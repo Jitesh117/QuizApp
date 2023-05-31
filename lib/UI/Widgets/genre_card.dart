@@ -8,11 +8,18 @@ class GenreCard extends StatelessWidget {
     required this.width,
     required this.imagePath,
     required this.topicName,
+    required this.colorOne,
+    required this.colorTwo,
+    required this.colorThree,
   });
 
   final double width;
   final String imagePath;
   final String topicName;
+
+  final Color colorOne;
+  final Color colorTwo;
+  final Color colorThree;
 
   @override
   Widget build(BuildContext context) {
@@ -24,14 +31,10 @@ class GenreCard extends StatelessWidget {
             width: width - 32,
             height: 150,
             padding: const EdgeInsets.all(16),
-            decoration: const BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(32)),
+            decoration: BoxDecoration(
+              borderRadius: const BorderRadius.all(Radius.circular(32)),
               gradient: LinearGradient(
-                colors: [
-                  Colors.pinkAccent,
-                  Colors.redAccent,
-                  Colors.orange,
-                ],
+                colors: [colorOne, colorTwo, colorThree],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
