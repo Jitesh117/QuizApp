@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_v2/UI/Quiz/quiz_page.dart';
+import 'package:quiz_v2/UI/Home/home.dart';
 
 void main() {
   runApp(const MyApp());
 }
+// TODO: 1.random topic questions(chaos mode)
+// TODO: 2.customised settings(no of questions,, type(true/false, mcq), time limit)
+// TODO: 3. Rewards( badges, coins, in app purchases)
+// TODO: 4. notifications( daily challenge: special rewards)
+// TODO: 5. social sharing
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -17,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
-      home: const QuizPage(),
+      home: const HomePage(),
     );
   }
 }

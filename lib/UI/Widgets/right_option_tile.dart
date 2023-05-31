@@ -19,7 +19,7 @@ class RightOptionTile extends StatelessWidget {
           color: Colors.white,
           gradient: LinearGradient(
             colors: [
-              Colors.yellowAccent.shade400,
+              Colors.yellowAccent.shade700,
               Colors.green,
             ],
             begin: Alignment.topCenter,

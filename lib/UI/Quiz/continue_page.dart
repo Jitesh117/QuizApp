@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:quiz_v2/UI/Styles/textStyles.dart';
+import 'package:quiz_v2/UI/Styles/text_styles.dart';
 
 class ContinuePage extends StatelessWidget {
   const ContinuePage({super.key});

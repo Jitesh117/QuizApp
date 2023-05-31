@@ -19,8 +19,8 @@ class WrongOptionTile extends StatelessWidget {
           color: Colors.white,
           gradient: LinearGradient(
             colors: [
-              Colors.orange.shade400,
               Colors.red,
+              Colors.redAccent.shade700,
             ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,

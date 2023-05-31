@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
-import 'package:quiz_v2/UI/Styles/textStyles.dart';
+import 'package:quiz_v2/UI/Styles/text_styles.dart';
 import 'package:quiz_v2/UI/Widgets/genre_card.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,7 +10,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    double height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: SafeArea(
         child: Padding(
