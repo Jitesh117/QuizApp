@@ -45,13 +45,18 @@ class QuizPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const FaIcon(
-                    FontAwesomeIcons.circleXmark,
-                    size: 40,
-                    color: Colors.white,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: const FaIcon(
+                      FontAwesomeIcons.circleXmark,
+                      size: 40,
+                      color: Colors.white,
+                    ),
                   ),
-                  Row(
-                    children: const [
+                  const Row(
+                    children: [
                       FaIcon(
                         FontAwesomeIcons.fire,
                         color: Colors.white,

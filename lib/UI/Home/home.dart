@@ -4,23 +4,29 @@ import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:quiz_v2/UI/Styles/text_styles.dart';
 import 'package:quiz_v2/UI/Widgets/genre_card.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32),
+          padding:
+              const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //! AppBar
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.end,
-                children: const [
+                children: [
                   FaIcon(
                     FontAwesomeIcons.solidHeart,
                     color: Colors.blue,

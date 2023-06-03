@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:developer';
 
 import 'package:http/http.dart' as http;
-import 'package:quiz_v2/Data/models/token_mode.dart';
+import 'package:quiz_v2/Data/models/token_model.dart';
 
 import 'models/mcq_model.dart';
 
@@ -14,6 +14,7 @@ void printdata() async {
   response = await http.get(Uri.parse(
       'https://opentdb.com/api.php?amount=1&category=10&difficulty=easy&type=multiple&token=$token'));
   McqModel jsondata = McqModel.fromJson(json.decode(response.body));
+
   // ! retrieve a new token
   if (jsondata.responseCode == 3) {
     log("response code is: ${jsondata.responseCode}");
@@ -31,6 +32,7 @@ void printdata() async {
     log(" ");
   } else {
     log("response code is: ${jsondata.responseCode}");
+
     // ! reset the token
     await http.put(Uri.parse(
         'https://opentdb.com/api_token.php?command=reset&token=41b6053947c596ddfdfe1a5cb973ac0230221af2db62838b9c0522d8c32d03e5'));

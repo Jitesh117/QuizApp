@@ -24,8 +24,8 @@ List<Color> colorOne = [
   Colors.pinkAccent,
   Colors.blue,
   Colors.deepPurple,
-  Colors.green,
   Colors.red,
+  Colors.green,
   Colors.indigo,
   Colors.deepOrange,
 ];
@@ -34,8 +34,8 @@ List<Color> colorTwo = [
   Colors.redAccent,
   Colors.blueAccent,
   Colors.purple,
-  Colors.greenAccent,
   Colors.orange,
+  Colors.greenAccent,
   Colors.blue,
   Colors.orangeAccent,
 ];
@@ -44,8 +44,8 @@ List<Color> colorThree = [
   Colors.orange,
   Colors.lightBlueAccent,
   Colors.purpleAccent,
-  Colors.lightGreen,
   Colors.orangeAccent,
+  Colors.lightGreen,
   Colors.lightBlue,
   Colors.yellow,
 ];
