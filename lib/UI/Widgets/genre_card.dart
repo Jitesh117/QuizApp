@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:quiz_v2/UI/Quiz/quiz_page.dart';
 
+import '../../providers/question_provider.dart';
 import '../Styles/text_styles.dart';
 
 class GenreCard extends StatelessWidget {
@@ -12,6 +14,7 @@ class GenreCard extends StatelessWidget {
     required this.colorOne,
     required this.colorTwo,
     required this.colorThree,
+    required this.category,
   });
 
   final double width;
@@ -21,59 +24,64 @@ class GenreCard extends StatelessWidget {
   final Color colorOne;
   final Color colorTwo;
   final Color colorThree;
+  final int category;
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => QuizPage(
-              colorOne: colorOne,
-              colorTwo: colorTwo,
-              colorThree: colorThree,
-              imagePath: imagePath,
-            ),
-          ),
-        );
-      },
-      child: Stack(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 50.0),
-            child: Container(
-              width: width - 32,
-              height: 150,
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                borderRadius: const BorderRadius.all(Radius.circular(32)),
-                gradient: LinearGradient(
-                  colors: [colorOne, colorTwo, colorThree],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
+    return Consumer<QuesProvider>(
+      builder: (context, quesProvider, _) => GestureDetector(
+        onTap: () {
+          quesProvider.printdata(category.toString());
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => QuizPage(
+                colorOne: colorOne,
+                colorTwo: colorTwo,
+                colorThree: colorThree,
+                imagePath: imagePath,
+                category: category.toString(),
               ),
-              child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      topicName,
-                      style: cardTextStyle,
-                    )
-                  ]),
             ),
-          ),
-          Positioned(
-            top: -20,
-            right: 10,
-            child: Image.asset(
-              imagePath,
-              height: 150,
+          );
+        },
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 50.0),
+              child: Container(
+                width: width - 32,
+                height: 150,
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  borderRadius: const BorderRadius.all(Radius.circular(32)),
+                  gradient: LinearGradient(
+                    colors: [colorOne, colorTwo, colorThree],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                ),
+                child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        topicName,
+                        style: cardTextStyle,
+                      )
+                    ]),
+              ),
             ),
-          ),
-        ],
+            Positioned(
+              top: -20,
+              right: 10,
+              child: Image.asset(
+                imagePath,
+                height: 150,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

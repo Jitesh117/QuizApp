@@ -20,6 +20,15 @@ List<String> topicNames = [
   'Book',
 ];
 
+List<int> category = [
+  21,
+  18,
+  25,
+  22,
+  17,
+  10,
+];
+
 List<Color> colorOne = [
   Colors.pinkAccent,
   Colors.blue,
