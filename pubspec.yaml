@@ -36,7 +36,9 @@ dependencies:
   flutter_bloc: ^8.1.3
   font_awesome_flutter: ^10.4.0
   google_fonts: ^4.0.4
+  html: ^0.15.3
   http: ^1.0.0
+  intl: ^0.18.1
   provider: ^6.0.5
   shimmer_animation: ^2.1.0+1
 

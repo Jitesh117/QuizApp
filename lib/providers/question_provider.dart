@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'dart:developer';
+import 'package:intl/intl.dart';
 
 import 'package:http/http.dart' as http;
 import 'package:quiz_v2/Data/models/token_model.dart';
@@ -26,7 +27,7 @@ class QuesProvider with ChangeNotifier {
     log("tapped");
     http.Response response;
     response = await http.get(Uri.parse(
-        'https://opentdb.com/api.php?amount=1&category=$category&difficulty=easy&type=multiple&token=$token'));
+        'https://opentdb.com/api.php?amount=1&category=$category&difficulty=hard&type=multiple&token=$token'));
     McqModel jsondata = McqModel.fromJson(json.decode(response.body));
 
     // ! retrieve a new token
@@ -40,14 +41,22 @@ class QuesProvider with ChangeNotifier {
       printdata(category);
     } else if (jsondata.responseCode == 0) {
       log(jsondata.results![0].question as String);
+
       for (int i = 0; i < 3; i++) {
         log("Incorrect answer ${jsondata.results![0].incorrectAnswers![i]}"); // }
       }
       question = jsondata.results![0].question!;
+      question = question = Bidi.stripHtmlIfNeeded(question);
+
       inCorrectAnswerOne = jsondata.results![0].incorrectAnswers![0];
+      inCorrectAnswerOne = Bidi.stripHtmlIfNeeded(inCorrectAnswerOne);
+
       inCorrectAnswerTwo = jsondata.results![0].incorrectAnswers![1];
+      inCorrectAnswerTwo = Bidi.stripHtmlIfNeeded(inCorrectAnswerTwo);
+
       log("Correct answer: ${jsondata.results![0].correctAnswer!}");
       correctAnswer = jsondata.results![0].correctAnswer!;
+      correctAnswer = Bidi.stripHtmlIfNeeded(correctAnswer);
       log(" ");
       isLoading = false;
     } else {
