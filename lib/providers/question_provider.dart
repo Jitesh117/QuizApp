@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'dart:developer' as dev;
@@ -15,22 +16,30 @@ class QuesProvider with ChangeNotifier {
       "41b6053947c596ddfdfe1a5cb973ac0230221af2db62838b9c0522d8c32d03e5";
   String question = "In which city of Germany is the largest port?";
   String correctAnswer = "";
-  List<String> inccorrectAnswer = ["", "", ""];
+  List<String> incorrectAnswer = ["", "", ""];
   bool isLoading = false;
   int rightPosition = 3;
 
   bool tapped = false;
+  int timesTapped = 0;
 
   List<int> tappedOption = [-1, -1, -1];
 
+  CountDownController timeControler = CountDownController();
+
   bool tappedOptionIsCorrect = false;
   void printdata(String category) async {
+// ! reset the countdown timer
+    timeControler.reset();
+
     dev.log("right value at call $rightPosition");
+
     isLoading = true;
     rightPosition = 3;
+    timesTapped = 0;
     correctAnswer = "Option";
     for (int i = 0; i < 3; i++) {
-      inccorrectAnswer[i] = "Option";
+      incorrectAnswer[i] = "Option";
       tappedOption[i] = -1;
     }
     rightPosition = Random().nextInt(3);
@@ -48,6 +57,7 @@ class QuesProvider with ChangeNotifier {
         'https://opentdb.com/api.php?amount=1&category=$category&difficulty=hard&type=multiple&token=$token'));
     McqModel jsondata = McqModel.fromJson(json.decode(response.body));
 
+// ! start the countdown timer
     // ! retrieve a new token
     if (jsondata.responseCode == 3 || jsondata.responseCode == 4) {
       dev.log("response code is: ${jsondata.responseCode}");
@@ -67,8 +77,11 @@ class QuesProvider with ChangeNotifier {
       question = jsondata.results![0].question!;
       question = question = Bidi.stripHtmlIfNeeded(question);
       for (int i = 0; i < 3; i++) {
-        inccorrectAnswer[i] = jsondata.results![0].incorrectAnswers![i];
-        inccorrectAnswer[i] = Bidi.stripHtmlIfNeeded(inccorrectAnswer[i]);
+        incorrectAnswer[i] = jsondata.results![0].incorrectAnswers![i];
+        incorrectAnswer[i] = Bidi.stripHtmlIfNeeded(incorrectAnswer[i]);
+      }
+      if (incorrectAnswer[0] != "Option") {
+        timeControler.start();
       }
 
       dev.log("Correct answer: ${jsondata.results![0].correctAnswer!}");

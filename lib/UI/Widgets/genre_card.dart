@@ -48,7 +48,7 @@ class GenreCard extends StatelessWidget {
         child: Stack(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 50.0),
+              padding: const EdgeInsets.only(top: 50, bottom: 20),
               child: Container(
                 width: width - 32,
                 height: 150,

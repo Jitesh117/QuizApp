@@ -32,9 +32,22 @@ class _OptionTileState extends State<OptionTile> {
           child: Container(
             width: MediaQuery.of(context).size.width - 40,
             padding: const EdgeInsets.all(16),
-            decoration: const BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.all(Radius.circular(16)),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: quesProvider.tapped &&
+                        quesProvider.rightPosition == widget.optionNumber
+                    ? [
+                        Colors.yellowAccent.shade700,
+                        Colors.green,
+                      ]
+                    : [
+                        Colors.white,
+                        Colors.white,
+                      ],
+              ),
+              borderRadius: const BorderRadius.all(Radius.circular(16)),
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -45,7 +58,10 @@ class _OptionTileState extends State<OptionTile> {
                     widget.optionValue,
                     textAlign: TextAlign.start,
                     style: TextStyle(
-                      color: widget.optionColor,
+                      color: quesProvider.tapped &&
+                              quesProvider.rightPosition == widget.optionNumber
+                          ? Colors.white
+                          : widget.optionColor,
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),

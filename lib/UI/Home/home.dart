@@ -43,10 +43,10 @@ class _HomePageState extends State<HomePage> {
                 style: headingTextStyle,
               ),
               const SizedBox(height: 10),
-              Text(
-                "Be the First!",
-                style: levelTextStyle,
-              ),
+              // Text(
+              //   "Be the First!",
+              //   style: levelTextStyle,
+              // ),
 
               // ! Category tiles: Science, Books, Computers, VideoGames, Geography, Anime and Manga,
               Expanded(

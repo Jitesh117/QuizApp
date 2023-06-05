@@ -83,7 +83,9 @@ class QuizPage extends StatelessWidget {
                       width: 40,
                       height: 40,
                       duration: 30,
+                      autoStart: false,
                       ringColor: colorThree,
+                      controller: quesProvider.timeControler,
                       fillColor: Colors.white,
                       isReverse: true,
                       textStyle: const TextStyle(
@@ -135,7 +137,7 @@ class QuizPage extends StatelessWidget {
                       return OptionTile(
                           optionValue: quesProvider.rightPosition == index
                               ? quesProvider.correctAnswer
-                              : quesProvider.inccorrectAnswer[index],
+                              : quesProvider.incorrectAnswer[index],
                           optionColor: colorOne,
                           optionNumber: index);
                     },
