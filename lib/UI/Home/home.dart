@@ -18,8 +18,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding:
-              const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32),
+          padding: const EdgeInsets.only(top: 16.0, left: 32, right: 32),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

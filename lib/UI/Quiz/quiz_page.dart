@@ -4,8 +4,6 @@ import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
-import 'package:quiz_v2/UI/Widgets/right_option_tile.dart';
-import 'package:quiz_v2/UI/Widgets/wrong_option.dart';
 import 'package:quiz_v2/providers/question_provider.dart';
 
 import '../Styles/text_styles.dart';
@@ -85,7 +83,7 @@ class QuizPage extends StatelessWidget {
                       width: 40,
                       height: 40,
                       duration: 30,
-                      ringColor: Colors.blue.shade200,
+                      ringColor: colorThree,
                       fillColor: Colors.white,
                       isReverse: true,
                       textStyle: const TextStyle(
@@ -131,13 +129,16 @@ class QuizPage extends StatelessWidget {
                       ),
                 const SizedBox(height: 20),
                 Expanded(
-                  child: ListView(
-                    children: [
-                      OptionTile(optionValue: quesProvider.inCorrectAnswerOne),
-                      RightOptionTile(optionValue: quesProvider.correctAnswer),
-                      WrongOptionTile(
-                          optionValue: quesProvider.inCorrectAnswerTwo),
-                    ],
+                  child: ListView.builder(
+                    itemCount: 3,
+                    itemBuilder: (BuildContext context, int index) {
+                      return OptionTile(
+                          optionValue: quesProvider.rightPosition == index
+                              ? quesProvider.correctAnswer
+                              : quesProvider.inccorrectAnswer[index],
+                          optionColor: colorOne,
+                          optionNumber: index);
+                    },
                   ),
                 ),
               ],
