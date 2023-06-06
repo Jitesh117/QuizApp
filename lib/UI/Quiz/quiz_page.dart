@@ -65,7 +65,7 @@ class QuizPage extends StatelessWidget {
                     const Row(
                       children: [
                         FaIcon(
-                          FontAwesomeIcons.fire,
+                          FontAwesomeIcons.fireFlameCurved,
                           color: Colors.white,
                           size: 30,
                         ),
@@ -82,12 +82,14 @@ class QuizPage extends StatelessWidget {
                     CircularCountDownTimer(
                       width: 40,
                       height: 40,
-                      duration: 30,
+                      duration: 60,
                       autoStart: false,
                       ringColor: colorThree,
                       controller: quesProvider.timeControler,
+                      isReverseAnimation: true,
                       fillColor: Colors.white,
                       isReverse: true,
+                      textFormat: CountdownTextFormat.S,
                       textStyle: const TextStyle(
                         fontSize: 16,
                         color: Colors.white,

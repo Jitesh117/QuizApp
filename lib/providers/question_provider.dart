@@ -27,9 +27,14 @@ class QuesProvider with ChangeNotifier {
 
   CountDownController timeControler = CountDownController();
 
+  String previousCategory = "";
+  int streakCount = 0;
   bool tappedOptionIsCorrect = false;
+
   void printdata(String category) async {
 // ! reset the countdown timer
+
+    timeControler = CountDownController();
     timeControler.reset();
 
     dev.log("right value at call $rightPosition");
@@ -52,14 +57,17 @@ class QuesProvider with ChangeNotifier {
     notifyListeners();
 
     dev.log("tapped");
-    http.Response response;
-    response = await http.get(Uri.parse(
+    http.Response response = await http.get(Uri.parse(
         'https://opentdb.com/api.php?amount=1&category=$category&difficulty=hard&type=multiple&token=$token'));
     McqModel jsondata = McqModel.fromJson(json.decode(response.body));
 
-// ! start the countdown timer
     // ! retrieve a new token
-    if (jsondata.responseCode == 3 || jsondata.responseCode == 4) {
+// Code 0: Success Returned results successfully.
+// Code 1: No Results Could not return results. The API doesn't have enough questions for your query. (Ex. Asking for 50 Questions in a Category that only has 20.)
+// Code 2: Invalid Parameter Contains an invalid parameter. Arguements passed in aren't valid. (Ex. Amount = Five)
+// Code 3: Token Not Found Session Token does not exist.
+// Code 4: Token Empty Session Token has returned all possible questions for the specified query. Resetting the Token is necessary.
+    if (jsondata.responseCode == 3) {
       dev.log("response code is: ${jsondata.responseCode}");
       http.Response resetToken = await http
           .get(Uri.parse('https://opentdb.com/api_token.php?command=request'));
@@ -80,6 +88,7 @@ class QuesProvider with ChangeNotifier {
         incorrectAnswer[i] = jsondata.results![0].incorrectAnswers![i];
         incorrectAnswer[i] = Bidi.stripHtmlIfNeeded(incorrectAnswer[i]);
       }
+      // ! start the countdown timer
       if (incorrectAnswer[0] != "Option") {
         timeControler.start();
       }
@@ -89,12 +98,14 @@ class QuesProvider with ChangeNotifier {
       correctAnswer = Bidi.stripHtmlIfNeeded(correctAnswer);
       dev.log(" ");
       isLoading = false;
-    } else {
+    }
+    // token empty
+    else if (jsondata.responseCode == 4) {
       dev.log("response code is: ${jsondata.responseCode}");
 
       // ! reset the token
       await http.put(Uri.parse(
-          'https://opentdb.com/api_token.php?command=reset&token=41b6053947c596ddfdfe1a5cb973ac0230221af2db62838b9c0522d8c32d03e5'));
+          'https://opentdb.com/api_token.php?command=reset&token=$token'));
       printdata(category);
     }
     notifyListeners();
@@ -109,5 +120,13 @@ class QuesProvider with ChangeNotifier {
       tappedOptionIsCorrect = false;
     }
     notifyListeners();
+  }
+
+  void streakChanger(String category) {
+    if (tappedOptionIsCorrect) {
+      streakCount++;
+    } else {
+      streakCount = 0;
+    }
   }
 }
