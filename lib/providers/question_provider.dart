@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'dart:developer' as dev;
@@ -22,26 +21,24 @@ class QuesProvider with ChangeNotifier {
 
   bool tapped = false;
   int timesTapped = 0;
-
   List<int> tappedOption = [-1, -1, -1];
 
-  CountDownController timeControler = CountDownController();
+  // CountDownController timeController = CountDownController();
 
   String previousCategory = "";
   int streakCount = 0;
   bool tappedOptionIsCorrect = false;
 
   void printdata(String category) async {
-// ! reset the countdown timer
-
-    timeControler = CountDownController();
-    timeControler.reset();
+// // ! reset the countdown timer
+//     timeController = CountDownController();
+//     timeController.start();
+//     timeController.reset();
 
     dev.log("right value at call $rightPosition");
 
     isLoading = true;
     rightPosition = 3;
-    timesTapped = 0;
     correctAnswer = "Option";
     for (int i = 0; i < 3; i++) {
       incorrectAnswer[i] = "Option";
@@ -50,6 +47,7 @@ class QuesProvider with ChangeNotifier {
     rightPosition = Random().nextInt(3);
 
     tapped = false;
+    timesTapped = 0;
 
     dev.log("right value after change $rightPosition");
     isLoading = true;
@@ -58,7 +56,7 @@ class QuesProvider with ChangeNotifier {
 
     dev.log("tapped");
     http.Response response = await http.get(Uri.parse(
-        'https://opentdb.com/api.php?amount=1&category=$category&difficulty=hard&type=multiple&token=$token'));
+        'https://opentdb.com/api.php?amount=1&category=$category&difficulty=easy&type=multiple&token=$token'));
     McqModel jsondata = McqModel.fromJson(json.decode(response.body));
 
     // ! retrieve a new token
@@ -89,9 +87,9 @@ class QuesProvider with ChangeNotifier {
         incorrectAnswer[i] = Bidi.stripHtmlIfNeeded(incorrectAnswer[i]);
       }
       // ! start the countdown timer
-      if (incorrectAnswer[0] != "Option") {
-        timeControler.start();
-      }
+      // if (incorrectAnswer[0] != "Option") {
+      //   timeController.start();
+      // }
 
       dev.log("Correct answer: ${jsondata.results![0].correctAnswer!}");
       correctAnswer = jsondata.results![0].correctAnswer!;
@@ -113,20 +111,23 @@ class QuesProvider with ChangeNotifier {
 
   void checkTappedOption(int option) {
     tapped = true;
+    timesTapped++;
     tappedOption[option] = 1;
     if (option == rightPosition) {
       tappedOptionIsCorrect = true;
     } else {
       tappedOptionIsCorrect = false;
     }
+    streakChanger();
     notifyListeners();
   }
 
-  void streakChanger(String category) {
-    if (tappedOptionIsCorrect) {
+  void streakChanger() {
+    if (tappedOptionIsCorrect && timesTapped == 1) {
       streakCount++;
-    } else {
+    } else if (!tappedOptionIsCorrect && timesTapped == 1) {
       streakCount = 0;
     }
+    notifyListeners();
   }
 }

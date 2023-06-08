@@ -60,6 +60,7 @@ class _HomePageState extends State<HomePage> {
                     colorTwo: colorTwo[index],
                     colorThree: colorThree[index],
                     category: category[index],
+                    streakColor: streakColor[index],
                   ),
                 ),
               ),

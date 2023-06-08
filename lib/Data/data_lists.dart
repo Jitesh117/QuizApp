@@ -35,7 +35,7 @@ List<Color> colorOne = [
   Colors.blue,
   Colors.deepPurple,
   Colors.red,
-  Colors.green,
+  Colors.pink,
   Colors.indigo,
   Colors.deepOrange,
 ];
@@ -45,7 +45,7 @@ List<Color> colorTwo = [
   Colors.blueAccent,
   Colors.purple,
   Colors.orange,
-  Colors.greenAccent,
+  Colors.pinkAccent,
   Colors.blue,
   Colors.orangeAccent,
 ];
@@ -55,7 +55,17 @@ List<Color> colorThree = [
   Colors.lightBlueAccent,
   Colors.purpleAccent,
   Colors.orangeAccent,
-  Colors.lightGreen,
+  Colors.pink.shade400,
   Colors.lightBlue,
   Colors.yellow,
+];
+
+List<Color> streakColor = [
+  Colors.yellow,
+  Colors.orange,
+  Colors.orange,
+  Colors.lightBlueAccent,
+  Colors.lightGreenAccent,
+  Colors.orange,
+  Colors.deepPurple,
 ];

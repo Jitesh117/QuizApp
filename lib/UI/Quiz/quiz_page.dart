@@ -1,6 +1,5 @@
 import 'dart:developer';
 
-import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
@@ -9,6 +8,7 @@ import 'package:quiz_v2/providers/question_provider.dart';
 import '../Styles/text_styles.dart';
 import '../Widgets/option_tile.dart';
 import '../Widgets/shimmer_tile.dart';
+import '../Widgets/streak_counter.dart';
 
 class QuizPage extends StatelessWidget {
   const QuizPage({
@@ -18,6 +18,7 @@ class QuizPage extends StatelessWidget {
     required this.colorThree,
     required this.imagePath,
     required this.category,
+    required this.streakColor,
   });
 
   final Color colorOne;
@@ -25,6 +26,7 @@ class QuizPage extends StatelessWidget {
   final Color colorThree;
   final String imagePath;
   final String category;
+  final Color streakColor;
   @override
   Widget build(BuildContext context) {
     log('build');
@@ -62,39 +64,27 @@ class QuizPage extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                    const Row(
-                      children: [
-                        FaIcon(
-                          FontAwesomeIcons.fireFlameCurved,
-                          color: Colors.white,
-                          size: 30,
-                        ),
-                        SizedBox(width: 10),
-                        Text(
-                          '1',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                          ),
-                        )
-                      ],
+                    // streakcounter
+                    StreakCounter(
+                      streakColor: streakColor,
                     ),
-                    CircularCountDownTimer(
-                      width: 40,
-                      height: 40,
-                      duration: 60,
-                      autoStart: false,
-                      ringColor: colorThree,
-                      controller: quesProvider.timeControler,
-                      isReverseAnimation: true,
-                      fillColor: Colors.white,
-                      isReverse: true,
-                      textFormat: CountdownTextFormat.S,
-                      textStyle: const TextStyle(
-                        fontSize: 16,
-                        color: Colors.white,
-                      ),
-                    ),
+                    // TODO: implement countdownTimer
+                    // CircularCountDownTimer(
+                    //   width: 40,
+                    //   height: 40,
+                    //   duration: 60,
+                    //   autoStart: false,
+                    //   ringColor: colorThree,
+                    //   controller: quesProvider.timeController,
+                    //   isReverseAnimation: true,
+                    //   fillColor: Colors.white,
+                    //   isReverse: true,
+                    //   textFormat: CountdownTextFormat.S,
+                    //   textStyle: const TextStyle(
+                    //     fontSize: 16,
+                    //     color: Colors.white,
+                    //   ),
+                    // ),
                   ],
                 ),
                 const SizedBox(height: 10),

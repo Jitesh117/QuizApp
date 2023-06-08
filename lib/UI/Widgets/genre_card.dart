@@ -15,6 +15,7 @@ class GenreCard extends StatelessWidget {
     required this.colorTwo,
     required this.colorThree,
     required this.category,
+    required this.streakColor,
   });
 
   final double width;
@@ -25,6 +26,7 @@ class GenreCard extends StatelessWidget {
   final Color colorTwo;
   final Color colorThree;
   final int category;
+  final Color streakColor;
 
   @override
   Widget build(BuildContext context) {
@@ -41,6 +43,7 @@ class GenreCard extends StatelessWidget {
                 colorThree: colorThree,
                 imagePath: imagePath,
                 category: category.toString(),
+                streakColor: streakColor,
               ),
             ),
           );
