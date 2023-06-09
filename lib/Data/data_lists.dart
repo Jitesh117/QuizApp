@@ -10,7 +10,7 @@ List<String> imagePaths = [
   'assets/book.png',
 ];
 
-List<String> topicNames = [
+List<String> categoryNames = [
   'Sports',
   'Computer',
   'Art',

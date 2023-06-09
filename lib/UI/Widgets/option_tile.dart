@@ -62,8 +62,8 @@ class _OptionTileState extends State<OptionTile> {
                               quesProvider.rightPosition == widget.optionNumber
                           ? Colors.white
                           : widget.optionColor,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      // fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),

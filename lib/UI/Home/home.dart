@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                   itemBuilder: (context, index) => GenreCard(
                     width: width,
                     imagePath: imagePaths[index],
-                    topicName: topicNames[index],
+                    topicName: categoryNames[index],
                     colorOne: colorOne[index],
                     colorTwo: colorTwo[index],
                     colorThree: colorThree[index],

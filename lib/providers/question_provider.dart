@@ -29,7 +29,7 @@ class QuesProvider with ChangeNotifier {
   int streakCount = 0;
   bool tappedOptionIsCorrect = false;
 
-  void printdata(String category) async {
+  void fetchQuestion(String category, String difficulty) async {
 // // ! reset the countdown timer
 //     timeController = CountDownController();
 //     timeController.start();
@@ -56,7 +56,7 @@ class QuesProvider with ChangeNotifier {
 
     dev.log("tapped");
     http.Response response = await http.get(Uri.parse(
-        'https://opentdb.com/api.php?amount=1&category=$category&difficulty=easy&type=multiple&token=$token'));
+        'https://opentdb.com/api.php?amount=1&category=$category&difficulty=${difficulty}&type=multiple&token=$token'));
     McqModel jsondata = McqModel.fromJson(json.decode(response.body));
 
     // ! retrieve a new token
@@ -72,7 +72,7 @@ class QuesProvider with ChangeNotifier {
       TokenModel tokenModel = TokenModel.fromJson(json.decode(resetToken.body));
 
       token = tokenModel.token.toString();
-      printdata(category);
+      fetchQuestion(category,difficulty);
     } else if (jsondata.responseCode == 0) {
       dev.log(jsondata.results![0].question as String);
 
@@ -104,7 +104,7 @@ class QuesProvider with ChangeNotifier {
       // ! reset the token
       await http.put(Uri.parse(
           'https://opentdb.com/api_token.php?command=reset&token=$token'));
-      printdata(category);
+      fetchQuestion(category,difficulty);
     }
     notifyListeners();
   }

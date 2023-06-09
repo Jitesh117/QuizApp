@@ -19,6 +19,7 @@ class QuizPage extends StatelessWidget {
     required this.imagePath,
     required this.category,
     required this.streakColor,
+    required this.difficulty,
   });
 
   final Color colorOne;
@@ -27,6 +28,7 @@ class QuizPage extends StatelessWidget {
   final String imagePath;
   final String category;
   final Color streakColor;
+  final String difficulty;
   @override
   Widget build(BuildContext context) {
     log('build');
@@ -34,109 +36,130 @@ class QuizPage extends StatelessWidget {
       builder: (context, quesProvider, _) => Scaffold(
         backgroundColor: Colors.blue,
         body: SafeArea(
-          child: Container(
-            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  colorOne,
-                  colorTwo,
-                  colorThree,
-                ],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-              ),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const SizedBox(height: 20),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Stack(
+            children: [
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      colorOne,
+                      colorTwo,
+                      colorThree,
+                    ],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    const SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).pop();
+                          },
+                          child: const FaIcon(
+                            FontAwesomeIcons.circleXmark,
+                            size: 40,
+                            color: Colors.white,
+                          ),
+                        ),
+                        // streakcounter
+                        StreakCounter(
+                          streakColor: streakColor,
+                        ),
+                        // TODO: implement countdownTimer
+                        // CircularCountDownTimer(
+                        //   width: 40,
+                        //   height: 40,
+                        //   duration: 60,
+                        //   autoStart: false,
+                        //   ringColor: colorThree,
+                        //   controller: quesProvider.timeController,
+                        //   isReverseAnimation: true,
+                        //   fillColor: Colors.white,
+                        //   isReverse: true,
+                        //   textFormat: CountdownTextFormat.S,
+                        //   textStyle: const TextStyle(
+                        //     fontSize: 16,
+                        //     color: Colors.white,
+                        //   ),
+                        // ),
+                      ],
+                    ),
+                    const SizedBox(height: 10),
                     GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).pop();
-                      },
-                      child: const FaIcon(
-                        FontAwesomeIcons.circleXmark,
-                        size: 40,
-                        color: Colors.white,
+                      onTap: () =>
+                          quesProvider.fetchQuestion(category, difficulty),
+                      child: Center(
+                        child: Image.asset(
+                          imagePath,
+                          height: 150,
+                        ),
                       ),
                     ),
-                    // streakcounter
-                    StreakCounter(
-                      streakColor: streakColor,
+                    const SizedBox(height: 30),
+                    Text(
+                      'Question 1 of 10',
+                      style: TextStyle(
+                        color: Colors.grey.shade300,
+                        fontSize: 20,
+                      ),
                     ),
-                    // TODO: implement countdownTimer
-                    // CircularCountDownTimer(
-                    //   width: 40,
-                    //   height: 40,
-                    //   duration: 60,
-                    //   autoStart: false,
-                    //   ringColor: colorThree,
-                    //   controller: quesProvider.timeController,
-                    //   isReverseAnimation: true,
-                    //   fillColor: Colors.white,
-                    //   isReverse: true,
-                    //   textFormat: CountdownTextFormat.S,
-                    //   textStyle: const TextStyle(
-                    //     fontSize: 16,
-                    //     color: Colors.white,
-                    //   ),
-                    // ),
+                    quesProvider.isLoading == true
+                        ? const Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ShimmerTile(height: 20, width: 350),
+                              SizedBox(height: 10),
+                              ShimmerTile(height: 20, width: 350),
+                              SizedBox(height: 10),
+                              ShimmerTile(height: 20, width: 300),
+                            ],
+                          )
+                        : Text(
+                            // 'In which city of Germany is the largest port?',
+                            quesProvider.question,
+                            style: cardTextStyle,
+                          ),
+                    const SizedBox(height: 20),
+                    Expanded(
+                      flex: 2,
+                      child: ListView.builder(
+                        itemCount: 3,
+                        itemBuilder: (BuildContext context, int index) {
+                          return OptionTile(
+                              optionValue: quesProvider.rightPosition == index
+                                  ? quesProvider.correctAnswer
+                                  : quesProvider.incorrectAnswer[index],
+                              optionColor: colorOne,
+                              optionNumber: index);
+                        },
+                      ),
+                    ),
                   ],
                 ),
-                const SizedBox(height: 10),
-                GestureDetector(
-                  onTap: () => quesProvider.printdata(category),
-                  child: Center(
-                    child: Image.asset(
-                      imagePath,
-                      height: 250,
-                    ),
+              ),
+              Positioned(
+                right: 20,
+                bottom: 40,
+                child: GestureDetector(
+                  onTap: () {
+                    quesProvider.fetchQuestion(category, difficulty);
+                  },
+                  child: const Icon(
+                    Icons.arrow_circle_right_outlined,
+                    color: Colors.white,
+                    size: 70,
                   ),
                 ),
-                const SizedBox(height: 30),
-                Text(
-                  'Question 1 of 10',
-                  style: TextStyle(
-                    color: Colors.grey.shade300,
-                    fontSize: 20,
-                  ),
-                ),
-                quesProvider.isLoading == true
-                    ? const Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          ShimmerTile(height: 20, width: 350),
-                          SizedBox(height: 10),
-                          ShimmerTile(height: 20, width: 350),
-                          SizedBox(height: 10),
-                          ShimmerTile(height: 20, width: 300),
-                        ],
-                      )
-                    : Text(
-                        // 'In which city of Germany is the largest port?',
-                        quesProvider.question,
-                        style: cardTextStyle,
-                      ),
-                const SizedBox(height: 20),
-                Expanded(
-                  child: ListView.builder(
-                    itemCount: 3,
-                    itemBuilder: (BuildContext context, int index) {
-                      return OptionTile(
-                          optionValue: quesProvider.rightPosition == index
-                              ? quesProvider.correctAnswer
-                              : quesProvider.incorrectAnswer[index],
-                          optionColor: colorOne,
-                          optionNumber: index);
-                    },
-                  ),
-                ),
-              ],
-            ),
+              )
+            ],
           ),
         ),
       ),
