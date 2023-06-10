@@ -7,7 +7,7 @@ import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:quiz_v2/UI/Quiz/quiz_page.dart';
 import 'package:quiz_v2/providers/question_provider.dart';
 
-import '../Widgets/difficulty_tile.dart';
+import '../Widgets/quizWidgets/difficulty_tile.dart';
 
 // ignore: must_be_immutable
 class ChooseDifficultyPage extends StatelessWidget {

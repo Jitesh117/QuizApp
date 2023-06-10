@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../Styles/text_styles.dart';
+import '../../Styles/text_styles.dart';
 
 class DifficultyTile extends StatelessWidget {
   const DifficultyTile({

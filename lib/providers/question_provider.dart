@@ -44,6 +44,11 @@ class QuesProvider with ChangeNotifier {
 //     timeController.reset();
 
     dev.log("right value at call $rightPosition");
+    if (previousCategory != category || previousDifficulty != difficulty) {
+      questionNumber = 1;
+      previousCategory = category;
+      previousDifficulty = difficulty;
+    }
 
     isLoading = true;
     rightPosition = 3;

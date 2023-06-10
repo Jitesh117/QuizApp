@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
+import 'package:quiz_v2/UI/Player/player_profile_page.dart';
 import 'package:quiz_v2/UI/Styles/text_styles.dart';
-import 'package:quiz_v2/UI/Widgets/genre_card.dart';
+import 'package:quiz_v2/UI/Widgets/quizWidgets/genre_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -23,17 +24,30 @@ class _HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //! AppBar
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  FaIcon(
+                  const FaIcon(
                     FontAwesomeIcons.solidHeart,
-                    color: Colors.blue,
+                    color: Colors.pink,
                   ),
-                  SizedBox(width: 20),
-                  FaIcon(
-                    FontAwesomeIcons.userLarge,
-                    color: Colors.blue,
+                  const SizedBox(width: 20),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (
+                            context,
+                          ) =>
+                              const PlayerProfilePage(),
+                        ),
+                      );
+                    },
+                    child: const FaIcon(
+                      FontAwesomeIcons.userLarge,
+                      color: Colors.deepPurpleAccent,
+                    ),
                   )
                 ],
               ),

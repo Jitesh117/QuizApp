@@ -8,9 +8,9 @@ import 'package:provider/provider.dart';
 import 'package:quiz_v2/providers/question_provider.dart';
 
 import '../Styles/text_styles.dart';
-import '../Widgets/option_tile.dart';
-import '../Widgets/shimmer_tile.dart';
-import '../Widgets/streak_counter.dart';
+import '../Widgets/quizWidgets/option_tile.dart';
+import '../Widgets/quizWidgets/shimmer_tile.dart';
+import '../Widgets/quizWidgets/streak_counter.dart';
 
 class QuizPage extends StatelessWidget {
   const QuizPage({
@@ -96,14 +96,10 @@ class QuizPage extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 10),
-                    GestureDetector(
-                      onTap: () =>
-                          quesProvider.fetchQuestion(category, difficulty),
-                      child: Center(
-                        child: Image.asset(
-                          imagePath,
-                          height: 150,
-                        ),
+                    Center(
+                      child: Image.asset(
+                        imagePath,
+                        height: 150,
                       ),
                     ),
                     const SizedBox(height: 30),
