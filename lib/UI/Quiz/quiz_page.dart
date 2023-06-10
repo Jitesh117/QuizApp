@@ -105,7 +105,7 @@ class QuizPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 30),
                     Text(
-                      'Question 1 of 10',
+                      'Question ${quesProvider.questionNumber.toString()} of 10',
                       style: TextStyle(
                         color: Colors.grey.shade300,
                         fontSize: 20,
@@ -145,17 +145,21 @@ class QuizPage extends StatelessWidget {
                   ],
                 ),
               ),
-              Positioned(
-                right: 20,
-                bottom: 40,
-                child: GestureDetector(
-                  onTap: () {
-                    quesProvider.fetchQuestion(category, difficulty);
-                  },
-                  child: const Icon(
-                    Icons.arrow_circle_right_outlined,
-                    color: Colors.white,
-                    size: 70,
+              Visibility(
+                visible: quesProvider.tapped,
+                child: Positioned(
+                  right: 20,
+                  bottom: 40,
+                  child: GestureDetector(
+                    onTap: () {
+                      quesProvider.questionNumberChanger(category, difficulty);
+                      quesProvider.fetchQuestion(category, difficulty);
+                    },
+                    child: const Icon(
+                      Icons.arrow_circle_right_outlined,
+                      color: Colors.white,
+                      size: 70,
+                    ),
                   ),
                 ),
               )

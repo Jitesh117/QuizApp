@@ -3,8 +3,11 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:quiz_v2/UI/Quiz/quiz_page.dart';
 import 'package:quiz_v2/providers/question_provider.dart';
+
+import '../Widgets/difficulty_tile.dart';
 
 // ignore: must_be_immutable
 class ChooseDifficultyPage extends StatelessWidget {
@@ -71,12 +74,12 @@ class ChooseDifficultyPage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10),
-                Center(
-                  child: Image.asset(
-                    imagePath,
-                    height: 250,
-                  ),
-                ),
+                // Center(
+                //   child: Image.asset(
+                //     imagePath,
+                //     height: 250,
+                //   ),
+                // ),
                 const SizedBox(height: 30),
                 Expanded(
                   child: ListView.builder(
@@ -84,6 +87,8 @@ class ChooseDifficultyPage extends StatelessWidget {
                     itemBuilder: (context, index) => GestureDetector(
                       onTap: () {
                         quesProvider.fetchQuestion(
+                            category, difficulty[index].toLowerCase());
+                        quesProvider.questionNumberChanger(
                             category, difficulty[index].toLowerCase());
                         Navigator.push(
                           context,
@@ -101,61 +106,17 @@ class ChooseDifficultyPage extends StatelessWidget {
                         );
                       },
                       child: DifficultyTile(
-                          difficulty: difficulty[index],
-                          diffColor: diffColor[index]),
+                        difficulty: difficulty[index],
+                        colorOne: difficultyColorOne[index],
+                        colorTwo: difficultyColorTwo[index],
+                        colorThree: difficultyColorThree[index],
+                        imagePath: imagePath,
+                      ),
                     ),
                   ),
                 ),
               ],
             ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class DifficultyTile extends StatelessWidget {
-  const DifficultyTile({
-    super.key,
-    required this.difficulty,
-    required this.diffColor,
-  });
-
-  final String difficulty;
-  final Color diffColor;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 20),
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        width: MediaQuery.of(context).size.width - 32,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          color: Colors.white,
-          // gradient: LinearGradient(
-          //   colors: [
-          //     diffColor,
-          //     Colors.white,
-          //   ],
-          //   begin: Alignment.topLeft,
-          //   end: Alignment.bottomRight,
-          // ),
-          border: Border.all(
-            color: Colors.white,
-            strokeAlign: 2,
-            width: 2,
-          ),
-        ),
-        child: Text(
-          difficulty,
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            color: diffColor,
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
           ),
         ),
       ),

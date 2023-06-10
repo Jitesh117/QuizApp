@@ -13,24 +13,30 @@ import '../Data/models/mcq_model.dart';
 class QuesProvider with ChangeNotifier {
   String token =
       "41b6053947c596ddfdfe1a5cb973ac0230221af2db62838b9c0522d8c32d03e5";
-  String question = "In which city of Germany is the largest port?";
+  // initialisation of question and answers
+  String question = "";
   String correctAnswer = "";
   List<String> incorrectAnswer = ["", "", ""];
   bool isLoading = false;
   int rightPosition = 3;
 
+//  used for changing option tile's appearance
   bool tapped = false;
   int timesTapped = 0;
   List<int> tappedOption = [-1, -1, -1];
 
   // CountDownController timeController = CountDownController();
 
+// question number controlling parameters
   String previousCategory = "";
+  String previousDifficulty = "";
+  int questionNumber = 1;
+
   int streakCount = 0;
   bool tappedOptionIsCorrect = false;
 
   void fetchQuestion(String category, String difficulty) async {
-// // ! reset the countdown timer
+//  reset the countdown timer
 //     timeController = CountDownController();
 //     timeController.start();
 //     timeController.reset();
@@ -56,7 +62,7 @@ class QuesProvider with ChangeNotifier {
 
     dev.log("tapped");
     http.Response response = await http.get(Uri.parse(
-        'https://opentdb.com/api.php?amount=1&category=$category&difficulty=${difficulty}&type=multiple&token=$token'));
+        'https://opentdb.com/api.php?amount=1&category=$category&difficulty=$difficulty&type=multiple&token=$token'));
     McqModel jsondata = McqModel.fromJson(json.decode(response.body));
 
     // ! retrieve a new token
@@ -72,7 +78,7 @@ class QuesProvider with ChangeNotifier {
       TokenModel tokenModel = TokenModel.fromJson(json.decode(resetToken.body));
 
       token = tokenModel.token.toString();
-      fetchQuestion(category,difficulty);
+      fetchQuestion(category, difficulty);
     } else if (jsondata.responseCode == 0) {
       dev.log(jsondata.results![0].question as String);
 
@@ -104,7 +110,7 @@ class QuesProvider with ChangeNotifier {
       // ! reset the token
       await http.put(Uri.parse(
           'https://opentdb.com/api_token.php?command=reset&token=$token'));
-      fetchQuestion(category,difficulty);
+      fetchQuestion(category, difficulty);
     }
     notifyListeners();
   }
@@ -128,6 +134,21 @@ class QuesProvider with ChangeNotifier {
     } else if (!tappedOptionIsCorrect && timesTapped == 1) {
       streakCount = 0;
     }
+    notifyListeners();
+  }
+
+  void questionNumberChanger(String category, String difficulty) {
+    if (previousCategory == "" ||
+        (previousCategory == category && previousDifficulty == difficulty)) {
+      questionNumber++;
+      previousCategory = category;
+      previousDifficulty = difficulty;
+    } else {
+      questionNumber = 1;
+      previousCategory = category;
+      previousDifficulty = difficulty;
+    }
+    dev.log("question number: $questionNumber");
     notifyListeners();
   }
 }

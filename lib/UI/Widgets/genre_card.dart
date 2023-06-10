@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/UI/Quiz/choose_difficulty.dart';
-import 'package:quiz_v2/UI/Quiz/quiz_page.dart';
 
 import '../../providers/question_provider.dart';
 import '../Styles/text_styles.dart';
@@ -57,13 +56,16 @@ class GenreCard extends StatelessWidget {
                 height: 150,
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  borderRadius: const BorderRadius.all(Radius.circular(32)),
-                  gradient: LinearGradient(
-                    colors: [colorOne, colorTwo, colorThree],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                  ),
-                ),
+                    borderRadius: const BorderRadius.all(Radius.circular(32)),
+                    gradient: LinearGradient(
+                      colors: [colorOne, colorTwo, colorThree],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 2,
+                    )),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,

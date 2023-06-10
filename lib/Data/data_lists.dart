@@ -69,3 +69,20 @@ List<Color> streakColor = [
   Colors.orange,
   Colors.deepPurple,
 ];
+
+List<Color> difficultyColorOne = [
+  Colors.lightGreenAccent.shade100,
+  Colors.orangeAccent.shade100,
+  Colors.redAccent.shade100,
+];
+List<Color> difficultyColorTwo = [
+  Colors.lightGreen,
+  Colors.orangeAccent,
+  Colors.redAccent,
+];
+
+List<Color> difficultyColorThree = [
+  Colors.green,
+  Colors.orange,
+  Colors.red,
+];

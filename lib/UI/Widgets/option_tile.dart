@@ -36,7 +36,8 @@ class _OptionTileState extends State<OptionTile> {
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors: quesProvider.tapped &&
+                colors: !quesProvider.isLoading &&
+                        quesProvider.tapped &&
                         quesProvider.rightPosition == widget.optionNumber
                     ? [
                         Colors.yellowAccent.shade700,
@@ -46,6 +47,10 @@ class _OptionTileState extends State<OptionTile> {
                         Colors.white,
                         Colors.white,
                       ],
+              ),
+              border: Border.all(
+                color: Colors.black,
+                width: 2,
               ),
               borderRadius: const BorderRadius.all(Radius.circular(16)),
             ),
@@ -58,22 +63,25 @@ class _OptionTileState extends State<OptionTile> {
                     widget.optionValue,
                     textAlign: TextAlign.start,
                     style: TextStyle(
-                      color: quesProvider.tapped &&
+                      color: !quesProvider.isLoading &&
+                              quesProvider.tapped &&
                               quesProvider.rightPosition == widget.optionNumber
                           ? Colors.white
                           : widget.optionColor,
                       fontSize: 20,
-                      // fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
-                quesProvider.tapped == true &&
+                !quesProvider.isLoading &&
+                        quesProvider.tapped == true &&
                         quesProvider.rightPosition == widget.optionNumber
                     ? const Icon(
                         Icons.check,
                         color: Colors.green,
                       )
-                    : quesProvider.tappedOption[widget.optionNumber] == 1
+                    : quesProvider.correctAnswer != "Option" &&
+                            quesProvider.tappedOption[widget.optionNumber] == 1
                         ? Icon(
                             quesProvider.rightPosition == widget.optionNumber
                                 ? Icons.check
