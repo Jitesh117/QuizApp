@@ -1,5 +1,7 @@
-import 'dart:developer';
+import 'dart:math';
+import 'dart:developer' as dev;
 
+import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
@@ -29,9 +31,10 @@ class QuizPage extends StatelessWidget {
   final String category;
   final Color streakColor;
   final String difficulty;
+
   @override
   Widget build(BuildContext context) {
-    log('build');
+    dev.log('build');
     return Consumer<QuesProvider>(
       builder: (context, quesProvider, _) => Scaffold(
         backgroundColor: Colors.blue,
@@ -146,7 +149,7 @@ class QuizPage extends StatelessWidget {
                 ),
               ),
               Visibility(
-                visible: quesProvider.tapped,
+                visible: quesProvider.tapped && !quesProvider.isLoading,
                 child: Positioned(
                   right: 20,
                   bottom: 40,
@@ -162,7 +165,49 @@ class QuizPage extends StatelessWidget {
                     ),
                   ),
                 ),
-              )
+              ),
+              Align(
+                alignment: Alignment.topCenter,
+                child: ConfettiWidget(
+                  confettiController: quesProvider.confettiController,
+                  blastDirection: pi / 2,
+                  maxBlastForce: 20,
+                  minBlastForce: 5,
+                  emissionFrequency: 0.1,
+                  gravity: 1,
+                  // 10 paticles will pop-up at a time
+                  numberOfParticles: 10,
+                  shouldLoop: true,
+                ),
+              ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: ConfettiWidget(
+                  confettiController: quesProvider.confettiController,
+                  blastDirection: 0,
+                  maxBlastForce: 20,
+                  minBlastForce: 5,
+                  emissionFrequency: 0.1,
+                  gravity: 1,
+                  // 10 paticles will pop-up at a time
+                  numberOfParticles: 10,
+                  shouldLoop: false,
+                ),
+              ),
+              Align(
+                alignment: Alignment.topRight,
+                child: ConfettiWidget(
+                  confettiController: quesProvider.confettiController,
+                  blastDirection: pi,
+                  maxBlastForce: 20,
+                  minBlastForce: 5,
+                  emissionFrequency: 0.1,
+                  gravity: 1,
+                  // 10 paticles will pop-up at a time
+                  numberOfParticles: 10,
+                  shouldLoop: true,
+                ),
+              ),
             ],
           ),
         ),

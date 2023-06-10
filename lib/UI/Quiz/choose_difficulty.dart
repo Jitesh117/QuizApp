@@ -74,13 +74,6 @@ class ChooseDifficultyPage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10),
-                // Center(
-                //   child: Image.asset(
-                //     imagePath,
-                //     height: 250,
-                //   ),
-                // ),
-                const SizedBox(height: 30),
                 Expanded(
                   child: ListView.builder(
                     itemCount: difficulty.length,

@@ -25,7 +25,9 @@ class _OptionTileState extends State<OptionTile> {
     return Consumer<QuesProvider>(
       builder: (context, quesProvider, _) => GestureDetector(
         onTap: () {
-          quesProvider.checkTappedOption(widget.optionNumber);
+          if (!quesProvider.isLoading) { // check the tapped option only when the question has been loaded
+            quesProvider.checkTappedOption(widget.optionNumber);
+          }
         },
         child: Padding(
           padding: const EdgeInsets.only(bottom: 16.0),

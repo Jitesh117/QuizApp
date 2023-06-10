@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'dart:developer' as dev;
@@ -13,6 +14,7 @@ import '../Data/models/mcq_model.dart';
 class QuesProvider with ChangeNotifier {
   String token =
       "41b6053947c596ddfdfe1a5cb973ac0230221af2db62838b9c0522d8c32d03e5";
+  ConfettiController confettiController = ConfettiController();
   // initialisation of question and answers
   String question = "";
   String correctAnswer = "";
@@ -131,6 +133,9 @@ class QuesProvider with ChangeNotifier {
   void streakChanger() {
     if (tappedOptionIsCorrect && timesTapped == 1) {
       streakCount++;
+      if (streakCount % 10 == 0) {
+        confettiController.play();
+      }
     } else if (!tappedOptionIsCorrect && timesTapped == 1) {
       streakCount = 0;
     }
@@ -138,6 +143,7 @@ class QuesProvider with ChangeNotifier {
   }
 
   void questionNumberChanger(String category, String difficulty) {
+    confettiController.stop();
     if (previousCategory == "" ||
         (previousCategory == category && previousDifficulty == difficulty)) {
       questionNumber++;
