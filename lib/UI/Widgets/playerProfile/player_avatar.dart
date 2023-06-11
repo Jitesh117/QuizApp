@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 class PlayerAvatar extends StatelessWidget {
   const PlayerAvatar({
     super.key,
+    required this.imagePath,
   });
-
+  final String imagePath;
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
+        color: Colors.pink.shade100,
         borderRadius: BorderRadius.circular(500),
         border: Border.all(
           color: Colors.black,
@@ -18,7 +20,7 @@ class PlayerAvatar extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(100),
         child: Image.asset(
-          'assets/userAvatars/user_1.png',
+          imagePath,
           height: 100,
           width: 100,
         ),

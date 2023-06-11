@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/UI/Home/home.dart';
+import 'package:quiz_v2/providers/player_provider.dart';
 import 'package:quiz_v2/providers/question_provider.dart';
 
 void main() {
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => QuesProvider()),
+        ChangeNotifierProvider(create: (_) => PlayerProvider()),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',

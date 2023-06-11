@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:quiz_v2/UI/Widgets/playerProfile/badge.dart';
 import 'package:quiz_v2/UI/Widgets/playerProfile/stats_tile_column.dart';
 
+import '../../providers/player_provider.dart';
 import '../Widgets/playerProfile/player_avatar.dart';
 
 class PlayerProfilePage extends StatelessWidget {
@@ -11,111 +13,173 @@ class PlayerProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.deepPurpleAccent,
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.only(top: 16.0, left: 16, right: 16),
-          child: Column(
-            children: [
-              const SizedBox(height: 10),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                    child: const FaIcon(
-                      FontAwesomeIcons.circleXmark,
-                      size: 40,
+    return Consumer<PlayerProvider>(
+      builder: (context, playerProvider, _) => Scaffold(
+        backgroundColor: Colors.deepPurpleAccent,
+        body: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 16.0, left: 16, right: 16),
+            child: Column(
+              children: [
+                const SizedBox(height: 10),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: const FaIcon(
+                        FontAwesomeIcons.circleXmark,
+                        size: 40,
+                        color: Colors.white,
+                      ),
+                    ),
+                    const FaIcon(
+                      FontAwesomeIcons.gear,
+                      size: 35,
                       color: Colors.white,
                     ),
-                  ),
-                  const FaIcon(
-                    FontAwesomeIcons.gear,
-                    size: 35,
-                    color: Colors.white,
-                  ),
-                ],
-              ),
-              const SizedBox(height: 30),
-              Stack(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 50.0),
-                    child: Container(
-                      height: 600,
-                      padding:
-                          const EdgeInsets.only(top: 80, left: 20, right: 20),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(16),
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 2.5,
+                  ],
+                ),
+                const SizedBox(height: 30),
+                Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 50.0),
+                      child: Container(
+                        height: 600,
+                        padding:
+                            const EdgeInsets.only(top: 80, left: 20, right: 20),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(
+                            color: Colors.black,
+                            width: 2.5,
+                          ),
+                        ),
+                        child: Column(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.all(16),
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  colors: [
+                                    Colors.deepPurpleAccent,
+                                    Colors.deepPurpleAccent.shade400,
+                                  ],
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                ),
+                                borderRadius: BorderRadius.circular(16),
+                                border: Border.all(
+                                  color: Colors.black,
+                                  width: 2,
+                                ),
+                              ),
+                              child: const Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  StatsTileColumn(
+                                      icon: Icons.star_outline_rounded,
+                                      description: "POINTS"),
+                                  StatsTileColumn(
+                                      icon: Icons.question_mark_rounded,
+                                      description: "QUESTIONS"),
+                                  StatsTileColumn(
+                                      icon: Icons.settings,
+                                      description: "STREAK"),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(height: 20),
+                            Expanded(
+                              child: GridView.builder(
+                                gridDelegate:
+                                    const SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 3,
+                                  crossAxisSpacing: 10,
+                                  mainAxisSpacing: 10,
+                                ),
+                                itemCount: categoryNames.length,
+                                itemBuilder: (context, index) => CategoryBadge(
+                                  mainColor: colorThree[index],
+                                  borderColor: colorTwo[index],
+                                  imagePath: imagePaths[index],
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      child: Column(
+                    ),
+                    Align(
+                      alignment: Alignment.topCenter,
+                      child: Stack(
                         children: [
-                          Container(
-                            padding: const EdgeInsets.all(16),
-                            decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  Colors.deepPurpleAccent,
-                                  Colors.deepPurpleAccent.shade400,
-                                ],
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                              ),
-                              borderRadius: BorderRadius.circular(16),
-                              border: Border.all(
-                                color: Colors.black,
-                                width: 2,
-                              ),
-                            ),
-                            child: const Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                StatsTileColumn(
-                                    icon: Icons.star_outline_rounded,
-                                    description: "POINTS"),
-                                StatsTileColumn(
-                                    icon: Icons.question_mark_rounded,
-                                    description: "QUESTIONS"),
-                                StatsTileColumn(
-                                    icon: Icons.settings,
-                                    description: "STREAK"),
-                              ],
-                            ),
+                          PlayerAvatar(
+                            imagePath: playerProvider.avatarPath,
                           ),
-                          const SizedBox(height: 20),
-                          Expanded(
-                            child: GridView.builder(
-                              gridDelegate:
-                                  const SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: 3,
-                                crossAxisSpacing: 10,
-                                mainAxisSpacing: 10,
-                              ),
-                              itemCount: categoryNames.length,
-                              itemBuilder: (context, index) => CategoryBadge(
-                                mainColor: colorThree[index],
-                                borderColor: colorTwo[index],
-                                imagePath: imagePaths[index],
+                          Positioned(
+                            right: 0,
+                            bottom: 0,
+                            child: GestureDetector(
+                              onTap: () {
+                                showModalBottomSheet(
+                                  context: context,
+                                  builder: (context) => Container(
+                                    padding: const EdgeInsets.only(
+                                        top: 20, right: 20, left: 20),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    child: Expanded(
+                                      child: GridView.builder(
+                                        itemCount: 24,
+                                        gridDelegate:
+                                            const SliverGridDelegateWithFixedCrossAxisCount(
+                                                crossAxisCount: 3,
+                                                crossAxisSpacing: 30,
+                                                mainAxisSpacing: 10),
+                                        itemBuilder: (context, index) =>
+                                            GestureDetector(
+                                          onTap: () => playerProvider.changeAvatar(
+                                              'assets/userAvatars/memojis/user_profile_$index.png'),
+                                          child: PlayerAvatar(
+                                            imagePath:
+                                                'assets/userAvatars/memojis/user_profile_$index.png',
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(100),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.black,
+                                      width: 2,
+                                    )),
+                                child: const Icon(
+                                  Icons.change_circle,
+                                  color: Colors.deepPurpleAccent,
+                                  size: 35,
+                                ),
                               ),
                             ),
-                          ),
+                          )
                         ],
                       ),
                     ),
-                  ),
-                  const Align(
-                      alignment: Alignment.topCenter, child: PlayerAvatar()),
-                ],
-              ),
-            ],
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
