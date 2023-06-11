@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../providers/question_provider.dart';
+import '../../../providers/ques_provider.dart';
 
 class OptionTile extends StatefulWidget {
   const OptionTile({
@@ -25,9 +25,7 @@ class _OptionTileState extends State<OptionTile> {
     return Consumer<QuesProvider>(
       builder: (context, quesProvider, _) => GestureDetector(
         onTap: () {
-          if (!quesProvider.isLoading) { // check the tapped option only when the question has been loaded
             quesProvider.checkTappedOption(widget.optionNumber);
-          }
         },
         child: Padding(
           padding: const EdgeInsets.only(bottom: 16.0),
@@ -38,7 +36,7 @@ class _OptionTileState extends State<OptionTile> {
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors: !quesProvider.isLoading &&
+                colors:
                         quesProvider.tapped &&
                         quesProvider.rightPosition == widget.optionNumber
                     ? [
@@ -65,7 +63,7 @@ class _OptionTileState extends State<OptionTile> {
                     widget.optionValue,
                     textAlign: TextAlign.start,
                     style: TextStyle(
-                      color: !quesProvider.isLoading &&
+                      color: 
                               quesProvider.tapped &&
                               quesProvider.rightPosition == widget.optionNumber
                           ? Colors.white
@@ -75,7 +73,6 @@ class _OptionTileState extends State<OptionTile> {
                     ),
                   ),
                 ),
-                !quesProvider.isLoading &&
                         quesProvider.tapped == true &&
                         quesProvider.rightPosition == widget.optionNumber
                     ? const Icon(

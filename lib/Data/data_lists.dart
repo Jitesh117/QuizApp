@@ -1,33 +1,39 @@
 import 'package:flutter/material.dart';
 
 List<String> imagePaths = [
-  'assets/sports.png',
+  'assets/anime.png',
   'assets/computer.png',
-  'assets/art.png',
+  'assets/gk.png',
   'assets/geography.png',
-  'assets/mythology.png',
+  'assets/history.png',
+  'assets/movies.png',
   'assets/science.png',
-  'assets/book.png',
+  'assets/sports.png',
+  'assets/games.png',
 ];
 
 List<String> categoryNames = [
-  'Sports',
+  'Anime',
   'Computer',
-  'Art',
+  'General Knowledge',
   'Geography',
-  'Mythology',
+  'History',
+  'Movies',
   'Science',
-  'Book',
+  'Sports',
+  'Video Games',
 ];
 
 List<int> category = [
-  21,
-  18,
-  25,
-  22,
-  20,
-  17,
-  10,
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
 ];
 
 List<Color> colorOne = [
@@ -38,6 +44,8 @@ List<Color> colorOne = [
   Colors.pink,
   Colors.indigo,
   Colors.deepOrange,
+  Colors.deepPurple,
+  Colors.red,
 ];
 
 List<Color> colorTwo = [
@@ -48,6 +56,8 @@ List<Color> colorTwo = [
   Colors.pinkAccent,
   Colors.blue,
   Colors.orangeAccent,
+  Colors.purple,
+  Colors.orange,
 ];
 
 List<Color> colorThree = [
@@ -58,6 +68,8 @@ List<Color> colorThree = [
   Colors.pink.shade400,
   Colors.lightBlue,
   Colors.yellow,
+  Colors.purpleAccent,
+  Colors.orangeAccent,
 ];
 
 List<Color> streakColor = [
@@ -68,6 +80,8 @@ List<Color> streakColor = [
   Colors.lightGreenAccent,
   Colors.orange,
   Colors.deepPurple,
+  Colors.orange,
+  Colors.lightBlueAccent,
 ];
 
 List<Color> difficultyColorOne = [

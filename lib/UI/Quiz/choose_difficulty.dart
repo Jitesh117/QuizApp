@@ -5,7 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:quiz_v2/UI/Quiz/quiz_page.dart';
-import 'package:quiz_v2/providers/question_provider.dart';
+import 'package:quiz_v2/providers/ques_provider.dart';
 
 import '../Widgets/quizWidgets/difficulty_tile.dart';
 
@@ -25,10 +25,11 @@ class ChooseDifficultyPage extends StatelessWidget {
   final Color colorTwo;
   final Color colorThree;
   final String imagePath;
-  final String category;
+  final int category;
   final Color streakColor;
 
   List<String> difficulty = ['EASY', 'MEDIUM', 'HARD'];
+  List<int> difficultyNumber = [0, 1, 2];
   List<Color> diffColor = [
     Colors.green,
     Colors.orange,
@@ -78,11 +79,11 @@ class ChooseDifficultyPage extends StatelessWidget {
                   child: ListView.builder(
                     itemCount: difficulty.length,
                     itemBuilder: (context, index) => GestureDetector(
-                      onTap: () {
+                      onTap: ()  {
                         quesProvider.fetchQuestion(
-                            category, difficulty[index].toLowerCase());
+                            category, difficultyNumber[index]);
                         quesProvider.questionNumberChanger(
-                            category, difficulty[index].toLowerCase());
+                            category, difficultyNumber[index]);
                         Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -91,9 +92,9 @@ class ChooseDifficultyPage extends StatelessWidget {
                               colorTwo: colorTwo,
                               colorThree: colorThree,
                               imagePath: imagePath,
-                              category: category.toString(),
+                              category: category,
                               streakColor: streakColor,
-                              difficulty: difficulty[index].toLowerCase(),
+                              difficulty: difficultyNumber[index],
                             ),
                           ),
                         );

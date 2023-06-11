@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
-import '../../../providers/question_provider.dart';
+import '../../../providers/ques_provider.dart';
 
 class StreakCounter extends StatelessWidget {
   const StreakCounter({

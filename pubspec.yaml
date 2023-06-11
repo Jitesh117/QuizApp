@@ -58,15 +58,15 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/QuestionData/animeManga/
-    - assets/QuestionData/computer/
-    - assets/QuestionData/generalKnowledge/
-    - assets/QuestionData/geography/
-    - assets/QuestionData/history/
-    - assets/QuestionData/movies/
-    - assets/QuestionData/science/
-    - assets/QuestionData/sports/
-    - assets/QuestionData/videoGames/
+    - assets/QuestionData/0/
+    - assets/QuestionData/1/
+    - assets/QuestionData/2/
+    - assets/QuestionData/3/
+    - assets/QuestionData/4/
+    - assets/QuestionData/5/
+    - assets/QuestionData/6/
+    - assets/QuestionData/7/
+    - assets/QuestionData/8/
     - assets/
     - assets/userAvatars/
     - assets/userAvatars/memojis/

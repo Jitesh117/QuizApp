@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/UI/Quiz/choose_difficulty.dart';
 
-import '../../../providers/question_provider.dart';
+import '../../../providers/ques_provider.dart';
 import '../../Styles/text_styles.dart';
 
 class GenreCard extends StatelessWidget {
@@ -33,6 +33,7 @@ class GenreCard extends StatelessWidget {
     return Consumer<QuesProvider>(
       builder: (context, quesProvider, _) => GestureDetector(
         onTap: () {
+          quesProvider.loadQuestions();
           Navigator.push(
             context,
             MaterialPageRoute(
@@ -41,7 +42,7 @@ class GenreCard extends StatelessWidget {
                 colorTwo: colorTwo,
                 colorThree: colorThree,
                 imagePath: imagePath,
-                category: category.toString(),
+                category: category,
                 streakColor: streakColor,
               ),
             ),
@@ -78,11 +79,11 @@ class GenreCard extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: -20,
-              right: 10,
+              top: category == 0 ? 0 : -20,
+              right: category == 0 ? 25 : 10,
               child: Image.asset(
                 imagePath,
-                height: 150,
+                height: category == 0 ? 100 : 150,
                 colorBlendMode: BlendMode.colorBurn,
               ),
             ),

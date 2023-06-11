@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/UI/Home/home.dart';
 import 'package:quiz_v2/providers/player_provider.dart';
-import 'package:quiz_v2/providers/question_provider.dart';
+import 'package:quiz_v2/providers/ques_provider.dart';
 
 void main() {
   runApp(const MyApp());

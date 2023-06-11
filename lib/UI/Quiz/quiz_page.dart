@@ -5,11 +5,10 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
-import 'package:quiz_v2/providers/question_provider.dart';
+import 'package:quiz_v2/providers/ques_provider.dart';
 
 import '../Styles/text_styles.dart';
 import '../Widgets/quizWidgets/option_tile.dart';
-import '../Widgets/quizWidgets/shimmer_tile.dart';
 import '../Widgets/quizWidgets/streak_counter.dart';
 
 class QuizPage extends StatelessWidget {
@@ -28,9 +27,9 @@ class QuizPage extends StatelessWidget {
   final Color colorTwo;
   final Color colorThree;
   final String imagePath;
-  final String category;
   final Color streakColor;
-  final String difficulty;
+  final int category;
+  final int difficulty;
 
   @override
   Widget build(BuildContext context) {
@@ -98,7 +97,7 @@ class QuizPage extends StatelessWidget {
                     const SizedBox(height: 10),
                     GestureDetector(
                       onTap: () {
-                        quesProvider.printQuestions();
+                        quesProvider.loadQuestions();
                       },
                       child: Center(
                         child: Image.asset(
@@ -115,22 +114,11 @@ class QuizPage extends StatelessWidget {
                         fontSize: 20,
                       ),
                     ),
-                    quesProvider.isLoading == true
-                        ? const Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              ShimmerTile(height: 20, width: 350),
-                              SizedBox(height: 10),
-                              ShimmerTile(height: 20, width: 350),
-                              SizedBox(height: 10),
-                              ShimmerTile(height: 20, width: 300),
-                            ],
-                          )
-                        : Text(
-                            // 'In which city of Germany is the largest port?',
-                            quesProvider.question,
-                            style: cardTextStyle,
-                          ),
+                    Text(
+                      // 'In which city of Germany is the largest port?',
+                      quesProvider.question,
+                      style: cardTextStyle,
+                    ),
                     const SizedBox(height: 20),
                     Expanded(
                       flex: 2,
@@ -150,7 +138,7 @@ class QuizPage extends StatelessWidget {
                 ),
               ),
               Visibility(
-                visible: quesProvider.tapped && !quesProvider.isLoading,
+                visible: quesProvider.tapped,
                 child: Positioned(
                   right: 20,
                   bottom: 40,
