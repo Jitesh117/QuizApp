@@ -1,0 +1,441 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which game did &quot;Sonic The Hedgehog&quot; make his first appearance in?",
+      "correct_answer": "Rad Mobile",
+      "incorrect_answers": ["Sonic The Hedgehog", "Super Mario 64", "Mega Man"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who created the digital distribution platform Steam?",
+      "correct_answer": "Valve",
+      "incorrect_answers": ["Pixeltail Games", "Ubisoft", "Electronic Arts"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What year was the game Team Fortress 2 released?",
+      "correct_answer": "2007",
+      "incorrect_answers": ["2009", "2005", "2010"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the most expensive weapon in Counter-Strike: Global Offensive?",
+      "correct_answer": "Scar-20/G3SG1",
+      "incorrect_answers": ["M4A1", "AWP", "R8 Revolver"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What was the name of the cancelled sequel of Team Fortress?",
+      "correct_answer": "Team Fortress 2: Brotherhood of Arms",
+      "incorrect_answers": [
+        "Team Fortress 2: Desert Mercenaries",
+        "Team Fortress 2: Operation Gear Grinder",
+        "Team Fortress 2: Return to Classic"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the protagonist in the game &quot;The Walking Dead: Season One&quot;?",
+      "correct_answer": "Lee Everett",
+      "incorrect_answers": ["Clementine", "Kenny", "Rick Grimes"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the writer of the game &quot;Half-Life&quot;?",
+      "correct_answer": "Marc Laidlaw",
+      "incorrect_answers": ["Gabe Newell", "Robin Walker", "Chet Faliszek"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Blinky, Pinky, Inky and Clyde are characters from which classic video game?",
+      "correct_answer": "Pac-Man",
+      "incorrect_answers": ["Gauntlet", "Space Invaders", "Street Fighter"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who made Garry&#039;s Mod?",
+      "correct_answer": "Garry Newman",
+      "incorrect_answers": ["Randy Newman", "Facepunch Studios", "Gabe Newell"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which student in Yandere Simulator is known for asking irritating and stupid questions?",
+      "correct_answer": "Midori Gurin",
+      "incorrect_answers": ["Kokona Hruka", "Oka Ruto", "Pipi Osu"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the main character in &quot;The Stanley Parable&quot;?",
+      "correct_answer": "Stanley",
+      "incorrect_answers": ["The Adventure Line", "The Narrator", "The Boss"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "How many times do you fight Gilgamesh in &quot;Final Fantasy 5&quot;?",
+      "correct_answer": "6",
+      "incorrect_answers": ["4", "5", "3"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In what year was &quot;Metal Gear Solid&quot; released in North America?",
+      "correct_answer": "1998",
+      "incorrect_answers": ["1987", "2001", "2004"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the 2002 video game &quot;Kingdom Hearts&quot;, how many Keyblades are usable?",
+      "correct_answer": "18",
+      "incorrect_answers": ["13", "16", "15"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the title of song on the main menu in Halo?",
+      "correct_answer": "Halo",
+      "incorrect_answers": ["Opening Suite", "Shadows", "Suite Autumn"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In Portal 2, how did CEO of Aperture Science, Cave Johnson, presumably die?",
+      "correct_answer": "Moon Rock Poisoning",
+      "incorrect_answers": [
+        "Accidentally sending a portal to the Moon",
+        "Slipped in the shower",
+        "Asbestos Poisoning"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the game &quot;Overwatch,&quot; what are the names of the two Australian criminals from the Junkers faction?",
+      "correct_answer": "Junkrat and Roadhog",
+      "incorrect_answers": [
+        "Roadrat and Junkhog",
+        "Ana and Pharah",
+        "McCree and Deadeye"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "When was Minecraft first released to the public?",
+      "correct_answer": "May 17th, 2009",
+      "incorrect_answers": [
+        "September 17th, 2009",
+        "November 18th, 2011",
+        "October 7th, 2011"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In what city in the dystopia alternate future of Half-Life 2 do you first start in?",
+      "correct_answer": "City 17",
+      "incorrect_answers": ["City 18", "City 6", "City 45"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Gordon Freeman is said to have burnt and destroyed what food in the break room microwave?",
+      "correct_answer": "Casserole",
+      "incorrect_answers": ["Sub Sandwich", "Chicken Soup", "Pepperoni Pizza"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Game Boy from the Game Boy series of portable video game consoles was released first?",
+      "correct_answer": "Game Boy Color",
+      "incorrect_answers": [
+        "Game Boy Advance",
+        "Game Boy Micro",
+        "Game Boy Advance SP"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What was the original name of Crash Bandicoot?",
+      "correct_answer": "Willie Wombat",
+      "incorrect_answers": ["Coco Bandicoot", "Marvelous Mole", "Wally Wombat"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In Undertale, what&#039;s the prize for answering correctly?",
+      "correct_answer": "More questions",
+      "incorrect_answers": ["New car", "Mercy", "Money"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "The Touhou Project series of games is often associated with which genre?",
+      "correct_answer": "Shoot &#039;em up",
+      "incorrect_answers": ["Strategy", "FPS", "Casual"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What was Frank West&#039;s job in &quot;Dead Rising&quot;?",
+      "correct_answer": "Photojournalist",
+      "incorrect_answers": ["Janitor", "Chef", "Taxi Driver"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the first weapon you acquire in Half-Life?",
+      "correct_answer": "A crowbar",
+      "incorrect_answers": ["A pistol", "The H.E.V suit", "Your fists"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In vanilla Minecraft, which of the following cannot be made into a block?",
+      "correct_answer": "Charcoal",
+      "incorrect_answers": ["Coal", "Wheat", "String"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the videogame Bully, what is the protagonist&#039;s last name?",
+      "correct_answer": "Hopkins",
+      "incorrect_answers": ["Smith", "Kowalski", "Crabblesnitch"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the game Nuclear Throne, what character is only usable in a play through with Melting?",
+      "correct_answer": "Skeleton",
+      "incorrect_answers": ["Frog", "Horror", "Plant"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In what year was Garry&#039;s Mod released as a standalone title on Valve&#039;s Steam distribution service?",
+      "correct_answer": "2006",
+      "incorrect_answers": ["2007", "2004", "2003"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which of the following characters from the game &quot;Overwatch&quot; was revealed to be homosexual in December of 2016?",
+      "correct_answer": "Tracer",
+      "incorrect_answers": ["Widowmaker", "Sombra", "Symmetra"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Aperture Science CEO Cave Johnson is voiced by which American actor?",
+      "correct_answer": "J.K. Simmons",
+      "incorrect_answers": [
+        "Nolan North",
+        "John Patrick Lowrie",
+        "Christopher Lloyd"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What household item make the characters of &quot;Steins; Gate&quot; travel through time?",
+      "correct_answer": "Microwave",
+      "incorrect_answers": ["Computer", "Refrigerator", "Televison"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "When was the top-down online RPG &quot;Space Station 13&quot; released?",
+      "correct_answer": "2003",
+      "incorrect_answers": ["2000", "2010", "2006"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who created the indie adventure game &quot;Night in the Woods&quot;?",
+      "correct_answer": "Alec Holowka",
+      "incorrect_answers": ["Ron Gilbert", "Tim Schafer", " Tommy Refenes"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In &quot;Call Of Duty: Zombies&quot;, what is the name of the Pack-A-Punched Crossbow?",
+      "correct_answer": "Awful Lawton",
+      "incorrect_answers": ["Longinus", "V-R11", "Predator"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the boss round featured in the &quot;Call Of Duty: Zombies&quot; map &quot;Five&quot;?",
+      "correct_answer": "The Pentagon Thief",
+      "incorrect_answers": ["Hellhounds", "Jumping Jacks", "Napalm Zombie"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the Super Smash Bros. series, which character was the first one to return to the series after being absent from a previous game?",
+      "correct_answer": "Dr. Mario",
+      "incorrect_answers": ["Mewtwo", "Lucas", "Roy"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the Halo series, which era of SPARTAN is Master Chief? ",
+      "correct_answer": "SPARTAN-II",
+      "incorrect_answers": ["SPARTAN-I", "SPARTAN-III", "SPARTAN-IV"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What was the first game in the &quot;Battlefield&quot; series?",
+      "correct_answer": "Battlefield 1942",
+      "incorrect_answers": [
+        "Battlefield Vietnam",
+        "Battlefield 2",
+        "Battlefield 1"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which of the following Pokemon Types was present in the original games, Red and Blue?",
+      "correct_answer": "Ice",
+      "incorrect_answers": ["Steel", "Dark", "Fairy"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Rincewind from the 1995 Discworld game was voiced by which member of Monty Python?",
+      "correct_answer": "Eric Idle",
+      "incorrect_answers": ["John Cleese", "Terry Gilliam", "Michael Palin"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the game &quot;Fire Emblem: Shadow Dragon&quot;, what is the central protagonist&#039;s name?",
+      "correct_answer": "Marth",
+      "incorrect_answers": ["Roy", "Eliwood", "Robin"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the Video Game, Half-life, what type of US military force starts clearing out the Black Mesa Research Facility?",
+      "correct_answer": "The HECU",
+      "incorrect_answers": ["Navy Seals", "The Combine", "The Marines"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the video game, Half-life, what event started the Half-life universe as we know today?",
+      "correct_answer": "The Resonance Cascade",
+      "incorrect_answers": [
+        "World War 3",
+        "The Xen Attack",
+        "The Black Mesa Nuke"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which of these covert groups employs Sam Fisher to work as a Splinter Cell?",
+      "correct_answer": "Third Echelon",
+      "incorrect_answers": ["Voron", "Black Arrow", "The Engineers"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What was the name of the canceled projected by Blizzard Entertainment that would be later become Overwatch?",
+      "correct_answer": "Titan",
+      "incorrect_answers": ["Omnic", "Omega", "Ghost"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the video game franchise &quot;Halo&quot;, what is the UNSC&#039;s main opposing faction called?",
+      "correct_answer": "The Covenant",
+      "incorrect_answers": ["The Reckoning", "The Peoples", "The Slaughterers"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In &quot;Xenoblade Chronicles 2&quot;, Which party member cannot use normal blades?",
+      "correct_answer": "Tora",
+      "incorrect_answers": ["Rex", "Zeke", "Nia"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the Assassin&#039;s Creed series,what was the name of Desmond Miles given by Abstergo?",
+      "correct_answer": "Subject 17",
+      "incorrect_answers": [
+        "Subject 16",
+        "Subject 18",
+        "Alta&iuml;r Ibn-La&#039;Ahad"
+      ]
+    }
+  ]
+}

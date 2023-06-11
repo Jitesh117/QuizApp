@@ -2,11 +2,13 @@ import 'dart:math';
 
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'dart:convert';
 import 'dart:developer' as dev;
 import 'package:intl/intl.dart';
 
 import 'package:http/http.dart' as http;
+import 'package:quiz_v2/Data/models/data_model.dart';
 import 'package:quiz_v2/Data/models/token_model.dart';
 
 import '../Data/models/mcq_model.dart';
@@ -161,5 +163,33 @@ class QuesProvider with ChangeNotifier {
     }
     dev.log("question number: $questionNumber");
     notifyListeners();
+  }
+
+  void printQuestions() async {
+    String easy =
+        await rootBundle.loadString("assets/QuestionData/computer/hard.json");
+    String medium =
+        await rootBundle.loadString("assets/QuestionData/computer/hard.json");
+    String hard =
+        await rootBundle.loadString("assets/QuestionData/computer/hard.json");
+    DataModel easyData = DataModel.fromJson(json.decode(easy));
+    DataModel mediumData = DataModel.fromJson(json.decode(medium));
+    DataModel hardData = DataModel.fromJson(json.decode(hard));
+    for (int i = 0; i < easyData.results!.length; i++) {
+      dev.log("Easy no $i");
+      dev.log(easyData.results![i].question!);
+    }
+    for (int i = 0; i < mediumData.results!.length; i++) {
+      dev.log("medium no $i");
+      dev.log(mediumData.results![i].question!);
+    }
+    for (int i = 0; i < hardData.results!.length; i++) {
+      dev.log("hard no $i");
+      dev.log(hardData.results![i].question!);
+    }
+  }
+
+  void loadQuestions() async {
+
   }
 }

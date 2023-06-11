@@ -96,10 +96,15 @@ class QuizPage extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 10),
-                    Center(
-                      child: Image.asset(
-                        imagePath,
-                        height: 150,
+                    GestureDetector(
+                      onTap: () {
+                        quesProvider.printQuestions();
+                      },
+                      child: Center(
+                        child: Image.asset(
+                          imagePath,
+                          height: 150,
+                        ),
                       ),
                     ),
                     const SizedBox(height: 30),

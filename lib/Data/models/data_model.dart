@@ -1,10 +1,10 @@
-class TrueFalseModel {
+class DataModel {
   int? responseCode;
   List<Results>? results;
 
-  TrueFalseModel({this.responseCode, this.results});
+  DataModel({this.responseCode, this.results});
 
-  TrueFalseModel.fromJson(Map<String, dynamic> json) {
+  DataModel.fromJson(Map<String, dynamic> json) {
     responseCode = json["response_code"];
     results = json["results"] == null
         ? null
