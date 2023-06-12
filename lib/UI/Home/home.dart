@@ -6,6 +6,7 @@ import 'package:quiz_v2/UI/Player/player_profile_page.dart';
 import 'package:quiz_v2/UI/Styles/text_styles.dart';
 import 'package:quiz_v2/UI/Widgets/quizWidgets/genre_card.dart';
 
+import '../../providers/player_provider.dart';
 import '../../providers/question_provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -19,8 +20,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    return Consumer<QuesProvider>(
-      builder: (context, quesProvider, _) => Scaffold(
+    return Consumer2<QuesProvider, PlayerProvider>(
+      builder: (context, quesProvider, playerProvider, _) => Scaffold(
         body: SafeArea(
           child: Padding(
             padding: const EdgeInsets.only(top: 16.0, left: 32, right: 32),
@@ -38,6 +39,7 @@ class _HomePageState extends State<HomePage> {
                     const SizedBox(width: 20),
                     GestureDetector(
                       onTap: () {
+                        playerProvider.fetchPlayerData();
                         Navigator.push(
                           context,
                           MaterialPageRoute(

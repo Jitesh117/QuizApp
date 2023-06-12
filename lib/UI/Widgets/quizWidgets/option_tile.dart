@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:quiz_v2/providers/player_provider.dart';
 
 import '../../../providers/question_provider.dart';
 
@@ -22,10 +23,12 @@ class OptionTile extends StatefulWidget {
 class _OptionTileState extends State<OptionTile> {
   @override
   Widget build(BuildContext context) {
-    return Consumer<QuesProvider>(
-      builder: (context, quesProvider, _) => GestureDetector(
+    return Consumer2<QuesProvider, PlayerProvider>(
+      builder: (context, quesProvider, playerProvider, _) => GestureDetector(
         onTap: () {
-            quesProvider.checkTappedOption(widget.optionNumber);
+          quesProvider.checkTappedOption(widget.optionNumber);
+          playerProvider.updateMaxStreak(quesProvider.streakCount);
+          playerProvider.updatePoints(quesProvider.tappedOptionIsCorrect);
         },
         child: Padding(
           padding: const EdgeInsets.only(bottom: 16.0),
@@ -36,8 +39,7 @@ class _OptionTileState extends State<OptionTile> {
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors:
-                        quesProvider.tapped &&
+                colors: quesProvider.tapped &&
                         quesProvider.rightPosition == widget.optionNumber
                     ? [
                         Colors.yellowAccent.shade700,
@@ -63,8 +65,7 @@ class _OptionTileState extends State<OptionTile> {
                     widget.optionValue,
                     textAlign: TextAlign.start,
                     style: TextStyle(
-                      color: 
-                              quesProvider.tapped &&
+                      color: quesProvider.tapped &&
                               quesProvider.rightPosition == widget.optionNumber
                           ? Colors.white
                           : widget.optionColor,
@@ -73,7 +74,7 @@ class _OptionTileState extends State<OptionTile> {
                     ),
                   ),
                 ),
-                        quesProvider.tapped == true &&
+                quesProvider.tapped == true &&
                         quesProvider.rightPosition == widget.optionNumber
                     ? const Icon(
                         Icons.check,

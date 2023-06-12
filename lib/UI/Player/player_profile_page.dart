@@ -78,19 +78,26 @@ class PlayerProfilePage extends StatelessWidget {
                                   width: 2,
                                 ),
                               ),
-                              child: const Row(
+                              child: Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   StatsTileColumn(
-                                      icon: Icons.star_outline_rounded,
-                                      description: "POINTS"),
+                                    icon: Icons.star_outline_rounded,
+                                    description: "POINTS",
+                                    number: playerProvider.points.toString(),
+                                  ),
                                   StatsTileColumn(
-                                      icon: Icons.question_mark_rounded,
-                                      description: "QUESTIONS"),
+                                    icon: Icons.question_mark_rounded,
+                                    description: "QUESTIONS",
+                                    number: playerProvider.questionsPlayed
+                                        .toString(),
+                                  ),
                                   StatsTileColumn(
-                                      icon: Icons.settings,
-                                      description: "STREAK"),
+                                    icon: Icons.settings,
+                                    description: "MAX STREAK",
+                                    number: playerProvider.maxStreak.toString(),
+                                  ),
                                 ],
                               ),
                             ),

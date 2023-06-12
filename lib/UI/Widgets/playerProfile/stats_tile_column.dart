@@ -5,9 +5,11 @@ class StatsTileColumn extends StatelessWidget {
     super.key,
     required this.icon,
     required this.description,
+    required this.number,
   });
   final IconData icon;
   final String description;
+  final String number;
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +26,9 @@ class StatsTileColumn extends StatelessWidget {
             color: Colors.grey.shade400,
           ),
         ),
-        const Text(
-          '590',
-          style: TextStyle(
+        Text(
+          number,
+          style: const TextStyle(
               color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
         ),
       ],

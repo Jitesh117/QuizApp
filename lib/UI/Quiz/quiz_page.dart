@@ -5,6 +5,7 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:quiz_v2/providers/player_provider.dart';
 import 'package:quiz_v2/providers/question_provider.dart';
 
 import '../Styles/text_styles.dart';
@@ -34,8 +35,8 @@ class QuizPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     dev.log('build');
-    return Consumer<QuesProvider>(
-      builder: (context, quesProvider, _) => Scaffold(
+    return Consumer2<QuesProvider, PlayerProvider>(
+      builder: (context, quesProvider, playerProvider, _) => Scaffold(
         backgroundColor: Colors.blue,
         body: SafeArea(
           child: Stack(
@@ -95,15 +96,10 @@ class QuizPage extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 10),
-                    GestureDetector(
-                      onTap: () {
-                        quesProvider.loadQuestions();
-                      },
-                      child: Center(
-                        child: Image.asset(
-                          imagePath,
-                          height: 150,
-                        ),
+                    Center(
+                      child: Image.asset(
+                        imagePath,
+                        height: 150,
                       ),
                     ),
                     const SizedBox(height: 30),
@@ -126,11 +122,12 @@ class QuizPage extends StatelessWidget {
                         itemCount: 3,
                         itemBuilder: (BuildContext context, int index) {
                           return OptionTile(
-                              optionValue: quesProvider.rightPosition == index
-                                  ? quesProvider.correctAnswer
-                                  : quesProvider.incorrectAnswer[index],
-                              optionColor: colorOne,
-                              optionNumber: index);
+                            optionValue: quesProvider.rightPosition == index
+                                ? quesProvider.correctAnswer
+                                : quesProvider.incorrectAnswer[index],
+                            optionColor: colorOne,
+                            optionNumber: index,
+                          );
                         },
                       ),
                     ),
