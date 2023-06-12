@@ -103,6 +103,7 @@ class ChooseDifficultyPage extends StatelessWidget {
                         colorTwo: difficultyColorTwo[index],
                         colorThree: difficultyColorThree[index],
                         imagePath: imagePath,
+                        category: category,
                       ),
                     ),
                   ),

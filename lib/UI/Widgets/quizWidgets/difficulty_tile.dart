@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../Styles/text_styles.dart';
@@ -11,6 +10,7 @@ class DifficultyTile extends StatelessWidget {
     required this.colorTwo,
     required this.colorThree,
     required this.imagePath,
+    required this.category,
   });
 
   final String difficulty;
@@ -18,6 +18,7 @@ class DifficultyTile extends StatelessWidget {
   final Color colorTwo;
   final Color colorThree;
   final String imagePath;
+  final int category;
 
   @override
   Widget build(BuildContext context) {
@@ -58,11 +59,11 @@ class DifficultyTile extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: -20,
-            right: 10,
+            top: category == 0 ? 0 : -20,
+            right: category == 0 ? 20 : 10,
             child: Image.asset(
               imagePath,
-              height: 150,
+              height: category == 0 ? 100 : 150,
               colorBlendMode: BlendMode.colorBurn,
             ),
           ),

@@ -52,14 +52,15 @@ class QuesProvider with ChangeNotifier {
       dataModels[i][1] = mediumData;
       dataModels[i][2] = hardData;
     }
-    for (int i = 0; i < categoryNames.length; i++) {
-      for (int j = 0; j < 3; j++) {
-        for (int k = 0; k < dataModels[i][j].results!.length; k++) {
-          dev.log(
-              "${dataModels[i][j].results![k].category!} ${dataModels[i][j].results![k].difficulty} ${dataModels[i][j].results![k].question!}");
-        }
-      }
-    }
+    // logged the value for checking whether the values are getting initialised or not
+    // for (int i = 0; i < categoryNames.length; i++) {
+    //   for (int j = 0; j < 3; j++) {
+    //     for (int k = 0; k < dataModels[i][j].results!.length; k++) {
+    //       dev.log(
+    //           "${dataModels[i][j].results![k].category!} ${dataModels[i][j].results![k].difficulty} ${dataModels[i][j].results![k].question!}");
+    //     }
+    //   }
+    // }
     questionsLoaded = true;
     notifyListeners();
   }
