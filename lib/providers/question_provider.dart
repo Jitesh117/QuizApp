@@ -22,7 +22,7 @@ class QuesProvider with ChangeNotifier {
   int timesTapped = 0;
   List<int> tappedOption = [-1, -1, -1];
 
-  // CountDownController timeController = CountDownController();
+// CountDownController timeController = CountDownController();
 
 // question number controlling parameters
   int previousCategory = -1;
@@ -142,27 +142,4 @@ class QuesProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  void printQuestions() async {
-    String easy =
-        await rootBundle.loadString("assets/QuestionData/computer/hard.json");
-    String medium =
-        await rootBundle.loadString("assets/QuestionData/computer/hard.json");
-    String hard =
-        await rootBundle.loadString("assets/QuestionData/computer/hard.json");
-    DataModel easyData = DataModel.fromJson(json.decode(easy));
-    DataModel mediumData = DataModel.fromJson(json.decode(medium));
-    DataModel hardData = DataModel.fromJson(json.decode(hard));
-    for (int i = 0; i < easyData.results!.length; i++) {
-      dev.log("Easy no $i");
-      dev.log(easyData.results![i].question!);
-    }
-    for (int i = 0; i < mediumData.results!.length; i++) {
-      dev.log("medium no $i");
-      dev.log(mediumData.results![i].question!);
-    }
-    for (int i = 0; i < hardData.results!.length; i++) {
-      dev.log("hard no $i");
-      dev.log(hardData.results![i].question!);
-    }
-  }
 }

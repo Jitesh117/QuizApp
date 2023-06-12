@@ -28,20 +28,16 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  bloc: ^8.1.2
   circular_countdown_timer: ^0.2.3
   confetti: ^0.7.0
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.3
   font_awesome_flutter: ^10.4.0
   google_fonts: ^4.0.4
   html: ^0.15.3
-  http: ^1.0.0
   intl: ^0.18.1
   provider: ^6.0.5
-  shimmer_animation: ^2.1.0+1
 
 dev_dependencies:
   flutter_lints: ^2.0.0
