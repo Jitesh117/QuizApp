@@ -6,7 +6,7 @@ import 'package:quiz_v2/UI/Player/player_profile_page.dart';
 import 'package:quiz_v2/UI/Styles/text_styles.dart';
 import 'package:quiz_v2/UI/Widgets/quizWidgets/genre_card.dart';
 
-import '../../providers/ques_provider.dart';
+import '../../providers/question_provider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

@@ -5,7 +5,7 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
-import 'package:quiz_v2/providers/ques_provider.dart';
+import 'package:quiz_v2/providers/question_provider.dart';
 
 import '../Styles/text_styles.dart';
 import '../Widgets/quizWidgets/option_tile.dart';
@@ -144,7 +144,6 @@ class QuizPage extends StatelessWidget {
                   bottom: 40,
                   child: GestureDetector(
                     onTap: () {
-                      quesProvider.questionNumberChanger(category, difficulty);
                       quesProvider.fetchQuestion(category, difficulty);
                     },
                     child: const Icon(
@@ -166,7 +165,7 @@ class QuizPage extends StatelessWidget {
                   gravity: 1,
                   // 10 paticles will pop-up at a time
                   numberOfParticles: 10,
-                  shouldLoop: true,
+                  shouldLoop: false,
                 ),
               ),
               Align(
@@ -194,7 +193,7 @@ class QuizPage extends StatelessWidget {
                   gravity: 1,
                   // 10 paticles will pop-up at a time
                   numberOfParticles: 10,
-                  shouldLoop: true,
+                  shouldLoop: false,
                 ),
               ),
             ],

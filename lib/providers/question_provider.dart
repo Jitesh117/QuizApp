@@ -4,6 +4,7 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
+import 'package:quiz_v2/Data/data_lists.dart';
 import 'dart:convert';
 import 'dart:developer' as dev;
 import 'package:quiz_v2/Data/models/data_model.dart';
@@ -26,18 +27,18 @@ class QuesProvider with ChangeNotifier {
 // question number controlling parameters
   int previousCategory = -1;
   int previousDifficulty = -1;
-  int questionNumber = 1;
+  int questionNumber = 0;
   bool questionsLoaded = false;
 
   int streakCount = 0;
   bool tappedOptionIsCorrect = false;
 
-  List<List<DataModel>> dataModels =
-      List.generate(9, (index) => List.generate(3, (index) => DataModel()));
+  List<List<DataModel>> dataModels = List.generate(categoryNames.length,
+      (index) => List.generate(3, (index) => DataModel()));
 
   void loadQuestions() async {
     questionsLoaded = false;
-    for (int i = 0; i < 9; i++) {
+    for (int i = 0; i < categoryNames.length; i++) {
       String easy =
           await rootBundle.loadString("assets/QuestionData/$i/easy.json");
       String medium =
@@ -51,7 +52,7 @@ class QuesProvider with ChangeNotifier {
       dataModels[i][1] = mediumData;
       dataModels[i][2] = hardData;
     }
-    for (int i = 0; i < 9; i++) {
+    for (int i = 0; i < categoryNames.length; i++) {
       for (int j = 0; j < 3; j++) {
         for (int k = 0; k < dataModels[i][j].results!.length; k++) {
           dev.log(
@@ -65,11 +66,7 @@ class QuesProvider with ChangeNotifier {
 
   void fetchQuestion(int category, int difficulty) {
     dev.log("right value at call $rightPosition");
-    if (previousCategory != category || previousDifficulty != difficulty) {
-      questionNumber = 1;
-      previousCategory = category;
-      previousDifficulty = difficulty;
-    }
+    questionNumberChanger(category, difficulty);
 
     rightPosition = 3;
     correctAnswer = "Option";
@@ -131,8 +128,7 @@ class QuesProvider with ChangeNotifier {
 
   void questionNumberChanger(int category, int difficulty) {
     confettiController.stop();
-    if (previousCategory == -1 ||
-        (previousCategory == category && previousDifficulty == difficulty)) {
+    if (previousCategory == category && previousDifficulty == difficulty) {
       questionNumber++;
       previousCategory = category;
       previousDifficulty = difficulty;

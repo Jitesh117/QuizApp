@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/UI/Quiz/choose_difficulty.dart';
 
-import '../../../providers/ques_provider.dart';
+import '../../../providers/question_provider.dart';
 import '../../Styles/text_styles.dart';
 
 class GenreCard extends StatelessWidget {

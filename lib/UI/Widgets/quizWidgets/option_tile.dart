@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../providers/ques_provider.dart';
+import '../../../providers/question_provider.dart';
 
 class OptionTile extends StatefulWidget {
   const OptionTile({

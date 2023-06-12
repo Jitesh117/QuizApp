@@ -5,7 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:quiz_v2/UI/Quiz/quiz_page.dart';
-import 'package:quiz_v2/providers/ques_provider.dart';
+import 'package:quiz_v2/providers/question_provider.dart';
 
 import '../Widgets/quizWidgets/difficulty_tile.dart';
 
@@ -81,8 +81,6 @@ class ChooseDifficultyPage extends StatelessWidget {
                     itemBuilder: (context, index) => GestureDetector(
                       onTap: ()  {
                         quesProvider.fetchQuestion(
-                            category, difficultyNumber[index]);
-                        quesProvider.questionNumberChanger(
                             category, difficultyNumber[index]);
                         Navigator.push(
                           context,
