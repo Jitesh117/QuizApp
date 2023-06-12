@@ -10,8 +10,10 @@ class PlayerProvider with ChangeNotifier {
   int points = 0;
   String avatarPath = "assets/userAvatars/memojis/user_profile_0.png";
 
-  void changeAvatar(String imagePath) {
+  void changeAvatar(String imagePath) async {
     avatarPath = imagePath;
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    pref.setString('avatarPath', avatarPath);
     notifyListeners();
   }
 
@@ -20,6 +22,8 @@ class PlayerProvider with ChangeNotifier {
     maxStreak = pref.getInt('highestStreak') ?? 0;
     questionsPlayed = pref.getInt('questionsPlayed') ?? 0;
     points = pref.getInt('points') ?? 0;
+    avatarPath = pref.getString('avatarPath') ??
+        "assets/userAvatars/memojis/user_profile_0.png";
   }
 
   void updateMaxStreak(int streak) async {
