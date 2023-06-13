@@ -9,6 +9,7 @@ import 'package:quiz_v2/providers/player_provider.dart';
 import 'package:quiz_v2/providers/question_provider.dart';
 
 import '../Styles/text_styles.dart';
+import '../Widgets/playerProfile/player_avatar.dart';
 import '../Widgets/quizWidgets/option_tile.dart';
 import '../Widgets/quizWidgets/streak_counter.dart';
 
@@ -76,6 +77,13 @@ class QuizPage extends StatelessWidget {
                         StreakCounter(
                           streakColor: streakColor,
                         ),
+                        SizedBox(
+                          height: 50,
+                          width: 50,
+                          child: PlayerAvatar(
+                              imagePath: playerProvider.avatarPath),
+                        ),
+
                         // TODO: implement countdownTimer
                         // CircularCountDownTimer(
                         //   width: 40,

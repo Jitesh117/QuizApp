@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:quiz_v2/UI/Widgets/playerProfile/badge.dart';
+import 'package:quiz_v2/UI/Widgets/playerProfile/shimmer_badge.dart';
 import 'package:quiz_v2/UI/Widgets/playerProfile/stats_tile_column.dart';
 
 import '../../providers/player_provider.dart';
@@ -111,7 +112,7 @@ class PlayerProfilePage extends StatelessWidget {
                                   mainAxisSpacing: 10,
                                 ),
                                 itemCount: categoryNames.length,
-                                itemBuilder: (context, index) => CategoryBadge(
+                                itemBuilder: (context, index) => ShimmerBadge(
                                   mainColor: colorThree[index],
                                   borderColor: colorTwo[index],
                                   imagePath: imagePaths[index],

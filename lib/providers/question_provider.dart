@@ -8,6 +8,7 @@ import 'package:quiz_v2/Data/data_lists.dart';
 import 'dart:convert';
 import 'dart:developer' as dev;
 import 'package:quiz_v2/Data/models/data_model.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class QuesProvider with ChangeNotifier {
   ConfettiController confettiController = ConfettiController();
@@ -32,9 +33,13 @@ class QuesProvider with ChangeNotifier {
 
   int streakCount = 0;
   bool tappedOptionIsCorrect = false;
+  bool previousAnswerWasCorrect = false;
 
   List<List<DataModel>> dataModels = List.generate(categoryNames.length,
       (index) => List.generate(3, (index) => DataModel()));
+
+  List<List<String>> badgesEarned = List.generate(
+      categoryNames.length, (index) => List.generate(3, (index) => "0"));
 
   void loadQuestions() async {
     questionsLoaded = false;
@@ -108,28 +113,49 @@ class QuesProvider with ChangeNotifier {
     tappedOption[option] = 1;
     if (option == rightPosition) {
       tappedOptionIsCorrect = true;
+      previousAnswerWasCorrect = true;
     } else {
       tappedOptionIsCorrect = false;
+      previousAnswerWasCorrect = false;
     }
     streakChanger();
     notifyListeners();
   }
 
-  void streakChanger() {
+  void streakChanger() async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    for (int i = 0; i < categoryNames.length; i++) {
+      badgesEarned[i] =
+          pref.getStringList("category$i") ?? List.generate(3, (index) => '0');
+    }
+    for (int i = 0; i < categoryNames.length; i++) {
+      for (int j = 0; j < 3; j++) {
+        dev.log("${badgesEarned[i][j]} ");
+      }
+    }
     if (tappedOptionIsCorrect && timesTapped == 1) {
       streakCount++;
+      if (badgesEarned[previousCategory][previousDifficulty] == '0' &&
+          questionNumber == 9) {
+        badgesEarned[previousCategory][previousDifficulty] = '1';
+        pref.setStringList(
+            "category$previousCategory", badgesEarned[previousCategory]);
+        confettiController.play();
+      }
       if (streakCount % 10 == 0) {
         confettiController.play();
       }
     } else if (!tappedOptionIsCorrect && timesTapped == 1) {
       streakCount = 0;
+      notifyListeners();
     }
-    notifyListeners();
   }
 
   void questionNumberChanger(int category, int difficulty) {
     confettiController.stop();
-    if (previousCategory == category && previousDifficulty == difficulty) {
+    if (previousCategory == category &&
+        previousDifficulty == difficulty &&
+        previousAnswerWasCorrect) {
       questionNumber++;
       previousCategory = category;
       previousDifficulty = difficulty;
@@ -141,5 +167,4 @@ class QuesProvider with ChangeNotifier {
     dev.log("question number: $questionNumber");
     notifyListeners();
   }
-
 }

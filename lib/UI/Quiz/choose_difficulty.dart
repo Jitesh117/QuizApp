@@ -79,7 +79,8 @@ class ChooseDifficultyPage extends StatelessWidget {
                   child: ListView.builder(
                     itemCount: difficulty.length,
                     itemBuilder: (context, index) => GestureDetector(
-                      onTap: ()  {
+                      onTap: () {
+                        quesProvider.questionNumberChanger(-1, -1);// question number change only when it is changed inside the quiz page and not from the change difficulty page
                         quesProvider.fetchQuestion(
                             category, difficultyNumber[index]);
                         Navigator.push(

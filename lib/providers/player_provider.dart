@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PlayerProvider with ChangeNotifier {
@@ -9,6 +10,10 @@ class PlayerProvider with ChangeNotifier {
   int questionsPlayed = 0;
   int points = 0;
   String avatarPath = "assets/userAvatars/memojis/user_profile_0.png";
+
+  // variables for storing badges information
+  List<List<String>> badgesEarned = List.generate(
+      categoryNames.length, (index) => List.generate(3, (index) => "0"));
 
   void changeAvatar(String imagePath) async {
     avatarPath = imagePath;
@@ -24,6 +29,12 @@ class PlayerProvider with ChangeNotifier {
     points = pref.getInt('points') ?? 0;
     avatarPath = pref.getString('avatarPath') ??
         "assets/userAvatars/memojis/user_profile_0.png";
+
+    // badges information
+    for (int i = 0; i < categoryNames.length; i++) {
+      badgesEarned[i] =
+          pref.getStringList(i.toString()) ?? List.generate(3, (index) => '0');
+    }
   }
 
   void updateMaxStreak(int streak) async {

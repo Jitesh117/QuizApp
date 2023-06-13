@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quiz_v2/UI/Styles/text_styles.dart';
+import 'package:quiz_v2/UI/Widgets/playerProfile/rotating_badge.dart';
+import 'package:quiz_v2/UI/Widgets/playerProfile/shimmer_badge.dart';
 
 class ContinuePage extends StatelessWidget {
   const ContinuePage({super.key});
@@ -33,11 +35,12 @@ class ContinuePage extends StatelessWidget {
                 color: Colors.white,
               ),
               const SizedBox(height: 10),
-              Center(
-                child: Image.asset(
-                  'assets/art.png',
-                  height: 300,
-                ),
+              const Center(
+                child: RotatingBadge(),
+                // Image.asset(
+                //   'assets/science.png',
+                //   height: 300,
+                // ),
               ),
               const SizedBox(height: 30),
               Text(

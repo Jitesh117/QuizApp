@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:quiz_v2/UI/Player/player_profile_page.dart';
 import 'package:quiz_v2/UI/Styles/text_styles.dart';
+import 'package:quiz_v2/UI/Widgets/playerProfile/player_avatar.dart';
 import 'package:quiz_v2/UI/Widgets/quizWidgets/genre_card.dart';
 
 import '../../providers/player_provider.dart';
@@ -30,11 +30,15 @@ class _HomePageState extends State<HomePage> {
               children: [
                 //! AppBar
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const FaIcon(
-                      FontAwesomeIcons.solidHeart,
-                      color: Colors.pink,
+                    // const FaIcon(
+                    //   FontAwesomeIcons.solidHeart,
+                    //   color: Colors.pink,
+                    // ),
+                    Text(
+                      "Let's Play!",
+                      style: headingTextStyle,
                     ),
                     const SizedBox(width: 20),
                     GestureDetector(
@@ -50,18 +54,17 @@ class _HomePageState extends State<HomePage> {
                           ),
                         );
                       },
-                      child: const FaIcon(
-                        FontAwesomeIcons.userLarge,
-                        color: Colors.deepPurpleAccent,
+                      child: 
+                      SizedBox(
+                        height: 50,
+                        width: 50,
+                        child:
+                            PlayerAvatar(imagePath: playerProvider.avatarPath),
                       ),
-                    )
+                    ),
                   ],
                 ),
                 //! appbar ends
-                Text(
-                  "Let's Play",
-                  style: headingTextStyle,
-                ),
                 const SizedBox(height: 10),
                 // Text(
                 //   "Be the First!",

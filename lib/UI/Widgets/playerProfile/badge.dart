@@ -28,14 +28,14 @@ class CategoryBadge extends StatelessWidget {
             height: 80,
           ),
         ),
-        const Align(
-          alignment: Alignment.center,
-          child: Icon(
-            Icons.lock,
-            color: Colors.white,
-            size: 50,
-          ),
-        ),
+        // const Align(
+        //   alignment: Alignment.center,
+        //   child: Icon(
+        //     Icons.lock,
+        //     color: Colors.white,
+        //     size: 50,
+        //   ),
+        // ),
       ],
     );
   }
