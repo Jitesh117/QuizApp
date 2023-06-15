@@ -154,8 +154,7 @@ class QuesProvider with ChangeNotifier {
   void questionNumberChanger(int category, int difficulty) {
     confettiController.stop();
     if (previousCategory == category &&
-        previousDifficulty == difficulty &&
-        previousAnswerWasCorrect) {
+        previousDifficulty == difficulty ) {
       questionNumber++;
       previousCategory = category;
       previousDifficulty = difficulty;

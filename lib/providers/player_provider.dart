@@ -33,7 +33,7 @@ class PlayerProvider with ChangeNotifier {
     // badges information
     for (int i = 0; i < categoryNames.length; i++) {
       badgesEarned[i] =
-          pref.getStringList(i.toString()) ?? List.generate(3, (index) => '0');
+          pref.getStringList("category$i") ?? List.generate(3, (index) => '0');
     }
   }
 

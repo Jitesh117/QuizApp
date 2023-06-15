@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/providers/player_provider.dart';
 
@@ -10,11 +11,15 @@ class OptionTile extends StatefulWidget {
     required this.optionValue,
     required this.optionColor,
     required this.optionNumber,
+    required this.category,
+    required this.difficulty,
   });
 
   final String optionValue;
   final Color optionColor;
   final int optionNumber;
+  final int category;
+  final int difficulty;
 
   @override
   State<OptionTile> createState() => _OptionTileState();
@@ -25,10 +30,51 @@ class _OptionTileState extends State<OptionTile> {
   Widget build(BuildContext context) {
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => GestureDetector(
-        onTap: () {
+        onTap: () async {
           quesProvider.checkTappedOption(widget.optionNumber);
           playerProvider.updateMaxStreak(quesProvider.streakCount);
           playerProvider.updatePoints(quesProvider.tappedOptionIsCorrect);
+          if (quesProvider.tappedOptionIsCorrect) {
+            showDialog(
+              context: context,
+              builder: (context) => SizedBox(
+                height: 150,
+                width: 150,
+                child: Lottie.asset(
+                  'assets/lottieAnimations/right.zip',
+                ),
+              ),
+            );
+            await Future.delayed(
+              const Duration(seconds: 2),
+              () {
+                Navigator.pop(context);
+              },
+            );
+          } else {
+            showDialog(
+              context: context,
+              builder: (context) => SizedBox(
+                height: 150,
+                width: 150,
+                child: Lottie.asset(
+                  'assets/lottieAnimations/wrongAnswerAnimation.zip',
+                ),
+              ),
+            );
+            await Future.delayed(
+              const Duration(seconds: 2),
+              () {
+                Navigator.pop(context);
+              },
+            );
+          }
+          await Future.delayed(
+            const Duration(seconds: 1),
+            () {
+              quesProvider.fetchQuestion(widget.difficulty, widget.category);
+            },
+          );
         },
         child: Padding(
           padding: const EdgeInsets.only(bottom: 16.0),

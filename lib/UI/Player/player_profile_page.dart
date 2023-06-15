@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
-import 'package:quiz_v2/UI/Widgets/playerProfile/badge.dart';
+import 'package:quiz_v2/UI/Widgets/playerProfile/locked_badge.dart';
 import 'package:quiz_v2/UI/Widgets/playerProfile/shimmer_badge.dart';
 import 'package:quiz_v2/UI/Widgets/playerProfile/stats_tile_column.dart';
+import 'package:quiz_v2/providers/question_provider.dart';
 
 import '../../providers/player_provider.dart';
 import '../Widgets/playerProfile/player_avatar.dart';
@@ -14,8 +15,8 @@ class PlayerProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<PlayerProvider>(
-      builder: (context, playerProvider, _) => Scaffold(
+    return Consumer2<PlayerProvider, QuesProvider>(
+      builder: (context, playerProvider, quesProvider, _) => Scaffold(
         backgroundColor: Colors.deepPurpleAccent,
         body: SafeArea(
           child: Padding(
@@ -111,12 +112,20 @@ class PlayerProfilePage extends StatelessWidget {
                                   crossAxisSpacing: 10,
                                   mainAxisSpacing: 10,
                                 ),
-                                itemCount: categoryNames.length,
-                                itemBuilder: (context, index) => ShimmerBadge(
-                                  mainColor: colorThree[index],
-                                  borderColor: colorTwo[index],
-                                  imagePath: imagePaths[index],
-                                ),
+                                itemCount: categoryNames.length * 3,
+                                itemBuilder: (context, index) =>
+                                    quesProvider.badgesEarned[index ~/ 3]
+                                                [index % 3] ==
+                                            "0"
+                                        ? LockedBadge(
+                                            mainColor: colorThree[index ~/ 3],
+                                            borderColor: colorTwo[index ~/ 3],
+                                            imagePath: imagePaths[index ~/ 3])
+                                        : ShimmerBadge(
+                                            mainColor: colorThree[index ~/ 3],
+                                            borderColor: colorTwo[index ~/ 3],
+                                            imagePath: imagePaths[index ~/ 3],
+                                          ),
                               ),
                             ),
                           ],

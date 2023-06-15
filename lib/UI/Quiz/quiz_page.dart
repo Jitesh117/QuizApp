@@ -4,6 +4,7 @@ import 'dart:developer' as dev;
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/providers/player_provider.dart';
 import 'package:quiz_v2/providers/question_provider.dart';
@@ -38,24 +39,30 @@ class QuizPage extends StatelessWidget {
     dev.log('build');
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => Scaffold(
-        backgroundColor: Colors.blue,
         body: SafeArea(
           child: Stack(
             children: [
+              SizedBox(
+                height: MediaQuery.of(context).size.height,
+                child: Lottie.asset(
+                  'assets/lottieAnimations/nightAnimation.zip',
+                  fit: BoxFit.fill,
+                ),
+              ),
               Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      colorOne,
-                      colorTwo,
-                      colorThree,
-                    ],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                  ),
-                ),
+                decoration: const BoxDecoration(
+                    // gradient: LinearGradient(
+                    //   colors: [
+                    //     colorOne,
+                    //     colorTwo,
+                    //     colorThree,
+                    //   ],
+                    //   begin: Alignment.topLeft,
+                    //   end: Alignment.bottomRight,
+                    // ),
+                    ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -135,6 +142,8 @@ class QuizPage extends StatelessWidget {
                                 : quesProvider.incorrectAnswer[index],
                             optionColor: colorOne,
                             optionNumber: index,
+                            category: category,
+                            difficulty: difficulty,
                           );
                         },
                       ),
@@ -142,23 +151,23 @@ class QuizPage extends StatelessWidget {
                   ],
                 ),
               ),
-              Visibility(
-                visible: quesProvider.tapped,
-                child: Positioned(
-                  right: 20,
-                  bottom: 40,
-                  child: GestureDetector(
-                    onTap: () {
-                      quesProvider.fetchQuestion(category, difficulty);
-                    },
-                    child: const Icon(
-                      Icons.arrow_circle_right_outlined,
-                      color: Colors.white,
-                      size: 70,
-                    ),
-                  ),
-                ),
-              ),
+              // Visibility(
+              //   visible: quesProvider.tapped,
+              //   child: Positioned(
+              //     right: 20,
+              //     bottom: 40,
+              //     child: GestureDetector(
+              //       onTap: () {
+              //         quesProvider.fetchQuestion(category, difficulty);
+              //       },
+              //       child: const Icon(
+              //         Icons.arrow_circle_right_outlined,
+              //         color: Colors.white,
+              //         size: 70,
+              //       ),
+              //     ),
+              //   ),
+              // ),
               Align(
                 alignment: Alignment.topCenter,
                 child: ConfettiWidget(
