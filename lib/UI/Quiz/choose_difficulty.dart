@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:quiz_v2/UI/Quiz/quiz_page.dart';
@@ -42,75 +43,88 @@ class ChooseDifficultyPage extends StatelessWidget {
       builder: (context, quesProvider, _) => Scaffold(
         backgroundColor: Colors.blue,
         body: SafeArea(
-          child: Container(
-            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  colorOne,
-                  colorTwo,
-                  colorThree,
-                ],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
+          child: Stack(
+            children: [
+              SizedBox(
+                height: MediaQuery.of(context).size.height,
+                child: Lottie.asset(
+                  'assets/lottieAnimations/dayAnimation.zip',
+                  fit: BoxFit.fill,
+                ),
               ),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const SizedBox(height: 20),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
+                decoration: const BoxDecoration(
+                    // gradient: LinearGradient(
+                    //   colors: [
+                    //     colorOne,
+                    //     colorTwo,
+                    //     colorThree,
+                    //   ],
+                    //   begin: Alignment.topLeft,
+                    //   end: Alignment.bottomRight,
+                    // ),
+                    ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).pop();
-                      },
-                      child: const FaIcon(
-                        FontAwesomeIcons.circleXmark,
-                        size: 40,
-                        color: Colors.white,
+                    const SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).pop();
+                          },
+                          child: const FaIcon(
+                            FontAwesomeIcons.circleXmark,
+                            size: 40,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 10),
+                    Expanded(
+                      child: ListView.builder(
+                        itemCount: difficulty.length,
+                        itemBuilder: (context, index) => GestureDetector(
+                          onTap: () {
+                            quesProvider.questionNumberChanger(-1,
+                                -1); // question number change only when it is changed inside the quiz page and not from the change difficulty page
+                            quesProvider.fetchQuestion(
+                                category, difficultyNumber[index]);
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => QuizPage(
+                                  colorOne: colorOne,
+                                  colorTwo: colorTwo,
+                                  colorThree: colorThree,
+                                  imagePath: imagePath,
+                                  category: category,
+                                  streakColor: streakColor,
+                                  difficulty: difficultyNumber[index],
+                                ),
+                              ),
+                            );
+                          },
+                          child: DifficultyTile(
+                            difficulty: difficulty[index],
+                            colorOne: difficultyColorOne[index],
+                            colorTwo: difficultyColorTwo[index],
+                            colorThree: difficultyColorThree[index],
+                            imagePath: imagePath,
+                            category: category,
+                          ),
+                        ),
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(height: 10),
-                Expanded(
-                  child: ListView.builder(
-                    itemCount: difficulty.length,
-                    itemBuilder: (context, index) => GestureDetector(
-                      onTap: () {
-                        quesProvider.questionNumberChanger(-1, -1);// question number change only when it is changed inside the quiz page and not from the change difficulty page
-                        quesProvider.fetchQuestion(
-                            category, difficultyNumber[index]);
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => QuizPage(
-                              colorOne: colorOne,
-                              colorTwo: colorTwo,
-                              colorThree: colorThree,
-                              imagePath: imagePath,
-                              category: category,
-                              streakColor: streakColor,
-                              difficulty: difficultyNumber[index],
-                            ),
-                          ),
-                        );
-                      },
-                      child: DifficultyTile(
-                        difficulty: difficulty[index],
-                        colorOne: difficultyColorOne[index],
-                        colorTwo: difficultyColorTwo[index],
-                        colorThree: difficultyColorThree[index],
-                        imagePath: imagePath,
-                        category: category,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

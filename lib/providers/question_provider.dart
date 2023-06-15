@@ -71,6 +71,8 @@ class QuesProvider with ChangeNotifier {
   }
 
   void fetchQuestion(int category, int difficulty) {
+    dev.log("category: $category");
+    dev.log("difficulty: $difficulty");
     dev.log("right value at call $rightPosition");
     questionNumberChanger(category, difficulty);
 
@@ -136,11 +138,11 @@ class QuesProvider with ChangeNotifier {
     if (tappedOptionIsCorrect && timesTapped == 1) {
       streakCount++;
       if (badgesEarned[previousCategory][previousDifficulty] == '0' &&
-          questionNumber == 9) {
+          streakCount == 10) {
         badgesEarned[previousCategory][previousDifficulty] = '1';
         pref.setStringList(
             "category$previousCategory", badgesEarned[previousCategory]);
-        confettiController.play();
+        // confettiController.play();
       }
       if (streakCount % 10 == 0) {
         confettiController.play();
@@ -153,8 +155,7 @@ class QuesProvider with ChangeNotifier {
 
   void questionNumberChanger(int category, int difficulty) {
     confettiController.stop();
-    if (previousCategory == category &&
-        previousDifficulty == difficulty ) {
+    if (previousCategory == category && previousDifficulty == difficulty) {
       questionNumber++;
       previousCategory = category;
       previousDifficulty = difficulty;
@@ -165,5 +166,48 @@ class QuesProvider with ChangeNotifier {
     }
     dev.log("question number: $questionNumber");
     notifyListeners();
+  }
+
+  Future<bool> popOrNot(BuildContext context) async {
+    final shouldPop = await showDialog<bool>(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text(
+            "Do you want to go back? You'll lose all your progess!",
+            textAlign: TextAlign.center,
+          ),
+          actionsAlignment: MainAxisAlignment.spaceBetween,
+          actions: [
+            TextButton(
+              onPressed: () {
+                streakCount = 0;
+                Navigator.pop(context, true);
+              },
+              child: const Text(
+                'Yes',
+                style: TextStyle(
+                  color: Colors.green,
+                  fontSize: 20,
+                ),
+              ),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context, false);
+              },
+              child: const Text(
+                'No',
+                style: TextStyle(
+                  color: Colors.red,
+                  fontSize: 20,
+                ),
+              ),
+            ),
+          ],
+        );
+      },
+    );
+    return shouldPop!;
   }
 }

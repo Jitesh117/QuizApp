@@ -31,50 +31,52 @@ class _OptionTileState extends State<OptionTile> {
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => GestureDetector(
         onTap: () async {
-          quesProvider.checkTappedOption(widget.optionNumber);
-          playerProvider.updateMaxStreak(quesProvider.streakCount);
-          playerProvider.updatePoints(quesProvider.tappedOptionIsCorrect);
-          if (quesProvider.tappedOptionIsCorrect) {
-            showDialog(
-              context: context,
-              builder: (context) => SizedBox(
-                height: 150,
-                width: 150,
-                child: Lottie.asset(
-                  'assets/lottieAnimations/right.zip',
+          if (!quesProvider.tapped) {
+            quesProvider.checkTappedOption(widget.optionNumber);
+            playerProvider.updateMaxStreak(quesProvider.streakCount);
+            playerProvider.updatePoints(quesProvider.tappedOptionIsCorrect);
+            if (quesProvider.tappedOptionIsCorrect) {
+              showDialog(
+                context: context,
+                builder: (context) => SizedBox(
+                  height: 150,
+                  width: 150,
+                  child: Lottie.asset(
+                    'assets/lottieAnimations/right.zip',
+                  ),
                 ),
-              ),
-            );
-            await Future.delayed(
-              const Duration(seconds: 2),
-              () {
-                Navigator.pop(context);
-              },
-            );
-          } else {
-            showDialog(
-              context: context,
-              builder: (context) => SizedBox(
-                height: 150,
-                width: 150,
-                child: Lottie.asset(
-                  'assets/lottieAnimations/wrongAnswerAnimation.zip',
+              );
+              await Future.delayed(
+                const Duration(seconds: 2),
+                () {
+                  Navigator.pop(context);
+                },
+              );
+            } else {
+              showDialog(
+                context: context,
+                builder: (context) => SizedBox(
+                  height: 150,
+                  width: 150,
+                  child: Lottie.asset(
+                    'assets/lottieAnimations/wrongAnswerAnimation.zip',
+                  ),
                 ),
-              ),
-            );
+              );
+              await Future.delayed(
+                const Duration(seconds: 2),
+                () {
+                  Navigator.pop(context);
+                },
+              );
+            }
             await Future.delayed(
-              const Duration(seconds: 2),
+              const Duration(seconds: 1),
               () {
-                Navigator.pop(context);
+                quesProvider.fetchQuestion(widget.category, widget.difficulty);
               },
             );
           }
-          await Future.delayed(
-            const Duration(seconds: 1),
-            () {
-              quesProvider.fetchQuestion(widget.difficulty, widget.category);
-            },
-          );
         },
         child: Padding(
           padding: const EdgeInsets.only(bottom: 16.0),

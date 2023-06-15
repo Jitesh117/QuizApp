@@ -51,26 +51,26 @@ class _HomePageState extends State<HomePage> {
                           style: headingTextStyle,
                         ),
                         const SizedBox(width: 20),
-                        GestureDetector(
-                          onTap: () {
-                            playerProvider.fetchPlayerData();
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (
-                                  context,
-                                ) =>
-                                    const PlayerProfilePage(),
-                              ),
-                            );
-                          },
-                          child: SizedBox(
-                            height: 50,
-                            width: 50,
-                            child: PlayerAvatar(
-                                imagePath: playerProvider.avatarPath),
-                          ),
-                        ),
+                        // GestureDetector(
+                        //   onTap: () {
+                        //     playerProvider.fetchPlayerData();
+                        //     Navigator.push(
+                        //       context,
+                        //       MaterialPageRoute(
+                        //         builder: (
+                        //           context,
+                        //         ) =>
+                        //             const PlayerProfilePage(),
+                        //       ),
+                        //     );
+                        //   },
+                        //   child: SizedBox(
+                        //     height: 50,
+                        //     width: 50,
+                        //     child: PlayerAvatar(
+                        //         imagePath: playerProvider.avatarPath),
+                        //   ),
+                        // ),
                       ],
                     ),
                     //! appbar ends
