@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/providers/player_provider.dart';
-
 import '../../../providers/question_provider.dart';
 
 class OptionTile extends StatefulWidget {
@@ -26,16 +25,20 @@ class OptionTile extends StatefulWidget {
 }
 
 class _OptionTileState extends State<OptionTile> {
+  // AudioPlayer player = AudioPlayer();
   @override
   Widget build(BuildContext context) {
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => GestureDetector(
         onTap: () async {
+          // player.setAsset('assets/sounds/rightSound.wav');
           if (!quesProvider.tapped) {
             quesProvider.checkTappedOption(widget.optionNumber);
             playerProvider.updateMaxStreak(quesProvider.streakCount);
             playerProvider.updatePoints(quesProvider.tappedOptionIsCorrect);
+            // correct answer tapped
             if (quesProvider.tappedOptionIsCorrect) {
+              // player.play();
               showDialog(
                 context: context,
                 builder: (context) => SizedBox(
@@ -46,13 +49,16 @@ class _OptionTileState extends State<OptionTile> {
                   ),
                 ),
               );
+              // player.stop();
               await Future.delayed(
                 const Duration(seconds: 2),
                 () {
                   Navigator.pop(context);
                 },
               );
-            } else {
+            }
+            // wrong answer tapped
+            else {
               showDialog(
                 context: context,
                 builder: (context) => SizedBox(

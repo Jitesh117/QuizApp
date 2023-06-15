@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
-import 'package:quiz_v2/UI/Player/player_profile_page.dart';
 import 'package:quiz_v2/UI/Styles/text_styles.dart';
-import 'package:quiz_v2/UI/Widgets/playerProfile/player_avatar.dart';
 import 'package:quiz_v2/UI/Widgets/quizWidgets/genre_card.dart';
 
 import '../../providers/player_provider.dart';
