@@ -1,0 +1,157 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the Indian cartoon 'Roll No. 21', what is the name of Kanishk's pet snake?",
+      "correct_answer": "Drona",
+      "incorrect_answers": ["Krishna", "Arjuna", "Bheem"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the villain character in the Indian cartoon 'Shin Chan'?",
+      "correct_answer": "Buriburizaemon",
+      "incorrect_answers": ["Nene Sakurada", "Bo-chan", "Himawari Nohara"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the Indian cartoon 'Krishna Balram', what is the name of the demon king who often joins forces with Krishna?",
+      "correct_answer": "Jarasandha",
+      "incorrect_answers": ["Kansa", "Shishupala", "Duryodhana"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the character in the Indian cartoon 'Krishna Balram' who is a master of illusion?",
+      "correct_answer": "Sudarshan",
+      "incorrect_answers": ["Krishnadevaraya", "Shakuni", "Duryodhana"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the Indian cartoon 'Motu Patlu', what is the name of the scientist who often helps Motu and Patlu?",
+      "correct_answer": "Ghasitaram",
+      "incorrect_answers": ["Dr. Jhatka", "Chingam", "John the Don"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the main villain in the Indian cartoon 'Krishna Balram'?",
+      "correct_answer": "Shakuni",
+      "incorrect_answers": ["Kansa", "Kalvakra", "Duryodhana"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the Indian cartoon 'Roll No. 21', what is the name of the demon king who often tries to defeat Kris?",
+      "correct_answer": "Yamraj",
+      "incorrect_answers": ["Kansa", "Kalvakra", "Shishupala"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the character in the Indian cartoon 'Chhota Bheem' who is known for his intelligence and strategic skills?",
+      "correct_answer": "Indumati",
+      "incorrect_answers": ["Jaggu", "Kalia", "Dholu"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the cartoon show 'Shin Chan', what is the name of Shin Chan's dog?",
+      "correct_answer": "Shiro",
+      "incorrect_answers": ["Lucky", "Penny", "Whitey"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the character in the Indian cartoon 'Krishna Balram' who is a master of disguise?",
+      "correct_answer": "Rakshas",
+      "incorrect_answers": ["Krishnadevaraya", "Shakuni", "Duryodhana"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the Indian cartoon 'Motu Patlu', what is the name of the don who is often seen causing trouble?",
+      "correct_answer": "John",
+      "incorrect_answers": ["Motu", "Patlu", "Ghasitaram"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the character in the Indian cartoon 'Krishna Balram' who is known for his strength and loyalty?",
+      "correct_answer": "Raju",
+      "incorrect_answers": ["Aghor", "Krishnadevaraya", "Kesariya"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the cartoon show 'Doraemon', what is the name of Nobita's best friend?",
+      "correct_answer": "Takeshi Goda",
+      "incorrect_answers": [
+        "Suneo Honekawa",
+        "Nobita Nobi",
+        "Hidetoshi Dekisugi"
+      ]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the character in the Indian cartoon 'Chhota Bheem' who is known for his wit and wisdom?",
+      "correct_answer": "Bheem's Mother",
+      "incorrect_answers": ["Kalia", "Raju", "Jaggu"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the Indian cartoon 'Motu Patlu', what is the name of the character who is a scientist and invents various gadgets?",
+      "correct_answer": "Dr. Jhatka",
+      "incorrect_answers": ["Motu", "Patlu", "Ghasitaram"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the character in the Indian cartoon 'Chhota Bheem' who is a skilled archer?",
+      "correct_answer": "Jaggu",
+      "incorrect_answers": ["Bheem", "Kalia", "Dholu"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Indian cartoon show features the character 'Motu' who loves to eat samosas?",
+      "correct_answer": "Motu Patlu",
+      "incorrect_answers": [
+        "Chhota Bheem",
+        "Roll No. 21",
+        "Shiva: The Superhero"
+      ]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the Indian cartoon 'Krishna Balram', what is the name of the character who is Krishna's cousin and also a skilled warrior?",
+      "correct_answer": "Siddharth",
+      "incorrect_answers": ["Jarasandha", "Kalvakra", "Kansa"]
+    }
+  ]
+}

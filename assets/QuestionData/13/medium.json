@@ -1,0 +1,253 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who plays the character Thor in the Marvel Cinematic Universe?",
+      "correct_answer": "Chris Hemsworth",
+      "incorrect_answers": ["Chris Evans", "Chris Pratt", "Chris Pine"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the fictional planet that Star-Lord is from?",
+      "correct_answer": "Morag",
+      "incorrect_answers": ["Xandar", "Knowhere", "Ego"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which Infinity Stone is featured in the movie Thor: The Dark World?",
+      "correct_answer": "Reality Stone",
+      "incorrect_answers": ["Space Stone", "Power Stone", "Mind Stone"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main villain in the movie Captain America: Civil War?",
+      "correct_answer": "Helmut Zemo",
+      "incorrect_answers": ["Red Skull", "Baron Strucker", "Crossbones"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the real name of the superhero Black Widow?",
+      "correct_answer": "Natasha Romanoff",
+      "incorrect_answers": ["Wanda Maximoff", "Carol Danvers", "Hope van Dyne"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which Marvel movie features the character Falcon?",
+      "correct_answer": "Captain America: The Winter Soldier",
+      "incorrect_answers": [
+        "Iron Man 3",
+        "Thor: The Dark World",
+        "Avengers: Age of Ultron"
+      ]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main villain in the movie Guardians of the Galaxy?",
+      "correct_answer": "Ronan the Accuser",
+      "incorrect_answers": ["Thanos", "Ego the Living Planet", "Nebula"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the movie Avengers: Age of Ultron, who creates the artificial intelligence Ultron?",
+      "correct_answer": "Tony Stark",
+      "incorrect_answers": ["Bruce Banner", "Steve Rogers", "Thor"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the villainous organization in the movie Ant-Man?",
+      "correct_answer": "HYDRA",
+      "incorrect_answers": ["AIM", "S.H.I.E.L.D.", "The Hand"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which character is portrayed by Benedict Cumberbatch in the movie Doctor Strange?",
+      "correct_answer": "Stephen Strange",
+      "incorrect_answers": ["Wong", "Karl Mordo", "Dormammu"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the superhero team in the movie Avengers: Age of Ultron?",
+      "correct_answer": "The Avengers",
+      "incorrect_answers": [
+        "Guardians of the Galaxy",
+        "X-Men",
+        "Fantastic Four"
+      ]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main villain in the movie Captain Marvel?",
+      "correct_answer": "Yon-Rogg",
+      "incorrect_answers": [
+        "Talos",
+        "Ronan the Accuser",
+        "Kree Supreme Intelligence"
+      ]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the fictional metal used in Thor's hammer, Mjolnir?",
+      "correct_answer": "Uru",
+      "incorrect_answers": ["Adamantium", "Vibranium", "Promethium"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which Marvel movie features the character Black Panther?",
+      "correct_answer": "Black Panther",
+      "incorrect_answers": [
+        "Captain America: Civil War",
+        "Avengers: Infinity War",
+        "Spider-Man: Homecoming"
+      ]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main villain in the movie Doctor Strange?",
+      "correct_answer": "Dormammu",
+      "incorrect_answers": ["Kaecilius", "Baron Mordo", "Thanos"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the fictional city where Spider-Man operates?",
+      "correct_answer": "New York City",
+      "incorrect_answers": ["Gotham City", "Metropolis", "Central City"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main villain in the movie Guardians of the Galaxy Vol. 2?",
+      "correct_answer": "Ego the Living Planet",
+      "incorrect_answers": ["Ronan the Accuser", "Nebula", "Thanos"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the metal used in the creation of Wolverine's claws?",
+      "correct_answer": "Adamantium",
+      "incorrect_answers": ["Vibranium", "Promethium", "Plasteel"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main villain in the movie Captain America: The Winter Soldier?",
+      "correct_answer": "The Winter Soldier",
+      "incorrect_answers": ["Red Skull", "Alexander Pierce", "Zemo"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which Marvel movie features the character Captain Marvel?",
+      "correct_answer": "Captain Marvel",
+      "incorrect_answers": [
+        "Ant-Man and the Wasp",
+        "Avengers: Infinity War",
+        "Guardians of the Galaxy Vol. 2"
+      ]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the real name of the superhero Spider-Man?",
+      "correct_answer": "Peter Parker",
+      "incorrect_answers": ["Scott Lang", "Steve Rogers", "Tony Stark"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main villain in the movie Thor: Ragnarok?",
+      "correct_answer": "Hela",
+      "incorrect_answers": ["Loki", "Thanos", "Surtur"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of Tony Stark's AI assistant in the Iron Man movies?",
+      "correct_answer": "JARVIS",
+      "incorrect_answers": ["FRIDAY", "ULTRON", "EDITH"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which Marvel movie features the character Hulk?",
+      "correct_answer": "The Incredible Hulk",
+      "incorrect_answers": [
+        "Iron Man 2",
+        "Captain America: The First Avenger",
+        "Thor"
+      ]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main villain in the movie Ant-Man and the Wasp?",
+      "correct_answer": "Ghost",
+      "incorrect_answers": ["Yellowjacket", "Crossbones", "Thanos"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the fictional metal used in Black Panther's suit?",
+      "correct_answer": "Vibranium",
+      "incorrect_answers": ["Adamantium", "Promethium", "Plasteel"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main villain in the movie Doctor Strange?",
+      "correct_answer": "Dormammu",
+      "incorrect_answers": ["Kaecilius", "Baron Mordo", "Thanos"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the fictional city where Spider-Man operates?",
+      "correct_answer": "New York City",
+      "incorrect_answers": ["Gotham City", "Metropolis", "Central City"]
+    }
+  ]
+}

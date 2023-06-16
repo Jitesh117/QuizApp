@@ -1,0 +1,281 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian TV show follows the lives of a group of aliens living in Mumbai?",
+      "correct_answer": "Badi door se aaye hain",
+      "incorrect_answers": [
+        "Taarak Mehta ka Ooltah Chasmah",
+        "Chidiya Ghar",
+        "Wagle ki Duniya"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the TV show 'Taarak Mehta Ka Ooltah Chashmah,' who is the main character known for his humorous tales?",
+      "correct_answer": "Jethalal Gada",
+      "incorrect_answers": [
+        "Daya Jethalal Gada",
+        "Sonu",
+        "Aatmaram Tukaram Bhide"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian TV movie features a fictional character named 'Circuit'?",
+      "correct_answer": "Munna Bhai M.B.B.S.",
+      "incorrect_answers": [
+        "Sacred Games",
+        "Crime Patrol",
+        "Kaun Banega Crorepati"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the detective TV show featuring a character named 'Byomkesh Bakshi'?",
+      "correct_answer": "Byomkesh Bakshi",
+      "incorrect_answers": ["CID", "Sherlock Holmes", "Jasoos Vijay"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian TV show is about a doctor and his team solving medical cases?",
+      "correct_answer": "Dil Mill Gayye",
+      "incorrect_answers": ["Grey's Anatomy", "House", "ER"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the TV show 'Balika Vadhu,' what social issue does the story revolve around?",
+      "correct_answer": "Child Marriage",
+      "incorrect_answers": [
+        "Gender Inequality",
+        "Domestic Violence",
+        "Child Labor"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian TV show features a fictional character named 'Anandi'?",
+      "correct_answer": "Balika Vadhu",
+      "incorrect_answers": [
+        "Sasural Simar Ka",
+        "Kumkum Bhagya",
+        "Diya Aur Baati Hum"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the host of the TV show 'Bigg Boss' in India?",
+      "correct_answer": "Salman Khan",
+      "incorrect_answers": [
+        "Amitabh Bachchan",
+        "Shah Rukh Khan",
+        "Akshay Kumar"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian TV show features a character named 'Kapil Sharma' who hosts a comedy talk show?",
+      "correct_answer": "The Kapil Sharma Show",
+      "incorrect_answers": [
+        "Comedy Nights with Kapil",
+        "Family Time with Kapil Sharma",
+        "Comedy Circus"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the Indian TV show where contestants perform various dance styles?",
+      "correct_answer": "Dance India Dance",
+      "incorrect_answers": ["Indian Idol", "Nach Baliye", "Jhalak Dikhhla Jaa"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the TV show 'Sarabhai vs Sarabhai,' which character is known for his poetic and philosophical nature?",
+      "correct_answer": "Indravadan Sarabhai",
+      "incorrect_answers": [
+        "Maya Sarabhai",
+        "Monisha Sarabhai",
+        "Sahil Sarabhai"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian TV show is a reality competition where participants perform stunts?",
+      "correct_answer": "Khatron Ke Khiladi",
+      "incorrect_answers": ["Bigg Boss", "Indian Idol", "Dance India Dance"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the host of the Indian TV show 'Kaun Banega Crorepati'?",
+      "correct_answer": "Amitabh Bachchan",
+      "incorrect_answers": ["Shah Rukh Khan", "Salman Khan", "Akshay Kumar"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian TV show follows the life of a small-town girl, Sandhya, who aspires to become an IPS officer?",
+      "correct_answer": "Diya Aur Baati Hum",
+      "incorrect_answers": [
+        "Yeh Rishta Kya Kehlata Hai",
+        "Naagin",
+        "Kasautii Zindagii Kay"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the Indian TV show where contestants participate in a singing competition?",
+      "correct_answer": "Indian Idol",
+      "incorrect_answers": [
+        "Dance India Dance",
+        "Sa Re Ga Ma Pa",
+        "The Voice India"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the TV show 'Yeh Hai Mohabbatein,' what is the profession of the main character, Ishita?",
+      "correct_answer": "Doctor",
+      "incorrect_answers": ["Lawyer", "Teacher", "Police Officer"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian TV show is a comedy-drama about an ideal daughter-in-law?",
+      "correct_answer": "Sasural Simar Ka",
+      "incorrect_answers": [
+        "Balika Vadhu",
+        "Diya Aur Baati Hum",
+        "Kumkum Bhagya"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the Indian TV show where contestants live in a house and compete for a cash prize?",
+      "correct_answer": "Bigg Boss",
+      "incorrect_answers": [
+        "Roadies",
+        "Splitsvilla",
+        "Fear Factor: Khatron Ke Khiladi"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the TV show 'Bhabiji Ghar Par Hain!', what is the name of the character known for his obsession with his neighbor's wife?",
+      "correct_answer": "Vibhuti Mishra",
+      "incorrect_answers": ["Anita Mishra", "Manmohan Tiwari", "Angoori Bhabhi"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian TV show features the story of a young woman named 'Prerna' and her love interest 'Anurag'?",
+      "correct_answer": "Kasautii Zindagii Kay",
+      "incorrect_answers": [
+        "Yeh Rishta Kya Kehlata Hai",
+        "Naagin",
+        "Diya Aur Baati Hum"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the host of the Indian TV show 'Comedy Nights with Kapil'?",
+      "correct_answer": "Kapil Sharma",
+      "incorrect_answers": ["Kapil Dev", "Kapil Sibal", "Kapil Dev Sharma"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the Indian TV show where couples compete against each other in dance performances?",
+      "correct_answer": "Nach Baliye",
+      "incorrect_answers": [
+        "Dance India Dance",
+        "Indian Idol",
+        "Jhalak Dikhhla Jaa"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the TV show 'Yeh Rishta Kya Kehlata Hai,' what is the profession of the main character, Naira?",
+      "correct_answer": "Dancer",
+      "incorrect_answers": ["Doctor", "Teacher", "Lawyer"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the host of the Indian TV show 'Indian Idol'?",
+      "correct_answer": "Aditya Narayan",
+      "incorrect_answers": ["Amitabh Bachchan", "Salman Khan", "Akshay Kumar"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the Indian TV show where couples compete in various tasks and challenges?",
+      "correct_answer": "MTV Splitsvilla",
+      "incorrect_answers": ["MTV Roadies", "Bigg Boss", "Nach Baliye"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the TV show 'Ishqbaaaz,' what is the profession of the main character, Shivaay?",
+      "correct_answer": "Businessman",
+      "incorrect_answers": ["Doctor", "Actor", "Engineer"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian TV show features the story of a girl named 'Pragya' and her love interest 'Abhi'?",
+      "correct_answer": "Kumkum Bhagya",
+      "incorrect_answers": [
+        "Yeh Rishta Kya Kehlata Hai",
+        "Naagin",
+        "Diya Aur Baati Hum"
+      ]
+    }
+  ]
+}

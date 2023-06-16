@@ -1,0 +1,453 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main antagonist in the epic Ramayana?",
+      "correct_answer": "Ravana",
+      "incorrect_answers": ["Kumbhakarna", "Indrajit", "Maricha"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the father of Lord Rama in the epic Ramayana?",
+      "correct_answer": "Dasharatha",
+      "incorrect_answers": ["Kaikeyi", "Janaka", "Kausalya"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Mahabharata, who is the teacher of the Pandavas and Kauravas?",
+      "correct_answer": "Dronacharya",
+      "incorrect_answers": ["Kripacharya", "Bhishma", "Krishna"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the wife of Lord Shiva in Hindu mythology?",
+      "correct_answer": "Parvati",
+      "incorrect_answers": ["Sati", "Ganga", "Kali"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which character is known as the strongest warrior in the Mahabharata?",
+      "correct_answer": "Bhishma",
+      "incorrect_answers": ["Arjuna", "Karna", "Dronacharya"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the father of Lord Krishna in Hindu mythology?",
+      "correct_answer": "Vasudeva",
+      "incorrect_answers": ["Nanda", "Devaki", "Yashoda"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the mother of Lord Rama in the epic Ramayana?",
+      "correct_answer": "Kausalya",
+      "incorrect_answers": ["Kaikeyi", "Sumitra", "Anjana"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Mahabharata, who is the mother of the Pandavas?",
+      "correct_answer": "Kunti",
+      "incorrect_answers": ["Draupadi", "Gandhari", "Subhadra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the son of Lord Shiva and Parvati in Hindu mythology?",
+      "correct_answer": "Ganesha",
+      "incorrect_answers": ["Kartikeya", "Hanuman", "Indra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which weapon does Lord Rama use to defeat Ravana in the epic Ramayana?",
+      "correct_answer": "Brahmastra",
+      "incorrect_answers": ["Sudarshana Chakra", "Trishula", "Vajra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the eldest Pandava brother in the Mahabharata?",
+      "correct_answer": "Yudhishthira",
+      "incorrect_answers": ["Bhima", "Arjuna", "Nakula"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of Lord Shiva's vehicle in Hindu mythology?",
+      "correct_answer": "Nandi",
+      "incorrect_answers": ["Garuda", "Hamsa", "Vahana"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the wife of Arjuna in the Mahabharata?",
+      "correct_answer": "Draupadi",
+      "incorrect_answers": ["Subhadra", "Satyabhama", "Uloopi"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which character is known as the greatest archer in the Mahabharata?",
+      "correct_answer": "Arjuna",
+      "incorrect_answers": ["Bhishma", "Karna", "Dronacharya"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the monkey god in Hindu mythology?",
+      "correct_answer": "Hanuman",
+      "incorrect_answers": ["Garuda", "Jambavan", "Vali"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the epic Ramayana, who is the faithful devotee of Lord Rama?",
+      "correct_answer": "Hanuman",
+      "incorrect_answers": ["Jatayu", "Sugriva", "Vibhishana"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the brother of Lord Rama in the epic Ramayana?",
+      "correct_answer": "Lakshmana",
+      "incorrect_answers": ["Bharata", "Shatrughna", "Hanuman"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the father of Duryodhana in the Mahabharata?",
+      "correct_answer": "Dhritarashtra",
+      "incorrect_answers": ["Pandu", "Bhishma", "Vidura"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of Lord Shiva's trident in Hindu mythology?",
+      "correct_answer": "Trishula",
+      "incorrect_answers": ["Sudarshana Chakra", "Vajra", "Shankha"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Mahabharata, who is the wife of Duryodhana?",
+      "correct_answer": "Bhanumati",
+      "incorrect_answers": ["Draupadi", "Gandhari", "Subhadra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the brother of Duryodhana in the Mahabharata?",
+      "correct_answer": "Dushasana",
+      "incorrect_answers": ["Vikarna", "Karna", "Shakuni"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the father of Karna in the Mahabharata?",
+      "correct_answer": "Surya",
+      "incorrect_answers": ["Indra", "Vayu", "Chandra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the epic Ramayana, who is the loyal brother of Ravana?",
+      "correct_answer": "Vibhishana",
+      "incorrect_answers": ["Kumbhakarna", "Khara", "Maricha"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of Lord Krishna's divine weapon in Hindu mythology?",
+      "correct_answer": "Sudarshana Chakra",
+      "incorrect_answers": ["Gada", "Bow and Arrows", "Vajra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the son of Lord Shiva and Parvati in Hindu mythology?",
+      "correct_answer": "Kartikeya",
+      "incorrect_answers": ["Ganesha", "Hanuman", "Indra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Mahabharata, who is the mother of Karna?",
+      "correct_answer": "Kunti",
+      "incorrect_answers": ["Draupadi", "Gandhari", "Subhadra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of Lord Shiva's vehicle in Hindu mythology?",
+      "correct_answer": "Nandi",
+      "incorrect_answers": ["Garuda", "Hamsa", "Vahana"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the wife of Arjuna in the Mahabharata?",
+      "correct_answer": "Draupadi",
+      "incorrect_answers": ["Subhadra", "Satyabhama", "Uloopi"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which character is known as the greatest archer in the Mahabharata?",
+      "correct_answer": "Arjuna",
+      "incorrect_answers": ["Bhishma", "Karna", "Dronacharya"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the monkey god in Hindu mythology?",
+      "correct_answer": "Hanuman",
+      "incorrect_answers": ["Garuda", "Jambavan", "Vali"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the epic Ramayana, who is the faithful devotee of Lord Rama?",
+      "correct_answer": "Hanuman",
+      "incorrect_answers": ["Jatayu", "Sugriva", "Vibhishana"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the brother of Lord Rama in the epic Ramayana?",
+      "correct_answer": "Lakshmana",
+      "incorrect_answers": ["Bharata", "Shatrughna", "Hanuman"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the father of Duryodhana in the Mahabharata?",
+      "correct_answer": "Dhritarashtra",
+      "incorrect_answers": ["Pandu", "Bhishma", "Vidura"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of Lord Shiva's trident in Hindu mythology?",
+      "correct_answer": "Trishula",
+      "incorrect_answers": ["Sudarshana Chakra", "Vajra", "Shankha"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Mahabharata, who is the wife of Duryodhana?",
+      "correct_answer": "Bhanumati",
+      "incorrect_answers": ["Draupadi", "Gandhari", "Subhadra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the brother of Duryodhana in the Mahabharata?",
+      "correct_answer": "Dushasana",
+      "incorrect_answers": ["Vikarna", "Karna", "Shakuni"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the father of Karna in the Mahabharata?",
+      "correct_answer": "Surya",
+      "incorrect_answers": ["Indra", "Vayu", "Chandra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the epic Ramayana, who is the loyal brother of Ravana?",
+      "correct_answer": "Vibhishana",
+      "incorrect_answers": ["Kumbhakarna", "Khara", "Maricha"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of Lord Krishna's divine weapon in Hindu mythology?",
+      "correct_answer": "Sudarshana Chakra",
+      "incorrect_answers": ["Gada", "Bow and Arrows", "Vajra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the son of Lord Shiva and Parvati in Hindu mythology?",
+      "correct_answer": "Kartikeya",
+      "incorrect_answers": ["Ganesha", "Hanuman", "Indra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Mahabharata, who is the mother of Karna?",
+      "correct_answer": "Kunti",
+      "incorrect_answers": ["Draupadi", "Gandhari", "Subhadra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of Lord Shiva's vehicle in Hindu mythology?",
+      "correct_answer": "Nandi",
+      "incorrect_answers": ["Garuda", "Hamsa", "Vahana"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the wife of Arjuna in the Mahabharata?",
+      "correct_answer": "Draupadi",
+      "incorrect_answers": ["Subhadra", "Satyabhama", "Uloopi"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which character is known as the greatest archer in the Mahabharata?",
+      "correct_answer": "Arjuna",
+      "incorrect_answers": ["Bhishma", "Karna", "Dronacharya"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the monkey god in Hindu mythology?",
+      "correct_answer": "Hanuman",
+      "incorrect_answers": ["Garuda", "Jambavan", "Vali"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the epic Ramayana, who is the faithful devotee of Lord Rama?",
+      "correct_answer": "Hanuman",
+      "incorrect_answers": ["Jatayu", "Sugriva", "Vibhishana"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the brother of Lord Rama in the epic Ramayana?",
+      "correct_answer": "Lakshmana",
+      "incorrect_answers": ["Bharata", "Shatrughna", "Hanuman"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the father of Duryodhana in the Mahabharata?",
+      "correct_answer": "Dhritarashtra",
+      "incorrect_answers": ["Pandu", "Bhishma", "Vidura"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of Lord Shiva's trident in Hindu mythology?",
+      "correct_answer": "Trishula",
+      "incorrect_answers": ["Sudarshana Chakra", "Vajra", "Shankha"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Mahabharata, who is the wife of Duryodhana?",
+      "correct_answer": "Bhanumati",
+      "incorrect_answers": ["Draupadi", "Gandhari", "Subhadra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the brother of Duryodhana in the Mahabharata?",
+      "correct_answer": "Dushasana",
+      "incorrect_answers": ["Vikarna", "Karna", "Shakuni"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the father of Karna in the Mahabharata?",
+      "correct_answer": "Surya",
+      "incorrect_answers": ["Indra", "Vayu", "Chandra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the epic Ramayana, who is the loyal brother of Ravana?",
+      "correct_answer": "Vibhishana",
+      "incorrect_answers": ["Kumbhakarna", "Khara", "Maricha"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of Lord Krishna's divine weapon in Hindu mythology?",
+      "correct_answer": "Sudarshana Chakra",
+      "incorrect_answers": ["Gada", "Bow and Arrows", "Vajra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the son of Lord Shiva and Parvati in Hindu mythology?",
+      "correct_answer": "Kartikeya",
+      "incorrect_answers": ["Ganesha", "Hanuman", "Indra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Mahabharata, who is the mother of Karna?",
+      "correct_answer": "Kunti",
+      "incorrect_answers": ["Draupadi", "Gandhari", "Subhadra"]
+    }
+  ]
+}

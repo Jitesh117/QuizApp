@@ -1,0 +1,244 @@
+{
+  "results": [
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who cursed Lord Rama to suffer separation from his wife Sita?",
+      "correct_answer": "Sage Durvasa",
+      "incorrect_answers": ["Ravana", "Hanuman", "Lakshmana"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the maternal grandfather of Lord Rama?",
+      "correct_answer": "King Janaka",
+      "incorrect_answers": ["King Dasharatha", "King Kaikeya", "King Sugriva"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the mother of Lord Rama?",
+      "correct_answer": "Queen Kaushalya",
+      "incorrect_answers": ["Queen Kaikeyi", "Queen Sumitra", "Queen Kausalya"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What was the name of Lord Rama's bow in the Ramayana?",
+      "correct_answer": "Kodanda",
+      "incorrect_answers": ["Sharanga", "Pinaka", "Gandiva"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the guru of Lord Rama?",
+      "correct_answer": "Sage Vashishta",
+      "incorrect_answers": ["Sage Vishwamitra", "Sage Valmiki", "Sage Agastya"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What was the name of Lord Rama's army of monkeys in the Ramayana?",
+      "correct_answer": "Vanara Sena",
+      "incorrect_answers": ["Kaurava Sena", "Naga Sena", "Gandharva Sena"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the charioteer of Lord Krishna during the Kurukshetra War?",
+      "correct_answer": "Lord Krishna Himself",
+      "incorrect_answers": ["Arjuna", "Bhishma", "Karna"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the mother of Pandavas in the Mahabharata?",
+      "correct_answer": "Kunti",
+      "incorrect_answers": ["Draupadi", "Gandhari", "Subhadra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the father of Lord Krishna?",
+      "correct_answer": "Vasudeva",
+      "incorrect_answers": ["Nanda", "Devaki", "Yashoda"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What was the name of the weapon used by Arjuna to kill Bhishma in the Mahabharata?",
+      "correct_answer": "Anjalikastra",
+      "incorrect_answers": ["Brahmastra", "Narayanastra", "Pashupatastra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the son of Lord Shiva and Parvati in the Mahabharata?",
+      "correct_answer": "Kartikeya",
+      "incorrect_answers": ["Ganesha", "Hanuman", "Indra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the maternal grandfather of Kauravas and Pandavas in the Mahabharata?",
+      "correct_answer": "King Shurasena",
+      "incorrect_answers": ["King Dhritarashtra", "King Drupada", "King Jarasandha"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the wife of Arjuna in the Mahabharata?",
+      "correct_answer": "Subhadra",
+      "incorrect_answers": ["Draupadi", "Satyabhama", "Uloopi"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What was the name of the divine horse born during the churning of the ocean in Hindu mythology?",
+      "correct_answer": "Uchchaishravas",
+      "incorrect_answers": ["Pegasus", "Hayagriva", "Sleipnir"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the teacher of Dronacharya in the Mahabharata?",
+      "correct_answer": "Parashurama",
+      "incorrect_answers": ["Bhishma", "Kripacharya", "Vishwamitra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the daughter of King Drupada and the wife of the five Pandavas in the Mahabharata?",
+      "correct_answer": "Draupadi",
+      "incorrect_answers": ["Subhadra", "Satyabhama", "Uloopi"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the father of Karna in the Mahabharata?",
+      "correct_answer": "Surya",
+      "incorrect_answers": ["Indra", "Vayu", "Chandra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the mother of Kauravas in the Mahabharata?",
+      "correct_answer": "Gandhari",
+      "incorrect_answers": ["Kunti", "Draupadi", "Subhadra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the epic Ramayana, who was the father of Sita?",
+      "correct_answer": "King Janaka",
+      "incorrect_answers": ["King Dasharatha", "King Kaikeya", "King Sugriva"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the king of Lanka in the Ramayana?",
+      "correct_answer": "Ravana",
+      "incorrect_answers": ["Dasharatha", "Sugriva", "Vibhishana"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What was the name of Hanuman's son in the Ramayana?",
+      "correct_answer": "Makardhwaja",
+      "incorrect_answers": ["Angada", "Bali", "Sugriva"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the Mahabharata, who was the mother of Abhimanyu?",
+      "correct_answer": "Subhadra",
+      "incorrect_answers": ["Draupadi", "Satyabhama", "Uloopi"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the son of Lord Shiva and Mohini in Hindu mythology?",
+      "correct_answer": "Ayyappa",
+      "incorrect_answers": ["Ganesha", "Kartikeya", "Hanuman"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who killed the demon king Mahishasura in Hindu mythology?",
+      "correct_answer": "Goddess Durga",
+      "incorrect_answers": ["Lord Rama", "Lord Krishna", "Lord Shiva"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the epic Ramayana, who was the mother of Hanuman?",
+      "correct_answer": "Anjana",
+      "incorrect_answers": ["Sita", "Kaushalya", "Kaikeyi"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the charioteer of Karna in the Mahabharata?",
+      "correct_answer": "Lord Krishna",
+      "incorrect_answers": ["Arjuna", "Bhishma", "Dronacharya"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What was the name of the divine bow given to Arjuna by Lord Shiva in the Mahabharata?",
+      "correct_answer": "Gandiva",
+      "incorrect_answers": ["Sharanga", "Kodanda", "Pinaka"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the wife of Arjuna in the Mahabharata?",
+      "correct_answer": "Subhadra",
+      "incorrect_answers": ["Draupadi", "Satyabhama", "Uloopi"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the epic Ramayana, who was the mother of Luv and Kush?",
+      "correct_answer": "Sita",
+      "incorrect_answers": ["Kaikeyi", "Mandodari", "Sumitra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What was the name of Lord Rama's army of monkeys in the Ramayana?",
+      "correct_answer": "Vanara Sena",
+      "incorrect_answers": ["Kaurava Sena", "Naga Sena", "Gandharva Sena"]
+    }
+  ]
+}

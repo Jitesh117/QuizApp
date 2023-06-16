@@ -1,0 +1,269 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is considered the supreme deity in Hindu mythology?",
+      "correct_answer": "Brahma",
+      "incorrect_answers": ["Vishnu", "Shiva", "Indra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the goddess of wealth and prosperity in Hindu mythology?",
+      "correct_answer": "Lakshmi",
+      "incorrect_answers": ["Saraswati", "Durga", "Parvati"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the monkey god in Hindu mythology?",
+      "correct_answer": "Hanuman",
+      "incorrect_answers": ["Ganesha", "Krishna", "Rama"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the goddess of knowledge and learning in Hindu mythology?",
+      "correct_answer": "Saraswati",
+      "incorrect_answers": ["Durga", "Kali", "Lakshmi"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is known as the god of love and desire in Hindu mythology?",
+      "correct_answer": "Kama",
+      "incorrect_answers": ["Indra", "Varuna", "Yama"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the goddess of destruction in Hindu mythology?",
+      "correct_answer": "Kali",
+      "incorrect_answers": ["Parvati", "Sita", "Radha"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is considered the creator of the universe in Hindu mythology?",
+      "correct_answer": "Brahma",
+      "incorrect_answers": ["Vishnu", "Shiva", "Indra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the god of wealth in Hindu mythology?",
+      "correct_answer": "Kubera",
+      "incorrect_answers": ["Ganesha", "Brahma", "Vishnu"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which god is known as the protector of the universe in Hindu mythology?",
+      "correct_answer": "Vishnu",
+      "incorrect_answers": ["Brahma", "Shiva", "Indra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the goddess of learning and arts in Hindu mythology?",
+      "correct_answer": "Saraswati",
+      "incorrect_answers": ["Lakshmi", "Parvati", "Durga"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is known as the remover of obstacles in Hindu mythology?",
+      "correct_answer": "Ganesha",
+      "incorrect_answers": ["Hanuman", "Kartikeya", "Indra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which river is considered sacred in Hindu mythology?",
+      "correct_answer": "Ganga",
+      "incorrect_answers": ["Yamuna", "Saraswati", "Godavari"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the goddess of time and destruction in Hindu mythology?",
+      "correct_answer": "Kali",
+      "incorrect_answers": ["Parvati", "Sita", "Radha"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is known as the goddess of beauty and love in Hindu mythology?",
+      "correct_answer": "Parvati",
+      "incorrect_answers": ["Durga", "Lakshmi", "Saraswati"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is considered the preserver of the universe in Hindu mythology?",
+      "correct_answer": "Vishnu",
+      "incorrect_answers": ["Brahma", "Shiva", "Indra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the goddess of knowledge and wisdom in Hindu mythology?",
+      "correct_answer": "Saraswati",
+      "incorrect_answers": ["Lakshmi", "Durga", "Parvati"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is known as the god of fire in Hindu mythology?",
+      "correct_answer": "Agni",
+      "incorrect_answers": ["Surya", "Vayu", "Varuna"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the god of thunder and lightning in Hindu mythology?",
+      "correct_answer": "Indra",
+      "incorrect_answers": ["Varuna", "Vayu", "Agni"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is considered the supreme goddess in Hindu mythology?",
+      "correct_answer": "Devi",
+      "incorrect_answers": ["Durga", "Kali", "Saraswati"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which god is known as the destroyer of evil and the restorer of dharma in Hindu mythology?",
+      "correct_answer": "Rama",
+      "incorrect_answers": ["Krishna", "Shiva", "Vishnu"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the goddess of victory in Hindu mythology?",
+      "correct_answer": "Durga",
+      "incorrect_answers": ["Lakshmi", "Saraswati", "Parvati"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which god is known as the lord of beginnings and the remover of obstacles in Hindu mythology?",
+      "correct_answer": "Ganesha",
+      "incorrect_answers": ["Hanuman", "Kartikeya", "Indra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is known as the god of wisdom and intelligence in Hindu mythology?",
+      "correct_answer": "Ganesha",
+      "incorrect_answers": ["Hanuman", "Kartikeya", "Indra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which goddess is known as the divine mother in Hindu mythology?",
+      "correct_answer": "Durga",
+      "incorrect_answers": ["Lakshmi", "Saraswati", "Parvati"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the goddess of speech, language, and expression in Hindu mythology?",
+      "correct_answer": "Saraswati",
+      "incorrect_answers": ["Lakshmi", "Durga", "Parvati"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In Hindu mythology, who is known as the divine cowherd boy?",
+      "correct_answer": "Krishna",
+      "incorrect_answers": ["Rama", "Hanuman", "Ganesha"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is known as the god of the sun in Hindu mythology?",
+      "correct_answer": "Surya",
+      "incorrect_answers": ["Chandra", "Agni", "Varuna"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In Hindu mythology, who is the god of rain and thunderstorms?",
+      "correct_answer": "Indra",
+      "incorrect_answers": ["Varuna", "Vayu", "Agni"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is considered the goddess of fertility and agriculture in Hindu mythology?",
+      "correct_answer": "Parvati",
+      "incorrect_answers": ["Durga", "Lakshmi", "Saraswati"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which god is known as the divine musician and the destroyer of pride in Hindu mythology?",
+      "correct_answer": "Shiva",
+      "incorrect_answers": ["Vishnu", "Brahma", "Indra"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is considered the goddess of the earth and the mother of all beings in Hindu mythology?",
+      "correct_answer": "Prithvi",
+      "incorrect_answers": ["Lakshmi", "Saraswati", "Durga"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In Hindu mythology, who is known as the divine archer?",
+      "correct_answer": "Arjuna",
+      "incorrect_answers": ["Karna", "Bhishma", "Drona"]
+    },
+    {
+      "category": "Indian Mythology",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the god of compassion and love in Hindu mythology?",
+      "correct_answer": "Krishna",
+      "incorrect_answers": ["Rama", "Hanuman", "Ganesha"]
+    }
+  ]
+}

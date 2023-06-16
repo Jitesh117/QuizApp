@@ -1,0 +1,205 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian cartoon show features the character 'Chhota Bheem'?",
+      "correct_answer": "Chhota Bheem",
+      "incorrect_answers": ["Motu Patlu", "Roll No. 21", "Krishna Balram"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the cartoon show 'Shin Chan', what is the full name of the main character?",
+      "correct_answer": "Shinnosuke Nohara",
+      "incorrect_answers": [
+        "Shinichi Kudo",
+        "Shirogane Naoto",
+        "Shikamaru Nara"
+      ]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the talking parrot in the Indian cartoon 'Pakdam Pakdai'?",
+      "correct_answer": "Chhotu",
+      "incorrect_answers": ["Motu", "Patlu", "Dholu"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian cartoon show follows the adventures of a little girl named 'Gattu'?",
+      "correct_answer": "Gattu Battu",
+      "incorrect_answers": ["Mighty Raju", "Little Krishna", "Chhota Bheem"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the Indian cartoon 'Mighty Raju', what superpower does Raju possess?",
+      "correct_answer": "Super Strength",
+      "incorrect_answers": ["Flight", "Invisibility", "Teleportation"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the villain in the Indian cartoon 'Roll No. 21'?",
+      "correct_answer": "Kanishk",
+      "incorrect_answers": ["Kris", "Kartik", "Keshav"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian cartoon show features the character 'Shiva', a brave and intelligent boy?",
+      "correct_answer": "Shiva: The Superhero",
+      "incorrect_answers": ["Chhota Bheem", "Krishna Balram", "Roll No. 21"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the monkey character in the Indian cartoon 'Chhota Bheem'?",
+      "correct_answer": "Jaggu",
+      "incorrect_answers": ["Bheem", "Kalia", "Dholu"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the cartoon show 'Doraemon', what is the name of Doraemon's sister?",
+      "correct_answer": "Dorami",
+      "incorrect_answers": ["Dorako", "Dora Med", "Dora Meka"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the boy character in the Indian cartoon 'Krishna Balram'?",
+      "correct_answer": "Balram",
+      "incorrect_answers": ["Krishna", "Chhota Bheem", "Motu"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the cartoon show 'Popeye the Sailor Man', what does Popeye eat to gain strength?",
+      "correct_answer": "Spinach",
+      "incorrect_answers": ["Carrots", "Broccoli", "Tomatoes"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the dog character in the Indian cartoon 'Motu Patlu'?",
+      "correct_answer": "Motu",
+      "incorrect_answers": ["Patlu", "Dr. Jhatka", "Ghasitaram"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian cartoon show features the character 'Krishna'?",
+      "correct_answer": "Little Krishna",
+      "incorrect_answers": ["Chhota Bheem", "Motu Patlu", "Roll No. 21"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the Indian cartoon 'Roll No. 21', who is Kris' love interest?",
+      "correct_answer": "Rani",
+      "incorrect_answers": ["Raju", "Ricky", "Rahul"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the mongoose character in the Indian cartoon 'Chhota Bheem'?",
+      "correct_answer": "Bheem",
+      "incorrect_answers": ["Jaggu", "Kalia", "Dholu"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian cartoon show features the character 'Krishna Balram'?",
+      "correct_answer": "Krishna Balram",
+      "incorrect_answers": ["Chhota Bheem", "Motu Patlu", "Roll No. 21"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the Indian cartoon 'Motu Patlu', who is known for his love for sweets?",
+      "correct_answer": "Patlu",
+      "incorrect_answers": ["Motu", "Dr. Jhatka", "Ghasitaram"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the elephant character in the Indian cartoon 'Chhota Bheem'?",
+      "correct_answer": "Kalia",
+      "incorrect_answers": ["Jaggu", "Bheem", "Dholu"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian cartoon show follows the adventures of a girl named 'Raju & Chhota Bheem'?",
+      "correct_answer": "Mighty Little Bheem",
+      "incorrect_answers": [
+        "Gattu Battu",
+        "Krishna Balram",
+        "Shiva: The Superhero"
+      ]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the main character in the Indian cartoon 'Krishna Balram'?",
+      "correct_answer": "Krishna",
+      "incorrect_answers": ["Balram", "Chhota Bheem", "Motu"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the cartoon show 'Tom and Jerry', what is the color of Tom's fur?",
+      "correct_answer": "Gray",
+      "incorrect_answers": ["Brown", "Black", "White"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the Indian cartoon 'Motu Patlu', who is known for his intelligence and inventions?",
+      "correct_answer": "Dr. Jhatka",
+      "incorrect_answers": ["Motu", "Patlu", "Ghasitaram"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the squirrel character in the Indian cartoon 'Chhota Bheem'?",
+      "correct_answer": "Dholu",
+      "incorrect_answers": ["Jaggu", "Bheem", "Kalia"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian cartoon show features the character 'Shin Chan'?",
+      "correct_answer": "Shin Chan",
+      "incorrect_answers": ["Chhota Bheem", "Motu Patlu", "Roll No. 21"]
+    }
+  ]
+}

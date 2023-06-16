@@ -1,0 +1,269 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Breaking Bad', what is the full name of Walter White's alias, Heisenberg?",
+      "correct_answer": "Walter Hartwell White",
+      "incorrect_answers": [
+        "Walter White Jr.",
+        "Walter Hartwell Black",
+        "Walter Hartman White"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which character from the TV show 'Friends' says the famous line 'We were on a break!'?",
+      "correct_answer": "Ross Geller",
+      "incorrect_answers": ["Rachel Green", "Joey Tribbiani", "Chandler Bing"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'The Sopranos', what is Tony Soprano's hometown?",
+      "correct_answer": "Newark, New Jersey",
+      "incorrect_answers": [
+        "New York, New York",
+        "Philadelphia, Pennsylvania",
+        "Boston, Massachusetts"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which character from the TV show 'Game of Thrones' famously says 'I drink and I know things'?",
+      "correct_answer": "Tyrion Lannister",
+      "incorrect_answers": [
+        "Jon Snow",
+        "Daenerys Targaryen",
+        "Cersei Lannister"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the creator of the TV show 'The Wire'?",
+      "correct_answer": "David Simon",
+      "incorrect_answers": ["Aaron Sorkin", "David Chase", "Matthew Weiner"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the fictional advertising agency in the TV show 'Mad Men'?",
+      "correct_answer": "Sterling Cooper Draper Pryce",
+      "incorrect_answers": [
+        "Sterling Cooper",
+        "Draper Hart",
+        "Pryce & Associates"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'The Office' (US version), who is the regional manager of the Scranton branch of Dunder Mifflin after Michael Scott leaves?",
+      "correct_answer": "Andy Bernard",
+      "incorrect_answers": [
+        "Jim Halpert",
+        "Dwight Schrute",
+        "Robert California"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which character from the TV show 'The Walking Dead' is known for carrying a barbed-wire-wrapped baseball bat named Lucille?",
+      "correct_answer": "Negan",
+      "incorrect_answers": ["Rick Grimes", "Daryl Dixon", "Carol Peletier"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main character in the TV show 'Better Call Saul'?",
+      "correct_answer": "Jimmy McGill",
+      "incorrect_answers": ["Walter White", "Jesse Pinkman", "Mike Ehrmantraut"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the full name of the character known as 'The Mother' in the TV show 'How I Met Your Mother'?",
+      "correct_answer": "Tracy McConnell",
+      "incorrect_answers": ["Lily Aldrin", "Robin Scherbatsky", "Stella Zinman"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Lost', what is the name of the mysterious organization that funded the DHARMA Initiative?",
+      "correct_answer": "The Hanso Foundation",
+      "incorrect_answers": [
+        "The Others",
+        "The Others Foundation",
+        "The Widmore Corporation"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who plays the character of Stringer Bell in the TV show 'The Wire'?",
+      "correct_answer": "Idris Elba",
+      "incorrect_answers": [
+        "Michael K. Williams",
+        "Dominic West",
+        "Wood Harris"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the fictional university in the TV show 'Community'?",
+      "correct_answer": "Greendale Community College",
+      "incorrect_answers": [
+        "Hillman College",
+        "Sacred Heart University",
+        "Bayside College"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the narrator of the TV show 'How I Met Your Mother'?",
+      "correct_answer": "Bob Saget",
+      "incorrect_answers": ["Neil Patrick Harris", "Jason Segel", "Josh Radnor"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'The Office' (US version), what is the name of Dwight Schrute's beet farm?",
+      "correct_answer": "Schrute Farms",
+      "incorrect_answers": [
+        "Dunder Mifflin Farms",
+        "Beetle Farms",
+        "Bass Farms"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the fictional police department in the TV show 'Brooklyn Nine-Nine'?",
+      "correct_answer": "The 99th Precinct",
+      "incorrect_answers": [
+        "The 9th Precinct",
+        "The 69th Precinct",
+        "The 19th Precinct"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which character from the TV show 'The Big Bang Theory' has a twin sister named Missy?",
+      "correct_answer": "Sheldon Cooper",
+      "incorrect_answers": [
+        "Leonard Hofstadter",
+        "Rajesh Koothrappali",
+        "Howard Wolowitz"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the fictional newsroom in the TV show 'The Newsroom'?",
+      "correct_answer": "News Night",
+      "incorrect_answers": ["News Central", "Newsline", "News Network"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who plays the character of Clay Morrow in the TV show 'Sons of Anarchy'?",
+      "correct_answer": "Ron Perlman",
+      "incorrect_answers": ["Charlie Hunnam", "Kim Coates", "Tommy Flanagan"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Fargo', what is the name of the character played by Billy Bob Thornton in the first season?",
+      "correct_answer": "Lorne Malvo",
+      "incorrect_answers": ["Jerry Lundegaard", "Molly Solverson", "Gus Grimly"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which character from the TV show 'The Office' (US version) starts his own paper company named 'Michael Scott Paper Company'?",
+      "correct_answer": "Michael Scott",
+      "incorrect_answers": ["Jim Halpert", "Dwight Schrute", "Pam Beesly"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the fictional town in the TV show 'Twin Peaks'?",
+      "correct_answer": "Twin Peaks",
+      "incorrect_answers": ["Bluebell", "Riverdale", "Sunnydale"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who plays the character of Walter Bishop in the TV show 'Fringe'?",
+      "correct_answer": "John Noble",
+      "incorrect_answers": ["Joshua Jackson", "Anna Torv", "Lance Reddick"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the fictional paper company in the TV show 'The Office' (US version)?",
+      "correct_answer": "Dunder Mifflin",
+      "incorrect_answers": ["Wernham Hogg", "Initech", "Pied Piper"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the creator of the TV show 'Lost'?",
+      "correct_answer": "J.J. Abrams",
+      "incorrect_answers": ["Damon Lindelof", "Carlton Cuse", "Matthew Fox"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'The Office' (US version), who is the regional manager of the Stamford branch of Dunder Mifflin?",
+      "correct_answer": "Josh Porter",
+      "incorrect_answers": ["Jim Halpert", "Dwight Schrute", "Michael Scott"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the fictional hospital in the TV show 'House'?",
+      "correct_answer": "Princeton-Plainsboro Teaching Hospital",
+      "incorrect_answers": [
+        "Seattle Grace Hospital",
+        "Grey Sloan Memorial Hospital",
+        "St. Jude Hospital"
+      ]
+    }
+  ]
+}

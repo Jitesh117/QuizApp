@@ -1,0 +1,325 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known for the famous 'Valley of Flowers'?",
+      "correct_answer": "Uttarakhand",
+      "incorrect_answers": [
+        "Himachal Pradesh",
+        "Jammu and Kashmir",
+        "Arunachal Pradesh"
+      ]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known as the 'Land of Thunderbolts'?",
+      "correct_answer": "Meghalaya",
+      "incorrect_answers": ["Manipur", "Mizoram", "Nagaland"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known for the famous 'Hawa Mahal'?",
+      "correct_answer": "Rajasthan",
+      "incorrect_answers": ["Uttar Pradesh", "Madhya Pradesh", "Gujarat"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known as the 'Land of High Passes'?",
+      "correct_answer": "Ladakh",
+      "incorrect_answers": ["Himachal Pradesh", "Uttarakhand", "Sikkim"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known for the famous 'Jaisalmer Fort'?",
+      "correct_answer": "Rajasthan",
+      "incorrect_answers": ["Uttar Pradesh", "Maharashtra", "Gujarat"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Uttar Pradesh?",
+      "correct_answer": "Lucknow",
+      "incorrect_answers": ["Kanpur", "Agra", "Varanasi"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known as the 'Land of Forests and Waterfalls'?",
+      "correct_answer": "Chhattisgarh",
+      "incorrect_answers": ["Madhya Pradesh", "Uttarakhand", "Jharkhand"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Telangana?",
+      "correct_answer": "Hyderabad",
+      "incorrect_answers": ["Vijayawada", "Visakhapatnam", "Warangal"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which union territory of India is known for the famous 'Ross Island'?",
+      "correct_answer": "Andaman and Nicobar Islands",
+      "incorrect_answers": [
+        "Dadra and Nagar Haveli and Daman and Diu",
+        "Puducherry",
+        "Lakshadweep"
+      ]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Punjab?",
+      "correct_answer": "Chandigarh",
+      "incorrect_answers": ["Amritsar", "Ludhiana", "Jalandhar"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known as the 'Spice Garden of India'?",
+      "correct_answer": "Kerala",
+      "incorrect_answers": ["Tamil Nadu", "Karnataka", "Andhra Pradesh"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Assam?",
+      "correct_answer": "Dispur",
+      "incorrect_answers": ["Guwahati", "Silchar", "Jorhat"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known as the 'Land of Temples'?",
+      "correct_answer": "Tamil Nadu",
+      "incorrect_answers": ["Karnataka", "Andhra Pradesh", "Kerala"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Haryana?",
+      "correct_answer": "Chandigarh",
+      "incorrect_answers": ["Gurugram", "Faridabad", "Hisar"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which union territory of India is known for the famous 'Golden Beach'?",
+      "correct_answer": "Puducherry",
+      "incorrect_answers": [
+        "Dadra and Nagar Haveli and Daman and Diu",
+        "Andaman and Nicobar Islands",
+        "Lakshadweep"
+      ]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Goa?",
+      "correct_answer": "Panaji",
+      "incorrect_answers": ["Mumbai", "Bengaluru", "Chennai"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known as the 'Land of the Gods'?",
+      "correct_answer": "Uttarakhand",
+      "incorrect_answers": [
+        "Himachal Pradesh",
+        "Jammu and Kashmir",
+        "Arunachal Pradesh"
+      ]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Jharkhand?",
+      "correct_answer": "Ranchi",
+      "incorrect_answers": ["Jamshedpur", "Dhanbad", "Bokaro"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known as the 'Land of the Rising Sun'?",
+      "correct_answer": "Arunachal Pradesh",
+      "incorrect_answers": ["Manipur", "Mizoram", "Nagaland"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Manipur?",
+      "correct_answer": "Imphal",
+      "incorrect_answers": ["Guwahati", "Silchar", "Jorhat"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which union territory of India is known for the famous 'Radhanagar Beach'?",
+      "correct_answer": "Andaman and Nicobar Islands",
+      "incorrect_answers": [
+        "Dadra and Nagar Haveli and Daman and Diu",
+        "Puducherry",
+        "Lakshadweep"
+      ]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Uttarakhand?",
+      "correct_answer": "Dehradun",
+      "incorrect_answers": ["Nainital", "Haridwar", "Rishikesh"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known as the 'Jewel of the East'?",
+      "correct_answer": "Meghalaya",
+      "incorrect_answers": ["Manipur", "Mizoram", "Nagaland"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Mizoram?",
+      "correct_answer": "Aizawl",
+      "incorrect_answers": ["Imphal", "Agartala", "Kohima"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which union territory of India is known for the famous 'Basilica of Bom Jesus'?",
+      "correct_answer": "Goa",
+      "incorrect_answers": [
+        "Puducherry",
+        "Andaman and Nicobar Islands",
+        "Dadra and Nagar Haveli and Daman and Diu"
+      ]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Sikkim?",
+      "correct_answer": "Gangtok",
+      "incorrect_answers": ["Darjeeling", "Kalimpong", "Siliguri"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known as the 'Land of Black Diamonds'?",
+      "correct_answer": "Jharkhand",
+      "incorrect_answers": ["Chhattisgarh", "Madhya Pradesh", "West Bengal"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Nagaland?",
+      "correct_answer": "Kohima",
+      "incorrect_answers": ["Imphal", "Agartala", "Aizawl"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which union territory of India is known for the famous 'Auroville'?",
+      "correct_answer": "Puducherry",
+      "incorrect_answers": [
+        "Dadra and Nagar Haveli and Daman and Diu",
+        "Andaman and Nicobar Islands",
+        "Lakshadweep"
+      ]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Arunachal Pradesh?",
+      "correct_answer": "Itanagar",
+      "incorrect_answers": ["Imphal", "Agartala", "Aizawl"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known as the 'Land of Black Gold'?",
+      "correct_answer": "Gujarat",
+      "incorrect_answers": ["Maharashtra", "Rajasthan", "Madhya Pradesh"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Karnataka?",
+      "correct_answer": "Bengaluru",
+      "incorrect_answers": ["Mysuru", "Hubballi", "Mangaluru"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which union territory of India is known for the famous 'Kavaratti Island'?",
+      "correct_answer": "Lakshadweep",
+      "incorrect_answers": [
+        "Dadra and Nagar Haveli and Daman and Diu",
+        "Andaman and Nicobar Islands",
+        "Puducherry"
+      ]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Bihar?",
+      "correct_answer": "Patna",
+      "incorrect_answers": ["Gaya", "Muzaffarpur", "Bhagalpur"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state is known as the 'Land of Festivals'?",
+      "correct_answer": "Manipur",
+      "incorrect_answers": ["Mizoram", "Nagaland", "Meghalaya"]
+    },
+    {
+      "category": "Medium Difficulty",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the capital city of Himachal Pradesh?",
+      "correct_answer": "Shimla",
+      "incorrect_answers": ["Dharamshala", "Manali", "Kullu"]
+    }
+  ]
+}

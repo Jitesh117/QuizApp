@@ -1,0 +1,385 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the TV show 'Breaking Bad', what is the full name of Walter White's alter ego?",
+      "correct_answer": "Heisenberg",
+      "incorrect_answers": ["Gus Fring", "Jesse Pinkman", "Saul Goodman"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which TV show features a group of survivors trying to solve the mystery of the island they are stranded on?",
+      "correct_answer": "Lost",
+      "incorrect_answers": ["Gilligan's Island", "Survivor", "The 100"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the fictional advertising agency in the TV show 'Mad Men'?",
+      "correct_answer": "Sterling Cooper Draper Pryce",
+      "incorrect_answers": [
+        "McCann Erickson",
+        "DDB Worldwide",
+        "Ogilvy & Mather"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main character in the TV show 'The Sopranos'?",
+      "correct_answer": "Tony Soprano",
+      "incorrect_answers": [
+        "Paulie Walnuts",
+        "Christopher Moltisanti",
+        "Carmela Soprano"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which TV show is set in the fictional town of Twin Peaks?",
+      "correct_answer": "Twin Peaks",
+      "incorrect_answers": ["Pleasantville", "Twin Springs", "Hill Valley"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who plays the character of Carrie Mathison in the TV show 'Homeland'?",
+      "correct_answer": "Claire Danes",
+      "incorrect_answers": ["Mandy Patinkin", "Damian Lewis", "Rupert Friend"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the high school in the TV show 'Buffy the Vampire Slayer'?",
+      "correct_answer": "Sunnydale High School",
+      "incorrect_answers": [
+        "Hogwarts School of Witchcraft and Wizardry",
+        "Rydell High School",
+        "West Beverly High School"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which TV show features a group of friends living in New York City and often hanging out at a bar called McLaren's?",
+      "correct_answer": "How I Met Your Mother",
+      "incorrect_answers": ["Friends", "Seinfeld", "The Big Bang Theory"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main character in the TV show 'The X-Files'?",
+      "correct_answer": "Fox Mulder",
+      "incorrect_answers": [
+        "Dana Scully",
+        "Walter Skinner",
+        "Cigarette Smoking Man"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the prison in the TV show 'Orange Is the New Black'?",
+      "correct_answer": "Litchfield Penitentiary",
+      "incorrect_answers": [
+        "San Quentin State Prison",
+        "Alcatraz Federal Penitentiary",
+        "Riker's Island"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the host of the TV show 'The Tonight Show Starring Jimmy Fallon'?",
+      "correct_answer": "Jimmy Fallon",
+      "incorrect_answers": ["Jimmy Kimmel", "Stephen Colbert", "James Corden"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the high school in the TV show 'Veronica Mars'?",
+      "correct_answer": "Neptune High School",
+      "incorrect_answers": [
+        "Rydell High School",
+        "Sunnydale High School",
+        "West Beverly High School"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main character in the TV show 'The Crown'?",
+      "correct_answer": "Queen Elizabeth II",
+      "incorrect_answers": [
+        "Prince Philip",
+        "Princess Margaret",
+        "Winston Churchill"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which TV show features a serial killer who works as a blood spatter pattern analyst for the Miami Metro Police Department?",
+      "correct_answer": "Dexter",
+      "incorrect_answers": ["Breaking Bad", "Hannibal", "True Detective"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the detective in the TV show 'Psych'?",
+      "correct_answer": "Shawn Spencer",
+      "incorrect_answers": ["Gus Guster", "Burton Guster", "Henry Spencer"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main character in the TV show 'Mr. Robot'?",
+      "correct_answer": "Elliot Alderson",
+      "incorrect_answers": ["Darlene Alderson", "Angela Moss", "Tyrell Wellick"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the college in the TV show 'Community'?",
+      "correct_answer": "Greendale Community College",
+      "incorrect_answers": [
+        "Hillman College",
+        "Bayside High School",
+        "Faber College"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main character in the TV show 'The Handmaid's Tale'?",
+      "correct_answer": "June Osborne",
+      "incorrect_answers": [
+        "Serena Joy Waterford",
+        "Commander Fred Waterford",
+        "Aunt Lydia"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the fictional paper company in the TV show 'The Office'?",
+      "correct_answer": "Dunder Mifflin",
+      "incorrect_answers": ["Pied Piper", "Initech", "Sterling Cooper"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which TV show is set in the fictional town of Stars Hollow?",
+      "correct_answer": "Gilmore Girls",
+      "incorrect_answers": ["Smallville", "Pawnee", "Sunnydale"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who plays the character of Piper Chapman in the TV show 'Orange Is the New Black'?",
+      "correct_answer": "Taylor Schilling",
+      "incorrect_answers": ["Laura Prepon", "Uzo Aduba", "Danielle Brooks"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the fictional law firm in the TV show 'Suits'?",
+      "correct_answer": "Pearson Hardman",
+      "incorrect_answers": [
+        "Lockhart Gardner",
+        "Wolfram & Hart",
+        "Crane, Poole & Schmidt"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main character in the TV show 'Westworld'?",
+      "correct_answer": "Dolores Abernathy",
+      "incorrect_answers": ["Bernard Lowe", "Robert Ford", "William"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the university in the TV show 'The Big Bang Theory'?",
+      "correct_answer": "California Institute of Technology (Caltech)",
+      "incorrect_answers": [
+        "Massachusetts Institute of Technology (MIT)",
+        "Stanford University",
+        "Harvard University"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main character in the TV show 'Fargo'?",
+      "correct_answer": "Lester Nygaard",
+      "incorrect_answers": [
+        "Jerry Lundegaard",
+        "Molly Solverson",
+        "Lou Solverson"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the island in the TV show 'Lost'?",
+      "correct_answer": "The Island",
+      "incorrect_answers": [
+        "Alcatraz Island",
+        "Gilligan's Island",
+        "Shutter Island"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who plays the character of Michael Scott in the TV show 'The Office' (US version)?",
+      "correct_answer": "Steve Carell",
+      "incorrect_answers": ["John Krasinski", "Rainn Wilson", "Ed Helms"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which TV show is set in the fictional town of Pawnee?",
+      "correct_answer": "Parks and Recreation",
+      "incorrect_answers": [
+        "The Office",
+        "Brooklyn Nine-Nine",
+        "The Good Place"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who plays the character of Don Draper in the TV show 'Mad Men'?",
+      "correct_answer": "Jon Hamm",
+      "incorrect_answers": ["Bryan Cranston", "Matthew Weiner", "John Slattery"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the fictional hospital in the TV show 'Grey's Anatomy'?",
+      "correct_answer": "Grey Sloan Memorial Hospital",
+      "incorrect_answers": [
+        "Seattle Grace Hospital",
+        "St. Ambrose Hospital",
+        "New Amsterdam Medical Center"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who plays the character of Olivia Pope in the TV show 'Scandal'?",
+      "correct_answer": "Kerry Washington",
+      "incorrect_answers": [
+        "Viola Davis",
+        "Taraji P. Henson",
+        "Gabrielle Union"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the fictional town in the TV show 'Stranger Things'?",
+      "correct_answer": "Hawkins",
+      "incorrect_answers": ["Hill Valley", "Sunnydale", "Pleasantville"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the main character in the TV show 'The Americans'?",
+      "correct_answer": "Elizabeth Jennings",
+      "incorrect_answers": [
+        "Philip Jennings",
+        "Stan Beeman",
+        "Nina Sergeevna Krilova"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the high school in the TV show 'Friday Night Lights'?",
+      "correct_answer": "Dillon High School",
+      "incorrect_answers": [
+        "West Beverly High School",
+        "Hillman College",
+        "Rydell High School"
+      ]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who plays the character of Selina Meyer in the TV show 'Veep'?",
+      "correct_answer": "Julia Louis-Dreyfus",
+      "incorrect_answers": ["Amy Poehler", "Tina Fey", "Mindy Kaling"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the fictional town in the TV show 'The Walking Dead'?",
+      "correct_answer": "Alexandria",
+      "incorrect_answers": ["Woodbury", "Hilltop", "Sanctuary"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the host of the TV show 'Saturday Night Live'?",
+      "correct_answer": "Various",
+      "incorrect_answers": ["Jimmy Fallon", "Tina Fey", "Seth Meyers"]
+    },
+    {
+      "category": "American TV Shows",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the fictional hospital in the TV show 'House'?",
+      "correct_answer": "Princeton-Plainsboro Teaching Hospital",
+      "incorrect_answers": [
+        "Seattle Grace Hospital",
+        "Grey Sloan Memorial Hospital",
+        "St. Jude Hospital"
+      ]
+    }
+  ]
+}

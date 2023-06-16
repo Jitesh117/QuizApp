@@ -1,0 +1,293 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the movie Avengers: Infinity War, how many Infinity Stones does Thanos collect?",
+      "correct_answer": "Six",
+      "incorrect_answers": ["Four", "Five", "Seven"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main villain in the movie Avengers: Endgame?",
+      "correct_answer": "Thanos",
+      "incorrect_answers": ["Loki", "Ultron", "Hela"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which character wields the Stormbreaker in the movie Avengers: Infinity War?",
+      "correct_answer": "Thor",
+      "incorrect_answers": ["Iron Man", "Captain America", "Hulk"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main villain in the movie Spider-Man: Homecoming?",
+      "correct_answer": "Vulture",
+      "incorrect_answers": ["Green Goblin", "Doctor Octopus", "Venom"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Marvel movie features the character Wanda Maximoff?",
+      "correct_answer": "Avengers: Age of Ultron",
+      "incorrect_answers": [
+        "Captain America: Civil War",
+        "Guardians of the Galaxy Vol. 2",
+        "Black Panther"
+      ]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the movie Guardians of the Galaxy Vol. 2, what is the name of Star-Lord's father?",
+      "correct_answer": "Ego",
+      "incorrect_answers": ["Yondu", "Ronan", "Thanos"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main villain in the movie Thor: Ragnarok?",
+      "correct_answer": "Hela",
+      "incorrect_answers": ["Loki", "Thanos", "Surtur"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of Tony Stark's AI assistant in the Iron Man movies?",
+      "correct_answer": "JARVIS",
+      "incorrect_answers": ["FRIDAY", "ULTRON", "EDITH"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main villain in the movie Black Panther?",
+      "correct_answer": "Erik Killmonger",
+      "incorrect_answers": ["Ulysses Klaue", "M'Baku", "Thanos"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Marvel movie features the character Nebula?",
+      "correct_answer": "Guardians of the Galaxy",
+      "incorrect_answers": ["Thor: The Dark World", "Ant-Man", "Doctor Strange"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the movie Captain America: Civil War, who is revealed to be responsible for the death of Tony Stark's parents?",
+      "correct_answer": "The Winter Soldier",
+      "incorrect_answers": ["Hawkeye", "Black Widow", "Crossbones"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Marvel movie features the character Wong?",
+      "correct_answer": "Doctor Strange",
+      "incorrect_answers": [
+        "Ant-Man and the Wasp",
+        "Captain Marvel",
+        "Thor: Ragnarok"
+      ]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main villain in the movie Guardians of the Galaxy?",
+      "correct_answer": "Ronan the Accuser",
+      "incorrect_answers": ["Thanos", "Ego the Living Planet", "Nebula"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the real name of the superhero Black Widow?",
+      "correct_answer": "Natasha Romanoff",
+      "incorrect_answers": ["Wanda Maximoff", "Hope van Dyne", "Carol Danvers"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the movie Avengers: Endgame, who is the first Avenger to say the iconic line 'Avengers Assemble!'?",
+      "correct_answer": "Captain America",
+      "incorrect_answers": ["Iron Man", "Thor", "Black Widow"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main villain in the movie Ant-Man and the Wasp?",
+      "correct_answer": "Ghost",
+      "incorrect_answers": ["Yellowjacket", "Crossbones", "Thanos"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the fictional metal used in Black Panther's suit?",
+      "correct_answer": "Vibranium",
+      "incorrect_answers": ["Adamantium", "Promethium", "Plasteel"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main villain in the movie Doctor Strange?",
+      "correct_answer": "Dormammu",
+      "incorrect_answers": ["Kaecilius", "Baron Mordo", "Thanos"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the fictional city where Spider-Man operates?",
+      "correct_answer": "New York City",
+      "incorrect_answers": ["Gotham City", "Metropolis", "Central City"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main villain in the movie Iron Man 3?",
+      "correct_answer": "The Mandarin",
+      "incorrect_answers": ["Aldrich Killian", "Justin Hammer", "Whiplash"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Marvel movie features the character Yondu Udonta?",
+      "correct_answer": "Guardians of the Galaxy",
+      "incorrect_answers": [
+        "Iron Man",
+        "Thor",
+        "Captain America: The First Avenger"
+      ]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the movie Captain Marvel, what is the name of Carol Danvers' best friend and fellow pilot?",
+      "correct_answer": "Maria Rambeau",
+      "incorrect_answers": ["Monica Rambeau", "Helen Cho", "Janet van Dyne"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main villain in the movie Captain America: The Winter Soldier?",
+      "correct_answer": "Alexander Pierce",
+      "incorrect_answers": ["The Winter Soldier", "Crossbones", "Red Skull"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Marvel movie features the character Peggy Carter?",
+      "correct_answer": "Captain America: The First Avenger",
+      "incorrect_answers": ["Iron Man", "Thor: The Dark World", "Ant-Man"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the powerful artifact in the movie Thor: The Dark World?",
+      "correct_answer": "Aether",
+      "incorrect_answers": ["Tesseract", "Eye of Agamotto", "Orb"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main villain in the movie Thor?",
+      "correct_answer": "Loki",
+      "incorrect_answers": ["Hela", "Thanos", "Malekith"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the movie Avengers: Age of Ultron, what is the name of Tony Stark's artificial intelligence program that becomes Ultron?",
+      "correct_answer": "JARVIS",
+      "incorrect_answers": ["FRIDAY", "EDITH", "ULTRON"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main villain in the movie Iron Man 2?",
+      "correct_answer": "Ivan Vanko",
+      "incorrect_answers": ["Obadiah Stane", "Justin Hammer", "Whiplash"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Marvel movie features the character T'Challa?",
+      "correct_answer": "Captain America: Civil War",
+      "incorrect_answers": [
+        "Guardians of the Galaxy Vol. 2",
+        "Thor: Ragnarok",
+        "Ant-Man and the Wasp"
+      ]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main villain in the movie Captain America: The First Avenger?",
+      "correct_answer": "Red Skull",
+      "incorrect_answers": ["Baron Zemo", "The Winter Soldier", "Crossbones"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the powerful artifact in the movie Guardians of the Galaxy?",
+      "correct_answer": "Orb",
+      "incorrect_answers": ["Tesseract", "Aether", "Eye of Agamotto"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the main villain in the movie Ant-Man?",
+      "correct_answer": "Yellowjacket",
+      "incorrect_answers": ["Crossbones", "Ghost", "Thanos"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the movie Avengers: Infinity War, who is the first Avenger to be killed by Thanos?",
+      "correct_answer": "Loki",
+      "incorrect_answers": ["Heimdall", "Gamora", "Vision"]
+    },
+    {
+      "category": "Marvel Movies",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Marvel movie features the character Janet van Dyne?",
+      "correct_answer": "Ant-Man and the Wasp",
+      "incorrect_answers": ["Iron Man 3", "Thor: Ragnarok", "Black Panther"]
+    }
+  ]
+}

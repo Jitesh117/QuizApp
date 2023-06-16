@@ -1,0 +1,169 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which Indian cartoon show features the character 'Kris', a mischievous and adventurous boy?",
+      "correct_answer": "Roll No. 21",
+      "incorrect_answers": ["Chhota Bheem", "Motu Patlu", "Krishna Balram"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the cartoon show 'Shin Chan', what is the name of Shin Chan's mother?",
+      "correct_answer": "Misae Nohara",
+      "incorrect_answers": ["Hiroko Nohara", "Himawari Nohara", "Masao Sato"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Indian cartoon 'Mighty Raju', what is the name of Raju's best friend?",
+      "correct_answer": "Cheeky",
+      "incorrect_answers": ["Moby", "Julie", "Gopi"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the main antagonist in the Indian cartoon 'Chhota Bheem'?",
+      "correct_answer": "Kirmada",
+      "incorrect_answers": ["Ravan", "Kalia", "Dholu"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Indian cartoon 'Krishna Balram', what is the name of the demon king who often tries to defeat Krishna?",
+      "correct_answer": "Kansa",
+      "incorrect_answers": ["Shakuni", "Ravana", "Duryodhana"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the cartoon show 'Doraemon', what is the name of Doraemon's friend from the future?",
+      "correct_answer": "Suneo Honekawa",
+      "incorrect_answers": ["Takeshi Goda", "Nobita Nobi", "Hidetoshi Dekisugi"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the prince character in the Indian cartoon 'Krishna Balram'?",
+      "correct_answer": "Krishnadevaraya",
+      "incorrect_answers": ["Akbar", "Ashoka", "Prithviraj Chauhan"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Indian cartoon 'Motu Patlu', what is the name of the tea-seller?",
+      "correct_answer": "Chaiwala",
+      "incorrect_answers": ["Motu", "Patlu", "Jhatka"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the character in the Indian cartoon 'Chhota Bheem' who is known for his strength and wrestling skills?",
+      "correct_answer": "Daku Mangal Singh",
+      "incorrect_answers": ["Kalia", "Jaggu", "Bheem"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Indian cartoon 'Roll No. 21', who is Kris' best friend?",
+      "correct_answer": "Raju",
+      "incorrect_answers": ["Rani", "Ricky", "Rahul"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which Indian cartoon show features the character 'Gattu Battu'?",
+      "correct_answer": "Gattu Battu",
+      "incorrect_answers": [
+        "Chhota Bheem",
+        "Motu Patlu",
+        "Shiva: The Superhero"
+      ]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the antagonist character in the Indian cartoon 'Krishna Balram'?",
+      "correct_answer": "Kalvakra",
+      "incorrect_answers": ["Jarasandha", "Shakuni", "Duryodhana"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the cartoon show 'Shin Chan', what is the name of Shin Chan's father?",
+      "correct_answer": "Hiroshi Nohara",
+      "incorrect_answers": ["Ginnosuke Nohara", "Himawari Nohara", "Masao Sato"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Indian cartoon 'Motu Patlu', who is known for his intelligence and gadgets?",
+      "correct_answer": "Dr. Jhatka",
+      "incorrect_answers": ["Motu", "Patlu", "Ghasitaram"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the character in the Indian cartoon 'Krishna Balram' who is a master of martial arts?",
+      "correct_answer": "Aghor",
+      "incorrect_answers": ["Makhichoos", "Zalim Singh", "Chingam"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which Indian cartoon show features the character 'Shiva', a brave and intelligent boy?",
+      "correct_answer": "Shiva: The Superhero",
+      "incorrect_answers": ["Chhota Bheem", "Motu Patlu", "Gattu Battu"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Indian cartoon 'Motu Patlu', what is the name of the police officer?",
+      "correct_answer": "Inspector Chingam",
+      "incorrect_answers": ["Motu", "Patlu", "Dr. Jhatka"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the character in the Indian cartoon 'Krishna Balram' who is a skilled archer?",
+      "correct_answer": "Arjuna",
+      "incorrect_answers": ["Bheem", "Karna", "Drona"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the cartoon show 'Tom and Jerry', what is the color of Jerry's fur?",
+      "correct_answer": "Brown",
+      "incorrect_answers": ["Gray", "Black", "White"]
+    },
+    {
+      "category": "Indian Cartoons",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the character in the Indian cartoon 'Krishna Balram' who is known for his mischief?",
+      "correct_answer": "Kesariya",
+      "incorrect_answers": ["Sindoori", "Suresh", "Brijrani"]
+    }
+  ]
+}

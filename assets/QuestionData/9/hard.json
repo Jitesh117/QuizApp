@@ -1,0 +1,293 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Bigg Boss,' who was the winner of its latest season?",
+      "correct_answer": "Rubina Dilaik",
+      "incorrect_answers": [
+        "Sidharth Shukla",
+        "Dipika Kakar Ibrahim",
+        "Gauahar Khan"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the host of the Indian TV show 'Kaun Banega Crorepati'?",
+      "correct_answer": "Amitabh Bachchan",
+      "incorrect_answers": ["Shah Rukh Khan", "Salman Khan", "Akshay Kumar"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the Indian TV show where participants compete in a singing competition for the title 'Indian Idol'?",
+      "correct_answer": "Indian Idol",
+      "incorrect_answers": [
+        "Sa Re Ga Ma Pa",
+        "Superstar Singer",
+        "The Voice India"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Yeh Rishta Kya Kehlata Hai,' who plays the role of 'Naira'?",
+      "correct_answer": "Shivangi Joshi",
+      "incorrect_answers": ["Hina Khan", "Nia Sharma", "Surbhi Chandna"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the host of the Indian TV show 'Dance India Dance'?",
+      "correct_answer": "Mithun Chakraborty",
+      "incorrect_answers": ["Remo D'Souza", "Terence Lewis", "Geeta Kapoor"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Naagin,' who plays the role of 'Shivangi'?",
+      "correct_answer": "Mouni Roy",
+      "incorrect_answers": ["Nia Sharma", "Adaa Khan", "Surbhi Jyoti"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the Indian TV show where participants compete in a dance reality competition?",
+      "correct_answer": "Jhalak Dikhhla Jaa",
+      "incorrect_answers": [
+        "Dance India Dance",
+        "Nach Baliye",
+        "So You Think You Can Dance"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Ishqbaaaz,' what is the profession of the main character, Shivaay?",
+      "correct_answer": "Businessman",
+      "incorrect_answers": ["Doctor", "Actor", "Engineer"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the host of the Indian TV show 'The Kapil Sharma Show'?",
+      "correct_answer": "Kapil Sharma",
+      "incorrect_answers": ["Kapil Dev", "Kapil Sibal", "Kapil Dev Sharma"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the Indian TV show where contestants compete in various physical and mental tasks?",
+      "correct_answer": "MTV Roadies",
+      "incorrect_answers": [
+        "Splitsvilla",
+        "Fear Factor: Khatron Ke Khiladi",
+        "Bigg Boss"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Beyhadh,' who plays the role of 'Maya Mehrotra'?",
+      "correct_answer": "Jennifer Winget",
+      "incorrect_answers": ["Mouni Roy", "Adaa Khan", "Surbhi Jyoti"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the host of the Indian TV show 'Super Dancer'?",
+      "correct_answer": "Shilpa Shetty",
+      "incorrect_answers": [
+        "Madhuri Dixit",
+        "Kareena Kapoor Khan",
+        "Jacqueline Fernandez"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the Indian TV show where participants compete in a cooking competition?",
+      "correct_answer": "MasterChef India",
+      "incorrect_answers": [
+        "Kitchen Champion",
+        "Cooking with Stars",
+        "The Great Indian Cook-Off"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Kasautii Zindagii Kay,' who plays the role of 'Prerna Sharma'?",
+      "correct_answer": "Erica Fernandes",
+      "incorrect_answers": ["Hina Khan", "Surbhi Chandna", "Nia Sharma"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the host of the Indian TV show 'India's Got Talent'?",
+      "correct_answer": "Bharti Singh",
+      "incorrect_answers": ["Kapil Sharma", "Sunil Grover", "Krishna Abhishek"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the Indian TV show where contestants compete in a fashion competition?",
+      "correct_answer": "India's Next Top Model",
+      "incorrect_answers": [
+        "Project Runway India",
+        "Fashion Superstar",
+        "The Fashion Show"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Yeh Hai Mohabbatein,' who plays the role of 'Raman Bhalla'?",
+      "correct_answer": "Karan Patel",
+      "incorrect_answers": [
+        "Shaheer Sheikh",
+        "Mohsin Khan",
+        "Karan Singh Grover"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the host of the Indian TV show 'India's Best Dancer'?",
+      "correct_answer": "Malaika Arora",
+      "incorrect_answers": [
+        "Nora Fatehi",
+        "Jacqueline Fernandez",
+        "Madhuri Dixit"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the Indian TV show where contestants compete in a stand-up comedy competition?",
+      "correct_answer": "The Great Indian Laughter Challenge",
+      "incorrect_answers": [
+        "Comedy Circus",
+        "Comedy Nights with Kapil",
+        "Comedy Central Presents"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Diya Aur Baati Hum,' what is the profession of the main character, Sandhya?",
+      "correct_answer": "Police Officer",
+      "incorrect_answers": ["Doctor", "Teacher", "Lawyer"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the host of the Indian TV show 'Bigg Boss'?",
+      "correct_answer": "Salman Khan",
+      "incorrect_answers": [
+        "Amitabh Bachchan",
+        "Shah Rukh Khan",
+        "Akshay Kumar"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the Indian TV show where participants compete in a reality singing competition?",
+      "correct_answer": "Sa Re Ga Ma Pa",
+      "incorrect_answers": [
+        "Indian Idol",
+        "Superstar Singer",
+        "The Voice India"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Kundali Bhagya,' who plays the role of 'Preeta'?",
+      "correct_answer": "Shraddha Arya",
+      "incorrect_answers": ["Shivangi Joshi", "Hina Khan", "Nia Sharma"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the host of the Indian TV show 'Khatron Ke Khiladi'?",
+      "correct_answer": "Rohit Shetty",
+      "incorrect_answers": ["Akshay Kumar", "Salman Khan", "Ajay Devgn"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the Indian TV show where participants compete in a beauty competition?",
+      "correct_answer": "Femina Miss India",
+      "incorrect_answers": [
+        "Miss Diva",
+        "Miss Universe India",
+        "Miss India Worldwide"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Bade Achhe Lagte Hain,' who plays the role of 'Ram Kapoor'?",
+      "correct_answer": "Ram Kapoor",
+      "incorrect_answers": ["Ronit Roy", "Karan Patel", "Sharad Kelkar"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the host of the Indian TV show 'Nach Baliye'?",
+      "correct_answer": "Manish Paul",
+      "incorrect_answers": ["Karan Wahi", "Raghav Juyal", "Rithvik Dhanjani"]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the Indian TV show where participants compete in a talent competition?",
+      "correct_answer": "India's Got Talent",
+      "incorrect_answers": [
+        "Dance India Dance",
+        "The Voice India",
+        "Indian Idol"
+      ]
+    },
+    {
+      "category": "Indian TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the TV show 'Yeh Hai Mohabbatein,' what is the profession of the main character, Raman?",
+      "correct_answer": "Businessman",
+      "incorrect_answers": ["Doctor", "Actor", "Engineer"]
+    }
+  ]
+}
