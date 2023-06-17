@@ -197,14 +197,6 @@
       "category": "Indian TV Shows",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "In the TV show 'Bhabiji Ghar Par Hain!', what is the name of the character known for his obsession with his neighbor's wife?",
-      "correct_answer": "Vibhuti Mishra",
-      "incorrect_answers": ["Anita Mishra", "Manmohan Tiwari", "Angoori Bhabhi"]
-    },
-    {
-      "category": "Indian TV Shows",
-      "type": "multiple",
-      "difficulty": "easy",
       "question": "Which Indian TV show features the story of a young woman named 'Prerna' and her love interest 'Anurag'?",
       "correct_answer": "Kasautii Zindagii Kay",
       "incorrect_answers": [

@@ -46,7 +46,7 @@
       "type": "multiple",
       "difficulty": "hard",
       "question": "Who is the host of the Indian TV show 'Dance India Dance'?",
-      "correct_answer": "Mithun Chakraborty",
+      "correct_answer": "Jay Bhanushali",
       "incorrect_answers": ["Remo D'Souza", "Terence Lewis", "Geeta Kapoor"]
     },
     {
@@ -110,23 +110,11 @@
       "type": "multiple",
       "difficulty": "hard",
       "question": "Who is the host of the Indian TV show 'Super Dancer'?",
-      "correct_answer": "Shilpa Shetty",
+      "correct_answer": "No one in particular",
       "incorrect_answers": [
         "Madhuri Dixit",
-        "Kareena Kapoor Khan",
+        "Shilpa Shetty",
         "Jacqueline Fernandez"
-      ]
-    },
-    {
-      "category": "Indian TV Shows",
-      "type": "multiple",
-      "difficulty": "hard",
-      "question": "What is the name of the Indian TV show where participants compete in a cooking competition?",
-      "correct_answer": "MasterChef India",
-      "incorrect_answers": [
-        "Kitchen Champion",
-        "Cooking with Stars",
-        "The Great Indian Cook-Off"
       ]
     },
     {

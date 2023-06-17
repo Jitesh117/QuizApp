@@ -11,9 +11,6 @@ class GenreCard extends StatelessWidget {
     required this.width,
     required this.imagePath,
     required this.topicName,
-    required this.colorOne,
-    required this.colorTwo,
-    required this.colorThree,
     required this.category,
     required this.streakColor,
   });
@@ -22,9 +19,6 @@ class GenreCard extends StatelessWidget {
   final String imagePath;
   final String topicName;
 
-  final Color colorOne;
-  final Color colorTwo;
-  final Color colorThree;
   final int category;
   final Color streakColor;
 
@@ -38,9 +32,6 @@ class GenreCard extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) => ChooseDifficultyPage(
-                colorOne: colorOne,
-                colorTwo: colorTwo,
-                colorThree: colorThree,
                 imagePath: imagePath,
                 category: category,
                 streakColor: streakColor,
@@ -51,17 +42,24 @@ class GenreCard extends StatelessWidget {
         child: Stack(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 50, bottom: 20),
+              padding: const EdgeInsets.only(top: 20, bottom: 20),
               child: Container(
                 width: width - 32,
                 height: 150,
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                     borderRadius: const BorderRadius.all(Radius.circular(32)),
-                    gradient: LinearGradient(
-                      colors: [colorOne, colorTwo, colorThree],
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
+                    // gradient: LinearGradient(
+                    //   colors: [colorOne, colorTwo, colorThree],
+                    //   begin: Alignment.topLeft,
+                    //   end: Alignment.bottomRight,
+                    // ),
+
+                    image: DecorationImage(
+                      filterQuality: FilterQuality.high,
+                      colorFilter: const ColorFilter.srgbToLinearGamma(),
+                      image: AssetImage(imagePath),
+                      fit: BoxFit.fill,
                     ),
                     border: Border.all(
                       color: Colors.black,
@@ -78,15 +76,15 @@ class GenreCard extends StatelessWidget {
                     ]),
               ),
             ),
-            Positioned(
-              top: category == 0 ? 0 : -20,
-              right: category == 0 ? 25 : 10,
-              child: Image.asset(
-                imagePath,
-                height: category == 0 ? 100 : 150,
-                colorBlendMode: BlendMode.colorBurn,
-              ),
-            ),
+            // Positioned(
+            //   top: category == 0 ? 0 : -20,
+            //   right: category == 0 ? 25 : 10,
+            //   child: Image.asset(
+            //     imagePath,
+            //     height: category == 0 ? 100 : 150,
+            //     colorBlendMode: BlendMode.colorBurn,
+            //   ),
+            // ),
           ],
         ),
       ),

@@ -8,11 +8,6 @@ import 'package:quiz_v2/providers/question_provider.dart';
 void main() {
   runApp(const MyApp());
 }
-// todo: add animations to badges
-// todo: change color palette of genreCards
-// todo: change video games imagePath
-// todo: add push notifications : daily challenge, beat your high score,
-// todo: make badges unlockable
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -34,6 +29,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
           useMaterial3: true,
+          // fontFamily: 'Alfa',
         ),
         home: const WelcomeScreen(),
       ),

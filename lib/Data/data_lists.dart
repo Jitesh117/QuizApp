@@ -11,6 +11,19 @@ List<String> imagePaths = [
   'assets/sports.png',
   'assets/games.png',
 ];
+List<String> imageBGPaths = [
+  'assets/genreImages/indianStates.jpg',
+  'assets/genreImages/anime.jpg',
+  'assets/genreImages/computer.jpg',
+  'assets/genreImages/gk.jpg',
+  'assets/genreImages/indianTv.jpg',
+  'assets/genreImages/indianMythology.jpg',
+  'assets/genreImages/marvel.jpg',
+  'assets/genreImages/movies.jpg',
+  'assets/genreImages/sports.jpg',
+  'assets/genreImages/usTv.jpg',
+  'assets/genreImages/indianCartoon.jpg',
+];
 
 List<String> categoryNames = [
   'Anime',
@@ -23,66 +36,33 @@ List<String> categoryNames = [
   'Sports',
   'Video Games',
 ];
-
-List<int> category = [
-  0,
-  1,
-  2,
-  3,
-  4,
-  5,
-  6,
-  7,
-  8,
+List<String> genreNames = [
+  'Indian States',
+  'Anime',
+  'Computer',
+  'General Knowledge',
+  'Indian TV Shows',
+  'Indian Mythology',
+  'Marvel',
+  'Movies',
+  'Sports',
+  'US TV Shows',
+  'Indian Cartoon Shows',
 ];
+Map<int, String> categories = {
+  0: "IndianStates",
+  1: "Anime",
+  2: "computer",
+  3: "GK",
+  4: "IndianTV",
+  5: "IndianMythology",
+  6: "Marvel",
+  7: "movies",
+  8: "sports",
+  9: "UsTV",
+  10: "IndianCartoons",
+};
 
-List<Color> colorOne = [
-  Colors.pinkAccent,
-  Colors.blue,
-  Colors.deepPurple,
-  Colors.red,
-  Colors.pink,
-  Colors.indigo,
-  Colors.deepOrange,
-  Colors.deepPurple,
-  Colors.red,
-];
-
-List<Color> colorTwo = [
-  Colors.redAccent,
-  Colors.blueAccent,
-  Colors.purple,
-  Colors.orange,
-  Colors.pinkAccent,
-  Colors.blue,
-  Colors.orangeAccent,
-  Colors.purple,
-  Colors.orange,
-];
-
-List<Color> colorThree = [
-  Colors.orange,
-  Colors.lightBlueAccent,
-  Colors.purpleAccent,
-  Colors.orangeAccent,
-  Colors.pink.shade400,
-  Colors.lightBlue,
-  Colors.yellow,
-  Colors.purpleAccent,
-  Colors.orangeAccent,
-];
-
-List<Color> streakColor = [
-  Colors.yellow,
-  Colors.orange,
-  Colors.orange,
-  Colors.lightBlueAccent,
-  Colors.lightGreenAccent,
-  Colors.orange,
-  Colors.deepPurple,
-  Colors.orange,
-  Colors.lightBlueAccent,
-];
 
 List<Color> difficultyColorOne = [
   Colors.lightGreenAccent.shade100,

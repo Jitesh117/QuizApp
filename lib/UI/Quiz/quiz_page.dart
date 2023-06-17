@@ -16,18 +16,12 @@ import '../Widgets/quizWidgets/streak_counter.dart';
 class QuizPage extends StatelessWidget {
   const QuizPage({
     super.key,
-    required this.colorOne,
-    required this.colorTwo,
-    required this.colorThree,
     required this.imagePath,
     required this.category,
     required this.streakColor,
     required this.difficulty,
   });
 
-  final Color colorOne;
-  final Color colorTwo;
-  final Color colorThree;
   final String imagePath;
   final Color streakColor;
   final int category;
@@ -98,7 +92,7 @@ class QuizPage extends StatelessWidget {
                           //       imagePath: playerProvider.avatarPath),
                           // ),
 
-                          // TODO: implement countdownTimer
+                          // todo: implement countdownTimer
                           // CircularCountDownTimer(
                           //   width: 40,
                           //   height: 40,
@@ -147,7 +141,7 @@ class QuizPage extends StatelessWidget {
                               optionValue: quesProvider.rightPosition == index
                                   ? quesProvider.correctAnswer
                                   : quesProvider.incorrectAnswer[index],
-                              optionColor: colorOne,
+                              optionColor: Colors.blue,
                               optionNumber: index,
                               category: category,
                               difficulty: difficulty,

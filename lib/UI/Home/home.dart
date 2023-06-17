@@ -81,16 +81,13 @@ class _HomePageState extends State<HomePage> {
                     // ! Category tiles: Science, Books, Computers, VideoGames, Geography, Anime and Manga,
                     Expanded(
                       child: ListView.builder(
-                        itemCount: imagePaths.length,
+                        itemCount: genreNames.length,
                         itemBuilder: (context, index) => GenreCard(
                           width: width,
-                          imagePath: imagePaths[index],
-                          topicName: categoryNames[index],
-                          colorOne: colorOne[index],
-                          colorTwo: colorTwo[index],
-                          colorThree: colorThree[index],
-                          category: category[index],
-                          streakColor: streakColor[index],
+                          imagePath: imageBGPaths[index],
+                          topicName: genreNames[index],
+                          category: index,
+                          streakColor: Colors.lightBlueAccent,
                         ),
                       ),
                     ),

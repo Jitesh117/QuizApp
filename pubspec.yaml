@@ -63,16 +63,19 @@ flutter:
   assets:
     - assets/
     - assets/sounds/
+    - assets/genreImages/
     - assets/lottieAnimations/
-    - assets/QuestionData/0/
-    - assets/QuestionData/1/
-    - assets/QuestionData/2/
-    - assets/QuestionData/3/
-    - assets/QuestionData/4/
-    - assets/QuestionData/5/
-    - assets/QuestionData/6/
-    - assets/QuestionData/7/
-    - assets/QuestionData/8/
+    - assets/QuestionData/IndianStates/
+    - assets/QuestionData/Anime/
+    - assets/QuestionData/computer/
+    - assets/QuestionData/GK/
+    - assets/QuestionData/IndianTV/
+    - assets/QuestionData/IndianMythology/
+    - assets/QuestionData/Marvel/
+    - assets/QuestionData/movies/
+    - assets/QuestionData/UsTV/
+    - assets/QuestionData/IndianCartoons/
+    - assets/QuestionData/sports/
     - assets/userAvatars/
     - assets/userAvatars/memojis/
   #   - images/a_dot_ham.jpeg
@@ -85,10 +88,11 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Alfa
+      fonts:
+        - asset: assets/AlfaSlabOne-Regular.ttf
+          weight: 400
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

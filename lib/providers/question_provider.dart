@@ -35,21 +35,21 @@ class QuesProvider with ChangeNotifier {
   bool tappedOptionIsCorrect = false;
   bool previousAnswerWasCorrect = false;
 
-  List<List<DataModel>> dataModels = List.generate(categoryNames.length,
+  List<List<DataModel>> dataModels = List.generate(genreNames.length,
       (index) => List.generate(3, (index) => DataModel()));
 
   List<List<String>> badgesEarned = List.generate(
-      categoryNames.length, (index) => List.generate(3, (index) => "0"));
+      genreNames.length, (index) => List.generate(3, (index) => "0"));
 
   void loadQuestions() async {
     questionsLoaded = false;
-    for (int i = 0; i < categoryNames.length; i++) {
-      String easy =
-          await rootBundle.loadString("assets/QuestionData/$i/easy.json");
-      String medium =
-          await rootBundle.loadString("assets/QuestionData/$i/medium.json");
-      String hard =
-          await rootBundle.loadString("assets/QuestionData/$i/hard.json");
+    for (int i = 0; i < genreNames.length; i++) {
+      String easy = await rootBundle
+          .loadString("assets/QuestionData/${categories[i]}/easy.json");
+      String medium = await rootBundle
+          .loadString("assets/QuestionData/${categories[i]}/medium.json");
+      String hard = await rootBundle
+          .loadString("assets/QuestionData/${categories[i]}/hard.json");
       DataModel easyData = DataModel.fromJson(json.decode(easy));
       DataModel mediumData = DataModel.fromJson(json.decode(medium));
       DataModel hardData = DataModel.fromJson(json.decode(hard));

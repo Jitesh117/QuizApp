@@ -58,15 +58,15 @@ class DifficultyTile extends StatelessWidget {
                   ]),
             ),
           ),
-          Positioned(
-            top: category == 0 ? 0 : -20,
-            right: category == 0 ? 20 : 10,
-            child: Image.asset(
-              imagePath,
-              height: category == 0 ? 100 : 150,
-              colorBlendMode: BlendMode.colorBurn,
-            ),
-          ),
+          // Positioned(
+          //   top: category == 0 ? 0 : -20,
+          //   right: category == 0 ? 20 : 10,
+          //   child: Image.asset(
+          //     imagePath,
+          //     height: category == 0 ? 100 : 150,
+          //     colorBlendMode: BlendMode.colorBurn,
+          //   ),
+          // ),
         ],
       ),
     );

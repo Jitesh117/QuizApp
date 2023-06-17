@@ -14,17 +14,11 @@ import '../Widgets/quizWidgets/difficulty_tile.dart';
 class ChooseDifficultyPage extends StatelessWidget {
   ChooseDifficultyPage({
     super.key,
-    required this.colorOne,
-    required this.colorTwo,
-    required this.colorThree,
     required this.imagePath,
     required this.category,
     required this.streakColor,
   });
 
-  final Color colorOne;
-  final Color colorTwo;
-  final Color colorThree;
   final String imagePath;
   final int category;
   final Color streakColor;
@@ -99,9 +93,6 @@ class ChooseDifficultyPage extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                 builder: (context) => QuizPage(
-                                  colorOne: colorOne,
-                                  colorTwo: colorTwo,
-                                  colorThree: colorThree,
                                   imagePath: imagePath,
                                   category: category,
                                   streakColor: streakColor,
