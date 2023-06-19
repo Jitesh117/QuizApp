@@ -1,21 +1,31 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_v2/Data/data_lists.dart';
 
-class WidgetChceck extends StatelessWidget {
-  const WidgetChceck({super.key});
+class WidgetCheck extends StatelessWidget {
+  const WidgetCheck({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.orange,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Expanded(
-            child: ListView.builder(
-              itemCount: genreNames.length,
-              itemBuilder: (context, index) => GenreTile(
-                name: genreNames[index],
-                imagePath: imageBGPaths[index],
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(100),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+              decoration: BoxDecoration(
+                color: Colors.green,
+                border: Border(
+                  top: const BorderSide(color: Colors.white),
+                  bottom: BorderSide(color: Colors.green.shade800),
+                ),
+              ),
+              child: Text(
+                'Easy'.toUpperCase(),
+                style: const TextStyle(
+                  color: Colors.white,
+                ),
               ),
             ),
           ),

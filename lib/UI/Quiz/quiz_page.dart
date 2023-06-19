@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'dart:developer' as dev;
 
+import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -29,6 +30,7 @@ class QuizPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    CountDownController timeController = CountDownController();
     dev.log('build');
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => Scaffold(
@@ -92,23 +94,44 @@ class QuizPage extends StatelessWidget {
                           //       imagePath: playerProvider.avatarPath),
                           // ),
 
-                          // todo: implement countdownTimer
-                          // CircularCountDownTimer(
-                          //   width: 40,
-                          //   height: 40,
-                          //   duration: 60,
-                          //   autoStart: false,
-                          //   ringColor: colorThree,
-                          //   controller: quesProvider.timeController,
-                          //   isReverseAnimation: true,
-                          //   fillColor: Colors.white,
-                          //   isReverse: true,
-                          //   textFormat: CountdownTextFormat.S,
-                          //   textStyle: const TextStyle(
-                          //     fontSize: 16,
-                          //     color: Colors.white,
-                          //   ),
-                          // ),
+                          CircularCountDownTimer(
+                            width: 40,
+                            height: 40,
+                            duration: 30,
+                            autoStart: true,
+                            ringColor: Colors.lightBlueAccent,
+                            controller: timeController,
+                            isReverseAnimation: true,
+                            fillColor: Colors.white,
+                            isReverse: true,
+                            textFormat: CountdownTextFormat.S,
+                            textStyle: const TextStyle(
+                              fontSize: 16,
+                              color: Colors.white,
+                            ),
+                            onComplete: () async {
+                              quesProvider.streakCount = 0;
+                              await quesProvider.showDialogue(context,
+                                  'assets/lottieAnimations/timeUp.zip');
+
+                              playerProvider
+                                  .updateMaxStreak(quesProvider.streakCount);
+                              playerProvider.updatePoints(
+                                  quesProvider.tappedOptionIsCorrect);
+                              quesProvider.streakChanger();
+                              // quesProvider.checkTappedOption(-1);
+                              quesProvider.showCorrectOption = true;
+                              await Future.delayed(
+                                const Duration(seconds: 1),
+                                () {
+                                  quesProvider.fetchQuestion(
+                                      category, difficulty);
+                                  timeController.restart();
+                                  quesProvider.showCorrectOption = false;
+                                },
+                              );
+                            },
+                          ),
                         ],
                       ),
                       const SizedBox(height: 10),
@@ -137,14 +160,44 @@ class QuizPage extends StatelessWidget {
                         child: ListView.builder(
                           itemCount: 3,
                           itemBuilder: (BuildContext context, int index) {
-                            return OptionTile(
-                              optionValue: quesProvider.rightPosition == index
-                                  ? quesProvider.correctAnswer
-                                  : quesProvider.incorrectAnswer[index],
-                              optionColor: Colors.blue,
-                              optionNumber: index,
-                              category: category,
-                              difficulty: difficulty,
+                            return GestureDetector(
+                              onTap: () async {
+                                if (!quesProvider.tapped) {
+                                  quesProvider.checkTappedOption(index);
+                                  playerProvider.updateMaxStreak(
+                                      quesProvider.streakCount);
+                                  playerProvider.updatePoints(
+                                      quesProvider.tappedOptionIsCorrect);
+                                  // correct answer tapped
+                                  if (quesProvider.tappedOptionIsCorrect) {
+                                    // player.play();
+                                    await quesProvider.showDialogue(context,
+                                        'assets/lottieAnimations/right.zip');
+                                  }
+                                  // wrong answer tapped
+                                  else {
+                                    await quesProvider.showDialogue(context,
+                                        'assets/lottieAnimations/wrong.zip');
+                                  }
+                                  await Future.delayed(
+                                    const Duration(seconds: 1),
+                                    () {
+                                      quesProvider.fetchQuestion(
+                                          category, difficulty);
+                                      timeController.restart();
+                                    },
+                                  );
+                                }
+                              },
+                              child: OptionTile(
+                                optionValue: quesProvider.rightPosition == index
+                                    ? quesProvider.correctAnswer
+                                    : quesProvider.incorrectAnswer[index],
+                                optionColor: Colors.blue,
+                                optionNumber: index,
+                                category: category,
+                                difficulty: difficulty,
+                              ),
                             );
                           },
                         ),

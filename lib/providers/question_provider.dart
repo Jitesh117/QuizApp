@@ -4,6 +4,7 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
+import 'package:lottie/lottie.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
 import 'dart:convert';
 import 'dart:developer' as dev;
@@ -22,8 +23,7 @@ class QuesProvider with ChangeNotifier {
   bool tapped = false;
   int timesTapped = 0;
   List<int> tappedOption = [-1, -1, -1];
-
-// CountDownController timeController = CountDownController();
+  bool showCorrectOption = false;
 
 // question number controlling parameters
   int previousCategory = -1;
@@ -35,8 +35,8 @@ class QuesProvider with ChangeNotifier {
   bool tappedOptionIsCorrect = false;
   bool previousAnswerWasCorrect = false;
 
-  List<List<DataModel>> dataModels = List.generate(genreNames.length,
-      (index) => List.generate(3, (index) => DataModel()));
+  List<List<DataModel>> dataModels = List.generate(
+      genreNames.length, (index) => List.generate(3, (index) => DataModel()));
 
   List<List<String>> badgesEarned = List.generate(
       genreNames.length, (index) => List.generate(3, (index) => "0"));
@@ -130,11 +130,11 @@ class QuesProvider with ChangeNotifier {
       badgesEarned[i] =
           pref.getStringList("category$i") ?? List.generate(3, (index) => '0');
     }
-    for (int i = 0; i < categoryNames.length; i++) {
-      for (int j = 0; j < 3; j++) {
-        dev.log("${badgesEarned[i][j]} ");
-      }
-    }
+    // for (int i = 0; i < categoryNames.length; i++) {
+    //   for (int j = 0; j < 3; j++) {
+    //     dev.log("${badgesEarned[i][j]} ");
+    //   }
+    // }
     if (tappedOptionIsCorrect && timesTapped == 1) {
       streakCount++;
       if (badgesEarned[previousCategory][previousDifficulty] == '0' &&
@@ -209,5 +209,24 @@ class QuesProvider with ChangeNotifier {
       },
     );
     return shouldPop!;
+  }
+
+  Future showDialogue(BuildContext context, String animationPath) async {
+    showDialog(
+      context: context,
+      builder: (context) => SizedBox(
+        height: 150,
+        width: 150,
+        child: Lottie.asset(
+          animationPath,
+        ),
+      ),
+    );
+    await Future.delayed(
+      const Duration(seconds: 2),
+      () {
+        Navigator.pop(context);
+      },
+    );
   }
 }

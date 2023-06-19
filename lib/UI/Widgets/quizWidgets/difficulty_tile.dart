@@ -48,14 +48,15 @@ class DifficultyTile extends StatelessWidget {
                     width: 2,
                   )),
               child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      difficulty,
-                      style: cardTextStyle,
-                    )
-                  ]),
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    difficulty,
+                    style: cardTextStyle,
+                  )
+                ],
+              ),
             ),
           ),
           // Positioned(
