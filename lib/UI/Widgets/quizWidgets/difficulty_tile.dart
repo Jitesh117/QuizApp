@@ -30,30 +30,35 @@ class DifficultyTile extends StatelessWidget {
             padding: const EdgeInsets.only(top: 50.0),
             child: Container(
               width: MediaQuery.of(context).size.width - 32,
-              height: 150,
+              height: 100,
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                  borderRadius: const BorderRadius.all(Radius.circular(32)),
-                  gradient: LinearGradient(
-                    colors: [
-                      colorOne,
-                      colorTwo,
-                      colorThree,
-                    ],
-                    begin: Alignment.bottomRight,
-                    end: Alignment.topLeft,
-                  ),
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 2,
-                  )),
+                borderRadius: const BorderRadius.all(Radius.circular(32)),
+                gradient: LinearGradient(
+                  colors: [
+                    // colorOne,
+                    // colorOne,
+                    // colorTwo,
+                    colorThree,
+                    colorThree,
+                  ],
+                  begin: Alignment.bottomRight,
+                  end: Alignment.topLeft,
+                ),
+                border: Border.all(
+                  color: Colors.black,
+                  width: 4,
+                ),
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    difficulty,
-                    style: cardTextStyle,
+                  Center(
+                    child: Text(
+                      difficulty,
+                      style: cardTextStyle,
+                    ),
                   )
                 ],
               ),

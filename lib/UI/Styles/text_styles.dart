@@ -6,7 +6,7 @@ TextStyle headingTextStyle = const TextStyle(
   fontWeight: FontWeight.bold,
 );
 TextStyle cardTextStyle = const TextStyle(
-  color: Colors.white,
+  color: Colors.black,
   fontSize: 24,
   fontWeight: FontWeight.bold,
 );

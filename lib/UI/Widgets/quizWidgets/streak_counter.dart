@@ -18,19 +18,16 @@ class StreakCounter extends StatelessWidget {
       builder: (context, quesProvider, _) => Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          FaIcon(
+          const FaIcon(
             FontAwesomeIcons.fireFlameCurved,
-            color: quesProvider.streakCount > 0
-                ? streakColor
-                : Colors.white,
+            color: Colors.black,
             size: 30,
           ),
           const SizedBox(width: 10),
           Text(
             quesProvider.streakCount.toString(),
-            style: TextStyle(
-              color:
-                  quesProvider.streakCount > 0 ? streakColor : Colors.white,
+            style: const TextStyle(
+              color: Colors.black,
               fontSize: 24,
             ),
           )

@@ -175,10 +175,24 @@ class QuesProvider with ChangeNotifier {
         return AlertDialog(
           title: const Text(
             "Do you want to go back? You'll lose all your progess!",
+            style: TextStyle(fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
           actionsAlignment: MainAxisAlignment.spaceBetween,
           actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context, false);
+              },
+              child: const Text(
+                'No',
+                style: TextStyle(
+                  color: Colors.red,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
             TextButton(
               onPressed: () {
                 streakCount = 0;
@@ -189,18 +203,7 @@ class QuesProvider with ChangeNotifier {
                 style: TextStyle(
                   color: Colors.green,
                   fontSize: 20,
-                ),
-              ),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.pop(context, false);
-              },
-              child: const Text(
-                'No',
-                style: TextStyle(
-                  color: Colors.red,
-                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),

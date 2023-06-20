@@ -8,49 +8,61 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.yellow.shade100,
       body: SafeArea(
-        child: Stack(
-          children: [
-            SizedBox(
-              height: MediaQuery.of(context).size.height,
-              width: MediaQuery.of(context).size.width,
-              child: Lottie.asset(
-                'assets/lottieAnimations/dayAnimation.zip',
-                fit: BoxFit.fill,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 30),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              SizedBox(
+                // height: MediaQuery.of(context).size.width,
+                // width: MediaQuery.of(context).size.width,
+                child: Lottie.asset(
+                  'assets/lottieAnimations/welcomePattern.json',
+                  fit: BoxFit.fill,
+                  alignment: Alignment.center,
+                ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(
-                vertical: 50,
-                horizontal: 32,
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SizedBox(
-                    height: 300,
-                    width: 350,
-                    child: Lottie.asset(
-                      'assets/lottieAnimations/quizit.zip',
-                      fit: BoxFit.fill,
-                      repeat: false,
+              // const Text(
+              //   "Welcome to our quiz app, where knowledge meets fun, and your quest for trivia begins!",
+              //   textAlign: TextAlign.center,
+              //   style: TextStyle(
+              //     color: Colors.black,
+              //     fontSize: 20,
+              //     fontWeight: FontWeight.bold,
+              //   ),
+              // ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HomePage(),
+                    ),
+                  );
+                },
+                child: Container(
+                  width: MediaQuery.of(context).size.width - 32,
+                  padding: const EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    color: Colors.yellow,
+                    border: Border.all(color: Colors.black, width: 5),
+                    borderRadius: BorderRadius.circular(32),
+                  ),
+                  child: const Text(
+                    'PLAY',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                  GestureDetector(
-                      onTap: () {
-                        Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                            builder: (BuildContext context) => const HomePage(),
-                          ),
-                        );
-                      },
-                      child:
-                          Lottie.asset('assets/lottieAnimations/continue.zip')),
-                ],
-              ),
-            ),
-          ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );

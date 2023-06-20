@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
+import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:quiz_v2/providers/player_provider.dart';
 import 'package:quiz_v2/providers/question_provider.dart';
 
@@ -34,6 +35,7 @@ class QuizPage extends StatelessWidget {
     dev.log('build');
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => Scaffold(
+        backgroundColor: Colors.yellow.shade100,
         body: WillPopScope(
           onWillPop: () {
             return quesProvider.popOrNot(context);
@@ -44,8 +46,8 @@ class QuizPage extends StatelessWidget {
                 SizedBox(
                   height: MediaQuery.of(context).size.height,
                   child: Lottie.asset(
-                    'assets/lottieAnimations/nightAnimation.zip',
-                    fit: BoxFit.fill,
+                    'assets/lottieAnimations/patternBack.zip',
+                    fit: BoxFit.cover,
                   ),
                 ),
                 Container(
@@ -80,79 +82,134 @@ class QuizPage extends StatelessWidget {
                             child: const FaIcon(
                               FontAwesomeIcons.circleXmark,
                               size: 40,
-                              color: Colors.white,
+                              color: Colors.black,
                             ),
                           ),
-                          // streakcounter
-                          StreakCounter(
-                            streakColor: streakColor,
-                          ),
-                          // SizedBox(
-                          //   height: 50,
-                          //   width: 50,
-                          //   child: PlayerAvatar(
-                          //       imagePath: playerProvider.avatarPath),
-                          // ),
-
-                          CircularCountDownTimer(
-                            width: 40,
-                            height: 40,
-                            duration: 30,
-                            autoStart: true,
-                            ringColor: Colors.lightBlueAccent,
-                            controller: timeController,
-                            isReverseAnimation: true,
-                            fillColor: Colors.white,
-                            isReverse: true,
-                            textFormat: CountdownTextFormat.S,
-                            textStyle: const TextStyle(
-                              fontSize: 16,
-                              color: Colors.white,
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 10, vertical: 5),
+                            decoration: BoxDecoration(
+                              color: Colors.yellow,
+                              borderRadius: BorderRadius.circular(16),
+                              border: Border.all(
+                                color: Colors.black,
+                                width: 4,
+                              ),
                             ),
-                            onComplete: () async {
-                              quesProvider.streakCount = 0;
-                              await quesProvider.showDialogue(context,
-                                  'assets/lottieAnimations/timeUp.zip');
-
-                              playerProvider
-                                  .updateMaxStreak(quesProvider.streakCount);
-                              playerProvider.updatePoints(
-                                  quesProvider.tappedOptionIsCorrect);
-                              quesProvider.streakChanger();
-                              // quesProvider.checkTappedOption(-1);
-                              quesProvider.showCorrectOption = true;
-                              await Future.delayed(
-                                const Duration(seconds: 1),
-                                () {
-                                  quesProvider.fetchQuestion(
-                                      category, difficulty);
-                                  timeController.restart();
-                                  quesProvider.showCorrectOption = false;
-                                },
-                              );
-                            },
-                          ),
+                            child: const Row(
+                              children: [
+                                FaIcon(
+                                  FontAwesomeIcons.circleInfo,
+                                  size: 16,
+                                ),
+                                SizedBox(width: 5),
+                                Text(
+                                  'Stats',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          )
                         ],
                       ),
                       const SizedBox(height: 10),
-                      Center(
-                        child: Image.asset(
-                          imagePath,
-                          height: 150,
+                      // Center(
+                      //   child: Image.asset(
+                      //     imagePath,
+                      //     height: 150,
+                      //   ),
+                      // ),
+                      const SizedBox(height: 10),
+                      Container(
+                        padding: const EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(color: Colors.black, width: 4),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: [
+                                const FaIcon(
+                                  FontAwesomeIcons.circleQuestion,
+                                ),
+                                const SizedBox(width: 10),
+                                Text(
+                                  quesProvider.questionNumber.toString(),
+                                  style: TextStyle(
+                                    color: Colors.grey.shade800,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            StreakCounter(
+                              streakColor: streakColor,
+                            ),
+                            CircularCountDownTimer(
+                              width: 40,
+                              height: 40,
+                              duration: 30,
+                              autoStart: true,
+                              fillColor: Colors.black,
+                              ringColor: Colors.yellow.shade100,
+                              controller: timeController,
+                              isReverseAnimation: true,
+                              isReverse: true,
+                              textFormat: CountdownTextFormat.S,
+                              textStyle: const TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold),
+                              onComplete: () async {
+                                quesProvider.streakCount = 0;
+                                await quesProvider.showDialogue(context,
+                                    'assets/lottieAnimations/timeUp.zip');
+
+                                playerProvider
+                                    .updateMaxStreak(quesProvider.streakCount);
+                                playerProvider.updatePoints(
+                                    quesProvider.tappedOptionIsCorrect);
+                                quesProvider.streakChanger();
+                                // quesProvider.checkTappedOption(-1);
+                                quesProvider.showCorrectOption = true;
+                                await Future.delayed(
+                                  const Duration(seconds: 1),
+                                  () {
+                                    quesProvider.fetchQuestion(
+                                        category, difficulty);
+                                    timeController.restart();
+                                    quesProvider.showCorrectOption = false;
+                                  },
+                                );
+                              },
+                            ),
+                          ],
                         ),
                       ),
+
                       const SizedBox(height: 30),
-                      Text(
-                        'Question ${quesProvider.questionNumber.toString()}',
-                        style: TextStyle(
-                          color: Colors.grey.shade300,
-                          fontSize: 20,
+                      Container(
+                        padding: const EdgeInsets.all(20),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(
+                            color: Colors.black,
+                            width: 4,
+                          ),
                         ),
-                      ),
-                      Text(
-                        // 'In which city of Germany is the largest port?',
-                        quesProvider.question,
-                        style: cardTextStyle,
+                        child: Text(
+                          // 'In which city of Germany is the largest port?',
+                          quesProvider.question,
+                          textAlign: TextAlign.center,
+                          style: cardTextStyle,
+                        ),
                       ),
                       const SizedBox(height: 20),
                       Expanded(
@@ -163,6 +220,7 @@ class QuizPage extends StatelessWidget {
                             return GestureDetector(
                               onTap: () async {
                                 if (!quesProvider.tapped) {
+                                  timeController.pause();
                                   quesProvider.checkTappedOption(index);
                                   playerProvider.updateMaxStreak(
                                       quesProvider.streakCount);
@@ -193,7 +251,7 @@ class QuizPage extends StatelessWidget {
                                 optionValue: quesProvider.rightPosition == index
                                     ? quesProvider.correctAnswer
                                     : quesProvider.incorrectAnswer[index],
-                                optionColor: Colors.blue,
+                                optionColor: optionColor[index],
                                 optionNumber: index,
                                 category: category,
                                 difficulty: difficulty,
@@ -202,6 +260,38 @@ class QuizPage extends StatelessWidget {
                           },
                         ),
                       ),
+                      Container(
+                        padding: const EdgeInsets.all(20),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(
+                            color: Colors.black,
+                            width: 4,
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Image.asset(
+                              'assets/powerups/one.png',
+                              height: 50,
+                            ),
+                            Image.asset(
+                              'assets/powerups/two.png',
+                              height: 50,
+                            ),
+                            Image.asset(
+                              'assets/powerups/three.png',
+                              height: 55,
+                            ),
+                            Image.asset(
+                              'assets/powerups/four.png',
+                              height: 50,
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 ),

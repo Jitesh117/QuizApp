@@ -28,7 +28,7 @@ List<String> imageBGPaths = [
 List<String> categoryNames = [
   'Anime',
   'Computer',
-  'General Knowledge',
+  'GK',
   'Geography',
   'History',
   'Movies',
@@ -40,14 +40,14 @@ List<String> genreNames = [
   'Indian States',
   'Anime',
   'Computer',
-  'General Knowledge',
+  'GK',
   'Indian TV Shows',
   'Indian Mythology',
   'Marvel',
   'Movies',
   'Sports',
   'US TV Shows',
-  'Indian Cartoon Shows',
+  'Indian Cartoon',
 ];
 Map<int, String> categories = {
   0: "IndianStates",
@@ -62,7 +62,6 @@ Map<int, String> categories = {
   9: "UsTV",
   10: "IndianCartoons",
 };
-
 
 List<Color> difficultyColorOne = [
   Colors.lightGreenAccent.shade100,
@@ -79,4 +78,24 @@ List<Color> difficultyColorThree = [
   Colors.green,
   Colors.orange,
   Colors.red,
+];
+
+List<Color> genreColor = [
+  const Color(0xffFFC312),
+  const Color(0xff12CBC4),
+  const Color(0xffD980FA),
+  const Color(0xffEA2027),
+  const Color(0xff833471),
+  const Color(0xff0a3d62),
+  const Color(0xff72CFC6),
+  const Color(0xffA3CB38),
+  const Color(0xff5758BB),
+  const Color(0xff0a3d62),
+  const Color(0xffe55039),
+];
+
+List<Color> optionColor = [
+  Colors.pink,
+  Colors.orange,
+  Colors.blue,
 ];

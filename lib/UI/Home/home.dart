@@ -21,15 +21,21 @@ class _HomePageState extends State<HomePage> {
     double width = MediaQuery.of(context).size.width;
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => Scaffold(
+        backgroundColor: Colors.yellow.shade100,
         body: SafeArea(
           child: Stack(
             children: [
               SizedBox(
                 height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
                 child: Lottie.asset(
-                  'assets/lottieAnimations/dayAnimation.zip',
-                  fit: BoxFit.fill,
+                  'assets/lottieAnimations/patternBack.zip',
+                  fit: BoxFit.cover,
                 ),
+                // child: Image.asset(
+                //   'assets/background.jpg',
+                //   fit: BoxFit.cover,
+                // ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 16.0, left: 32, right: 32),
@@ -80,15 +86,33 @@ class _HomePageState extends State<HomePage> {
 
                     // ! Category tiles: Science, Books, Computers, VideoGames, Geography, Anime and Manga,
                     Expanded(
-                      child: ListView.builder(
-                        itemCount: genreNames.length,
-                        itemBuilder: (context, index) => GenreCard(
-                          width: width,
-                          imagePath: imageBGPaths[index],
-                          topicName: genreNames[index],
-                          category: index,
-                          streakColor: Colors.lightBlueAccent,
+                      // child: ListView.builder(
+                      //   itemCount: genreNames.length,
+                      //   itemBuilder: (context, index) => GenreCard(
+                      //     width: width,
+                      //     imagePath: imageBGPaths[index],
+                      //     bgColor: genreColor[index],
+                      //     topicName: genreNames[index],
+                      //     category: index,
+                      //     streakColor: Colors.lightBlueAccent,
+                      //   ),
+                      // ),
+                      child: GridView.builder(
+                        itemCount: 11,
+                        gridDelegate:
+                            const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          crossAxisSpacing: 10,
+                          mainAxisSpacing: 7.5,
                         ),
+                        itemBuilder: ((context, index) => GenreCard(
+                              width: width,
+                              imagePath: imageBGPaths[index],
+                              topicName: genreNames[index],
+                              category: index,
+                              streakColor: Colors.lightBlue,
+                              bgColor: genreColor[index],
+                            )),
                       ),
                     ),
                   ],

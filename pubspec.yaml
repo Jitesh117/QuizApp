@@ -33,6 +33,7 @@ dependencies:
   circular_countdown_timer: ^0.2.3
   confetti: ^0.7.0
   cupertino_icons: ^1.0.2
+  draggable_bottom_sheet: ^1.0.2
   flutter:
     sdk: flutter
   font_awesome_flutter: ^10.4.0
@@ -63,6 +64,7 @@ flutter:
   assets:
     - assets/
     - assets/sounds/
+    - assets/powerups/
     - assets/genreImages/
     - assets/lottieAnimations/
     - assets/QuestionData/IndianStates/
