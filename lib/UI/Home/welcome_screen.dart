@@ -40,22 +40,9 @@ class WelcomeScreen extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
-                      const SizedBox(width: 2),
-                      Row(
-                        children: [
-                          const FaIcon(FontAwesomeIcons.coins),
-                          const SizedBox(width: 10),
-                          Text(
-                            playerProvider.points.toString(),
-                            style: const TextStyle(
-                              color: Colors.black,
-                              fontSize: 20,
-                            ),
-                          ),
-                        ],
-                      ),
                       GestureDetector(
                         onTap: () {
+                          playerProvider.fetchPlayerData();
                           Navigator.push(
                             context,
                             MaterialPageRoute(
