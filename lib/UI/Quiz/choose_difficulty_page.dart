@@ -6,6 +6,7 @@ import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:quiz_v2/UI/Quiz/quiz_page.dart';
+import 'package:quiz_v2/providers/player_provider.dart';
 import 'package:quiz_v2/providers/question_provider.dart';
 
 import '../Widgets/quizWidgets/difficulty_tile.dart';
@@ -33,8 +34,8 @@ class ChooseDifficultyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     log('build');
-    return Consumer<QuesProvider>(
-      builder: (context, quesProvider, _) => Scaffold(
+    return Consumer2<QuesProvider, PlayerProvider>(
+      builder: (context, quesProvider, playerProvider, _) => Scaffold(
         backgroundColor: Colors.yellow.shade100,
         body: SafeArea(
           child: Stack(
@@ -46,20 +47,9 @@ class ChooseDifficultyPage extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              Container(
+              Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
-                decoration: const BoxDecoration(
-                    // gradient: LinearGradient(
-                    //   colors: [
-                    //     colorOne,
-                    //     colorTwo,
-                    //     colorThree,
-                    //   ],
-                    //   begin: Alignment.topLeft,
-                    //   end: Alignment.bottomRight,
-                    // ),
-                    ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -94,6 +84,7 @@ class ChooseDifficultyPage extends StatelessWidget {
                         itemCount: difficulty.length,
                         itemBuilder: (context, index) => GestureDetector(
                           onTap: () {
+                            playerProvider.fetchPlayerData();
                             quesProvider.questionNumberChanger(-1,
                                 -1); // question number change only when it is changed inside the quiz page and not from the change difficulty page
                             quesProvider.fetchQuestion(

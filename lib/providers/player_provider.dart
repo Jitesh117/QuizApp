@@ -53,6 +53,7 @@ class PlayerProvider with ChangeNotifier {
       points += 5;
     } else {
       points -= 2;
+      if (points < 0) points = 0;
     }
     SharedPreferences pref = await SharedPreferences.getInstance();
     pref.setInt('points', points);

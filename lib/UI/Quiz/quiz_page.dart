@@ -40,16 +40,7 @@ class QuizPage extends StatelessWidget {
         backdrop: Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                Colors.orange,
-                Colors.orange,
-              ],
-            ),
-          ),
+          color: Colors.amber,
         ),
         controller: advancedDrawerController,
         animationCurve: Curves.easeInOut,
@@ -59,14 +50,6 @@ class QuizPage extends StatelessWidget {
         // openScale: 1.0,
         disabledGestures: false,
         childDecoration: const BoxDecoration(
-          // NOTICE: Uncomment if you want to add shadow behind the page.
-          // Keep in mind that it may cause animation jerks.
-          // boxShadow: <BoxShadow>[
-          //   BoxShadow(
-          //     color: Colors.black12,
-          //     blurRadius: 0.0,
-          //   ),
-          // ],
           borderRadius: BorderRadius.all(Radius.circular(16)),
         ),
         drawer: SafeArea(
@@ -89,7 +72,7 @@ class QuizPage extends StatelessWidget {
                         ),
                         clipBehavior: Clip.antiAlias,
                         decoration: BoxDecoration(
-                          color: Colors.yellow,
+                          color: Colors.pinkAccent.shade100,
                           shape: BoxShape.circle,
                           border: Border.all(color: Colors.black, width: 4),
                         ),
@@ -156,75 +139,86 @@ class QuizPage extends StatelessWidget {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  Container(
+                  Padding(
                     padding:
                         const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
-                    decoration: const BoxDecoration(
-                        // gradient: LinearGradient(
-                        //   colors: [
-                        //     colorOne,
-                        //     colorTwo,
-                        //     colorThree,
-                        //   ],
-                        //   begin: Alignment.topLeft,
-                        //   end: Alignment.bottomRight,
-                        // ),
-                        ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const SizedBox(height: 20),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            GestureDetector(
-                              onTap: () async {
-                                bool shouldPop =
-                                    await quesProvider.popOrNot(context);
-                                if (shouldPop) {
-                                  Navigator.pop(context);
-                                }
-                              },
-                              child: const FaIcon(
-                                FontAwesomeIcons.circleXmark,
-                                size: 40,
-                                color: Colors.black,
+                        Container(
+                          padding: const EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(color: Colors.black, width: 4),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              GestureDetector(
+                                onTap: () async {
+                                  bool shouldPop =
+                                      await quesProvider.popOrNot(context);
+                                  if (shouldPop) {
+                                    Navigator.pop(context);
+                                  }
+                                },
+                                child: const FaIcon(
+                                  FontAwesomeIcons.circleXmark,
+                                  size: 40,
+                                  color: Colors.black,
+                                ),
                               ),
-                            ),
-                            GestureDetector(
-                              onTap: () {
-                                advancedDrawerController.showDrawer();
-                              },
-                              child: Container(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 10, vertical: 5),
-                                decoration: BoxDecoration(
-                                  color: Colors.yellow,
-                                  borderRadius: BorderRadius.circular(16),
-                                  border: Border.all(
-                                    color: Colors.black,
-                                    width: 4,
+                              const SizedBox(width: 2),
+                              Row(
+                                children: [
+                                  const FaIcon(FontAwesomeIcons.coins),
+                                  const SizedBox(width: 10),
+                                  Text(
+                                    playerProvider.points.toString(),
+                                    style: const TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 20,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              GestureDetector(
+                                onTap: () {
+                                  advancedDrawerController.showDrawer();
+                                },
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 10, vertical: 5),
+                                  decoration: BoxDecoration(
+                                    color: Colors.yellow,
+                                    borderRadius: BorderRadius.circular(16),
+                                    border: Border.all(
+                                      color: Colors.black,
+                                      width: 4,
+                                    ),
+                                  ),
+                                  child: const Row(
+                                    children: [
+                                      FaIcon(
+                                        FontAwesomeIcons.circleInfo,
+                                        size: 16,
+                                      ),
+                                      SizedBox(width: 5),
+                                      Text(
+                                        'Stats',
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
-                                child: const Row(
-                                  children: [
-                                    FaIcon(
-                                      FontAwesomeIcons.circleInfo,
-                                      size: 16,
-                                    ),
-                                    SizedBox(width: 5),
-                                    Text(
-                                      'Stats',
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            )
-                          ],
+                              )
+                            ],
+                          ),
                         ),
                         const SizedBox(height: 10),
                         // Center(
@@ -280,6 +274,7 @@ class QuizPage extends StatelessWidget {
                                 onComplete: () async {
                                   quesProvider.streakCount = 0;
                                   quesProvider.numberOfInorrectAnswers++;
+                                  playerProvider.updatePoints(false);
                                   await quesProvider.showDialogue(context,
                                       'assets/lottieAnimations/timeUp.zip');
 
@@ -386,45 +381,43 @@ class QuizPage extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Image.asset(
-                                'assets/powerups/one.png',
-                                height: 50,
+                              GestureDetector(
+                                onTap: () => quesProvider.deleteWrongOption(),
+                                child: Image.asset(
+                                  'assets/powerups/one.png',
+                                  height: 50,
+                                ),
                               ),
-                              Image.asset(
-                                'assets/powerups/two.png',
-                                height: 50,
+                              GestureDetector(
+                                onTap: () => quesProvider.revealCorrectOption(),
+                                child: Image.asset(
+                                  'assets/powerups/two.png',
+                                  height: 50,
+                                ),
                               ),
-                              Image.asset(
-                                'assets/powerups/three.png',
-                                height: 55,
+                              GestureDetector(
+                                onTap: () => quesProvider.doublePoints(),
+                                child: Image.asset(
+                                  'assets/powerups/three.png',
+                                  height: 55,
+                                ),
                               ),
-                              Image.asset(
-                                'assets/powerups/four.png',
-                                height: 50,
-                              ),
+                              GestureDetector(
+                                onTap: () {
+                                  quesProvider.fetchQuestion(
+                                      category, difficulty);
+                                },
+                                child: Image.asset(
+                                  'assets/powerups/four.png',
+                                  height: 55,
+                                ),
+                              )
                             ],
                           ),
                         )
                       ],
                     ),
                   ),
-                  // Visibility(
-                  //   visible: quesProvider.tapped,
-                  //   child: Positioned(
-                  //     right: 20,
-                  //     bottom: 40,
-                  //     child: GestureDetector(
-                  //       onTap: () {
-                  //         quesProvider.fetchQuestion(category, difficulty);
-                  //       },
-                  //       child: const Icon(
-                  //         Icons.arrow_circle_right_outlined,
-                  //         color: Colors.white,
-                  //         size: 70,
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
                   Align(
                     alignment: Alignment.topCenter,
                     child: ConfettiWidget(

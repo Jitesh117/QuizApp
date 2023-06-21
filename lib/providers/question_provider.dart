@@ -34,6 +34,11 @@ class QuesProvider with ChangeNotifier {
   int questionNumber = 0;
   bool questionsLoaded = false;
 
+// powerups parameters
+  bool deleteWrongOptionTapped = false;
+  bool revealRightOptionTapped = false;
+  bool doublePointsTapped = false;
+
   int streakCount = 0;
   bool tappedOptionIsCorrect = false;
   bool previousAnswerWasCorrect = false;
@@ -91,6 +96,11 @@ class QuesProvider with ChangeNotifier {
 
     tapped = false;
     timesTapped = 0;
+
+    deleteWrongOptionTapped = false;
+    revealRightOptionTapped = false;
+
+    showCorrectOption = false;
 
     dev.log("right value after change $rightPosition");
 
@@ -203,6 +213,9 @@ class QuesProvider with ChangeNotifier {
                 streakCount = 0;
                 numberOfCorrectAnswers = 0;
                 numberOfInorrectAnswers = 0;
+                // reset double Streak
+                doublePointsTapped = false;
+                notifyListeners();
                 Navigator.pop(context, true);
               },
               child: const Text(
@@ -219,6 +232,35 @@ class QuesProvider with ChangeNotifier {
       },
     );
     return shouldPop!;
+  }
+
+  void deleteWrongOption() {
+    deleteWrongOptionTapped = true;
+    int randomWrongPosition = Random().nextInt(2);
+    if (rightPosition == 0) {
+      incorrectAnswer[randomWrongPosition + 1] = "";
+    } else if (rightPosition == 1) {
+      if (randomWrongPosition == 0) {
+        incorrectAnswer[0] = "";
+      } else {
+        incorrectAnswer[2] = "";
+      }
+    } else {
+      incorrectAnswer[randomWrongPosition] = "";
+    }
+    notifyListeners();
+  }
+
+  void revealCorrectOption() {
+    showCorrectOption = true;
+    notifyListeners();
+  }
+
+  void doublePoints() {
+    if (!doublePointsTapped) {
+      doublePointsTapped = true;
+      notifyListeners();
+    }
   }
 
   Future showDialogue(BuildContext context, String animationPath) async {
