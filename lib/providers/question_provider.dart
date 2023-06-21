@@ -131,7 +131,7 @@ class QuesProvider with ChangeNotifier {
 
   void streakChanger() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
-    for (int i = 0; i < categoryNames.length; i++) {
+    for (int i = 0; i < genreNames.length; i++) {
       badgesEarned[i] =
           pref.getStringList("category$i") ?? List.generate(3, (index) => '0');
     }

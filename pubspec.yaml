@@ -80,6 +80,7 @@ flutter:
     - assets/QuestionData/UsTV/
     - assets/QuestionData/IndianCartoons/
     - assets/QuestionData/sports/
+    - assets/QuestionData/PopSongs/
     - assets/userAvatars/
     - assets/userAvatars/memojis/
   #   - images/a_dot_ham.jpeg

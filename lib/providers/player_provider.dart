@@ -13,7 +13,7 @@ class PlayerProvider with ChangeNotifier {
 
   // variables for storing badges information
   List<List<String>> badgesEarned = List.generate(
-      categoryNames.length, (index) => List.generate(3, (index) => "0"));
+      genreNames.length, (index) => List.generate(3, (index) => "0"));
 
   void changeAvatar(String imagePath) async {
     avatarPath = imagePath;
@@ -31,7 +31,7 @@ class PlayerProvider with ChangeNotifier {
         "assets/userAvatars/memojis/user_profile_0.png";
 
     // badges information
-    for (int i = 0; i < categoryNames.length; i++) {
+    for (int i = 0; i < genreNames.length; i++) {
       badgesEarned[i] =
           pref.getStringList("category$i") ?? List.generate(3, (index) => '0');
     }

@@ -1,0 +1,269 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American pop artist released the hit song 'Bad Romance' in 2009?",
+      "correct_answer": "Lady Gaga",
+      "incorrect_answers": ["Taylor Swift", "Justin Timberlake", "Beyoncé"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Michael Jackson's iconic pop song released in 1982?",
+      "correct_answer": "Billie Jean",
+      "incorrect_answers": ["Thriller", "Beat It", "Smooth Criminal"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American singer-songwriter released the popular pop song 'Shape of You' in 2017?",
+      "correct_answer": "Ed Sheeran",
+      "incorrect_answers": ["Bruno Mars", "Justin Bieber", "The Weeknd"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Katy Perry's pop song that became an anthem for self-empowerment and topped the charts in 2013?",
+      "correct_answer": "Roar",
+      "incorrect_answers": ["Firework", "Teenage Dream", "California Gurls"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American pop duo released the hit song 'Closer' featuring Halsey in 2016?",
+      "correct_answer": "The Chainsmokers",
+      "incorrect_answers": ["Maroon 5", "Twenty One Pilots", "Imagine Dragons"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Rihanna's pop song featuring Calvin Harris, which became a global success in 2011?",
+      "correct_answer": "We Found Love",
+      "incorrect_answers": ["Umbrella", "Diamonds", "Work"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American singer-songwriter released the pop song 'Hello' in 2015?",
+      "correct_answer": "Adele",
+      "incorrect_answers": ["Taylor Swift", "Katy Perry", "Ariana Grande"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Justin Timberlake's pop song that won the Grammy Award for Record of the Year in 2007?",
+      "correct_answer": "What Goes Around... Comes Around",
+      "incorrect_answers": ["SexyBack", "Cry Me a River", "Mirrors"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American pop artist released the hit song 'Blank Space' in 2014?",
+      "correct_answer": "Taylor Swift",
+      "incorrect_answers": ["Selena Gomez", "Demi Lovato", "Miley Cyrus"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Bruno Mars' pop song that became one of the best-selling singles of all time?",
+      "correct_answer": "Uptown Funk",
+      "incorrect_answers": [
+        "Just the Way You Are",
+        "Locked Out of Heaven",
+        "24K Magic"
+      ]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American pop band released the hit song 'Somebody That I Used to Know' featuring Kimbra in 2011?",
+      "correct_answer": "Gotye",
+      "incorrect_answers": ["Foster the People", "OneRepublic", "Fun."]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Beyoncé's pop song that became an anthem for female empowerment and topped the charts in 2011?",
+      "correct_answer": "Run the World (Girls)",
+      "incorrect_answers": [
+        "Crazy in Love",
+        "Irreplaceable",
+        "Single Ladies (Put a Ring on It)"
+      ]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American singer-songwriter released the hit pop song 'Can't Feel My Face' in 2015?",
+      "correct_answer": "The Weeknd",
+      "incorrect_answers": ["Sam Smith", "Zayn", "Charlie Puth"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Maroon 5's pop song that topped the charts in 2011?",
+      "correct_answer": "Moves Like Jagger",
+      "incorrect_answers": ["Sugar", "Payphone", "One More Night"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American pop artist released the hit song 'Born This Way' in 2011?",
+      "correct_answer": "Lady Gaga",
+      "incorrect_answers": ["Katy Perry", "Rihanna", "Beyoncé"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Ed Sheeran's pop song that became a global sensation and one of the best-selling singles of all time?",
+      "correct_answer": "Shape of You",
+      "incorrect_answers": [
+        "Thinking Out Loud",
+        "Photograph",
+        "Castle on the Hill"
+      ]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American pop band released the hit song 'Radioactive' in 2012?",
+      "correct_answer": "Imagine Dragons",
+      "incorrect_answers": ["Coldplay", "Twenty One Pilots", "Fall Out Boy"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Taylor Swift's pop song that broke multiple streaming records upon its release in 2019?",
+      "correct_answer": "ME!",
+      "incorrect_answers": ["Shake It Off", "Blank Space", "Bad Blood"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American singer-songwriter released the hit pop song 'Love Yourself' in 2015?",
+      "correct_answer": "Justin Bieber",
+      "incorrect_answers": ["Shawn Mendes", "Charlie Puth", "Nick Jonas"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Ariana Grande's pop song that became a worldwide success and garnered critical acclaim in 2018?",
+      "correct_answer": "No Tears Left to Cry",
+      "incorrect_answers": ["Problem", "Thank U, Next", "Side to Side"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American pop artist released the hit song 'Hotline Bling' in 2015?",
+      "correct_answer": "Drake",
+      "incorrect_answers": ["Kendrick Lamar", "Jay-Z", "Eminem"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Shawn Mendes' pop song that became a global hit and reached the top of the charts in 2018?",
+      "correct_answer": "In My Blood",
+      "incorrect_answers": [
+        "Stitches",
+        "Treat You Better",
+        "There's Nothing Holdin' Me Back"
+      ]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American pop band released the hit song 'Sugar' in 2014?",
+      "correct_answer": "Maroon 5",
+      "incorrect_answers": ["OneRepublic", "Coldplay", "Panic! At The Disco"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Demi Lovato's pop song that became an anthem for self-acceptance and empowerment in 2011?",
+      "correct_answer": "Skyscraper",
+      "incorrect_answers": ["Cool for the Summer", "Heart Attack", "Confident"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American singer-songwriter released the hit pop song 'Havana' featuring Young Thug in 2017?",
+      "correct_answer": "Camila Cabello",
+      "incorrect_answers": ["Selena Gomez", "Ariana Grande", "Dua Lipa"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Sia's pop song that became a worldwide hit and gained widespread recognition in 2014?",
+      "correct_answer": "Chandelier",
+      "incorrect_answers": ["Elastic Heart", "Cheap Thrills", "The Greatest"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American pop artist released the hit song 'Shallow' in 2018, which won the Academy Award for Best Original Song?",
+      "correct_answer": "Lady Gaga",
+      "incorrect_answers": ["Adele", "Taylor Swift", "Beyoncé"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the title of Halsey's pop song that became a chart-topping hit in 2019?",
+      "correct_answer": "Without Me",
+      "incorrect_answers": ["Bad at Love", "Colors", "Eastside"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American singer-songwriter released the pop song 'Wrecking Ball' in 2013?",
+      "correct_answer": "Miley Cyrus",
+      "incorrect_answers": ["Selena Gomez", "Demi Lovato", "Ariana Grande"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is Britney Spears' pop song that became her debut single and reached number one on the Billboard Hot 100 in 1998?",
+      "correct_answer": "...Baby One More Time",
+      "incorrect_answers": ["Toxic", "Oops!... I Did It Again", "Crazy"]
+    },
+    {
+      "category": "American Pop Songs",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which American pop artist released the hit song 'WAP' featuring Megan Thee Stallion in 2020?",
+      "correct_answer": "Cardi B",
+      "incorrect_answers": ["Nicki Minaj", "Lizzo", "Megan Thee Stallion"]
+    }
+  ]
+}

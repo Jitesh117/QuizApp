@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
                       //   ),
                       // ),
                       child: GridView.builder(
-                        itemCount: 11,
+                        itemCount: genreNames.length,
                         gridDelegate:
                             const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
@@ -107,7 +107,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         itemBuilder: ((context, index) => GenreCard(
                               width: width,
-                              imagePath: imageBGPaths[index],
+                              imagePath: '',
                               topicName: genreNames[index],
                               category: index,
                               streakColor: Colors.lightBlue,

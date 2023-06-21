@@ -279,6 +279,7 @@ class QuizPage extends StatelessWidget {
                                     fontWeight: FontWeight.bold),
                                 onComplete: () async {
                                   quesProvider.streakCount = 0;
+                                  quesProvider.numberOfInorrectAnswers++;
                                   await quesProvider.showDialogue(context,
                                       'assets/lottieAnimations/timeUp.zip');
 

@@ -25,17 +25,6 @@ List<String> imageBGPaths = [
   'assets/genreImages/indianCartoon.jpg',
 ];
 
-List<String> categoryNames = [
-  'Anime',
-  'Computer',
-  'GK',
-  'Geography',
-  'History',
-  'Movies',
-  'Science',
-  'Sports',
-  'Video Games',
-];
 List<String> genreNames = [
   'Indian States',
   'Anime',
@@ -48,6 +37,7 @@ List<String> genreNames = [
   'Sports',
   'US TV Shows',
   'Indian Cartoon',
+  'American Pop',
 ];
 Map<int, String> categories = {
   0: "IndianStates",
@@ -61,6 +51,7 @@ Map<int, String> categories = {
   8: "sports",
   9: "UsTV",
   10: "IndianCartoons",
+  11: "PopSongs"
 };
 
 List<Color> difficultyColorOne = [
@@ -92,6 +83,7 @@ List<Color> genreColor = [
   const Color(0xff5758BB),
   const Color(0xff0a3d62),
   const Color(0xffe55039),
+  Colors.orange,
 ];
 
 List<Color> optionColor = [
