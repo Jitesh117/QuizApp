@@ -25,6 +25,9 @@ class QuesProvider with ChangeNotifier {
   List<int> tappedOption = [-1, -1, -1];
   bool showCorrectOption = false;
 
+  int numberOfCorrectAnswers = 0;
+  int numberOfInorrectAnswers = 0;
+
 // question number controlling parameters
   int previousCategory = -1;
   int previousDifficulty = -1;
@@ -116,9 +119,11 @@ class QuesProvider with ChangeNotifier {
     if (option == rightPosition) {
       tappedOptionIsCorrect = true;
       previousAnswerWasCorrect = true;
+      numberOfCorrectAnswers++;
     } else {
       tappedOptionIsCorrect = false;
       previousAnswerWasCorrect = false;
+      numberOfInorrectAnswers++;
     }
     streakChanger();
     notifyListeners();
@@ -196,6 +201,8 @@ class QuesProvider with ChangeNotifier {
             TextButton(
               onPressed: () {
                 streakCount = 0;
+                numberOfCorrectAnswers = 0;
+                numberOfInorrectAnswers = 0;
                 Navigator.pop(context, true);
               },
               child: const Text(
