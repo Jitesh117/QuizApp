@@ -91,3 +91,17 @@ List<Color> optionColor = [
   Colors.orange,
   Colors.blue,
 ];
+
+List<String> powerups = [
+  'assets/powerups/one.png',
+  'assets/powerups/two.png',
+  'assets/powerups/three.png',
+  'assets/powerups/four.png',
+];
+
+List<String> powerDescription = [
+  'Removes a wrong option',
+  'Reveals the correct option',
+  'Doubles the coins',
+  'Skips current question',
+];

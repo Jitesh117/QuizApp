@@ -280,8 +280,8 @@ class QuizPage extends StatelessWidget {
 
                                   playerProvider.updateMaxStreak(
                                       quesProvider.streakCount);
-                                  playerProvider.updatePoints(
-                                      quesProvider.tappedOptionIsCorrect);
+                                  // playerProvider.updatePoints(
+                                  //     quesProvider.tappedOptionIsCorrect);
                                   quesProvider.streakChanger();
                                   // quesProvider.checkTappedOption(-1);
                                   quesProvider.showCorrectOption = true;
@@ -302,6 +302,7 @@ class QuizPage extends StatelessWidget {
 
                         const SizedBox(height: 30),
                         Container(
+                          width: MediaQuery.of(context).size.width - 40,
                           padding: const EdgeInsets.all(20),
                           decoration: BoxDecoration(
                             color: Colors.white,
@@ -352,6 +353,7 @@ class QuizPage extends StatelessWidget {
                                         timeController.restart();
                                       },
                                     );
+                                    playerProvider.shouldDoublePoints = false;
                                   }
                                 },
                                 child: OptionTile(
@@ -382,34 +384,64 @@ class QuizPage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               GestureDetector(
-                                onTap: () => quesProvider.deleteWrongOption(),
-                                child: Image.asset(
-                                  'assets/powerups/one.png',
-                                  height: 50,
-                                ),
-                              ),
-                              GestureDetector(
-                                onTap: () => quesProvider.revealCorrectOption(),
-                                child: Image.asset(
-                                  'assets/powerups/two.png',
-                                  height: 50,
-                                ),
-                              ),
-                              GestureDetector(
-                                onTap: () => quesProvider.doublePoints(),
-                                child: Image.asset(
-                                  'assets/powerups/three.png',
-                                  height: 55,
+                                onTap: () {
+                                  if (playerProvider.powerDelete > 0 &&
+                                      !quesProvider.deleteWrongOptionTapped) {
+                                    playerProvider.powerDelete--;
+                                    playerProvider.updatePowerups();
+                                    quesProvider.deleteWrongOption();
+                                  }
+                                },
+                                child: PowerUp(
+                                  imagePath: 'assets/powerups/one.png',
+                                  availability:
+                                      playerProvider.powerDelete.toString(),
                                 ),
                               ),
                               GestureDetector(
                                 onTap: () {
-                                  quesProvider.fetchQuestion(
-                                      category, difficulty);
+                                  if (playerProvider.powerReveal > 0 &&
+                                      !quesProvider.revealRightOptionTapped) {
+                                    playerProvider.powerReveal--;
+                                    playerProvider.updatePowerups();
+                                    quesProvider.revealCorrectOption();
+                                  }
                                 },
-                                child: Image.asset(
-                                  'assets/powerups/four.png',
-                                  height: 55,
+                                child: PowerUp(
+                                  imagePath: 'assets/powerups/two.png',
+                                  availability:
+                                      playerProvider.powerReveal.toString(),
+                                ),
+                              ),
+                              GestureDetector(
+                                onTap: () {
+                                  if (playerProvider.powerDouble > 0 &&
+                                      !quesProvider.doublePointsTapped) {
+                                    playerProvider.powerDouble--;
+
+                                    playerProvider.shouldDoublePoints = true;
+                                    playerProvider.updatePowerups();
+                                  }
+                                },
+                                child: PowerUp(
+                                  imagePath: 'assets/powerups/three.png',
+                                  availability:
+                                      playerProvider.powerDouble.toString(),
+                                ),
+                              ),
+                              GestureDetector(
+                                onTap: () {
+                                  if (playerProvider.powerSkip > 0) {
+                                    playerProvider.powerSkip--;
+                                    playerProvider.updatePowerups();
+                                    quesProvider.fetchQuestion(
+                                        category, difficulty);
+                                  }
+                                },
+                                child: PowerUp(
+                                  imagePath: 'assets/powerups/four.png',
+                                  availability:
+                                      playerProvider.powerSkip.toString(),
                                 ),
                               )
                             ],
@@ -466,6 +498,52 @@ class QuizPage extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class PowerUp extends StatelessWidget {
+  const PowerUp({
+    super.key,
+    required this.imagePath,
+    required this.availability,
+  });
+
+  final String imagePath;
+  final String availability;
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        Image.asset(
+          imagePath,
+          height: 55,
+        ),
+        Positioned(
+          right: 0,
+          child: Container(
+            height: 30,
+            width: 30,
+            decoration: BoxDecoration(
+              color: Colors.yellowAccent,
+              borderRadius: BorderRadius.circular(100),
+              border: Border.all(
+                color: Colors.black,
+                width: 1,
+              ),
+            ),
+            child: Center(
+              child: Text(
+                availability,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

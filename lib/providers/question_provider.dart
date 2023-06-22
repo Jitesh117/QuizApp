@@ -96,7 +96,7 @@ class QuesProvider with ChangeNotifier {
 
     tapped = false;
     timesTapped = 0;
-
+    tappedOptionIsCorrect = false;
     deleteWrongOptionTapped = false;
     revealRightOptionTapped = false;
 

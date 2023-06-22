@@ -3,8 +3,11 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 
+import '../../Data/data_lists.dart';
 import '../../providers/player_provider.dart';
 import '../../providers/question_provider.dart';
+import '../Widgets/shop/power_description.dart';
+import '../Widgets/shop/shop_item.dart';
 
 class ShopScreen extends StatelessWidget {
   const ShopScreen({super.key});
@@ -69,15 +72,27 @@ class ShopScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        ShopItem(
-                          imagePath: 'assets/powerups/one.png',
-                          price: 25,
-                          bgColor: Colors.pinkAccent.shade200,
+                        GestureDetector(
+                          onTap: () {
+                            playerProvider.buyOrNot(context, 25, 0);
+                          },
+                          child: ShopItem(
+                            imagePath: 'assets/powerups/one.png',
+                            price: 25,
+                            bgColor: Colors.pinkAccent.shade200,
+                            numberOfItems: playerProvider.powerDelete,
+                          ),
                         ),
-                        ShopItem(
-                          imagePath: 'assets/powerups/two.png',
-                          price: 100,
-                          bgColor: Colors.greenAccent.shade400,
+                        GestureDetector(
+                          onTap: () {
+                            playerProvider.buyOrNot(context, 100, 1);
+                          },
+                          child: ShopItem(
+                            imagePath: 'assets/powerups/two.png',
+                            price: 100,
+                            bgColor: Colors.greenAccent.shade400,
+                            numberOfItems: playerProvider.powerReveal,
+                          ),
                         ),
                       ],
                     ),
@@ -85,74 +100,45 @@ class ShopScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        ShopItem(
-                          imagePath: 'assets/powerups/three.png',
-                          price: 50,
-                          bgColor: Colors.yellow.shade200,
+                        GestureDetector(
+                          onTap: () {
+                            playerProvider.buyOrNot(context, 50, 2);
+                          },
+                          child: ShopItem(
+                            imagePath: 'assets/powerups/three.png',
+                            price: 50,
+                            bgColor: Colors.yellow.shade200,
+                            numberOfItems: playerProvider.powerDouble,
+                          ),
                         ),
-                        ShopItem(
-                          imagePath: 'assets/powerups/four.png',
-                          price: 50,
-                          bgColor: Colors.blueAccent.shade100,
+                        GestureDetector(
+                          onTap: () {
+                            playerProvider.buyOrNot(context, 50, 3);
+                          },
+                          child: ShopItem(
+                            imagePath: 'assets/powerups/four.png',
+                            price: 50,
+                            bgColor: Colors.blueAccent.shade100,
+                            numberOfItems: playerProvider.powerSkip,
+                          ),
                         ),
                       ],
+                    ),
+                    const SizedBox(height: 20),
+                    Expanded(
+                      child: ListView.builder(
+                        itemCount: powerups.length,
+                        itemBuilder: (context, index) => PowerDescription(
+                          imagePath: powerups[index],
+                          description: powerDescription[index],
+                        ),
+                      ),
                     ),
                   ],
                 ),
               ),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class ShopItem extends StatelessWidget {
-  const ShopItem({
-    super.key,
-    required this.imagePath,
-    required this.price,
-    required this.bgColor,
-  });
-  final String imagePath;
-  final int price;
-  final Color bgColor;
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 160,
-      height: 160,
-      padding: const EdgeInsets.all(10),
-      decoration: BoxDecoration(
-        color: bgColor,
-        borderRadius: BorderRadius.circular(32),
-        border: Border.all(color: Colors.black, width: 4),
-      ),
-      child: Center(
-        child: Column(
-          children: [
-            Image.asset(
-              imagePath,
-              height: 90,
-            ),
-            const SizedBox(height: 10),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  '$price',
-                  style: const TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const SizedBox(width: 5),
-                const FaIcon(FontAwesomeIcons.coins)
-              ],
-            ),
-          ],
         ),
       ),
     );
