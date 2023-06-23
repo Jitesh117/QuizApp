@@ -29,18 +29,6 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "What is the capital of Chile?",
-      "correct_answer": "Santiago",
-      "incorrect_answers": [
-        "Valpara&iacute;so",
-        "Copiap&oacute;",
-        "Antofagasta"
-      ]
-    },
-    {
-      "category": "Geography",
-      "type": "multiple",
-      "difficulty": "medium",
       "question": "Which European city has the highest mileage of canals in the world?",
       "correct_answer": "Birmingham",
       "incorrect_answers": ["Venice", "Amsterdam", "Berlin"]
@@ -173,7 +161,7 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Where is the world&#039;s oldest still operational space launch facility located?",
+      "question": "Where is the world's oldest still operational space launch facility located?",
       "correct_answer": "Kazakhstan",
       "incorrect_answers": ["Russia", "Iran", "United States"]
     },
@@ -189,7 +177,7 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which country has the abbreviation &quot;CH&quot;?",
+      "question": "Which country has the abbreviation 'CH'?",
       "correct_answer": "Switzerland",
       "incorrect_answers": ["China", "Canada", "No Country"]
     },
@@ -257,7 +245,7 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Where is the &quot;Sonoran Desert&quot; located?",
+      "question": "Where is the 'Sonoran Desert' located?",
       "correct_answer": "North America",
       "incorrect_answers": ["South America", "Asia", "Africa"]
     },
@@ -281,7 +269,7 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Colchester Overpass, otherwise known as &quot;Bunny Man Bridge&quot;, is located where?",
+      "question": "Colchester Overpass, otherwise known as 'Bunny Man Bridge', is located where?",
       "correct_answer": "Fairfax County, Virginia",
       "incorrect_answers": [
         "Medford, Oregon",
@@ -341,7 +329,7 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Where is Hadrian&#039;s Wall located?",
+      "question": "Where is Hadrian's Wall located?",
       "correct_answer": "Carlisle, England",
       "incorrect_answers": [
         "Rome, Italy",
@@ -370,7 +358,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "question": "What city is the Terracotta Army located in?",
-      "correct_answer": "Xi&#039;an",
+      "correct_answer": "Xi'an",
       "incorrect_answers": ["Beijing", "Shanghai", "Hong Kong"]
     },
     {
@@ -393,7 +381,7 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which of the following is not a megadiverse country - one that harbors a high number of the earth&#039;s endemic species?",
+      "question": "Which of the following is not a megadiverse country - one that harbors a high number of the earth's endemic species?",
       "correct_answer": "Thailand",
       "incorrect_answers": ["Peru", "Mexico", "South Africa"]
     },
@@ -417,16 +405,15 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "The formerly East-Prussian city of K&ouml;nigsberg is known as which Russian City today?",
+      "question": "The formerly East-Prussian city of Königsberg is known as which Russian City today?",
       "correct_answer": "Kaliningrad",
       "incorrect_answers": ["Kazan", "Kursk", "Krasnodar"]
-    }
-    ,
+    },
     {
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "What is the world&#039;s most expensive spice by weight?",
+      "question": "What is the world's most expensive spice by weight?",
       "correct_answer": "Saffron",
       "incorrect_answers": ["Cinnamon", "Cardamom", "Vanilla"]
     },
@@ -474,7 +461,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "What does the &quot;G&quot; mean in &quot;G-Man&quot;?",
+      "question": "What does the 'G' mean in 'G-Man'?",
       "correct_answer": "Government",
       "incorrect_answers": ["Going", "Ghost", "Geronimo"]
     },
@@ -502,7 +489,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "What is a &quot;dakimakura&quot;?",
+      "question": "What is a 'dakimakura'?",
       "correct_answer": "A body pillow",
       "incorrect_answers": [
         "A Chinese meal, essentially composed of fish",
@@ -570,15 +557,15 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "What is the German word for &quot;spoon&quot;?",
-      "correct_answer": "L&ouml;ffel",
+      "question": "What is the German word for 'spoon'?",
+      "correct_answer": "Löffel",
       "incorrect_answers": ["Gabel", "Messer", "Essst&auml;bchen"]
     },
     {
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "What is the romanized Japanese word for &quot;university&quot;?",
+      "question": "What is the romanized Japanese word for 'university'?",
       "correct_answer": "Daigaku",
       "incorrect_answers": ["Toshokan", "Jimusho", "Shokudou"]
     },
@@ -586,15 +573,15 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "What is the romanized Russian word for &quot;winter&quot;?",
+      "question": "What is the romanized Russian word for 'winter'?",
       "correct_answer": "Zima",
-      "incorrect_answers": ["Leto", "Vesna", "Osen&#039;"]
+      "incorrect_answers": ["Leto", "Vesna", "Osen'"]
     },
     {
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "What is the name of the popular animatronic singing fish prop, singing such hits such as &quot;Don&#039;t Worry, Be Happy&quot;?",
+      "question": "What is the name of the popular animatronic singing fish prop, singing such hits such as 'Don't Worry, Be Happy'?",
       "correct_answer": "Big Mouth Billy Bass",
       "incorrect_answers": ["Big Billy Bass", "Singing Fish", "Sardeen"]
     },
@@ -614,7 +601,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "The term &quot;scientist&quot; was coined in which year?",
+      "question": "The term 'scientist' was coined in which year?",
       "correct_answer": "1833",
       "incorrect_answers": ["1933", "1942", "1796"]
     },
@@ -630,7 +617,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Who is the founder of &quot;The Lego Group&quot;?",
+      "question": "Who is the founder of 'The Lego Group'?",
       "correct_answer": "Ole Kirk Christiansen",
       "incorrect_answers": [
         " Jens Niels Christiansen",
@@ -662,12 +649,12 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which iconic Disneyland attraction was closed in 2017 to be remodeled as a &quot;Guardians of the Galaxy&quot; themed ride?",
+      "question": "Which iconic Disneyland attraction was closed in 2017 to be remodeled as a 'Guardians of the Galaxy' themed ride?",
       "correct_answer": "Twilight Zone Tower of Terror",
       "incorrect_answers": [
         "The Haunted Mansion",
         "Pirates of the Caribbean",
-        "Peter Pan&#039;s Flight"
+        "Peter Pan's Flight"
       ]
     },
     {
@@ -675,7 +662,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "question": "What was the soft drink Pepsi originally introduced as?",
-      "correct_answer": "Brad&#039;s Drink",
+      "correct_answer": "Brad's Drink",
       "incorrect_answers": ["Pepsin Pop", "Carolina Cola", "Pepsin Syrup"]
     },
     {
@@ -715,10 +702,10 @@
       "type": "multiple",
       "difficulty": "medium",
       "question": "What is real haggis made of?",
-      "correct_answer": "Sheep&#039;s Heart, Liver and Lungs",
+      "correct_answer": "Sheep's Heart, Liver and Lungs",
       "incorrect_answers": [
-        "Sheep&#039;s Heart, Kidneys and Lungs",
-        "Sheep&#039;s Liver, Kidneys and Eyes",
+        "Sheep's Heart, Kidneys and Lungs",
+        "Sheep's Liver, Kidneys and Eyes",
         "Whole Sheep"
       ]
     },
@@ -726,7 +713,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "What was the original name of the search engine &quot;Google&quot;?",
+      "question": "What was the original name of the search engine 'Google'?",
       "correct_answer": "BackRub",
       "incorrect_answers": ["CatMassage", "SearchPro", "Netscape Navigator"]
     },
@@ -775,14 +762,14 @@
       "type": "multiple",
       "difficulty": "medium",
       "question": "What is the currency of Poland?",
-      "correct_answer": "Z\u0142oty",
+      "correct_answer": "Złoty",
       "incorrect_answers": ["Ruble", "Euro", "Krone"]
     },
     {
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "In ancient Greece, if your job were a &quot;hippeus&quot; which of these would you own?",
+      "question": "In ancient Greece, if your job were a 'hippeus' which of these would you own?",
       "correct_answer": "Horse",
       "incorrect_answers": ["Weave", "Guitar", "Boat"]
     },
@@ -818,7 +805,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "The Mexican Beer &quot;Corona&quot; is what type of beer?",
+      "question": "The Mexican Beer 'Corona' is what type of beer?",
       "correct_answer": "Pale Lager",
       "incorrect_answers": ["India Pale Ale", "Pilfsner", "Baltic Porter"]
     },

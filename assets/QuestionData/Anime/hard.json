@@ -6,34 +6,34 @@
       "type": "multiple",
       "difficulty": "hard",
       "question": "In the anime Initial D, how does Takumi Fujiwara describe a drift?",
-      "correct_answer": "&#039;. . . the front tires slide so the car won&#039;t face the inside&#039;",
+      "correct_answer": "'. . . the front tires slide so the car won't face the inside'",
       "incorrect_answers": [
-        "&#039;. . . the wheels lose traction, making the car slide sideways&#039;",
-        "&#039;. . . the car oversteers through a curve, causing it to turn faster&#039;",
-        "&#039;. . . you turn a lot&#039;"
+        "'. . . the wheels lose traction, making the car slide sideways'",
+        "'. . . the car oversteers through a curve, causing it to turn faster'",
+        "'. . . you turn a lot'"
       ]
     },
     {
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "In the anime, Full Metal Panic!, who is Kaname&#039;s best friend?",
+      "question": "In the anime, Full Metal Panic!, who is Kaname's best friend?",
       "correct_answer": "Kyoko Tokiwa",
       "incorrect_answers": [
         "Melissa Mao",
         "Ren Mikihara",
-        "Teletha &quot;Tessa&quot; Testarossa"
+        "Teletha 'Tessa' Testarossa"
       ]
     },
     {
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "In &quot;Highschool of the Dead&quot;, where did Komuro and Saeko establish to meet after the bus explosion?",
+      "question": "In 'Highschool of the Dead', where did Komuro and Saeko establish to meet after the bus explosion?",
       "correct_answer": "Eastern Police Station",
       "incorrect_answers": [
         "The Center Mall",
-        "Komuro&#039;s House",
+        "Komuro's House",
         "On The Main Bridge"
       ]
     },
@@ -41,7 +41,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which of the following countries does &quot;JoJo&#039;s Bizarre Adventure: Stardust Crusaders&quot; not take place in?",
+      "question": "Which of the following countries does 'JoJo's Bizarre Adventure: Stardust Crusaders' not take place in?",
       "correct_answer": "Philippines",
       "incorrect_answers": ["India", "Pakistan", "Egypt"]
     },
@@ -49,7 +49,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What year was &quot;JoJo&#039;s Bizarre Adventure: Phantom Blood&quot; first released?",
+      "question": "What year was 'JoJo's Bizarre Adventure: Phantom Blood' first released?",
       "correct_answer": "1987",
       "incorrect_answers": ["2013", "1983", "1995"]
     },
@@ -57,19 +57,19 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the last line muttered in the anime film &quot;The End of Evangelion&quot;?",
-      "correct_answer": "&quot;How disgusting.&quot;",
+      "question": "What is the last line muttered in the anime film 'The End of Evangelion'?",
+      "correct_answer": "'How disgusting.'",
       "incorrect_answers": [
-        "&quot;Idiot, I won&#039;t let you kill me!&quot;",
-        "&quot;Nothing.&quot;",
-        "&quot;Goddammit, Shinji.&quot;"
+        "'Idiot, I won't let you kill me!'",
+        "'Nothing.'",
+        "'Goddammit, Shinji.'"
       ]
     },
     {
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Winch of these names are not a character of JoJo&#039;s Bizarre Adventure?",
+      "question": "Winch of these names are not a character of JoJo's Bizarre Adventure?",
       "correct_answer": "JoJo Kikasu",
       "incorrect_answers": [
         "Jean-Pierre Polnareff",
@@ -89,7 +89,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which song was the callsign for Stefan Verdemann&#039;s KWFM radio station in Urasawa Naoki&#039;s &quot;Monster&quot;?",
+      "question": "Which song was the callsign for Stefan Verdemann's KWFM radio station in Urasawa Naoki's 'Monster'?",
       "correct_answer": "Over the Rainbow",
       "incorrect_answers": [
         "What a Wonderful World",
@@ -101,7 +101,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Medaka Kurokami from &quot;Medaka Box&quot; has what abnormality?",
+      "question": "Medaka Kurokami from 'Medaka Box' has what abnormality?",
       "correct_answer": "The End",
       "incorrect_answers": ["Perfection", "Sandbox", "Fairness"]
     },
@@ -109,7 +109,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Akatsuki&#039;s subclass in &quot;Log Horizon&quot; is what?",
+      "question": "Akatsuki's subclass in 'Log Horizon' is what?",
       "correct_answer": " Tracker",
       "incorrect_answers": ["Assassin", "Scribe", "Apprentice"]
     },
@@ -117,7 +117,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "In &quot;One Piece&quot;, who is the girl who overcame her enslaved past and became an agent of an army to fight the corrupt government?",
+      "question": "In 'One Piece', who is the girl who overcame her enslaved past and became an agent of an army to fight the corrupt government?",
       "correct_answer": "Koala",
       "incorrect_answers": ["Boa Hancock", "Nico Robin", "Emporio Ivankov "]
     },
@@ -125,7 +125,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "In &quot;One Piece&quot;, what does &quot;the Pirate King&quot; mean to the captain of the Straw Hat Pirates?",
+      "question": "In 'One Piece', what does 'the Pirate King' mean to the captain of the Straw Hat Pirates?",
       "correct_answer": "Freedom",
       "incorrect_answers": ["Promise", "Adventure", "Friendship"]
     },
@@ -133,8 +133,8 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "In &quot;One Piece&quot;, who confirms the existence of the legendary treasure, One Piece?",
-      "correct_answer": "Edward &quot;Whitebeard&quot; Newgate",
+      "question": "In 'One Piece', who confirms the existence of the legendary treasure, One Piece?",
+      "correct_answer": "Edward 'Whitebeard' Newgate",
       "incorrect_answers": [
         "Former Marine Fleet Admiral Sengoku",
         "Pirate King Gol D Roger",
@@ -145,7 +145,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which one of these characters is from &quot;Legendz : Tale of the Dragon Kings&quot;?",
+      "question": "Which one of these characters is from 'Legendz : Tale of the Dragon Kings'?",
       "correct_answer": "Shiron",
       "incorrect_answers": ["Jack", "Axia", "Drum"]
     },
@@ -153,7 +153,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "In the &quot;Dragon Ball&quot; franchise, what is the name of Goku&#039;s brother?",
+      "question": "In the 'Dragon Ball' franchise, what is the name of Goku's brother?",
       "correct_answer": "Raditz",
       "incorrect_answers": ["Gohan", "Vegeta", "Bardock"]
     },
@@ -161,7 +161,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which person from &quot;JoJo&#039;s Bizarre Adventure&quot; does NOT house a reference to a band, artist, or song earlier than 1980?",
+      "question": "Which person from 'JoJo's Bizarre Adventure' does NOT house a reference to a band, artist, or song earlier than 1980?",
       "correct_answer": "Giorno Giovanna",
       "incorrect_answers": [
         "Josuke Higashikata",
@@ -173,7 +173,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "In &quot;Hunter x Hunter&quot;, which of the following is NOT a type of Nen aura?",
+      "question": "In 'Hunter x Hunter', which of the following is NOT a type of Nen aura?",
       "correct_answer": "Restoration",
       "incorrect_answers": ["Emission", "Transmutation", "Specialization"]
     },
@@ -181,7 +181,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "In &quot;Hunter x Hunter&quot;, what are members in Killua&#039;s family known for being?",
+      "question": "In 'Hunter x Hunter', what are members in Killua's family known for being?",
       "correct_answer": "Assassins",
       "incorrect_answers": ["Bandits", "Hunters", "Ninjas"]
     },
@@ -189,7 +189,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "The &quot;To Love-Ru&quot; Manga was started in what year?",
+      "question": "The 'To Love-Ru' Manga was started in what year?",
       "correct_answer": "2006",
       "incorrect_answers": ["2007", "2004", "2005"]
     },
@@ -197,23 +197,23 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "In &quot;Jewelpet Sunshine&quot;, what is the song that plays when Kanon and her friends bust out of prison?",
-      "correct_answer": "I Don&#039;t Want to Miss a Thing",
+      "question": "In 'Jewelpet Sunshine', what is the song that plays when Kanon and her friends bust out of prison?",
+      "correct_answer": "I Don't Want to Miss a Thing",
       "incorrect_answers": ["Eye Of The Tiger", "Born to be Wild", "Ruby Ring"]
     },
     {
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "In which manga did the &quot;404 Girl&quot; from 4chan originate from?",
-      "correct_answer": "Yotsuba&amp;!",
+      "question": "In which manga did the '404 Girl' from 4chan originate from?",
+      "correct_answer": "Yotsuba&!",
       "incorrect_answers": ["Azumanga Daioh", "Lucky Star", "Clover"]
     },
     {
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the name of the school in the anime and manga &quot;Gosick&quot;?",
+      "question": "What is the name of the school in the anime and manga 'Gosick'?",
       "correct_answer": "St. Marguerite",
       "incorrect_answers": ["St. Augustine", "St. Mary", "St. Bernadette"]
     },
@@ -221,7 +221,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which animation studio animated &quot;Hidamari Sketch&quot;?",
+      "question": "Which animation studio animated 'Hidamari Sketch'?",
       "correct_answer": "Shaft",
       "incorrect_answers": ["Trigger", "Kyoto Animation", "Production I.G"]
     },
@@ -229,7 +229,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which animation studio animated &quot;To Love-Ru&quot;?",
+      "question": "Which animation studio animated 'To Love-Ru'?",
       "correct_answer": "Xebec",
       "incorrect_answers": ["Trigger", "Sunrise", "Kyoto Animation"]
     },
@@ -237,7 +237,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which animation studio animated &quot;Psycho Pass&quot;?",
+      "question": "Which animation studio animated 'Psycho Pass'?",
       "correct_answer": "Production I.G",
       "incorrect_answers": ["Kyoto Animation", "Shaft", "Trigger"]
     },
@@ -245,7 +245,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which animation studio produced the anime adaptation of &quot;xxxHolic&quot;?",
+      "question": "Which animation studio produced the anime adaptation of 'xxxHolic'?",
       "correct_answer": "Production I.G",
       "incorrect_answers": ["Sunrise", "Xebec", "Kyoto Animation"]
     },
@@ -253,7 +253,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which animation studio produced &quot;Log Horizon&quot;?",
+      "question": "Which animation studio produced 'Log Horizon'?",
       "correct_answer": "Satelite",
       "incorrect_answers": ["Sunrise", "Xebec", "Production I.G"]
     },
@@ -261,7 +261,7 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which animation studio produced &quot;Sword Art Online&quot;?",
+      "question": "Which animation studio produced 'Sword Art Online'?",
       "correct_answer": "A-1 Pictures",
       "incorrect_answers": ["Production I.G", "Silver Link", "Kyoto Animation"]
     },

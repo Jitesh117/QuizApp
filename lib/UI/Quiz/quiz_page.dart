@@ -140,12 +140,11 @@ class QuizPage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding:
-                        const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 08, horizontal: 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const SizedBox(height: 20),
                         Container(
                           padding: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
@@ -299,8 +298,74 @@ class QuizPage extends StatelessWidget {
                             ],
                           ),
                         ),
+                        const SizedBox(height: 10),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            GestureDetector(
+                              onTap: () {
+                                if (playerProvider.powerDelete > 0 &&
+                                    !quesProvider.deleteWrongOptionTapped) {
+                                  playerProvider.powerDelete--;
+                                  playerProvider.updatePowerups();
+                                  quesProvider.deleteWrongOption();
+                                }
+                              },
+                              child: PowerUp(
+                                imagePath: 'assets/powerups/one.png',
+                                availability:
+                                    playerProvider.powerDelete.toString(),
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                if (playerProvider.powerReveal > 0 &&
+                                    !quesProvider.revealRightOptionTapped) {
+                                  playerProvider.powerReveal--;
+                                  playerProvider.updatePowerups();
+                                  quesProvider.revealCorrectOption();
+                                }
+                              },
+                              child: PowerUp(
+                                imagePath: 'assets/powerups/two.png',
+                                availability:
+                                    playerProvider.powerReveal.toString(),
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                if (playerProvider.powerDouble > 0 &&
+                                    !quesProvider.doublePointsTapped) {
+                                  playerProvider.powerDouble--;
 
-                        const SizedBox(height: 30),
+                                  playerProvider.shouldDoublePoints = true;
+                                  playerProvider.updatePowerups();
+                                }
+                              },
+                              child: PowerUp(
+                                imagePath: 'assets/powerups/three.png',
+                                availability:
+                                    playerProvider.powerDouble.toString(),
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                if (playerProvider.powerSkip > 0) {
+                                  playerProvider.powerSkip--;
+                                  playerProvider.updatePowerups();
+                                  quesProvider.fetchQuestion(
+                                      category, difficulty);
+                                }
+                              },
+                              child: PowerUp(
+                                imagePath: 'assets/powerups/four.png',
+                                availability:
+                                    playerProvider.powerSkip.toString(),
+                              ),
+                            )
+                          ],
+                        ),
+                        const SizedBox(height: 10),
                         Container(
                           width: MediaQuery.of(context).size.width - 40,
                           padding: const EdgeInsets.all(20),
@@ -370,83 +435,6 @@ class QuizPage extends StatelessWidget {
                             },
                           ),
                         ),
-                        Container(
-                          padding: const EdgeInsets.all(20),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(16),
-                            border: Border.all(
-                              color: Colors.black,
-                              width: 4,
-                            ),
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              GestureDetector(
-                                onTap: () {
-                                  if (playerProvider.powerDelete > 0 &&
-                                      !quesProvider.deleteWrongOptionTapped) {
-                                    playerProvider.powerDelete--;
-                                    playerProvider.updatePowerups();
-                                    quesProvider.deleteWrongOption();
-                                  }
-                                },
-                                child: PowerUp(
-                                  imagePath: 'assets/powerups/one.png',
-                                  availability:
-                                      playerProvider.powerDelete.toString(),
-                                ),
-                              ),
-                              GestureDetector(
-                                onTap: () {
-                                  if (playerProvider.powerReveal > 0 &&
-                                      !quesProvider.revealRightOptionTapped) {
-                                    playerProvider.powerReveal--;
-                                    playerProvider.updatePowerups();
-                                    quesProvider.revealCorrectOption();
-                                  }
-                                },
-                                child: PowerUp(
-                                  imagePath: 'assets/powerups/two.png',
-                                  availability:
-                                      playerProvider.powerReveal.toString(),
-                                ),
-                              ),
-                              GestureDetector(
-                                onTap: () {
-                                  if (playerProvider.powerDouble > 0 &&
-                                      !quesProvider.doublePointsTapped) {
-                                    playerProvider.powerDouble--;
-
-                                    playerProvider.shouldDoublePoints = true;
-                                    playerProvider.updatePowerups();
-                                  }
-                                },
-                                child: PowerUp(
-                                  imagePath: 'assets/powerups/three.png',
-                                  availability:
-                                      playerProvider.powerDouble.toString(),
-                                ),
-                              ),
-                              GestureDetector(
-                                onTap: () {
-                                  if (playerProvider.powerSkip > 0) {
-                                    playerProvider.powerSkip--;
-                                    playerProvider.updatePowerups();
-                                    quesProvider.fetchQuestion(
-                                        category, difficulty);
-                                  }
-                                },
-                                child: PowerUp(
-                                  imagePath: 'assets/powerups/four.png',
-                                  availability:
-                                      playerProvider.powerSkip.toString(),
-                                ),
-                              )
-                            ],
-                          ),
-                        )
                       ],
                     ),
                   ),

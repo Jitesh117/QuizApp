@@ -141,7 +141,7 @@
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Released in 2001, the first edition of Apple&#039;s Mac OS X operating system (version 10.0) was given what animal code name?",
+      "question": "Released in 2001, the first edition of Apple's Mac OS X operating system (version 10.0) was given what animal code name?",
       "correct_answer": "Cheetah",
       "incorrect_answers": ["Puma", "Tiger", "Leopard"]
     },
@@ -169,7 +169,7 @@
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Who invented the &quot;Spanning Tree Protocol&quot;?",
+      "question": "Who invented the 'Spanning Tree Protocol'?",
       "correct_answer": "Radia Perlman",
       "incorrect_answers": ["Paul Vixie", "Vint Cerf", "Michael Roberts"]
     },
@@ -177,19 +177,15 @@
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "According to DeMorgan&#039;s Theorem, the Boolean expression (AB)&#039; is equivalent to:",
-      "correct_answer": "A&#039; + B&#039;",
-      "incorrect_answers": [
-        "A&#039;B + B&#039;A",
-        "A&#039;B&#039;",
-        "AB&#039; + AB"
-      ]
+      "question": "According to DeMorgan's Theorem, the Boolean expression (AB)' is equivalent to:",
+      "correct_answer": "A' + B'",
+      "incorrect_answers": ["A'B + B'A", "A'B'", "AB' + AB"]
     },
     {
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "The acronym &quot;RIP&quot; stands for which of these?",
+      "question": "The acronym 'RIP' stands for which of these?",
       "correct_answer": "Routing Information Protocol",
       "incorrect_answers": [
         "Runtime Instance Processes",
@@ -237,7 +233,7 @@
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Lenovo acquired IBM&#039;s personal computer division, including the ThinkPad line of laptops and tablets, in what year?",
+      "question": "Lenovo acquired IBM's personal computer division, including the ThinkPad line of laptops and tablets, in what year?",
       "correct_answer": "2005",
       "incorrect_answers": ["1999", "2002", "2008"]
     },

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class PowerDescription extends StatelessWidget {
   const PowerDescription({
@@ -33,6 +32,7 @@ class PowerDescription extends StatelessWidget {
               const SizedBox(width: 10),
               Text(
                 description,
+                overflow: TextOverflow.ellipsis,
                 style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,

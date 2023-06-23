@@ -101,7 +101,7 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which of the following European languages is classified as a &quot;language isolate?&quot;",
+      "question": "Which of the following European languages is classified as a 'language isolate?'",
       "correct_answer": "Basque",
       "incorrect_answers": ["Galician", "Maltese", "Hungarian"]
     },
@@ -109,7 +109,7 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "The derisive acronym &quot;PIIGS&quot; refers to which of the following European countries and their economic statuses?",
+      "question": "The derisive acronym 'PIIGS' refers to which of the following European countries and their economic statuses?",
       "correct_answer": "Portugal, Ireland, Italy, Greece, Spain",
       "incorrect_answers": [
         "Poland, Iceland, Italy, Greece, Serbia",
@@ -167,11 +167,7 @@
       "difficulty": "easy",
       "question": "What name was historically used for the Turkish city currently known as Istanbul?",
       "correct_answer": "Constantinople",
-      "incorrect_answers": [
-        "H&uuml;davendigar",
-        "S&ouml;\u011f&uuml;t",
-        "Adrianople"
-      ]
+      "incorrect_answers": ["Hüdavendigar", "Söğüt", "Adrianople"]
     },
     {
       "category": "Geography",
@@ -237,7 +233,7 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which of these African countries list &quot;Spanish&quot; as an official language?",
+      "question": "Which of these African countries list 'Spanish' as an official language?",
       "correct_answer": "Equatorial Guinea",
       "incorrect_answers": ["Guinea", "Cameroon", "Angola"]
     },
@@ -294,14 +290,14 @@
       "type": "multiple",
       "difficulty": "easy",
       "question": "What is the Polish city known to Germans as Danzig?",
-      "correct_answer": "Gda\u0144sk",
-      "incorrect_answers": ["Warsaw", "Zakopane", "Pozna\u0144"]
+      "correct_answer": "Gdańsk",
+      "incorrect_answers": ["Warsaw", "Zakopane", "Poznań"]
     },
     {
       "category": "Geography",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "How many stars are featured on New Zealand&#039;s flag?",
+      "question": "How many stars are featured on New Zealand's flag?",
       "correct_answer": "4",
       "incorrect_answers": ["5", "2", "0"]
     },
@@ -317,7 +313,7 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the name of New Zealand&#039;s indigenous people?",
+      "question": "What is the name of New Zealand's indigenous people?",
       "correct_answer": "Maori",
       "incorrect_answers": ["Vikings", "Polynesians", "Samoans"]
     },
@@ -389,7 +385,7 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Where would you find the &quot;Spanish Steps&quot;?",
+      "question": "Where would you find the 'Spanish Steps'?",
       "correct_answer": "Rome, Italy",
       "incorrect_answers": [
         "Barcelona, Spain",
@@ -437,7 +433,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Where is the train station &quot;Llanfair&shy;pwllgwyngyll&shy;gogery&shy;chwyrn&shy;drobwll&shy;llan&shy;tysilio&shy;gogo&shy;goch&quot;?",
+      "question": "Where is the train station 'Llanfair&shy;pwllgwyngyll&shy;gogery&shy;chwyrn&shy;drobwll&shy;llan&shy;tysilio&shy;gogo&shy;goch'?",
       "correct_answer": "Wales",
       "incorrect_answers": ["Moldova", "Czech Republic", "Denmark"]
     },
@@ -498,7 +494,7 @@
       "type": "multiple",
       "difficulty": "easy",
       "question": "How would one say goodbye in Spanish?",
-      "correct_answer": "Adi&oacute;s",
+      "correct_answer": "AdiÓs",
       "incorrect_answers": [" Hola", "Au Revoir", "Salir"]
     },
     {
@@ -521,7 +517,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What word represents the letter &#039;T&#039; in the NATO phonetic alphabet?",
+      "question": "What word represents the letter 'T' in the NATO phonetic alphabet?",
       "correct_answer": "Tango",
       "incorrect_answers": ["Target", "Taxi", "Turkey"]
     },
@@ -549,7 +545,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What type of animal was Harambe, who was shot after a child fell into it&#039;s enclosure at the Cincinnati Zoo?",
+      "question": "What type of animal was Harambe, who was shot after a child fell into it's enclosure at the Cincinnati Zoo?",
       "correct_answer": "Gorilla",
       "incorrect_answers": ["Tiger", "Panda", "Crocodile"]
     },
@@ -581,7 +577,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is on display in the Madame Tussaud&#039;s museum in London?",
+      "question": "What is on display in the Madame Tussaud's museum in London?",
       "correct_answer": "Wax sculptures",
       "incorrect_answers": [
         "Designer clothing",
@@ -595,7 +591,7 @@
       "difficulty": "easy",
       "question": "What was the nickname given to the Hughes H-4 Hercules, a heavy transport flying boat which achieved flight in 1947?",
       "correct_answer": "Spruce Goose",
-      "incorrect_answers": ["Noah&#039;s Ark", "Fat Man", "Trojan Horse"]
+      "incorrect_answers": ["Noah's Ark", "Fat Man", "Trojan Horse"]
     },
     {
       "category": "General Knowledge",
@@ -633,7 +629,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "According to Sherlock Holmes, &quot;If you eliminate the impossible, whatever remains, however improbable, must be the...&quot;",
+      "question": "According to Sherlock Holmes, 'If you eliminate the impossible, whatever remains, however improbable, must be the...'",
       "correct_answer": "Truth",
       "incorrect_answers": ["Answer", "Cause", "Source"]
     },
@@ -649,8 +645,8 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which restaurant&#039;s mascot is a clown?",
-      "correct_answer": "McDonald&#039;s",
+      "question": "Which restaurant's mascot is a clown?",
+      "correct_answer": "McDonald's",
       "incorrect_answers": ["Whataburger", "Burger King", "Sonic"]
     },
     {
@@ -703,7 +699,7 @@
       "difficulty": "easy",
       "question": "Which candy is NOT made by Mars?",
       "correct_answer": "Almond Joy",
-      "incorrect_answers": ["M&amp;M&#039;s", "Twix", "Snickers"]
+      "incorrect_answers": ["M&M's", "Twix", "Snickers"]
     },
     {
       "category": "General Knowledge",
@@ -753,7 +749,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "If you are caught &quot;Goldbricking&quot;, what are you doing wrong?",
+      "question": "If you are caught 'Goldbricking', what are you doing wrong?",
       "correct_answer": "Slacking",
       "incorrect_answers": ["Smoking", "Stealing", "Cheating"]
     },
@@ -761,7 +757,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "When one is &quot;envious&quot;, they are said to be what color?",
+      "question": "When one is 'envious', they are said to be what color?",
       "correct_answer": "Green",
       "incorrect_answers": ["Red", "Blue", "Yellow"]
     },
@@ -769,7 +765,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the closest planet to our solar system&#039;s sun?",
+      "question": "What is the closest planet to our solar system's sun?",
       "correct_answer": "Mercury",
       "incorrect_answers": ["Mars", "Jupiter", "Earth"]
     },
@@ -837,7 +833,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the French word for &quot;fish&quot;?",
+      "question": "What is the French word for 'fish'?",
       "correct_answer": "poisson",
       "incorrect_answers": ["fiche", "escargot", "mer"]
     },
@@ -853,7 +849,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Waluigi&#039;s first appearance was in what game?",
+      "question": "Waluigi's first appearance was in what game?",
       "correct_answer": "Mario Tennis 64 (N64)",
       "incorrect_answers": [
         "Wario Land: Super Mario Land 3",

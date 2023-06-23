@@ -13,7 +13,7 @@
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Moore&#039;s law originally stated that the number of transistors on a microprocessor chip would double every...",
+      "question": "Moore's law originally stated that the number of transistors on a microprocessor chip would double every...",
       "correct_answer": "Year",
       "incorrect_answers": ["Four Years", "Two Years", "Eight Years"]
     },
@@ -33,7 +33,7 @@
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "When was the programming language &quot;C#&quot; released?",
+      "question": "When was the programming language 'C#' released?",
       "correct_answer": "2000",
       "incorrect_answers": ["1998", "1999", "2001"]
     },
@@ -66,14 +66,14 @@
       "incorrect_answers": [
         "United States",
         "Germany",
-        "China (People&#039;s Republic of)"
+        "China (People's Republic of)"
       ]
     },
     {
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Nvidia&#039;s headquarters are based in which Silicon Valley city?",
+      "question": "Nvidia's headquarters are based in which Silicon Valley city?",
       "correct_answer": "Santa Clara",
       "incorrect_answers": ["Palo Alto", "Cupertino", "Mountain View"]
     },
@@ -201,12 +201,12 @@
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "In the programming language &quot;Python&quot;, which of these statements would display the string &quot;Hello World&quot; correctly?",
-      "correct_answer": "print(&quot;Hello World&quot;)",
+      "question": "In the programming language 'Python', which of these statements would display the string 'Hello World' correctly?",
+      "correct_answer": "print('Hello World')",
       "incorrect_answers": [
-        "console.log(&quot;Hello World&quot;)",
-        "echo &quot;Hello World&quot;",
-        "printf(&quot;Hello World&quot;)"
+        "console.log('Hello World')",
+        "echo 'Hello World'",
+        "printf('Hello World')"
       ]
     },
     {
@@ -214,18 +214,18 @@
       "type": "multiple",
       "difficulty": "medium",
       "question": "In HTML, which non-standard tag used to be be used to make elements scroll across the viewport?",
-      "correct_answer": "&lt;marquee&gt;&lt;/marquee&gt;",
+      "correct_answer": "<marquee></marquee>",
       "incorrect_answers": [
-        "&lt;scroll&gt;&lt;/scroll&gt;",
-        "&lt;move&gt;&lt;/move&gt;",
-        "&lt;slide&gt;&lt;/slide&gt;"
+        "<scroll></scroll>",
+        "<move></move>",
+        "<slide></slide>"
       ]
     },
     {
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "In CSS, which of these values CANNOT be used with the &quot;position&quot; property?",
+      "question": "In CSS, which of these values CANNOT be used with the 'position' property?",
       "correct_answer": "center",
       "incorrect_answers": ["static", "absolute", "relative"]
     },
@@ -269,7 +269,7 @@
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "What does &quot;LCD&quot; stand for?",
+      "question": "What does 'LCD' stand for?",
       "correct_answer": "Liquid Crystal Display",
       "incorrect_answers": [
         "Language Control Design",
@@ -313,7 +313,7 @@
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "What is known as &quot;the brain&quot; of the Computer?",
+      "question": "What is known as 'the brain' of the Computer?",
       "correct_answer": "Central Processing Unit",
       "incorrect_answers": [
         "Motherboard",
@@ -361,7 +361,7 @@
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "When did the online streaming service &quot;Mixer&quot; launch?",
+      "question": "When did the online streaming service 'Mixer' launch?",
       "correct_answer": "2016",
       "incorrect_answers": ["2013", "2009", "2011"]
     },
@@ -449,7 +449,7 @@
       "correct_answer": "Midnight, January 1, 1970",
       "incorrect_answers": [
         "Midnight, July 4, 1976",
-        "Midnight on the creator of Unix&#039;s birthday",
+        "Midnight on the creator of Unix's birthday",
         "Midnight, July 4, 1980"
       ]
     },
@@ -465,7 +465,7 @@
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "What does the &#039;S&#039; in the RSA encryption algorithm stand for?",
+      "question": "What does the 'S' in the RSA encryption algorithm stand for?",
       "correct_answer": "Shamir",
       "incorrect_answers": ["Secure", "Schottky", "Stable"]
     }

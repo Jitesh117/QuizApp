@@ -89,6 +89,7 @@ class PlayerProvider with ChangeNotifier {
     pref.setInt('powerReveal', powerReveal);
     pref.setInt('powerDouble', powerDouble);
     pref.setInt('powerSkip', powerSkip);
+    pref.setInt('points', powerSkip);
     notifyListeners();
   }
 
@@ -103,10 +104,12 @@ class PlayerProvider with ChangeNotifier {
                   style: TextStyle(fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
-                actionsAlignment: MainAxisAlignment.spaceBetween,
+                actionsAlignment: MainAxisAlignment.center,
                 actions: [
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
                     child: const Text(
                       'OK',
                       style: TextStyle(

@@ -76,7 +76,7 @@
       "question": "Which union territory of India is known for the famous 'Ross Island'?",
       "correct_answer": "Andaman and Nicobar Islands",
       "incorrect_answers": [
-        "Dadra and Nagar Haveli and Daman and Diu",
+        "Dadra and Nagar Haveli",
         "Puducherry",
         "Lakshadweep"
       ]
@@ -128,7 +128,7 @@
       "question": "Which union territory of India is known for the famous 'Golden Beach'?",
       "correct_answer": "Puducherry",
       "incorrect_answers": [
-        "Dadra and Nagar Haveli and Daman and Diu",
+        "Dadra and Nagar",
         "Andaman and Nicobar Islands",
         "Lakshadweep"
       ]
@@ -184,7 +184,7 @@
       "question": "Which union territory of India is known for the famous 'Radhanagar Beach'?",
       "correct_answer": "Andaman and Nicobar Islands",
       "incorrect_answers": [
-        "Dadra and Nagar Haveli and Daman and Diu",
+        "Daman and Diu",
         "Puducherry",
         "Lakshadweep"
       ]
@@ -222,7 +222,7 @@
       "incorrect_answers": [
         "Puducherry",
         "Andaman and Nicobar Islands",
-        "Dadra and Nagar Haveli and Daman and Diu"
+        "Daman and Diu"
       ]
     },
     {
@@ -256,7 +256,7 @@
       "question": "Which union territory of India is known for the famous 'Auroville'?",
       "correct_answer": "Puducherry",
       "incorrect_answers": [
-        "Dadra and Nagar Haveli and Daman and Diu",
+        "Daman and Diu",
         "Andaman and Nicobar Islands",
         "Lakshadweep"
       ]
@@ -292,7 +292,7 @@
       "question": "Which union territory of India is known for the famous 'Kavaratti Island'?",
       "correct_answer": "Lakshadweep",
       "incorrect_answers": [
-        "Dadra and Nagar Haveli and Daman and Diu",
+        "Dadra and Nagar Haveli",
         "Andaman and Nicobar Islands",
         "Puducherry"
       ]

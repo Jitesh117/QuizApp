@@ -5,7 +5,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What breed of dog was Marley in the film &quot;Marley &amp; Me&quot; (2008)?",
+      "question": "What breed of dog was Marley in the film 'Marley & Me' (2008)?",
       "correct_answer": "Labrador Retriever",
       "incorrect_answers": ["Golden Retriever", "Dalmatian", "Shiba Inu"]
     },
@@ -13,7 +13,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which of the following is not the name of a &quot;Bond Girl&quot;? ",
+      "question": "Which of the following is not the name of a 'Bond Girl'? ",
       "correct_answer": "Vanessa Kensington",
       "incorrect_answers": ["Pam Bouvier", "Mary Goodnight", "Wai Lin"]
     },
@@ -21,7 +21,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which of the following was not one of &quot;The Magnificent Seven&quot;?",
+      "question": "Which of the following was not one of 'The Magnificent Seven'?",
       "correct_answer": "Clint Eastwood",
       "incorrect_answers": ["Steve McQueen", "Charles Bronson", "Robert Vaughn"]
     },
@@ -57,7 +57,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Who directed &quot;E.T. the Extra-Terrestrial&quot; (1982)?",
+      "question": "Who directed 'E.T. the Extra-Terrestrial' (1982)?",
       "correct_answer": "Steven Spielberg",
       "incorrect_answers": ["Stanley Kubrick", "James Cameron", "Tim Burton"]
     },
@@ -77,7 +77,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "When was the movie &#039;Con Air&#039; released?",
+      "question": "When was the movie 'Con Air' released?",
       "correct_answer": "1997",
       "incorrect_answers": ["1985", "1999", "1990"]
     },
@@ -85,7 +85,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Who wrote and directed the 1986 film &#039;Platoon&#039;?",
+      "question": "Who wrote and directed the 1986 film 'Platoon'?",
       "correct_answer": "Oliver Stone",
       "incorrect_answers": [
         "Francis Ford Coppola",
@@ -97,7 +97,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Who played Deputy Marshal Samuel Gerard in the 1993 film &quot;The Fugitive&quot;?",
+      "question": "Who played Deputy Marshal Samuel Gerard in the 1993 film 'The Fugitive'?",
       "correct_answer": "Tommy Lee Jones",
       "incorrect_answers": ["Harrison Ford", "Harvey Keitel", "Martin Landau"]
     },
@@ -105,7 +105,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Who played the female lead in the 1933 film &quot;King Kong&quot;?",
+      "question": "Who played the female lead in the 1933 film 'King Kong'?",
       "correct_answer": "Fay Wray",
       "incorrect_answers": ["Jean Harlow", "Vivien Leigh", "Mae West"]
     },
@@ -113,7 +113,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which actress danced the twist with John Travolta in &#039;Pulp Fiction&#039;?",
+      "question": "Which actress danced the twist with John Travolta in 'Pulp Fiction'?",
       "correct_answer": "Uma Thurman",
       "incorrect_answers": ["Kathy Griffin", "Pam Grier", "Bridget Fonda"]
     },
@@ -121,7 +121,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Who starred in the film 1973 movie &quot;Enter The Dragon&quot;?",
+      "question": "Who starred in the film 1973 movie 'Enter The Dragon'?",
       "correct_answer": "Bruce Lee",
       "incorrect_answers": ["Jackie Chan", "Jet Li", " Yun-Fat Chow"]
     },
@@ -129,7 +129,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which movie contains the quote, &quot;Say hello to my little friend!&quot;?",
+      "question": "Which movie contains the quote, 'Say hello to my little friend!'?",
       "correct_answer": "Scarface",
       "incorrect_answers": ["Reservoir Dogs", "Heat", "Goodfellas"]
     },
@@ -137,7 +137,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Who directed the 2015 movie &quot;The Revenant&quot;?",
+      "question": "Who directed the 2015 movie 'The Revenant'?",
       "correct_answer": "Alejandro G. I&ntilde;&aacute;rritu",
       "incorrect_answers": [
         "Christopher Nolan",
@@ -157,7 +157,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What was Dorothy&#039;s surname in &#039;The Wizard Of Oz&#039;?",
+      "question": "What was Dorothy's surname in 'The Wizard Of Oz'?",
       "correct_answer": "Gale",
       "incorrect_answers": ["Perkins", "Day", "Parker"]
     },
@@ -177,11 +177,11 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "This movie contains the quote, &quot;Nobody puts Baby in a corner.&quot;",
+      "question": "This movie contains the quote, 'Nobody puts Baby in a corner.'",
       "correct_answer": "Dirty Dancing",
       "incorrect_answers": [
         "Three Men and a Baby",
-        "Ferris Bueller&#039;s Day Off",
+        "Ferris Bueller's Day Off",
         "Pretty in Pink"
       ]
     },
@@ -189,7 +189,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the orange and white bot&#039;s name in &quot;Star Wars: The Force Awakens&quot;?",
+      "question": "What is the orange and white bot's name in 'Star Wars: The Force Awakens'?",
       "correct_answer": "BB-8",
       "incorrect_answers": ["BB-3", "AA-A", "R2-D2"]
     },
@@ -209,7 +209,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which of these actors/actresses is NOT a part of the cast for the 2016 movie &quot;Suicide Squad&quot;?",
+      "question": "Which of these actors/actresses is NOT a part of the cast for the 2016 movie 'Suicide Squad'?",
       "correct_answer": "Scarlett Johansson",
       "incorrect_answers": ["Jared Leto", "Will Smith", "Margot Robbie"]
     },
@@ -239,17 +239,13 @@
       "difficulty": "easy",
       "question": "Who is the main protagonist in, the 1985 film, Back to the Future?",
       "correct_answer": "Marty McFly",
-      "incorrect_answers": [
-        "Emmett &quot;Doc&quot; Brown",
-        "Biff Tannen",
-        "George McFly"
-      ]
+      "incorrect_answers": ["Emmett 'Doc' Brown", "Biff Tannen", "George McFly"]
     },
     {
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "In the movie &quot;Cast Away&quot; the main protagonist&#039;s best friend while on the island is named",
+      "question": "In the movie 'Cast Away' the main protagonist's best friend while on the island is named",
       "correct_answer": "Wilson",
       "incorrect_answers": ["Carson", "Jackson", "Willy"]
     },
@@ -269,7 +265,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "The 2002 film &quot;28 Days Later&quot; is mainly set in which European country?",
+      "question": "The 2002 film '28 Days Later' is mainly set in which European country?",
       "correct_answer": "United Kingdom",
       "incorrect_answers": ["France", "Italy", "Germany"]
     },
@@ -293,15 +289,15 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "In the 2012 film, &quot;The Lorax&quot;, who is the antagonist?",
-      "correct_answer": "Aloysius O&#039;Hare",
+      "question": "In the 2012 film, 'The Lorax', who is the antagonist?",
+      "correct_answer": "Aloysius O'Hare",
       "incorrect_answers": ["Ted Wiggins", "The Once-Ler", "Grammy Norma"]
     },
     {
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "In the 1992 film &quot;Army of Darkness&quot;, what name does Ash give to his double-barreled shotgun?",
+      "question": "In the 1992 film 'Army of Darkness', what name does Ash give to his double-barreled shotgun?",
       "correct_answer": "Boomstick",
       "incorrect_answers": ["Bloomstick", "Blastbranch", "2-Pump Chump"]
     },
@@ -309,7 +305,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "At the end of the 2001 film &quot;Rat Race&quot;, whose concert do the contestants crash?",
+      "question": "At the end of the 2001 film 'Rat Race', whose concert do the contestants crash?",
       "correct_answer": "Smash Mouth",
       "incorrect_answers": ["Bowling for Soup", "Sum 41", "Linkin Park"]
     },
@@ -329,7 +325,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "In the movie &quot;Blade Runner&quot;, what is the term used for human-like androids ?",
+      "question": "In the movie 'Blade Runner', what is the term used for human-like androids ?",
       "correct_answer": "Replicants",
       "incorrect_answers": ["Cylons", "Synthetics", "Skinjobs"]
     },
@@ -337,7 +333,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "The 2016 Disney animated film &#039;Moana&#039; is based on which culture?",
+      "question": "The 2016 Disney animated film 'Moana' is based on which culture?",
       "correct_answer": "Polynesian",
       "incorrect_answers": ["Native American", "Japanese", "Nordic"]
     },
@@ -345,7 +341,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "In the 1995 film &quot;Balto&quot;, who are Steele&#039;s accomplices?",
+      "question": "In the 1995 film 'Balto', who are Steele's accomplices?",
       "correct_answer": "Kaltag, Nikki, and Star",
       "incorrect_answers": [
         "Dusty, Kirby, and Ralph",
@@ -357,7 +353,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the name of the island that &quot;Jurassic Park&quot; is built on?",
+      "question": "What is the name of the island that 'Jurassic Park' is built on?",
       "correct_answer": "Isla Nublar",
       "incorrect_answers": ["Isla Sorna", "Isla Muerta", "Isla Pena"]
     },
@@ -365,7 +361,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What was Bruce Campbell&#039;s iconic one-liner after getting a chainsaw hand in Evil Dead 2?",
+      "question": "What was Bruce Campbell's iconic one-liner after getting a chainsaw hand in Evil Dead 2?",
       "correct_answer": "Groovy.",
       "incorrect_answers": ["Gnarly.", "Perfect.", "Nice."]
     },
@@ -389,7 +385,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "In which film does Humphrey Bogart say the famous line, &quot;Here&#039;s looking at you, kid&quot;?",
+      "question": "In which film does Humphrey Bogart say the famous line, 'Here's looking at you, kid'?",
       "correct_answer": "Casablanca",
       "incorrect_answers": [
         "The Maltese Falcon",
@@ -433,7 +429,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "In &quot;ALF&quot;, what was ALF&#039;s real name?",
+      "question": "In 'ALF', what was ALF's real name?",
       "correct_answer": "Gordon Shumway",
       "incorrect_answers": ["Gordon Milipp", "Gordon Foster", "Gordon von Gam"]
     },
@@ -453,7 +449,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Who plays Jack Burton in the movie &quot;Big Trouble in Little China?&quot;",
+      "question": "Who plays Jack Burton in the movie 'Big Trouble in Little China?'",
       "correct_answer": "Kurt Russell",
       "incorrect_answers": ["Patrick Swayze", "John Cusack", "Harrison Ford"]
     },
@@ -461,7 +457,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "The 1996 film &#039;Fargo&#039; is primarily set in which US state?",
+      "question": "The 1996 film 'Fargo' is primarily set in which US state?",
       "correct_answer": "Minnesota",
       "incorrect_answers": ["North Dakota", "South Dakota", "Wisconsin"]
     }

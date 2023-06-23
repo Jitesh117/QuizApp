@@ -21,7 +21,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which English football club has the nickname &#039;The Foxes&#039;?",
+      "question": "Which English football club has the nickname 'The Foxes'?",
       "correct_answer": "Leicester City",
       "incorrect_answers": [
         "Northampton Town",
@@ -41,7 +41,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "In what sport is a &quot;shuttlecock&quot; used?",
+      "question": "In what sport is a 'shuttlecock' used?",
       "correct_answer": "Badminton",
       "incorrect_answers": ["Table Tennis", "Rugby", "Cricket"]
     },
@@ -65,7 +65,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "The Rio 2016 Summer Olympics held it&#039;s closing ceremony on what date?",
+      "question": "The Rio 2016 Summer Olympics held it's closing ceremony on what date?",
       "correct_answer": "August 21",
       "incorrect_answers": ["August 23", "August 19", "August 17"]
     },
@@ -129,7 +129,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which city did the former NHL team &quot;The Nordiques&quot; originiate from?",
+      "question": "Which city did the former NHL team 'The Nordiques' originiate from?",
       "correct_answer": "Quebec City",
       "incorrect_answers": ["Houston", "Montreal", "New York"]
     },
@@ -153,7 +153,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "This Canadian television sportscaster is known for his &quot;Hockey Night in Canada&quot; role, a commentary show during hockey games.",
+      "question": "This Canadian television sportscaster is known for his 'Hockey Night in Canada' role, a commentary show during hockey games.",
       "correct_answer": "Don Cherry",
       "incorrect_answers": ["Don McKellar", "Don Taylor ", "Donald Sutherland"]
     },
@@ -181,7 +181,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which boxer was banned for taking a bite out of Evander Holyfield&#039;s ear in 1997?",
+      "question": "Which boxer was banned for taking a bite out of Evander Holyfield's ear in 1997?",
       "correct_answer": "Mike Tyson",
       "incorrect_answers": [
         "Roy Jones Jr.",
@@ -217,7 +217,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Who is often called &quot;the Maestro&quot; in the men&#039;s tennis circuit?",
+      "question": "Who is often called 'the Maestro' in the men's tennis circuit?",
       "correct_answer": "Roger Federer",
       "incorrect_answers": ["Bill Tilden", "Boris Becker", "Pete Sampras"]
     },
@@ -241,7 +241,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the name of Manchester United&#039;s home stadium?",
+      "question": "What is the name of Manchester United's home stadium?",
       "correct_answer": "Old Trafford",
       "incorrect_answers": [
         "Anfield",
@@ -285,7 +285,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "&quot;Stadium of Light&quot; is the home stadium for which soccer team?",
+      "question": "'Stadium of Light' is the home stadium for which soccer team?",
       "correct_answer": "Sunderland FC",
       "incorrect_answers": [
         "Barcelona FC",
@@ -297,7 +297,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which year did Jenson Button won his first ever Formula One World Drivers&#039; Championship?",
+      "question": "Which year did Jenson Button won his first ever Formula One World Drivers' Championship?",
       "correct_answer": "2009",
       "incorrect_answers": ["2010", "2007", "2006"]
     },
@@ -313,7 +313,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Who won the 2017 Formula One World Drivers&#039; Championship?",
+      "question": "Who won the 2017 Formula One World Drivers' Championship?",
       "correct_answer": "Lewis Hamilton",
       "incorrect_answers": [
         "Sebastian Vettel",
@@ -342,11 +342,11 @@
       "type": "multiple",
       "difficulty": "easy",
       "question": "Which two teams played in Super Bowl XLII?",
-      "correct_answer": "The New York Giants &amp; The New England Patriots",
+      "correct_answer": "The New York Giants & The New England Patriots",
       "incorrect_answers": [
-        "The Green Bay Packers &amp; The Pittsburgh Steelers",
-        "The Philadelphia Eagles &amp; The New England Patriots",
-        "The Seattle Seahawks &amp; The Denver Broncos"
+        "The Green Bay Packers & The Pittsburgh Steelers",
+        "The Philadelphia Eagles & The New England Patriots",
+        "The Seattle Seahawks & The Denver Broncos"
       ]
     }
   ]

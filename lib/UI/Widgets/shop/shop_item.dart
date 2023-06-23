@@ -15,9 +15,11 @@ class ShopItem extends StatelessWidget {
   final int numberOfItems;
   @override
   Widget build(BuildContext context) {
+    double cardHeight = (MediaQuery.of(context).size.width - 60) / 2;
+
     return Container(
-      width: 160,
-      height: 160,
+      width: cardHeight,
+      height: cardHeight,
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: bgColor,
@@ -31,7 +33,7 @@ class ShopItem extends StatelessWidget {
               children: [
                 Image.asset(
                   imagePath,
-                  height: 90,
+                  height: cardHeight - 75,
                 ),
                 Align(
                   alignment: Alignment.topRight,

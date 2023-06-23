@@ -1,42 +1,18 @@
 import 'package:flutter/material.dart';
 
-List<String> imagePaths = [
-  'assets/anime.png',
-  'assets/computer.png',
-  'assets/gk.png',
-  'assets/geography.png',
-  'assets/history.png',
-  'assets/movies.png',
-  'assets/science.png',
-  'assets/sports.png',
-  'assets/games.png',
-];
-List<String> imageBGPaths = [
-  'assets/genreImages/indianStates.jpg',
-  'assets/genreImages/anime.jpg',
-  'assets/genreImages/computer.jpg',
-  'assets/genreImages/gk.jpg',
-  'assets/genreImages/indianTv.jpg',
-  'assets/genreImages/indianMythology.jpg',
-  'assets/genreImages/marvel.jpg',
-  'assets/genreImages/movies.jpg',
-  'assets/genreImages/sports.jpg',
-  'assets/genreImages/usTv.jpg',
-  'assets/genreImages/indianCartoon.jpg',
-];
 
 List<String> genreNames = [
   'Indian States',
   'Anime',
   'Computer',
   'GK',
-  'Indian TV Shows',
+  // 'Indian TV Shows',
   'Indian Mythology',
   'Marvel',
   'Movies',
   'Sports',
   'US TV Shows',
-  'Indian Cartoon',
+  // 'Indian Cartoon',
   'American Pop',
 ];
 Map<int, String> categories = {
@@ -44,14 +20,14 @@ Map<int, String> categories = {
   1: "Anime",
   2: "computer",
   3: "GK",
-  4: "IndianTV",
-  5: "IndianMythology",
-  6: "Marvel",
-  7: "movies",
-  8: "sports",
-  9: "UsTV",
-  10: "IndianCartoons",
-  11: "PopSongs"
+  // 4: "IndianTV",
+  4: "IndianMythology",
+  5: "Marvel",
+  6: "movies",
+  7: "sports",
+  8: "UsTV",
+  // 10: "IndianCartoons",
+  9: "PopSongs"
 };
 
 List<Color> difficultyColorOne = [
@@ -81,8 +57,8 @@ List<Color> genreColor = [
   const Color(0xff72CFC6),
   const Color(0xffA3CB38),
   const Color(0xFF6163D5),
-  const Color(0xFF21D6AC),
-  const Color(0xffe55039),
+  // const Color(0xFF21D6AC),
+  // const Color(0xffe55039),
   Colors.orange,
 ];
 
@@ -101,7 +77,7 @@ List<String> powerups = [
 
 List<String> powerDescription = [
   'Removes a wrong option',
-  'Reveals the correct option',
+  'Reveals the answer' ,
   'Doubles the coins',
   'Skips current question',
 ];
