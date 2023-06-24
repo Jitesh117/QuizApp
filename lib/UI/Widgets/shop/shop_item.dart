@@ -31,6 +31,7 @@ class ShopItem extends StatelessWidget {
           children: [
             Stack(
               children: [
+                // number of current item player has
                 Image.asset(
                   imagePath,
                   height: cardHeight - 75,

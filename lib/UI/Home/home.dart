@@ -66,11 +66,8 @@ class _HomePageState extends State<HomePage> {
                             const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                           crossAxisSpacing: 10,
-                          // mainAxisSpacing: 10,
                         ),
                         itemBuilder: ((context, index) => GenreCard(
-                              width: width,
-                              imagePath: '',
                               topicName: genreNames[index],
                               category: index,
                               streakColor: Colors.lightBlue,

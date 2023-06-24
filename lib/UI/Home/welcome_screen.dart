@@ -27,6 +27,7 @@ class WelcomeScreen extends StatelessWidget {
       builder: (context, quesProvider, playerProvider, _) => Scaffold(
         backgroundColor: Colors.yellow.shade100,
         body: SafeArea(
+            // background animation
           child: Stack(
             children: [
               SizedBox(
@@ -113,15 +114,6 @@ class WelcomeScreen extends StatelessWidget {
                         alignment: Alignment.center,
                       ),
                     ),
-                    // const Text(
-                    //   "Welcome to our quiz app, where knowledge meets fun, and your quest for trivia begins!",
-                    //   textAlign: TextAlign.center,
-                    //   style: TextStyle(
-                    //     color: Colors.black,
-                    //     fontSize: 20,
-                    //     fontWeight: FontWeight.bold,
-                    //   ),
-                    // ),
                     GestureDetector(
                       onTap: () {
                         quesProvider.playTapSound();

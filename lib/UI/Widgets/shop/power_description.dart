@@ -23,7 +23,6 @@ class PowerDescription extends StatelessWidget {
           ),
         ),
         child: Row(
-            // mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Image.asset(
                 imagePath,

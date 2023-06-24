@@ -20,13 +20,11 @@ import '../Widgets/quizWidgets/streak_counter.dart';
 class QuizPage extends StatelessWidget {
   const QuizPage({
     super.key,
-    required this.imagePath,
     required this.category,
     required this.streakColor,
     required this.difficulty,
   });
 
-  final String imagePath;
   final Color streakColor;
   final int category;
   final int difficulty;
@@ -90,8 +88,7 @@ class QuizPage extends StatelessWidget {
                         ),
                         child: ListTile(
                           onTap: () {
-
-                              quesProvider.playTapSound();
+                            quesProvider.playTapSound();
                           },
                           leading: const FaIcon(FontAwesomeIcons.check),
                           title: Text(
@@ -111,8 +108,7 @@ class QuizPage extends StatelessWidget {
                         ),
                         child: ListTile(
                           onTap: () {
-
-                              quesProvider.playTapSound();
+                            quesProvider.playTapSound();
                           },
                           leading: const FaIcon(FontAwesomeIcons.x),
                           title: Text(
@@ -166,7 +162,7 @@ class QuizPage extends StatelessWidget {
                             children: [
                               GestureDetector(
                                 onTap: () async {
-                              quesProvider.playTapSound();
+                                  quesProvider.playTapSound();
                                   bool shouldPop =
                                       await quesProvider.popOrNot(context);
                                   if (shouldPop) {
@@ -195,7 +191,7 @@ class QuizPage extends StatelessWidget {
                               ),
                               GestureDetector(
                                 onTap: () {
-                              quesProvider.playTapSound();
+                                  quesProvider.playTapSound();
                                   advancedDrawerController.showDrawer();
                                 },
                                 child: Container(
@@ -293,10 +289,7 @@ class QuizPage extends StatelessWidget {
 
                                   playerProvider.updateMaxStreak(
                                       quesProvider.streakCount);
-                                  // playerProvider.updatePoints(
-                                  //     quesProvider.tappedOptionIsCorrect);
                                   quesProvider.streakChanger();
-                                  // quesProvider.checkTappedOption(-1);
                                   quesProvider.showCorrectOption = true;
                                   player.stop();
                                   await Future.delayed(
@@ -319,7 +312,7 @@ class QuizPage extends StatelessWidget {
                           children: [
                             GestureDetector(
                               onTap: () {
-                              quesProvider.playTapSound();
+                                quesProvider.playTapSound();
                                 if (playerProvider.powerDelete > 0 &&
                                     !quesProvider.deleteWrongOptionTapped) {
                                   playerProvider.powerDelete--;
@@ -335,7 +328,7 @@ class QuizPage extends StatelessWidget {
                             ),
                             GestureDetector(
                               onTap: () {
-                              quesProvider.playTapSound();
+                                quesProvider.playTapSound();
                                 if (playerProvider.powerReveal > 0 &&
                                     !quesProvider.revealRightOptionTapped) {
                                   playerProvider.powerReveal--;
@@ -351,7 +344,7 @@ class QuizPage extends StatelessWidget {
                             ),
                             GestureDetector(
                               onTap: () {
-                              quesProvider.playTapSound();
+                                quesProvider.playTapSound();
                                 if (playerProvider.powerDouble > 0 &&
                                     !quesProvider.doublePointsTapped) {
                                   playerProvider.powerDouble--;
@@ -368,7 +361,7 @@ class QuizPage extends StatelessWidget {
                             ),
                             GestureDetector(
                               onTap: () {
-                              quesProvider.playTapSound();
+                                quesProvider.playTapSound();
                                 if (playerProvider.powerSkip > 0) {
                                   playerProvider.powerSkip--;
                                   playerProvider.updatePowerups();
@@ -397,7 +390,6 @@ class QuizPage extends StatelessWidget {
                             ),
                           ),
                           child: Text(
-                            // 'In which city of Germany is the largest port?',
                             quesProvider.question,
                             textAlign: TextAlign.center,
                             style: cardTextStyle,
@@ -407,11 +399,11 @@ class QuizPage extends StatelessWidget {
                         Expanded(
                           flex: 2,
                           child: ListView.builder(
-                            itemCount: 3,
+                            itemCount: 3,// 3 is the number of options
                             itemBuilder: (BuildContext context, int index) {
                               return GestureDetector(
                                 onTap: () async {
-                              quesProvider.playTapSound();
+                                  quesProvider.playTapSound();
                                   if (!quesProvider.tapped) {
                                     timeController.pause();
                                     quesProvider.checkTappedOption(index);
@@ -472,11 +464,9 @@ class QuizPage extends StatelessWidget {
                       minBlastForce: 5,
                       emissionFrequency: 0.1,
                       gravity: 1,
-                      // 10 paticles will pop-up at a time
                       numberOfParticles: 7,
                       shouldLoop: false,
                       colors: const [
-                        // Colors.black,
                         Colors.white,
                         Colors.red,
                         Colors.green,
@@ -493,11 +483,9 @@ class QuizPage extends StatelessWidget {
                       minBlastForce: 5,
                       emissionFrequency: 0.1,
                       gravity: 1,
-                      // 10 paticles will pop-up at a time
                       numberOfParticles: 7,
                       shouldLoop: false,
                       colors: const [
-                        // Colors.black,
                         Colors.white,
                         Colors.red,
                         Colors.green,
@@ -514,11 +502,9 @@ class QuizPage extends StatelessWidget {
                       minBlastForce: 5,
                       emissionFrequency: 0.1,
                       gravity: 1,
-                      // 10 paticles will pop-up at a time
                       numberOfParticles: 7,
                       shouldLoop: false,
                       colors: const [
-                        // Colors.black,
                         Colors.white,
                         Colors.red,
                         Colors.green,

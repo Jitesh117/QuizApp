@@ -15,12 +15,10 @@ import '../Widgets/quizWidgets/difficulty_tile.dart';
 class ChooseDifficultyPage extends StatelessWidget {
   ChooseDifficultyPage({
     super.key,
-    required this.imagePath,
     required this.category,
     required this.streakColor,
   });
 
-  final String imagePath;
   final int category;
   final Color streakColor;
 
@@ -40,6 +38,7 @@ class ChooseDifficultyPage extends StatelessWidget {
         body: SafeArea(
           child: Stack(
             children: [
+              // background animation
               SizedBox(
                 height: MediaQuery.of(context).size.height,
                 child: Lottie.asset(
@@ -59,7 +58,7 @@ class ChooseDifficultyPage extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                              quesProvider.playTapSound();
+                            quesProvider.playTapSound();
                             Navigator.of(context).pop();
                           },
                           child: const FaIcon(
@@ -85,7 +84,7 @@ class ChooseDifficultyPage extends StatelessWidget {
                         itemCount: difficulty.length,
                         itemBuilder: (context, index) => GestureDetector(
                           onTap: () {
-                              quesProvider.playTapSound();
+                            quesProvider.playTapSound();
                             playerProvider.fetchPlayerData();
                             quesProvider.questionNumberChanger(-1,
                                 -1); // question number change only when it is changed inside the quiz page and not from the change difficulty page
@@ -95,7 +94,6 @@ class ChooseDifficultyPage extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                 builder: (context) => QuizPage(
-                                  imagePath: imagePath,
                                   category: category,
                                   streakColor: streakColor,
                                   difficulty: difficultyNumber[index],
@@ -105,10 +103,7 @@ class ChooseDifficultyPage extends StatelessWidget {
                           },
                           child: DifficultyTile(
                             difficulty: difficulty[index],
-                            colorOne: difficultyColorOne[index],
-                            colorTwo: difficultyColorTwo[index],
-                            colorThree: difficultyColorThree[index],
-                            imagePath: imagePath,
+                            cardColor: difficultyColorThree[index],
                             category: category,
                           ),
                         ),

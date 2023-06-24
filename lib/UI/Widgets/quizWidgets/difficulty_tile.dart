@@ -6,18 +6,12 @@ class DifficultyTile extends StatelessWidget {
   const DifficultyTile({
     super.key,
     required this.difficulty,
-    required this.colorOne,
-    required this.colorTwo,
-    required this.colorThree,
-    required this.imagePath,
+    required this.cardColor,
     required this.category,
   });
 
   final String difficulty;
-  final Color colorOne;
-  final Color colorTwo;
-  final Color colorThree;
-  final String imagePath;
+  final Color cardColor;
   final int category;
 
   @override
@@ -33,18 +27,8 @@ class DifficultyTile extends StatelessWidget {
               height: 100,
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
+                color: cardColor,
                 borderRadius: const BorderRadius.all(Radius.circular(32)),
-                gradient: LinearGradient(
-                  colors: [
-                    // colorOne,
-                    // colorOne,
-                    // colorTwo,
-                    colorThree,
-                    colorThree,
-                  ],
-                  begin: Alignment.bottomRight,
-                  end: Alignment.topLeft,
-                ),
                 border: Border.all(
                   color: Colors.black,
                   width: 4,
@@ -64,15 +48,6 @@ class DifficultyTile extends StatelessWidget {
               ),
             ),
           ),
-          // Positioned(
-          //   top: category == 0 ? 0 : -20,
-          //   right: category == 0 ? 20 : 10,
-          //   child: Image.asset(
-          //     imagePath,
-          //     height: category == 0 ? 100 : 150,
-          //     colorBlendMode: BlendMode.colorBurn,
-          //   ),
-          // ),
         ],
       ),
     );

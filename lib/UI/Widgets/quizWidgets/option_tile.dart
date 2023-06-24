@@ -23,7 +23,6 @@ class OptionTile extends StatefulWidget {
 }
 
 class _OptionTileState extends State<OptionTile> {
-  // AudioPlayer player = AudioPlayer();
   @override
   Widget build(BuildContext context) {
     return Consumer2<QuesProvider, PlayerProvider>(
@@ -54,17 +53,12 @@ class _OptionTileState extends State<OptionTile> {
             borderRadius: const BorderRadius.all(Radius.circular(16)),
           ),
           child: SizedBox(
-            // height: 60,
             child: Center(
               child: Text(
                 widget.optionValue,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  color:
-                      (quesProvider.showCorrectOption || quesProvider.tapped) &&
-                              quesProvider.rightPosition == widget.optionNumber
-                          ? Colors.black
-                          : Colors.black,
+                style: const TextStyle(
+                  color: Colors.black,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),

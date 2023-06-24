@@ -74,6 +74,7 @@ class ShopScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
+                        // remove wrong option powerup
                         GestureDetector(
                           onTap: () {
                             quesProvider.playTapSound();
@@ -86,6 +87,7 @@ class ShopScreen extends StatelessWidget {
                             numberOfItems: playerProvider.powerDelete,
                           ),
                         ),
+                        // reveal right option powerup
                         GestureDetector(
                           onTap: () {
                             quesProvider.playTapSound();
@@ -104,6 +106,7 @@ class ShopScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
+                    // double coins powerup
                         GestureDetector(
                           onTap: () {
                             quesProvider.playTapSound();
@@ -116,6 +119,7 @@ class ShopScreen extends StatelessWidget {
                             numberOfItems: playerProvider.powerDouble,
                           ),
                         ),
+                    // skip question powerup
                         GestureDetector(
                           onTap: () {
                             quesProvider.playTapSound();

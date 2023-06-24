@@ -8,24 +8,20 @@ import '../../Styles/text_styles.dart';
 class GenreCard extends StatelessWidget {
   const GenreCard({
     super.key,
-    required this.width,
-    required this.imagePath,
     required this.topicName,
     required this.category,
     required this.streakColor,
     required this.bgColor,
   });
 
-  final double width;
-  final String imagePath;
   final String topicName;
-
   final int category;
   final Color streakColor;
   final Color bgColor;
 
   @override
   Widget build(BuildContext context) {
+    final double width = MediaQuery.of(context).size.width;
     return Consumer<QuesProvider>(
       builder: (context, quesProvider, _) => GestureDetector(
         onTap: () {
@@ -35,7 +31,6 @@ class GenreCard extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) => ChooseDifficultyPage(
-                imagePath: imagePath,
                 category: category,
                 streakColor: streakColor,
               ),
@@ -68,7 +63,7 @@ class GenreCard extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: cardTextStyle,
                   ),
-                )
+                ),
               ],
             ),
           ),
