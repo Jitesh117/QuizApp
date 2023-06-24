@@ -59,6 +59,7 @@ class ChooseDifficultyPage extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
+                              quesProvider.playTapSound();
                             Navigator.of(context).pop();
                           },
                           child: const FaIcon(
@@ -84,6 +85,7 @@ class ChooseDifficultyPage extends StatelessWidget {
                         itemCount: difficulty.length,
                         itemBuilder: (context, index) => GestureDetector(
                           onTap: () {
+                              quesProvider.playTapSound();
                             playerProvider.fetchPlayerData();
                             quesProvider.questionNumberChanger(-1,
                                 -1); // question number change only when it is changed inside the quiz page and not from the change difficulty page

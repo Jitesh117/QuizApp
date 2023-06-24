@@ -20,6 +20,7 @@ class ShopScreen extends StatelessWidget {
         body: SafeArea(
           child: Stack(
             children: [
+              // background animation
               SizedBox(
                 height: MediaQuery.of(context).size.height,
                 child: Lottie.asset(
@@ -43,6 +44,7 @@ class ShopScreen extends StatelessWidget {
                         children: [
                           GestureDetector(
                             onTap: () async {
+                              quesProvider.playTapSound();
                               Navigator.pop(context);
                             },
                             child: const FaIcon(
@@ -74,6 +76,7 @@ class ShopScreen extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
+                            quesProvider.playTapSound();
                             playerProvider.buyOrNot(context, 25, 0);
                           },
                           child: ShopItem(
@@ -85,6 +88,7 @@ class ShopScreen extends StatelessWidget {
                         ),
                         GestureDetector(
                           onTap: () {
+                            quesProvider.playTapSound();
                             playerProvider.buyOrNot(context, 100, 1);
                           },
                           child: ShopItem(
@@ -102,6 +106,7 @@ class ShopScreen extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
+                            quesProvider.playTapSound();
                             playerProvider.buyOrNot(context, 50, 2);
                           },
                           child: ShopItem(
@@ -113,6 +118,7 @@ class ShopScreen extends StatelessWidget {
                         ),
                         GestureDetector(
                           onTap: () {
+                            quesProvider.playTapSound();
                             playerProvider.buyOrNot(context, 50, 3);
                           },
                           child: ShopItem(

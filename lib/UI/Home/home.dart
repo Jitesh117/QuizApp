@@ -32,10 +32,6 @@ class _HomePageState extends State<HomePage> {
                   'assets/lottieAnimations/patternBack.zip',
                   fit: BoxFit.cover,
                 ),
-                // child: Image.asset(
-                //   'assets/background.jpg',
-                //   fit: BoxFit.cover,
-                // ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
@@ -48,6 +44,7 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         GestureDetector(
                           onTap: () async {
+                            quesProvider.playTapSound();
                             Navigator.pop(context);
                           },
                           child: const FaIcon(

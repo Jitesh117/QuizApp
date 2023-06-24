@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'dart:developer' as dev;
 
+import 'package:audioplayers/audioplayers.dart';
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
@@ -33,8 +34,9 @@ class QuizPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final advancedDrawerController = AdvancedDrawerController();
-    CountDownController timeController = CountDownController();
+    final timeController = CountDownController();
     dev.log('build');
+    final player = AudioPlayer();
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => AdvancedDrawer(
         backdrop: Container(
@@ -87,7 +89,10 @@ class QuizPage extends StatelessWidget {
                           border: Border.all(color: Colors.black, width: 4),
                         ),
                         child: ListTile(
-                          onTap: () {},
+                          onTap: () {
+
+                              quesProvider.playTapSound();
+                          },
                           leading: const FaIcon(FontAwesomeIcons.check),
                           title: Text(
                             'Correct Answers: ${quesProvider.numberOfCorrectAnswers}',
@@ -105,7 +110,10 @@ class QuizPage extends StatelessWidget {
                           border: Border.all(color: Colors.black, width: 4),
                         ),
                         child: ListTile(
-                          onTap: () {},
+                          onTap: () {
+
+                              quesProvider.playTapSound();
+                          },
                           leading: const FaIcon(FontAwesomeIcons.x),
                           title: Text(
                             'Incorrect Answers: ${quesProvider.numberOfInorrectAnswers}',
@@ -132,6 +140,7 @@ class QuizPage extends StatelessWidget {
             child: SafeArea(
               child: Stack(
                 children: [
+                  // background animation
                   SizedBox(
                     height: MediaQuery.of(context).size.height,
                     child: Lottie.asset(
@@ -157,6 +166,7 @@ class QuizPage extends StatelessWidget {
                             children: [
                               GestureDetector(
                                 onTap: () async {
+                              quesProvider.playTapSound();
                                   bool shouldPop =
                                       await quesProvider.popOrNot(context);
                                   if (shouldPop) {
@@ -185,6 +195,7 @@ class QuizPage extends StatelessWidget {
                               ),
                               GestureDetector(
                                 onTap: () {
+                              quesProvider.playTapSound();
                                   advancedDrawerController.showDrawer();
                                 },
                                 child: Container(
@@ -274,6 +285,9 @@ class QuizPage extends StatelessWidget {
                                   quesProvider.streakCount = 0;
                                   quesProvider.numberOfInorrectAnswers++;
                                   playerProvider.updatePoints(false);
+                                  player.play(
+                                    AssetSource('sounds/alarm.mp3'),
+                                  );
                                   await quesProvider.showDialogue(context,
                                       'assets/lottieAnimations/timeUp.zip');
 
@@ -284,6 +298,7 @@ class QuizPage extends StatelessWidget {
                                   quesProvider.streakChanger();
                                   // quesProvider.checkTappedOption(-1);
                                   quesProvider.showCorrectOption = true;
+                                  player.stop();
                                   await Future.delayed(
                                     const Duration(seconds: 1),
                                     () {
@@ -304,6 +319,7 @@ class QuizPage extends StatelessWidget {
                           children: [
                             GestureDetector(
                               onTap: () {
+                              quesProvider.playTapSound();
                                 if (playerProvider.powerDelete > 0 &&
                                     !quesProvider.deleteWrongOptionTapped) {
                                   playerProvider.powerDelete--;
@@ -319,6 +335,7 @@ class QuizPage extends StatelessWidget {
                             ),
                             GestureDetector(
                               onTap: () {
+                              quesProvider.playTapSound();
                                 if (playerProvider.powerReveal > 0 &&
                                     !quesProvider.revealRightOptionTapped) {
                                   playerProvider.powerReveal--;
@@ -334,12 +351,13 @@ class QuizPage extends StatelessWidget {
                             ),
                             GestureDetector(
                               onTap: () {
+                              quesProvider.playTapSound();
                                 if (playerProvider.powerDouble > 0 &&
                                     !quesProvider.doublePointsTapped) {
                                   playerProvider.powerDouble--;
-
-                                  playerProvider.shouldDoublePoints = true;
                                   playerProvider.updatePowerups();
+                                  playerProvider.shouldDoublePoints = true;
+                                  quesProvider.doublePointsTapped = true;
                                 }
                               },
                               child: PowerUp(
@@ -350,6 +368,7 @@ class QuizPage extends StatelessWidget {
                             ),
                             GestureDetector(
                               onTap: () {
+                              quesProvider.playTapSound();
                                 if (playerProvider.powerSkip > 0) {
                                   playerProvider.powerSkip--;
                                   playerProvider.updatePowerups();
@@ -392,6 +411,7 @@ class QuizPage extends StatelessWidget {
                             itemBuilder: (BuildContext context, int index) {
                               return GestureDetector(
                                 onTap: () async {
+                              quesProvider.playTapSound();
                                   if (!quesProvider.tapped) {
                                     timeController.pause();
                                     quesProvider.checkTappedOption(index);
@@ -401,12 +421,17 @@ class QuizPage extends StatelessWidget {
                                         quesProvider.tappedOptionIsCorrect);
                                     // correct answer tapped
                                     if (quesProvider.tappedOptionIsCorrect) {
-                                      // player.play();
+                                      player.play(
+                                        AssetSource('sounds/rightSound.wav'),
+                                      );
                                       await quesProvider.showDialogue(context,
                                           'assets/lottieAnimations/right.zip');
                                     }
                                     // wrong answer tapped
                                     else {
+                                      player.play(
+                                        AssetSource('sounds/wrongSound.wav'),
+                                      );
                                       await quesProvider.showDialogue(context,
                                           'assets/lottieAnimations/wrong.zip');
                                     }
@@ -448,8 +473,15 @@ class QuizPage extends StatelessWidget {
                       emissionFrequency: 0.1,
                       gravity: 1,
                       // 10 paticles will pop-up at a time
-                      numberOfParticles: 10,
+                      numberOfParticles: 7,
                       shouldLoop: false,
+                      colors: const [
+                        // Colors.black,
+                        Colors.white,
+                        Colors.red,
+                        Colors.green,
+                        Colors.blue,
+                      ],
                     ),
                   ),
                   Align(
@@ -462,8 +494,15 @@ class QuizPage extends StatelessWidget {
                       emissionFrequency: 0.1,
                       gravity: 1,
                       // 10 paticles will pop-up at a time
-                      numberOfParticles: 10,
+                      numberOfParticles: 7,
                       shouldLoop: false,
+                      colors: const [
+                        // Colors.black,
+                        Colors.white,
+                        Colors.red,
+                        Colors.green,
+                        Colors.blue,
+                      ],
                     ),
                   ),
                   Align(
@@ -476,8 +515,15 @@ class QuizPage extends StatelessWidget {
                       emissionFrequency: 0.1,
                       gravity: 1,
                       // 10 paticles will pop-up at a time
-                      numberOfParticles: 10,
+                      numberOfParticles: 7,
                       shouldLoop: false,
+                      colors: const [
+                        // Colors.black,
+                        Colors.white,
+                        Colors.red,
+                        Colors.green,
+                        Colors.blue,
+                      ],
                     ),
                   ),
                 ],

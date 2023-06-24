@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:audioplayers/audioplayers.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -99,6 +100,7 @@ class QuesProvider with ChangeNotifier {
     tappedOptionIsCorrect = false;
     deleteWrongOptionTapped = false;
     revealRightOptionTapped = false;
+    doublePointsTapped = false;
 
     showCorrectOption = false;
 
@@ -197,6 +199,7 @@ class QuesProvider with ChangeNotifier {
           actions: [
             TextButton(
               onPressed: () {
+                playTapSound();
                 Navigator.pop(context, false);
               },
               child: const Text(
@@ -210,6 +213,7 @@ class QuesProvider with ChangeNotifier {
             ),
             TextButton(
               onPressed: () {
+                playTapSound();
                 streakCount = 0;
                 numberOfCorrectAnswers = 0;
                 numberOfInorrectAnswers = 0;
@@ -280,5 +284,11 @@ class QuesProvider with ChangeNotifier {
         Navigator.pop(context);
       },
     );
+  }
+
+  void playTapSound() {
+    final player = AudioPlayer();
+    player.setVolume(0.5);
+    player.play(AssetSource('sounds/ding.mp3'));
   }
 }

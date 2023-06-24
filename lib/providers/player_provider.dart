@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -108,6 +109,7 @@ class PlayerProvider with ChangeNotifier {
                 actions: [
                   TextButton(
                     onPressed: () {
+                      playTapSound();
                       Navigator.pop(context);
                     },
                     child: const Text(
@@ -131,6 +133,7 @@ class PlayerProvider with ChangeNotifier {
                 actions: [
                   TextButton(
                     onPressed: () {
+                      playTapSound();
                       Navigator.pop(context, false);
                     },
                     child: const Text(
@@ -144,6 +147,7 @@ class PlayerProvider with ChangeNotifier {
                   ),
                   TextButton(
                     onPressed: () {
+                      playTapSound();
                       points -= price;
                       switch (powerup) {
                         case 0:
@@ -184,5 +188,11 @@ class PlayerProvider with ChangeNotifier {
       },
     );
     return shouldPop!;
+  }
+
+  void playTapSound() {
+    final player = AudioPlayer();
+    player.setVolume(0.5);
+    player.play(AssetSource('sounds/ding.mp3'));
   }
 }
