@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -9,25 +11,68 @@ import 'package:quiz_v2/UI/Home/shop_screen.dart';
 import '../../providers/player_provider.dart';
 import '../../providers/question_provider.dart';
 
-class WelcomeScreen extends StatelessWidget {
+class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    final player = AudioPlayer();
-    player.play(
-      AssetSource('sounds/technoLoop.mp3'),
-    );
-    player.onPlayerComplete.listen((event) {
-      player.play(
-        AssetSource('sounds/technoLoop.mp3'),
+  State<WelcomeScreen> createState() => _WelcomeScreenState();
+}
+
+class _WelcomeScreenState extends State<WelcomeScreen>
+    with WidgetsBindingObserver {
+  // / ADD THIS AppLifecycleState VARIABLE
+  late AppLifecycleState appLifecycle;
+  final player = AudioPlayer();
+
+  // ADD THIS FUNCTION WITH A AppLifecycleState PARAMETER
+  @override
+  didChangeAppLifecycleState(AppLifecycleState state) {
+    appLifecycle = state;
+    setState(() {});
+
+    if (state == AppLifecycleState.paused) {
+      // IF YOUT APP IS IN BACKGROUND...
+      // YOU CAN ADDED THE ACTION HERE
+      player.pause();
+      log('My app is in background');
+    } else {
+      // player.stop();
+      player.resume(
       );
+      player.onPlayerComplete.listen((event) {
+        player.play(
+          AssetSource('sounds/technoLoop.mp3'),
+        );
+      });
+    }
+  }
+
+  // CREATE INITSTATE AND DISPOSE METHODS
+  @override
+  initState() {
+    super.initState();
+    player.play(AssetSource('sounds/technoLoop.mp3'));
+      player.onPlayerComplete.listen((event) {
+        player.play(
+          AssetSource('sounds/technoLoop.mp3'),
+        );
     });
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => Scaffold(
         backgroundColor: Colors.yellow.shade100,
         body: SafeArea(
-            // background animation
+          // background animation
           child: Stack(
             children: [
               SizedBox(
@@ -152,4 +197,4 @@ class WelcomeScreen extends StatelessWidget {
       ),
     );
   }
-}
+}  

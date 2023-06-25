@@ -18,7 +18,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => Scaffold(
         backgroundColor: Colors.yellow.shade100,
