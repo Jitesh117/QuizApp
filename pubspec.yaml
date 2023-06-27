@@ -28,6 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  animated_flip_widget: ^0.0.2
   animated_rotation: ^2.0.0
   audioplayers: ^4.1.0
   circular_countdown_timer: ^0.2.3
@@ -67,6 +68,7 @@ flutter:
     - assets/
     - assets/sounds/
     - assets/powerups/
+    - assets/badges/
     - assets/lottieAnimations/
     - assets/QuestionData/IndianStates/
     - assets/QuestionData/Anime/

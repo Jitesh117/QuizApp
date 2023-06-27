@@ -399,13 +399,15 @@ class QuizPage extends StatelessWidget {
                         Expanded(
                           flex: 2,
                           child: ListView.builder(
-                            itemCount: 3,// 3 is the number of options
+                            itemCount: 3, // 3 is the number of options
                             itemBuilder: (BuildContext context, int index) {
                               return GestureDetector(
                                 onTap: () async {
                                   quesProvider.playTapSound();
                                   if (!quesProvider.tapped) {
                                     timeController.pause();
+                                    quesProvider.currentTime =
+                                        timeController.getTime();
                                     quesProvider.checkTappedOption(index);
                                     playerProvider.updateMaxStreak(
                                         quesProvider.streakCount);

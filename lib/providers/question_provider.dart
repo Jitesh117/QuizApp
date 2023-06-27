@@ -29,6 +29,8 @@ class QuesProvider with ChangeNotifier {
   int numberOfCorrectAnswers = 0;
   int numberOfInorrectAnswers = 0;
 
+  String? currentTime = '0';
+
 // question number controlling parameters
   int previousCategory = -1;
   int previousDifficulty = -1;

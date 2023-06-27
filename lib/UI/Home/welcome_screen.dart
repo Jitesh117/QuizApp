@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
+import 'package:quiz_v2/Data/data_lists.dart';
+import 'package:quiz_v2/UI/Home/achievements.dart';
 import 'package:quiz_v2/UI/Home/home.dart';
 import 'package:quiz_v2/UI/Home/shop_screen.dart';
 
@@ -37,8 +39,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       log('My app is in background');
     } else {
       // player.stop();
-      player.resume(
-      );
+      player.resume();
       player.onPlayerComplete.listen((event) {
         player.play(
           AssetSource('sounds/technoLoop.mp3'),
@@ -52,12 +53,15 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   initState() {
     super.initState();
     player.play(AssetSource('sounds/technoLoop.mp3'));
-      player.onPlayerComplete.listen((event) {
-        player.play(
-          AssetSource('sounds/technoLoop.mp3'),
-        );
+    player.onPlayerComplete.listen((event) {
+      player.play(
+        AssetSource('sounds/technoLoop.mp3'),
+      );
     });
     WidgetsBinding.instance.addObserver(this);
+    // for (int i = 0; i < badgeName.length; i++) {
+    //   precacheImage(AssetImage('assets/badges/$i.png'), context);
+    // }
   }
 
   @override
@@ -101,6 +105,13 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                           GestureDetector(
                             onTap: () async {
                               quesProvider.playTapSound();
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const AchievementsPage(),
+                                ),
+                              );
                             },
                             child: const FaIcon(
                               FontAwesomeIcons.trophy,
@@ -197,4 +208,4 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       ),
     );
   }
-}  
+}

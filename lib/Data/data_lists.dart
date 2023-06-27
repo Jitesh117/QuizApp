@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 List<String> genreNames = [
   'Indian States',
   'Anime',
@@ -77,7 +76,57 @@ List<String> powerups = [
 
 List<String> powerDescription = [
   'Removes a wrong option',
-  'Reveals the answer' ,
+  'Reveals the answer',
   'Doubles the coins',
   'Skips current question',
+];
+
+List<String> badgeName = [
+  "The Silent Cartographer",
+  "Otaku",
+  "Geek",
+  "Know-It-All Extraordinaire",
+  "The Enlightened One",
+  "MCU Fanatic",
+  "Jock of all Trades",
+  "What do your furniture point at?",
+  "Pop Patriot",
+  "Certified Clown",
+  "Quiz Ninja",
+  "The Oracle",
+  "Unnstoppable",
+  "The Braniac",
+  "The Know it All",
+  "Speed Demon",
+  "Prepare for Trouble, and Make it Double",
+  "Master of Trivia",
+  "Lucky Break",
+  "The Grand Challenge",
+  "Power Junkie",
+  "Ninja Skipper"
+];
+
+List<String> badgeDescription = [
+  "Answer 10 questions correctly across all difficulties in the category 'Indian States'",
+  "Answer 10 questions correctly across all difficulties in the category 'Anime'",
+  "Answer 10 questions correctly across all difficulties in the category 'Computers'",
+  "Answer 10 questions correctly across all difficulties in the category 'GK'",
+  "Answer 10 questions correctly across all difficulties in the category 'Indian Mythology'",
+  "Answer 10 questions correctly across all difficulties in the category 'Marvel'",
+  "Answer 10 questions correctly across all difficulties in the category 'Movies'",
+  "Answer 10 questions correctly across all difficulties in the category 'Sports'",
+  "Answer 10 questions correctly across all difficulties in the category 'US TV Shows'",
+  "Answer 10 questions correctly across all difficulties in the category 'American Pop'",
+  "Answer 10 questions correctly wihin the first 3 seconds of each question",
+  "Correctly predict the next answer before the question appears on the screen",
+  "Answer a question wrong after using the 'Reveal correct option' powerup",
+  "Answer 25 questions correctly in a row without making a mistake",
+  "Achieve a perfect streak of 10 in all categories and difficulties",
+  "Play quz in all 10 categoies at least once",
+  "Complete a quiz with a streak of 10 within a 10 seconds time",
+  "Score max points on a question after using the 'Double the points' powerup",
+  "Answer 200 questions correctly across all categories and difficulties",
+  "Use the 'Reveal the answer' powerup and answer it correctly",
+  "Use all 4 powerups in a single question",
+  "Use the skip powerup on a question within the first 3 seconds",
 ];

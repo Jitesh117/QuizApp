@@ -17,6 +17,26 @@ class PlayerProvider with ChangeNotifier {
   int powerSkip = 2;
   bool shouldDoublePoints = false;
 
+  // achievements variables
+  List<String> achievements = [
+    "Master of Trivia",
+    "Brainiac",
+    "Speed Demon",
+    "Infalliable",
+    "Unstoppable",
+    "And make it double",
+    "Trivia Explorer",
+    "Lucky break",
+    "Quiz Ninja",
+    "Quick Thinker",
+    "The Grand Challenge",
+    "Wrong is the new right"
+    "The Oracle",
+    "Powerup Junkie",
+    "Ninja Skipper",
+    "Category Conquerer"
+  ];
+
   // variables for storing badges information
   List<List<String>> badgesEarned = List.generate(
       genreNames.length, (index) => List.generate(3, (index) => "0"));
