@@ -104,6 +104,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                           GestureDetector(
                             onTap: () async {
                               quesProvider.playTapSound();
+                              playerProvider.fetchPlayerData();
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(

@@ -315,8 +315,8 @@ class QuizPage extends StatelessWidget {
                                 quesProvider.playTapSound();
                                 if (playerProvider.powerDelete > 0 &&
                                     !quesProvider.deleteWrongOptionTapped) {
+                                  playerProvider.deleteUsed = true;
                                   playerProvider.powerDelete--;
-                                  playerProvider.updatePowerups();
                                   quesProvider.deleteWrongOption();
                                 }
                               },
@@ -331,8 +331,8 @@ class QuizPage extends StatelessWidget {
                                 quesProvider.playTapSound();
                                 if (playerProvider.powerReveal > 0 &&
                                     !quesProvider.revealRightOptionTapped) {
+                                  playerProvider.revealUsed = true;
                                   playerProvider.powerReveal--;
-                                  playerProvider.updatePowerups();
                                   quesProvider.revealCorrectOption();
                                 }
                               },
@@ -347,10 +347,10 @@ class QuizPage extends StatelessWidget {
                                 quesProvider.playTapSound();
                                 if (playerProvider.powerDouble > 0 &&
                                     !quesProvider.doublePointsTapped) {
+                                  playerProvider.doubleUsed = true;
                                   playerProvider.powerDouble--;
-                                  playerProvider.updatePowerups();
-                                  playerProvider.shouldDoublePoints = true;
                                   quesProvider.doublePointsTapped = true;
+                                  playerProvider.doubleUsed = true;
                                 }
                               },
                               child: PowerUp(
@@ -363,7 +363,12 @@ class QuizPage extends StatelessWidget {
                               onTap: () {
                                 quesProvider.playTapSound();
                                 if (playerProvider.powerSkip > 0) {
+                                  playerProvider.skipUsed = true;
                                   playerProvider.powerSkip--;
+                                  playerProvider.callAllBadgeFunctions(
+                                      category,
+                                      difficulty,
+                                      quesProvider.tappedOptionIsCorrect);
                                   playerProvider.updatePowerups();
                                   quesProvider.fetchQuestion(
                                       category, difficulty);
@@ -406,8 +411,6 @@ class QuizPage extends StatelessWidget {
                                   quesProvider.playTapSound();
                                   if (!quesProvider.tapped) {
                                     timeController.pause();
-                                    quesProvider.currentTime =
-                                        timeController.getTime();
                                     quesProvider.checkTappedOption(index);
                                     playerProvider.updateMaxStreak(
                                         quesProvider.streakCount);
@@ -429,6 +432,20 @@ class QuizPage extends StatelessWidget {
                                       await quesProvider.showDialogue(context,
                                           'assets/lottieAnimations/wrong.zip');
                                     }
+                                    String curTime =
+                                        timeController.getTime() ?? '30';
+                                    playerProvider.timeTaken =
+                                        30 - int.parse(curTime);
+                                    if (quesProvider.tappedOptionIsCorrect) {
+                                      playerProvider.totalTimeTaken +=
+                                          playerProvider.timeTaken;
+                                    } else {
+                                      playerProvider.totalTimeTaken = 0;
+                                    }
+                                    playerProvider.callAllBadgeFunctions(
+                                        category,
+                                        difficulty,
+                                        quesProvider.tappedOptionIsCorrect);
                                     await Future.delayed(
                                       const Duration(seconds: 1),
                                       () {
@@ -437,7 +454,7 @@ class QuizPage extends StatelessWidget {
                                         timeController.restart();
                                       },
                                     );
-                                    playerProvider.shouldDoublePoints = false;
+                                    playerProvider.doubleUsed = false;
                                   }
                                 },
                                 child: OptionTile(

@@ -5,13 +5,11 @@ List<String> genreNames = [
   'Anime',
   'Computer',
   'GK',
-  // 'Indian TV Shows',
   'Indian Mythology',
   'Marvel',
   'Movies',
   'Sports',
   'US TV Shows',
-  // 'Indian Cartoon',
   'American Pop',
 ];
 Map<int, String> categories = {
@@ -19,13 +17,11 @@ Map<int, String> categories = {
   1: "Anime",
   2: "computer",
   3: "GK",
-  // 4: "IndianTV",
   4: "IndianMythology",
   5: "Marvel",
   6: "movies",
   7: "sports",
   8: "UsTV",
-  // 10: "IndianCartoons",
   9: "PopSongs"
 };
 
@@ -56,9 +52,7 @@ List<Color> genreColor = [
   const Color(0xff72CFC6),
   const Color(0xffA3CB38),
   const Color(0xFF6163D5),
-  // const Color(0xFF21D6AC),
-  // const Color(0xffe55039),
-  Colors.orange,
+  const Color(0xFFFF9800),
 ];
 
 List<Color> optionColor = [
@@ -82,51 +76,97 @@ List<String> powerDescription = [
 ];
 
 List<String> badgeName = [
+  // badge 0
   "The Silent Cartographer",
+  // badge 1
   "Otaku",
+  // badge 2
   "Geek",
+  // badge 3
   "Know-It-All Extraordinaire",
+  // badge 4
   "The Enlightened One",
+  // badge 5
   "MCU Fanatic",
+  // badge 6
   "Cinema Buff",
+  // badge 7
   "Jock of all Trades",
+  // badge 8
   "What's all your furniture pointed at?",
+  // badge 9
   "Pop Patriot",
+  // badge 10
   "Quiz Ninja",
+  // badge 11
   "The Oracle",
-  "Unnstoppable",
+  // badge 12
+  "Professional Clown",
+  // badge 13
   "The Braniac",
+  // badge 14
   "The Know it All",
-  "Speed Demon",
-  "Prepare for Trouble, and Make it Double",
+  // badge 15
   "Master of Trivia",
-  "Lucky Break",
+  // badge 16
+  "Speed Demon",
+  // badge 17
+  "Prepare for Trouble, and Make it Double",
+  // badge 18
   "The Grand Challenge",
+  // badge 19
+  "Lucky Break",
+  // badge 20
   "Power Junkie",
+  // badge 21
   "Ninja Skipper"
 ];
 
 List<String> badgeDescription = [
-  "Answer 10 questions correctly across all difficulties in the category 'Indian States'",
-  "Answer 10 questions correctly across all difficulties in the category 'Anime'",
-  "Answer 10 questions correctly across all difficulties in the category 'Computers'",
-  "Answer 10 questions correctly across all difficulties in the category 'GK'",
-  "Answer 10 questions correctly across all difficulties in the category 'Indian Mythology'",
-  "Answer 10 questions correctly across all difficulties in the category 'Marvel'",
-  "Answer 10 questions correctly across all difficulties in the category 'Movies'",
-  "Answer 10 questions correctly across all difficulties in the category 'Sports'",
-  "Answer 10 questions correctly across all difficulties in the category 'US TV Shows'",
-  "Answer 10 questions correctly across all difficulties in the category 'American Pop'",
-  "Answer 10 questions correctly wihin the first 3 seconds of each question",
+  // category badges
+  // badge 0
+  "Answer 10 questions correctly in a row across all difficulties in the category 'Indian States'",
+  // badge 1
+  "Answer 10 questions correctly in a row across all difficulties in the category 'Anime'", 
+  // badge 2
+  "Answer 10 questions correctly in a row across all difficulties in the category 'Computers'",  
+  // badge 3
+  "Answer 10 questions correctly in a row across all difficulties in the category 'GK'",
+  // badge 4
+  "Answer 10 questions correctly in a row across all difficulties in the category 'Indian Mythology'",
+  // badge 5
+  "Answer 10 questions correctly in a row across all difficulties in the category 'Marvel'",
+  // badge 6
+  "Answer 10 questions correctly in a row across all difficulties in the category 'Movies'",
+  // badge 7
+  "Answer 10 questions correctly in a row across all difficulties in the category 'Sports'",
+  // badge 8
+  "Answer 10 questions correctly in a row across all difficulties in the category 'US TV Shows'",
+  // badge 9
+  "Answer 10 questions correctly in a row across all difficulties in the category 'American Pop'",
+  //! misc. badges
+  // badge 10
+  "Answer 10 questions correctly in a row within the first 3 seconds of each question",
+  // badge 11
   "Correctly predict the next answer before the question appears on the screen",
+  // badge 12
   "Answer a question wrong after using the 'Reveal correct option' powerup",
-  "Answer 25 questions correctly in a row without making a mistake",
+  // badge 13
+  "Answer 25 questions correctly in a row without making a mistake in any category",
+  // badge 14
   "Achieve a perfect streak of 10 in all categories and difficulties",
-  "Play quz in all 10 categoies at least once",
+  // badge 15
+  "Play quiz in all 10 categories at least once",
+  // badge 16
   "Complete a quiz with a streak of 10 within a 10 seconds time",
+  // badge 17
   "Score max points on a question after using the 'Double the points' powerup",
-  "Answer 200 questions correctly across all categories and difficulties",
+  // badge 18
   "Use the 'Reveal the answer' powerup and answer it correctly",
+  // badge 19
+  "Answer 200 questions correctly across all categories and difficulties",
+  // badge 20
   "Use all 4 powerups in a single question",
+  // badge 21
   "Use the skip powerup on a question within the first 3 seconds",
 ];

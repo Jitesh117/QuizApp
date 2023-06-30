@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
+import 'package:shimmer_animation/shimmer_animation.dart';
 
 import '../../providers/player_provider.dart';
 import '../../providers/question_provider.dart';
@@ -52,69 +53,78 @@ class AchievementsPage extends StatelessWidget {
                     const SizedBox(height: 10),
                     Expanded(
                       child: GridView.builder(
-                          itemCount: 22,
-                          gridDelegate:
-                              const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                            mainAxisSpacing: 10,
-                            crossAxisSpacing: 10,
-                          ),
-                          itemBuilder: (context, index) => GestureDetector(
-                                onTap: () {
-                                  quesProvider.playTapSound();
-                                  showModalBottomSheet(
-                                    barrierColor: Colors.transparent,
-                                    context: context,
-                                    builder: (context) => ClipRRect(
-                                      borderRadius: const BorderRadius.only(
-                                        topRight: Radius.circular(32),
-                                        topLeft: Radius.circular(32),
-                                      ),
-                                      child: Container(
-                                        height: 300,
-                                        padding: const EdgeInsets.symmetric(
-                                          vertical: 0,
-                                          horizontal: 16,
-                                        ),
-                                        decoration: BoxDecoration(
-                                          borderRadius: const BorderRadius.only(
-                                            topRight: Radius.circular(32),
-                                            topLeft: Radius.circular(32),
-                                          ),
-                                          border: Border.all(
-                                              color: Colors.black, width: 4),
-                                          // color: Colors.pink,
-                                        ),
-                                        child: Column(
-                                          children: [
-                                            SizedBox(
-                                              height: 170,
-                                              child: Badge(
-                                                  imagePath:
-                                                      'assets/badges/$index.png'),
-                                            ),
-                                            Text(
-                                              badgeName[index],
-                                              textAlign: TextAlign.center,
-                                              style: const TextStyle(
-                                                fontSize: 20,
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                            Text(
-                                              badgeDescription[index],
-                                              textAlign: TextAlign.center,
-                                            )
-                                          ],
-                                        ),
-                                      ),
+                        itemCount: 22,
+                        gridDelegate:
+                            const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          mainAxisSpacing: 10,
+                          crossAxisSpacing: 10,
+                        ),
+                        itemBuilder: (context, index) => GestureDetector(
+                          onTap: () {
+                            quesProvider.playTapSound();
+                            showModalBottomSheet(
+                              barrierColor: Colors.transparent,
+                              context: context,
+                              builder: (context) => ClipRRect(
+                                borderRadius: const BorderRadius.only(
+                                  topRight: Radius.circular(32),
+                                  topLeft: Radius.circular(32),
+                                ),
+                                child: Container(
+                                  height: 300,
+                                  padding: const EdgeInsets.symmetric(
+                                    vertical: 0,
+                                    horizontal: 16,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    borderRadius: const BorderRadius.only(
+                                      topRight: Radius.circular(32),
+                                      topLeft: Radius.circular(32),
                                     ),
-                                  );
-                                },
-                                child: Center(
+                                    border: Border.all(
+                                        color: Colors.black, width: 4),
+                                    // color: Colors.pink,
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      SizedBox(
+                                        height: 170,
+                                        child: Badge(
+                                            imagePath:
+                                                'assets/badges/$index.png'),
+                                      ),
+                                      Text(
+                                        badgeName[index],
+                                        textAlign: TextAlign.center,
+                                        style: const TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        badgeDescription[index],
+                                        textAlign: TextAlign.center,
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            );
+                          },
+                          child: Center(
+                            child: playerProvider.badge[index]
+                                ? Shimmer(
+                                    color: Colors.transparent,
                                     child: Badge(
-                                        imagePath: 'assets/badges/$index.png')),
-                              )),
+                                        imagePath: 'assets/badges/$index.png'),
+                                  )
+                                : Badge(
+                                    imagePath: 'assets/badges/$index.png',
+                                  ),
+                          ),
+                        ),
+                      ),
                     )
                   ],
                 ),

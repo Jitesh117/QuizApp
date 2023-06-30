@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
@@ -7,39 +9,33 @@ class PlayerProvider with ChangeNotifier {
   int highScore = 0;
   String name = "Guest";
   int level = 0;
-  int maxStreak = 0;
-  int questionsPlayed = 0;
   int points = 100;
   String avatarPath = "assets/userAvatars/memojis/user_profile_0.png";
   int powerDelete = 2;
   int powerReveal = 2;
   int powerDouble = 2;
   int powerSkip = 2;
-  bool shouldDoublePoints = false;
 
   // achievements variables
-  List<String> achievements = [
-    "Master of Trivia",
-    "Brainiac",
-    "Speed Demon",
-    "Infalliable",
-    "Unstoppable",
-    "And make it double",
-    "Trivia Explorer",
-    "Lucky break",
-    "Quiz Ninja",
-    "Quick Thinker",
-    "The Grand Challenge",
-    "Wrong is the new right"
-    "The Oracle",
-    "Powerup Junkie",
-    "Ninja Skipper",
-    "Category Conquerer"
-  ];
+  List<bool> badge = List.generate(badgeName.length, (index) => false);
+  int currentCategory = -1;
+  int currentDifficulty = -1;
+  int questionsPlayed = 0;
+  int maxStreak = 0;
+  int currentStreak = 0;
+  int threeSecondStreak = 0;
+  bool answeredCorrectly = false;
+  List<List<bool>> categoryDifficultyPlayed = List.generate(
+      badgeName.length, (index) => List.generate(3, (index) => false));
+  List<bool> categoryPlayed = List.generate(badgeName.length, (index) => false);
 
-  // variables for storing badges information
-  List<List<String>> badgesEarned = List.generate(
-      genreNames.length, (index) => List.generate(3, (index) => "0"));
+  bool deleteUsed = false;
+  bool revealUsed = false;
+  bool doubleUsed = false;
+  bool skipUsed = false;
+
+  int timeTaken = 0;
+  int totalTimeTaken = 0;
 
   void changeAvatar(String imagePath) async {
     avatarPath = imagePath;
@@ -69,9 +65,14 @@ class PlayerProvider with ChangeNotifier {
     }
 
     // badges information
-    for (int i = 0; i < genreNames.length; i++) {
-      badgesEarned[i] =
-          pref.getStringList("category$i") ?? List.generate(3, (index) => '0');
+    if (pref.getBool('badge0') == null) {
+      for (int i = 0; i < badgeName.length; i++) {
+        pref.setBool('badge$i', false);
+      }
+    } else {
+      for (int i = 0; i < badgeName.length; i++) {
+        badge[i] = pref.getBool('badge$i') ?? false;
+      }
     }
     notifyListeners();
   }
@@ -82,6 +83,7 @@ class PlayerProvider with ChangeNotifier {
       maxStreak = streak;
       pref.setInt('highestStreak', maxStreak);
     }
+    currentStreak = streak;
     questionsPlayed++;
     pref.setInt('questionsPlayed', questionsPlayed);
     notifyListeners();
@@ -89,7 +91,7 @@ class PlayerProvider with ChangeNotifier {
 
   void updatePoints(bool isCorrect) async {
     if (isCorrect) {
-      if (shouldDoublePoints) {
+      if (doubleUsed) {
         points += 10;
       } else {
         points += 5;
@@ -105,6 +107,10 @@ class PlayerProvider with ChangeNotifier {
   }
 
   void updatePowerups() async {
+    deleteUsed = false;
+    revealUsed = false;
+    doubleUsed = false;
+    skipUsed = false;
     SharedPreferences pref = await SharedPreferences.getInstance();
     pref.setInt('powerDelete', powerDelete);
     pref.setInt('powerReveal', powerReveal);
@@ -214,5 +220,169 @@ class PlayerProvider with ChangeNotifier {
     final player = AudioPlayer();
     player.setVolume(0.5);
     player.play(AssetSource('sounds/ding.mp3'));
+  }
+// achievement unlock functions
+
+  void badge0to9(int category, int difficulty) {
+    if (!badge[category]) {
+      if (currentStreak == 10) {
+        categoryDifficultyPlayed[category][difficulty] = true;
+        bool allCompleted = true;
+        for (int i = 0; i < categoryDifficultyPlayed[category].length; i++) {
+          allCompleted = allCompleted && categoryDifficultyPlayed[category][i];
+        }
+        if (allCompleted) {
+          badge[category] = true;
+        }
+      }
+    }
+    setPrefBadges();
+    notifyListeners();
+  }
+
+  void badge10() {
+    if (!badge[10]) {
+      if (timeTaken <= 3 && answeredCorrectly) {
+        threeSecondStreak++;
+        if (threeSecondStreak == 10) {
+          badge[10] = true;
+        }
+      }
+    }
+    setPrefBadges();
+    notifyListeners();
+  }
+
+  void badge11() {
+    if (!badge[11] && timeTaken <= 2 && answeredCorrectly) {
+      badge[11] = true;
+    }
+    setPrefBadges();
+    notifyListeners();
+  }
+
+  void badge12() {
+    if (!badge[12] && revealUsed && !answeredCorrectly) {
+      badge[12] = true;
+    }
+    setPrefBadges();
+    notifyListeners();
+  }
+
+  void badge13() {
+    if (!badge[13] && currentStreak == 25) {
+      badge[13] = true;
+    }
+    setPrefBadges();
+    notifyListeners();
+  }
+
+  void badge14() {
+    if (!badge[14]) {
+      bool allCompleted = true;
+      for (int i = 0; i < genreNames.length; i++) {
+        allCompleted = allCompleted && badge[i];
+      }
+      if (allCompleted) {
+        badge[14] = true;
+      }
+    }
+    setPrefBadges();
+    notifyListeners();
+  }
+
+  void badge15(int category, int difficulty) {
+    if (!badge[15]) {
+      categoryPlayed[category] = true;
+      bool allCompleted = false;
+      for (int i = 0; i < genreNames.length; i++) {
+        allCompleted = allCompleted && categoryPlayed[i];
+      }
+      if (allCompleted) {
+        badge[15] = true;
+      }
+    }
+    setPrefBadges();
+    notifyListeners();
+  }
+
+  void badge16() {
+    if (!badge[16]) {
+      if (currentStreak == 10 && totalTimeTaken <= 10) {
+        badge[16] = true;
+      }
+    }
+    setPrefBadges();
+    notifyListeners();
+  }
+
+  void badge17() {
+    if (!badge[17] && doubleUsed && answeredCorrectly) {
+      badge[17] = true;
+    }
+    setPrefBadges();
+    notifyListeners();
+  }
+
+  void badge18() {
+    if (!badge[18] && questionsPlayed == 200) {
+      badge[18] = true;
+    }
+    setPrefBadges();
+    notifyListeners();
+  }
+
+  void badge19() {
+    if (!badge[19] && revealUsed && answeredCorrectly) {
+      badge[19] = true;
+    }
+    setPrefBadges();
+    notifyListeners();
+  }
+
+  void badge20() {
+    if (!badge[20] && deleteUsed && revealUsed && doubleUsed && skipUsed) {
+      badge[20] = true;
+    }
+    setPrefBadges();
+    notifyListeners();
+  }
+
+  void badge21() {
+    if (!badge[21] && skipUsed) {
+      badge[21] = true;
+    }
+    setPrefBadges();
+    notifyListeners();
+  }
+
+  void callAllBadgeFunctions(
+      int category, int difficulty, bool tappedOptionIsCorrect) async {
+    answeredCorrectly = tappedOptionIsCorrect;
+    for (int i = 0; i < badgeName.length; i++) {
+      log(badge[i].toString());
+    }
+    badge0to9(category, difficulty);
+    badge10();
+    badge11();
+    badge12();
+    badge13();
+    badge14();
+    badge15(category, difficulty);
+    badge16();
+    badge17();
+    badge18();
+    badge19();
+    badge20();
+    badge21();
+
+    notifyListeners();
+  }
+
+  void setPrefBadges() async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    for (int i = 0; i < badgeName.length; i++) {
+      pref.setBool('badge$i', badge[i]);
+    }
   }
 }
