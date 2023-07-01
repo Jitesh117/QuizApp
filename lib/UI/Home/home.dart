@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         GestureDetector(
                           onTap: () async {
-                            quesProvider.playTapSound();
+                            playerProvider.playTapSound();
                             Navigator.pop(context);
                           },
                           child: const FaIcon(

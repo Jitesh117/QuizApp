@@ -3,6 +3,8 @@ import 'dart:developer';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
+import 'package:quiz_v2/UI/Home/achievements.dart';
+import 'package:quiz_v2/UI/Widgets/playerProfile/animated_badge.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PlayerProvider with ChangeNotifier {
@@ -11,6 +13,9 @@ class PlayerProvider with ChangeNotifier {
   int level = 0;
   int points = 100;
   String avatarPath = "assets/userAvatars/memojis/user_profile_0.png";
+
+  bool soundShouldPlay = true;
+  bool musicShouldPlay = true;
   int powerDelete = 2;
   int powerReveal = 2;
   int powerDouble = 2;
@@ -106,17 +111,21 @@ class PlayerProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  void updatePowerups() async {
+  void resetPowerups() {
     deleteUsed = false;
     revealUsed = false;
     doubleUsed = false;
     skipUsed = false;
+    notifyListeners();
+  }
+
+  void updatePowerups() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
     pref.setInt('powerDelete', powerDelete);
     pref.setInt('powerReveal', powerReveal);
     pref.setInt('powerDouble', powerDouble);
     pref.setInt('powerSkip', powerSkip);
-    pref.setInt('points', powerSkip);
+    pref.setInt('points', points);
     notifyListeners();
   }
 
@@ -217,13 +226,32 @@ class PlayerProvider with ChangeNotifier {
   }
 
   void playTapSound() {
-    final player = AudioPlayer();
-    player.setVolume(0.5);
-    player.play(AssetSource('sounds/ding.mp3'));
+    if (soundShouldPlay) {
+      final player = AudioPlayer();
+      player.setVolume(0.5);
+      player.play(AssetSource('sounds/ding.mp3'));
+    }
+  }
+
+  void toggleSoundButton() {
+    soundShouldPlay = !soundShouldPlay;
+    notifyListeners();
   }
 // achievement unlock functions
 
-  void badge0to9(int category, int difficulty) {
+  void badgeUnlocked(int badgeNumber, BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => AnimatedBadge(
+        badge: AchievementBadge(
+          imagePath: 'assets/badges/$badgeNumber.png',
+          unlocked: true,
+        ),
+      ),
+    );
+  }
+
+  void badge0to9(int category, int difficulty, BuildContext context) {
     if (!badge[category]) {
       if (currentStreak == 10) {
         categoryDifficultyPlayed[category][difficulty] = true;
@@ -233,6 +261,7 @@ class PlayerProvider with ChangeNotifier {
         }
         if (allCompleted) {
           badge[category] = true;
+          showSnackBar(context, category);
         }
       }
     }
@@ -240,12 +269,13 @@ class PlayerProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  void badge10() {
+  void badge10(BuildContext context) {
     if (!badge[10]) {
       if (timeTaken <= 3 && answeredCorrectly) {
         threeSecondStreak++;
         if (threeSecondStreak == 10) {
           badge[10] = true;
+          showSnackBar(context, 10);
         }
       }
     }
@@ -253,31 +283,34 @@ class PlayerProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  void badge11() {
-    if (!badge[11] && timeTaken <= 2 && answeredCorrectly) {
+  void badge11(BuildContext context) {
+    if (!badge[11] && timeTaken <= 1 && answeredCorrectly) {
       badge[11] = true;
+      showSnackBar(context, 11);
     }
     setPrefBadges();
     notifyListeners();
   }
 
-  void badge12() {
+  void badge12(BuildContext context) {
     if (!badge[12] && revealUsed && !answeredCorrectly) {
       badge[12] = true;
+      showSnackBar(context, 12);
     }
     setPrefBadges();
     notifyListeners();
   }
 
-  void badge13() {
+  void badge13(BuildContext context) {
     if (!badge[13] && currentStreak == 25) {
       badge[13] = true;
+      showSnackBar(context, 13);
     }
     setPrefBadges();
     notifyListeners();
   }
 
-  void badge14() {
+  void badge14(BuildContext context) {
     if (!badge[14]) {
       bool allCompleted = true;
       for (int i = 0; i < genreNames.length; i++) {
@@ -285,96 +318,151 @@ class PlayerProvider with ChangeNotifier {
       }
       if (allCompleted) {
         badge[14] = true;
+        showSnackBar(context, 14);
       }
     }
     setPrefBadges();
     notifyListeners();
   }
 
-  void badge15(int category, int difficulty) {
+  void badge15(int category, int difficulty, BuildContext context) {
     if (!badge[15]) {
       categoryPlayed[category] = true;
-      bool allCompleted = false;
+      bool allCompleted = true;
       for (int i = 0; i < genreNames.length; i++) {
         allCompleted = allCompleted && categoryPlayed[i];
       }
       if (allCompleted) {
         badge[15] = true;
+        showSnackBar(context, 15);
       }
     }
     setPrefBadges();
     notifyListeners();
   }
 
-  void badge16() {
+  void badge16(BuildContext context) {
     if (!badge[16]) {
       if (currentStreak == 10 && totalTimeTaken <= 10) {
         badge[16] = true;
+        showSnackBar(context, 16);
       }
     }
     setPrefBadges();
     notifyListeners();
   }
 
-  void badge17() {
+  void badge17(BuildContext context) {
     if (!badge[17] && doubleUsed && answeredCorrectly) {
       badge[17] = true;
+      showSnackBar(context, 17);
     }
     setPrefBadges();
     notifyListeners();
   }
 
-  void badge18() {
-    if (!badge[18] && questionsPlayed == 200) {
+  void badge18(BuildContext context) {
+    if (!badge[18] && revealUsed && answeredCorrectly) {
       badge[18] = true;
+      showSnackBar(context, 18);
     }
     setPrefBadges();
     notifyListeners();
   }
 
-  void badge19() {
-    if (!badge[19] && revealUsed && answeredCorrectly) {
+  void badge19(BuildContext context) {
+    if (!badge[19] && questionsPlayed == 200) {
       badge[19] = true;
+      showSnackBar(context, 19);
     }
     setPrefBadges();
     notifyListeners();
   }
 
-  void badge20() {
+  void badge20(BuildContext context) {
     if (!badge[20] && deleteUsed && revealUsed && doubleUsed && skipUsed) {
       badge[20] = true;
+      showSnackBar(context, 20);
     }
     setPrefBadges();
     notifyListeners();
   }
 
-  void badge21() {
+  void badge21(BuildContext context) {
     if (!badge[21] && skipUsed) {
       badge[21] = true;
+      showSnackBar(context, 21);
     }
     setPrefBadges();
     notifyListeners();
   }
 
-  void callAllBadgeFunctions(
-      int category, int difficulty, bool tappedOptionIsCorrect) async {
+  void showSnackBar(BuildContext context, int index) {
+    final snackBar = SnackBar(
+      elevation: 0,
+      behavior: SnackBarBehavior.floating,
+      backgroundColor: Colors.transparent,
+      margin: const EdgeInsets.only(bottom: 20),
+      content: Container(
+        padding: const EdgeInsets.symmetric(
+          vertical: 10,
+          horizontal: 16,
+        ),
+        decoration: BoxDecoration(
+          color: Colors.black,
+          border: Border.all(
+            color: Colors.white,
+            width: 3,
+          ),
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Center(
+              child: Center(
+                child: Image.asset(
+                  'assets/badges/$index.png',
+                  height: 50,
+                ),
+              ),
+            ),
+            const Text(
+              'Achievement Unlocked!',
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+    final player = AudioPlayer();
+    player.setVolume(1);
+    player.play(AssetSource('sounds/achievement.wav'));
+    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+  }
+
+  void callAllBadgeFunctions(int category, int difficulty,
+      bool tappedOptionIsCorrect, BuildContext context) async {
     answeredCorrectly = tappedOptionIsCorrect;
     for (int i = 0; i < badgeName.length; i++) {
-      log(badge[i].toString());
+      log("badge$i: ${badge[i]}");
     }
-    badge0to9(category, difficulty);
-    badge10();
-    badge11();
-    badge12();
-    badge13();
-    badge14();
-    badge15(category, difficulty);
-    badge16();
-    badge17();
-    badge18();
-    badge19();
-    badge20();
-    badge21();
+    badge0to9(category, difficulty, context);
+    badge10(context);
+    badge11(context);
+    badge12(context);
+    badge13(context);
+    badge14(context);
+    badge15(category, difficulty, context);
+    badge16(context);
+    badge17(context);
+    badge18(context);
+    badge19(context);
+    badge20(context);
+    badge21(context);
 
     notifyListeners();
   }

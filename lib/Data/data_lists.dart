@@ -113,9 +113,9 @@ List<String> badgeName = [
   // badge 17
   "Prepare for Trouble, and Make it Double",
   // badge 18
-  "The Grand Challenge",
-  // badge 19
   "Lucky Break",
+  // badge 19
+  "The Grand Challenge",
   // badge 20
   "Power Junkie",
   // badge 21

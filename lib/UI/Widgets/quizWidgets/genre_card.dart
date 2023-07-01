@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/UI/Quiz/choose_difficulty_page.dart';
+import 'package:quiz_v2/providers/player_provider.dart';
 
 import '../../../providers/question_provider.dart';
 import '../../Styles/text_styles.dart';
@@ -22,10 +23,10 @@ class GenreCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double width = MediaQuery.of(context).size.width;
-    return Consumer<QuesProvider>(
-      builder: (context, quesProvider, _) => GestureDetector(
+    return Consumer2<QuesProvider, PlayerProvider>(
+      builder: (context, quesProvider, playerProvider, _) => GestureDetector(
         onTap: () {
-          quesProvider.playTapSound();
+          playerProvider.playTapSound();
           quesProvider.loadQuestions();
           Navigator.push(
             context,

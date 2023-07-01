@@ -88,7 +88,7 @@ class QuizPage extends StatelessWidget {
                         ),
                         child: ListTile(
                           onTap: () {
-                            quesProvider.playTapSound();
+                            playerProvider.playTapSound();
                           },
                           leading: const FaIcon(FontAwesomeIcons.check),
                           title: Text(
@@ -108,7 +108,7 @@ class QuizPage extends StatelessWidget {
                         ),
                         child: ListTile(
                           onTap: () {
-                            quesProvider.playTapSound();
+                            playerProvider.playTapSound();
                           },
                           leading: const FaIcon(FontAwesomeIcons.x),
                           title: Text(
@@ -162,7 +162,7 @@ class QuizPage extends StatelessWidget {
                             children: [
                               GestureDetector(
                                 onTap: () async {
-                                  quesProvider.playTapSound();
+                                  playerProvider.playTapSound();
                                   bool shouldPop =
                                       await quesProvider.popOrNot(context);
                                   if (shouldPop) {
@@ -191,7 +191,7 @@ class QuizPage extends StatelessWidget {
                               ),
                               GestureDetector(
                                 onTap: () {
-                                  quesProvider.playTapSound();
+                                  playerProvider.playTapSound();
                                   advancedDrawerController.showDrawer();
                                 },
                                 child: Container(
@@ -259,8 +259,13 @@ class QuizPage extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              StreakCounter(
-                                streakColor: streakColor,
+                              GestureDetector(
+                                onTap: () {
+                                  playerProvider.showSnackBar(context, 11);
+                                },
+                                child: StreakCounter(
+                                  streakColor: streakColor,
+                                ),
                               ),
                               CircularCountDownTimer(
                                 width: 40,
@@ -287,18 +292,20 @@ class QuizPage extends StatelessWidget {
                                   await quesProvider.showDialogue(context,
                                       'assets/lottieAnimations/timeUp.zip');
 
+                                  quesProvider.streakChanger();
                                   playerProvider.updateMaxStreak(
                                       quesProvider.streakCount);
-                                  quesProvider.streakChanger();
                                   quesProvider.showCorrectOption = true;
                                   player.stop();
                                   await Future.delayed(
                                     const Duration(seconds: 1),
                                     () {
+                                      playerProvider.updatePowerups();
                                       quesProvider.fetchQuestion(
                                           category, difficulty);
                                       timeController.restart();
                                       quesProvider.showCorrectOption = false;
+                                      playerProvider.resetPowerups();
                                     },
                                   );
                                 },
@@ -312,12 +319,13 @@ class QuizPage extends StatelessWidget {
                           children: [
                             GestureDetector(
                               onTap: () {
-                                quesProvider.playTapSound();
+                                playerProvider.playTapSound();
                                 if (playerProvider.powerDelete > 0 &&
                                     !quesProvider.deleteWrongOptionTapped) {
                                   playerProvider.deleteUsed = true;
                                   playerProvider.powerDelete--;
                                   quesProvider.deleteWrongOption();
+                                  playerProvider.updatePowerups();
                                 }
                               },
                               child: PowerUp(
@@ -328,12 +336,13 @@ class QuizPage extends StatelessWidget {
                             ),
                             GestureDetector(
                               onTap: () {
-                                quesProvider.playTapSound();
+                                playerProvider.playTapSound();
                                 if (playerProvider.powerReveal > 0 &&
                                     !quesProvider.revealRightOptionTapped) {
                                   playerProvider.revealUsed = true;
                                   playerProvider.powerReveal--;
                                   quesProvider.revealCorrectOption();
+                                  playerProvider.updatePowerups();
                                 }
                               },
                               child: PowerUp(
@@ -344,13 +353,13 @@ class QuizPage extends StatelessWidget {
                             ),
                             GestureDetector(
                               onTap: () {
-                                quesProvider.playTapSound();
+                                playerProvider.playTapSound();
                                 if (playerProvider.powerDouble > 0 &&
                                     !quesProvider.doublePointsTapped) {
-                                  playerProvider.doubleUsed = true;
                                   playerProvider.powerDouble--;
                                   quesProvider.doublePointsTapped = true;
                                   playerProvider.doubleUsed = true;
+                                  playerProvider.updatePowerups();
                                 }
                               },
                               child: PowerUp(
@@ -361,17 +370,19 @@ class QuizPage extends StatelessWidget {
                             ),
                             GestureDetector(
                               onTap: () {
-                                quesProvider.playTapSound();
+                                playerProvider.playTapSound();
                                 if (playerProvider.powerSkip > 0) {
                                   playerProvider.skipUsed = true;
                                   playerProvider.powerSkip--;
                                   playerProvider.callAllBadgeFunctions(
                                       category,
                                       difficulty,
-                                      quesProvider.tappedOptionIsCorrect);
+                                      quesProvider.tappedOptionIsCorrect,
+                                      context);
                                   playerProvider.updatePowerups();
                                   quesProvider.fetchQuestion(
                                       category, difficulty);
+                                  playerProvider.resetPowerups();
                                 }
                               },
                               child: PowerUp(
@@ -408,7 +419,7 @@ class QuizPage extends StatelessWidget {
                             itemBuilder: (BuildContext context, int index) {
                               return GestureDetector(
                                 onTap: () async {
-                                  quesProvider.playTapSound();
+                                  playerProvider.playTapSound();
                                   if (!quesProvider.tapped) {
                                     timeController.pause();
                                     quesProvider.checkTappedOption(index);
@@ -445,16 +456,18 @@ class QuizPage extends StatelessWidget {
                                     playerProvider.callAllBadgeFunctions(
                                         category,
                                         difficulty,
-                                        quesProvider.tappedOptionIsCorrect);
+                                        quesProvider.tappedOptionIsCorrect,
+                                        context);
                                     await Future.delayed(
                                       const Duration(seconds: 1),
                                       () {
+                                        playerProvider.updatePowerups();
                                         quesProvider.fetchQuestion(
                                             category, difficulty);
+                                        playerProvider.resetPowerups();
                                         timeController.restart();
                                       },
                                     );
-                                    playerProvider.doubleUsed = false;
                                   }
                                 },
                                 child: OptionTile(

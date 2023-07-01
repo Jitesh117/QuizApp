@@ -144,25 +144,8 @@ class QuesProvider with ChangeNotifier {
   }
 
   void streakChanger() async {
-    SharedPreferences pref = await SharedPreferences.getInstance();
-    for (int i = 0; i < genreNames.length; i++) {
-      badgesEarned[i] =
-          pref.getStringList("category$i") ?? List.generate(3, (index) => '0');
-    }
-    // for (int i = 0; i < categoryNames.length; i++) {
-    //   for (int j = 0; j < 3; j++) {
-    //     dev.log("${badgesEarned[i][j]} ");
-    //   }
-    // }
     if (tappedOptionIsCorrect && timesTapped == 1) {
       streakCount++;
-      if (badgesEarned[previousCategory][previousDifficulty] == '0' &&
-          streakCount == 10) {
-        badgesEarned[previousCategory][previousDifficulty] = '1';
-        pref.setStringList(
-            "category$previousCategory", badgesEarned[previousCategory]);
-        // confettiController.play();
-      }
       if (streakCount % 10 == 0) {
         confettiController.play();
       }

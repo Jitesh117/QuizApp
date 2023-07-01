@@ -38,7 +38,7 @@ class AchievementsPage extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () async {
-                            quesProvider.playTapSound();
+                            playerProvider.playTapSound();
                             Navigator.pop(context);
                           },
                           child: const FaIcon(
@@ -62,7 +62,7 @@ class AchievementsPage extends StatelessWidget {
                         ),
                         itemBuilder: (context, index) => GestureDetector(
                           onTap: () {
-                            quesProvider.playTapSound();
+                            playerProvider.playTapSound();
                             showModalBottomSheet(
                               barrierColor: Colors.transparent,
                               context: context,
@@ -90,9 +90,10 @@ class AchievementsPage extends StatelessWidget {
                                     children: [
                                       SizedBox(
                                         height: 170,
-                                        child: Badge(
-                                            imagePath:
-                                                'assets/badges/$index.png'),
+                                        child: AchievementBadge(
+                                          imagePath: 'assets/badges/$index.png',
+                                          unlocked: true,
+                                        ),
                                       ),
                                       Text(
                                         badgeName[index],
@@ -114,13 +115,18 @@ class AchievementsPage extends StatelessWidget {
                           },
                           child: Center(
                             child: playerProvider.badge[index]
-                                ? Shimmer(
-                                    color: Colors.transparent,
-                                    child: Badge(
-                                        imagePath: 'assets/badges/$index.png'),
+                                ? ClipRRect(
+                                    borderRadius: BorderRadius.circular(100),
+                                    child: Shimmer(
+                                      child: AchievementBadge(
+                                        imagePath: 'assets/badges/$index.png',
+                                        unlocked: playerProvider.badge[index],
+                                      ),
+                                    ),
                                   )
-                                : Badge(
+                                : AchievementBadge(
                                     imagePath: 'assets/badges/$index.png',
+                                    unlocked: playerProvider.badge[index],
                                   ),
                           ),
                         ),
@@ -137,12 +143,14 @@ class AchievementsPage extends StatelessWidget {
   }
 }
 
-class Badge extends StatelessWidget {
-  const Badge({
+class AchievementBadge extends StatelessWidget {
+  const AchievementBadge({
     super.key,
     required this.imagePath,
+    required this.unlocked,
   });
   final String imagePath;
+  final bool unlocked;
 
   @override
   Widget build(BuildContext context) {
@@ -172,6 +180,16 @@ class Badge extends StatelessWidget {
                 imagePath,
               ),
             ),
+            Visibility(
+              visible: !unlocked,
+              child: const Center(
+                child: FaIcon(
+                  FontAwesomeIcons.lock,
+                  color: Colors.white,
+                  size: 50,
+                ),
+              ),
+            )
           ],
         ),
       ),

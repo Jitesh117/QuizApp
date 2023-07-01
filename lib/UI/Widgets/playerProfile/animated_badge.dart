@@ -3,8 +3,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class CardWidget extends StatefulWidget {
-  const CardWidget({
+class AnimatedBadge extends StatefulWidget {
+  const AnimatedBadge({
     super.key,
     required this.badge,
   });
@@ -12,10 +12,10 @@ class CardWidget extends StatefulWidget {
   final Widget badge;
 
   @override
-  createState() => _CardWidgetState();
+  createState() => _AnimatedBadgeState();
 }
 
-class _CardWidgetState extends State<CardWidget>
+class _AnimatedBadgeState extends State<AnimatedBadge>
     with SingleTickerProviderStateMixin {
   bool showFront = true;
   late AnimationController controller;

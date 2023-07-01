@@ -44,7 +44,7 @@ class ShopScreen extends StatelessWidget {
                         children: [
                           GestureDetector(
                             onTap: () async {
-                              quesProvider.playTapSound();
+                              playerProvider.playTapSound();
                               Navigator.pop(context);
                             },
                             child: const FaIcon(
@@ -77,7 +77,7 @@ class ShopScreen extends StatelessWidget {
                         // remove wrong option powerup
                         GestureDetector(
                           onTap: () {
-                            quesProvider.playTapSound();
+                            playerProvider.playTapSound();
                             playerProvider.buyOrNot(context, 25, 0);
                           },
                           child: ShopItem(
@@ -90,7 +90,7 @@ class ShopScreen extends StatelessWidget {
                         // reveal right option powerup
                         GestureDetector(
                           onTap: () {
-                            quesProvider.playTapSound();
+                            playerProvider.playTapSound();
                             playerProvider.buyOrNot(context, 100, 1);
                           },
                           child: ShopItem(
@@ -106,10 +106,10 @@ class ShopScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                    // double coins powerup
+                        // double coins powerup
                         GestureDetector(
                           onTap: () {
-                            quesProvider.playTapSound();
+                            playerProvider.playTapSound();
                             playerProvider.buyOrNot(context, 50, 2);
                           },
                           child: ShopItem(
@@ -119,10 +119,10 @@ class ShopScreen extends StatelessWidget {
                             numberOfItems: playerProvider.powerDouble,
                           ),
                         ),
-                    // skip question powerup
+                        // skip question powerup
                         GestureDetector(
                           onTap: () {
-                            quesProvider.playTapSound();
+                            playerProvider.playTapSound();
                             playerProvider.buyOrNot(context, 50, 3);
                           },
                           child: ShopItem(
