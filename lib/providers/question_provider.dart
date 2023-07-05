@@ -10,7 +10,6 @@ import 'package:quiz_v2/Data/data_lists.dart';
 import 'dart:convert';
 import 'dart:developer' as dev;
 import 'package:quiz_v2/Data/models/data_model.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class QuesProvider with ChangeNotifier {
   ConfettiController confettiController = ConfettiController();
@@ -143,11 +142,25 @@ class QuesProvider with ChangeNotifier {
     notifyListeners();
   }
 
+  void confettiPlay() async {
+    confettiController.play();
+    final player = AudioPlayer();
+    player.setVolume(0.5);
+    player.play(AssetSource('sounds/confetti.mp3'));
+    await Future.delayed(
+      const Duration(milliseconds: 200),
+      () {
+        confettiController.stop();
+      },
+    );
+  }
+
   void streakChanger() async {
     if (tappedOptionIsCorrect && timesTapped == 1) {
       streakCount++;
       if (streakCount % 10 == 0) {
-        confettiController.play();
+        // confettiController.play();
+        confettiPlay();
       }
     } else if (!tappedOptionIsCorrect && timesTapped == 1) {
       streakCount = 0;

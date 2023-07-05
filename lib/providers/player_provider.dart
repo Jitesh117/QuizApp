@@ -397,7 +397,7 @@ class PlayerProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  void showSnackBar(BuildContext context, int index) {
+  void showSnackBar(BuildContext context, int index)  {
     final snackBar = SnackBar(
       elevation: 0,
       behavior: SnackBarBehavior.floating,
@@ -440,7 +440,7 @@ class PlayerProvider with ChangeNotifier {
     );
     final player = AudioPlayer();
     player.setVolume(1);
-    player.play(AssetSource('sounds/achievement.wav'));
+     player.play(AssetSource('sounds/achievement.wav'));
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 

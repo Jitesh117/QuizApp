@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'dart:developer' as dev;
 
 import 'package:audioplayers/audioplayers.dart';
@@ -259,13 +258,8 @@ class QuizPage extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              GestureDetector(
-                                onTap: () {
-                                  playerProvider.showSnackBar(context, 11);
-                                },
-                                child: StreakCounter(
-                                  streakColor: streakColor,
-                                ),
+                              StreakCounter(
+                                streakColor: streakColor,
                               ),
                               CircularCountDownTimer(
                                 width: 40,
@@ -488,60 +482,27 @@ class QuizPage extends StatelessWidget {
                     ),
                   ),
                   Align(
-                    alignment: Alignment.topCenter,
-                    child: ConfettiWidget(
-                      confettiController: quesProvider.confettiController,
-                      blastDirection: pi / 2,
-                      maxBlastForce: 20,
-                      minBlastForce: 5,
-                      emissionFrequency: 0.1,
-                      gravity: 1,
-                      numberOfParticles: 7,
-                      shouldLoop: false,
-                      colors: const [
-                        Colors.white,
-                        Colors.red,
-                        Colors.green,
-                        Colors.blue,
-                      ],
-                    ),
-                  ),
-                  Align(
                     alignment: Alignment.topLeft,
                     child: ConfettiWidget(
                       confettiController: quesProvider.confettiController,
-                      blastDirection: 0,
-                      maxBlastForce: 20,
+                      blastDirectionality: BlastDirectionality.explosive,
+                      maxBlastForce: 50,
                       minBlastForce: 5,
-                      emissionFrequency: 0.1,
-                      gravity: 1,
-                      numberOfParticles: 7,
-                      shouldLoop: false,
-                      colors: const [
-                        Colors.white,
-                        Colors.red,
-                        Colors.green,
-                        Colors.blue,
-                      ],
+                      emissionFrequency: 0.5,
+                      numberOfParticles: 40,
+                      gravity: 0.3,
                     ),
                   ),
                   Align(
                     alignment: Alignment.topRight,
                     child: ConfettiWidget(
                       confettiController: quesProvider.confettiController,
-                      blastDirection: pi,
-                      maxBlastForce: 20,
+                      blastDirectionality: BlastDirectionality.explosive,
+                      maxBlastForce: 50,
                       minBlastForce: 5,
-                      emissionFrequency: 0.1,
-                      gravity: 1,
-                      numberOfParticles: 7,
-                      shouldLoop: false,
-                      colors: const [
-                        Colors.white,
-                        Colors.red,
-                        Colors.green,
-                        Colors.blue,
-                      ],
+                      emissionFrequency: 0.5,
+                      numberOfParticles: 40,
+                      gravity: 0.3,
                     ),
                   ),
                 ],

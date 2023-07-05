@@ -53,7 +53,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    playBackgroundMusic();
+    // playBackgroundMusic();
   }
 
   @override

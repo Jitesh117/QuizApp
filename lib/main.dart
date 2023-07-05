@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Quiz App',
+        title: 'Quiz',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           useMaterial3: true,
