@@ -3,8 +3,6 @@ import 'dart:developer';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
-import 'package:quiz_v2/UI/Home/achievements.dart';
-import 'package:quiz_v2/UI/Widgets/playerProfile/animated_badge.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PlayerProvider with ChangeNotifier {
@@ -12,7 +10,6 @@ class PlayerProvider with ChangeNotifier {
   String name = "Guest";
   int level = 0;
   int points = 100;
-  String avatarPath = "assets/userAvatars/memojis/user_profile_0.png";
 
   bool soundShouldPlay = true;
   bool musicShouldPlay = true;
@@ -20,6 +17,7 @@ class PlayerProvider with ChangeNotifier {
   int powerReveal = 2;
   int powerDouble = 2;
   int powerSkip = 2;
+
 
   // achievements variables
   List<bool> badge = List.generate(badgeName.length, (index) => false);
@@ -30,6 +28,7 @@ class PlayerProvider with ChangeNotifier {
   int currentStreak = 0;
   int threeSecondStreak = 0;
   bool answeredCorrectly = false;
+
   List<List<bool>> categoryDifficultyPlayed = List.generate(
       badgeName.length, (index) => List.generate(3, (index) => false));
   List<bool> categoryPlayed = List.generate(badgeName.length, (index) => false);
@@ -42,20 +41,12 @@ class PlayerProvider with ChangeNotifier {
   int timeTaken = 0;
   int totalTimeTaken = 0;
 
-  void changeAvatar(String imagePath) async {
-    avatarPath = imagePath;
-    SharedPreferences pref = await SharedPreferences.getInstance();
-    pref.setString('avatarPath', avatarPath);
-    notifyListeners();
-  }
 
   void fetchPlayerData() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
-    maxStreak = pref.getInt('highestStreak') ?? 0;
+    maxStreak = pref.getInt('maxStreak') ?? 0;
     questionsPlayed = pref.getInt('questionsPlayed') ?? 0;
     points = pref.getInt('points') ?? 100;
-    avatarPath = pref.getString('avatarPath') ??
-        "assets/userAvatars/memojis/user_profile_0.png";
     if (pref.getInt('powerDelete') == null) {
       pref.setInt('powerDelete', 2);
       pref.setInt('powerReveal', 2);
@@ -86,7 +77,7 @@ class PlayerProvider with ChangeNotifier {
     SharedPreferences pref = await SharedPreferences.getInstance();
     if (streak > maxStreak) {
       maxStreak = streak;
-      pref.setInt('highestStreak', maxStreak);
+      pref.setInt('maxStreak', maxStreak);
     }
     currentStreak = streak;
     questionsPlayed++;
@@ -239,18 +230,6 @@ class PlayerProvider with ChangeNotifier {
   }
 // achievement unlock functions
 
-  void badgeUnlocked(int badgeNumber, BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (context) => AnimatedBadge(
-        badge: AchievementBadge(
-          imagePath: 'assets/badges/$badgeNumber.png',
-          unlocked: true,
-        ),
-      ),
-    );
-  }
-
   void badge0to9(int category, int difficulty, BuildContext context) {
     if (!badge[category]) {
       if (currentStreak == 10) {
@@ -371,7 +350,7 @@ class PlayerProvider with ChangeNotifier {
   }
 
   void badge19(BuildContext context) {
-    if (!badge[19] && questionsPlayed == 200) {
+    if (!badge[19] && questionsPlayed == 500) {
       badge[19] = true;
       showSnackBar(context, 19);
     }
@@ -397,7 +376,7 @@ class PlayerProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  void showSnackBar(BuildContext context, int index)  {
+  void showSnackBar(BuildContext context, int index) {
     final snackBar = SnackBar(
       elevation: 0,
       behavior: SnackBarBehavior.floating,
@@ -417,7 +396,7 @@ class PlayerProvider with ChangeNotifier {
           borderRadius: BorderRadius.circular(16),
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Center(
               child: Center(
@@ -427,12 +406,24 @@ class PlayerProvider with ChangeNotifier {
                 ),
               ),
             ),
-            const Text(
-              'Achievement Unlocked!',
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              ),
+            const SizedBox(width: 10),
+            Column(
+              children: [
+                const Text(
+                  'Achievement Unlocked!',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  badgeName[index],
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -440,7 +431,7 @@ class PlayerProvider with ChangeNotifier {
     );
     final player = AudioPlayer();
     player.setVolume(1);
-     player.play(AssetSource('sounds/achievement.wav'));
+    player.play(AssetSource('sounds/achievement.wav'));
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 

@@ -1,305 +1,372 @@
 {
-  "response_code": 0,
   "results": [
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which artist released the hit song 'Uptown Funk'?",
-      "correct_answer": "Mark Ronson ft. Bruno Mars",
-      "incorrect_answers": [
-        "Maroon 5",
-        "Justin Timberlake",
-        "Pharrell Williams"
-      ]
+      "question": "Which actor played the character Iron Man in the Marvel Cinematic Universe?",
+      "correct_answer": "Robert Downey Jr.",
+      "incorrect_answers": ["Chris Evans", "Chris Hemsworth", "Tom Hiddleston"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Who is known for the pop song 'Shape of You'?",
+      "question": "Which TV show features a group of friends living in New York City?",
+      "correct_answer": "Friends",
+      "incorrect_answers": ["The Big Bang Theory", "How I Met Your Mother", "Seinfeld"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the lead vocalist of the band Nirvana?",
+      "correct_answer": "Kurt Cobain",
+      "incorrect_answers": ["Eddie Vedder", "Chris Cornell", "Dave Grohl"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which actress starred in the movie 'Legally Blonde'?",
+      "correct_answer": "Reese Witherspoon",
+      "incorrect_answers": ["Jennifer Aniston", "Cameron Diaz", "Scarlett Johansson"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the creator of the TV show 'The Simpsons'?",
+      "correct_answer": "Matt Groening",
+      "incorrect_answers": ["Seth MacFarlane", "Mike Judge", "Trey Parker"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which singer is known as the 'Queen of Pop'?",
+      "correct_answer": "Madonna",
+      "incorrect_answers": ["Britney Spears", "Taylor Swift", "Beyonce"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which film won the Best Picture award at the 2020 Academy Awards?",
+      "correct_answer": "Parasite",
+      "incorrect_answers": ["Joker", "1917", "Once Upon a Time in Hollywood"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the director of the movie 'Pulp Fiction'?",
+      "correct_answer": "Quentin Tarantino",
+      "incorrect_answers": ["Martin Scorsese", "Steven Spielberg", "Christopher Nolan"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which singer released the album 'Lemonade' in 2016?",
+      "correct_answer": "Beyonce",
+      "incorrect_answers": ["Rihanna", "Adele", "Katy Perry"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the host of the TV show 'The Tonight Show Starring Jimmy Fallon'?",
+      "correct_answer": "Jimmy Fallon",
+      "incorrect_answers": ["Jimmy Kimmel", "Stephen Colbert", "Conan O'Brien"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which band released the album 'Rumours' in 1977?",
+      "correct_answer": "Fleetwood Mac",
+      "incorrect_answers": ["Led Zeppelin", "The Eagles", "The Beatles"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which TV show is set in the fictional town of Pawnee, Indiana?",
+      "correct_answer": "Parks and Recreation",
+      "incorrect_answers": ["The Office", "Brooklyn Nine-Nine", "The Good Place"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who directed the movie 'The Shawshank Redemption'?",
+      "correct_answer": "Frank Darabont",
+      "incorrect_answers": ["David Fincher", "Martin Scorsese", "Steven Spielberg"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which actress portrayed Hermione Granger in the Harry Potter film series?",
+      "correct_answer": "Emma Watson",
+      "incorrect_answers": ["Emma Stone", "Jennifer Lawrence", "Natalie Portman"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the author of the 'Harry Potter' book series?",
+      "correct_answer": "J.K. Rowling",
+      "incorrect_answers": ["Stephenie Meyer", "Suzanne Collins", "George R.R. Martin"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which actor portrayed Captain Jack Sparrow in the 'Pirates of the Caribbean' film series?",
+      "correct_answer": "Johnny Depp",
+      "incorrect_answers": ["Orlando Bloom", "Tom Cruise", "Leonardo DiCaprio"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the author of the novel 'The Great Gatsby'?",
+      "correct_answer": "F. Scott Fitzgerald",
+      "incorrect_answers": ["Ernest Hemingway", "Mark Twain", "Harper Lee"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which rapper released the album 'To Pimp a Butterfly' in 2015?",
+      "correct_answer": "Kendrick Lamar",
+      "incorrect_answers": ["Eminem", "Drake", "Jay-Z"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the creator of the TV show 'Breaking Bad'?",
+      "correct_answer": "Vince Gilligan",
+      "incorrect_answers": ["David Chase", "Matthew Weiner", "Ryan Murphy"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which artist released the hit song 'Shape of You' in 2017?",
       "correct_answer": "Ed Sheeran",
-      "incorrect_answers": ["Justin Bieber", "Shawn Mendes", "Charlie Puth"]
+      "incorrect_answers": ["Justin Bieber", "Bruno Mars", "The Weeknd"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Who released the pop song 'Bad Guy'?",
-      "correct_answer": "Billie Eilish",
-      "incorrect_answers": ["Dua Lipa", "Ariana Grande", "Taylor Swift"]
+      "question": "Who is the creator of the TV show 'Stranger Things'?",
+      "correct_answer": "The Duffer Brothers",
+      "incorrect_answers": ["Ryan Murphy", "Vince Gilligan", "David Benioff and D.B. Weiss"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Who sang the pop song 'Rolling in the Deep'?",
-      "correct_answer": "Adele",
-      "incorrect_answers": ["Beyoncé", "Taylor Swift", "Rihanna"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Which artist released the hit song 'Closer'?",
-      "correct_answer": "The Chainsmokers ft. Halsey",
-      "incorrect_answers": [
-        "Calvin Harris ft. Rihanna",
-        "Zedd ft. Maren Morris",
-        "Kygo ft. Selena Gomez"
-      ]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who is known for the pop song 'Blank Space'?",
+      "question": "Which singer released the album '1989' in 2014?",
       "correct_answer": "Taylor Swift",
-      "incorrect_answers": ["Ariana Grande", "Katy Perry", "Selena Gomez"]
+      "incorrect_answers": ["Adele", "Lady Gaga", "Katy Perry"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Who released the pop song 'Radioactive'?",
-      "correct_answer": "Imagine Dragons",
-      "incorrect_answers": ["Coldplay", "OneRepublic", "Maroon 5"]
+      "question": "Who directed the movie 'Black Panther'?",
+      "correct_answer": "Ryan Coogler",
+      "incorrect_answers": ["Jordan Peele", "Ava DuVernay", "Spike Lee"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Who sang the pop song 'Someone Like You'?",
+      "question": "Which actor portrayed Tony Stark/Iron Man in the Marvel Cinematic Universe?",
+      "correct_answer": "Robert Downey Jr.",
+      "incorrect_answers": ["Chris Evans", "Chris Hemsworth", "Tom Hiddleston"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the creator of the TV show 'The Office'?",
+      "correct_answer": "Ricky Gervais",
+      "incorrect_answers": ["Greg Daniels", "Mitchell Hurwitz", "Chuck Lorre"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which artist released the hit song 'Hello' in 2015?",
       "correct_answer": "Adele",
-      "incorrect_answers": ["Beyoncé", "Rihanna", "Taylor Swift"]
+      "incorrect_answers": ["Rihanna", "Beyonce", "Taylor Swift"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which artist released the hit song 'Royals'?",
-      "correct_answer": "Lorde",
-      "incorrect_answers": ["Billie Eilish", "Dua Lipa", "Halsey"]
+      "question": "Which actor portrayed Wolverine in the X-Men film series?",
+      "correct_answer": "Hugh Jackman",
+      "incorrect_answers": ["Ryan Reynolds", "Chris Evans", "Brad Pitt"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Who is known for the pop song 'Firework'?",
-      "correct_answer": "Katy Perry",
-      "incorrect_answers": ["Lady Gaga", "Rihanna", "Beyoncé"]
+      "question": "Who is the host of the TV show 'Jeopardy!'?",
+      "correct_answer": "Alex Trebek",
+      "incorrect_answers": ["Pat Sajak", "Steve Harvey", "Jimmy Kimmel"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Who released the pop song 'Sugar'?",
-      "correct_answer": "Maroon 5",
-      "incorrect_answers": ["Bruno Mars", "Justin Timberlake", "OneRepublic"]
+      "question": "Which artist released the album 'Thriller' in 1982?",
+      "correct_answer": "Michael Jackson",
+      "incorrect_answers": ["Prince", "Madonna", "Elvis Presley"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Who sang the pop song 'Hotline Bling'?",
-      "correct_answer": "Drake",
-      "incorrect_answers": ["Kendrick Lamar", "The Weeknd", "Post Malone"]
+      "question": "Who directed the movie 'Inception'?",
+      "correct_answer": "Christopher Nolan",
+      "incorrect_answers": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which artist released the hit song 'Shake It Off'?",
+      "question": "Which actress portrayed Katniss Everdeen in 'The Hunger Games' film series?",
+      "correct_answer": "Jennifer Lawrence",
+      "incorrect_answers": ["Emma Stone", "Scarlett Johansson", "Natalie Portman"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the creator of the TV show 'Grey's Anatomy'?",
+      "correct_answer": "Shonda Rhimes",
+      "incorrect_answers": ["Ryan Murphy", "J.J. Abrams", "Dick Wolf"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which band released the album 'Nevermind' in 1991?",
+      "correct_answer": "Nirvana",
+      "incorrect_answers": ["Pearl Jam", "Guns N' Roses", "Metallica"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the director of the movie 'The Dark Knight'?",
+      "correct_answer": "Christopher Nolan",
+      "incorrect_answers": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which singer released the album '21' in 2011?",
+      "correct_answer": "Adele",
+      "incorrect_answers": ["Taylor Swift", "Beyonce", "Rihanna"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the creator of the TV show 'The Walking Dead'?",
+      "correct_answer": "Robert Kirkman",
+      "incorrect_answers": ["Vince Gilligan", "Ryan Murphy", "Frank Darabont"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which artist released the hit song 'Uptown Funk' in 2014?",
+      "correct_answer": "Mark Ronson",
+      "incorrect_answers": ["Bruno Mars", "Pharrell Williams", "Justin Timberlake"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the author of the 'Twilight' book series?",
+      "correct_answer": "Stephenie Meyer",
+      "incorrect_answers": ["J.K. Rowling", "Suzanne Collins", "Veronica Roth"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which actor portrayed the character Neo in 'The Matrix' film series?",
+      "correct_answer": "Keanu Reeves",
+      "incorrect_answers": ["Tom Cruise", "Leonardo DiCaprio", "Will Smith"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the host of the TV show 'Saturday Night Live'?",
+      "correct_answer": "Lorne Michaels",
+      "incorrect_answers": ["Jimmy Fallon", "Tina Fey", "Amy Poehler"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which artist released the album '25' in 2015?",
+      "correct_answer": "Adele",
+      "incorrect_answers": ["Taylor Swift", "Beyonce", "Rihanna"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who directed the movie 'Jurassic Park'?",
+      "correct_answer": "Steven Spielberg",
+      "incorrect_answers": ["Christopher Nolan", "James Cameron", "Martin Scorsese"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which actress portrayed Daenerys Targaryen in the TV show 'Game of Thrones'?",
+      "correct_answer": "Emilia Clarke",
+      "incorrect_answers": ["Lena Headey", "Sophie Turner", "Maisie Williams"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "The TV show 'The Office' is set in which city?",
+      "correct_answer": "Scranton",
+      "incorrect_answers": ["New York City", "Los Angeles", "Chicago"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the author of the novel 'The Catcher in the Rye'?",
+      "correct_answer": "J.D. Salinger",
+      "incorrect_answers": ["F. Scott Fitzgerald", "Ernest Hemingway", "Mark Twain"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which singer released the album 'Red' in 2012?",
       "correct_answer": "Taylor Swift",
-      "incorrect_answers": ["Ariana Grande", "Katy Perry", "Selena Gomez"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who is known for the pop song 'Love Story'?",
-      "correct_answer": "Taylor Swift",
-      "incorrect_answers": ["Adele", "Beyoncé", "Rihanna"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who released the pop song 'Just the Way You Are'?",
-      "correct_answer": "Bruno Mars",
-      "incorrect_answers": ["Ed Sheeran", "Shawn Mendes", "Justin Bieber"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who sang the pop song 'We Found Love'?",
-      "correct_answer": "Rihanna ft. Calvin Harris",
-      "incorrect_answers": ["Beyoncé", "Ariana Grande", "Lady Gaga"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Which artist released the hit song 'Havana'?",
-      "correct_answer": "Camila Cabello ft. Young Thug",
-      "incorrect_answers": ["Selena Gomez", "Dua Lipa", "Ariana Grande"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who is known for the pop song 'All of Me'?",
-      "correct_answer": "John Legend",
-      "incorrect_answers": ["Sam Smith", "Ed Sheeran", "Charlie Puth"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who released the pop song 'Royals'?",
-      "correct_answer": "Lorde",
-      "incorrect_answers": ["Billie Eilish", "Dua Lipa", "Halsey"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who sang the pop song 'Umbrella'?",
-      "correct_answer": "Rihanna ft. Jay-Z",
-      "incorrect_answers": ["Beyoncé", "Lady Gaga", "Ariana Grande"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Which artist released the hit song 'Blank Space'?",
-      "correct_answer": "Taylor Swift",
-      "incorrect_answers": ["Ariana Grande", "Katy Perry", "Selena Gomez"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who is known for the pop song 'Bad Guy'?",
-      "correct_answer": "Billie Eilish",
-      "incorrect_answers": ["Dua Lipa", "Ariana Grande", "Taylor Swift"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who released the pop song 'Hello'?",
-      "correct_answer": "Adele",
-      "incorrect_answers": ["Beyoncé", "Rihanna", "Taylor Swift"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who sang the pop song 'Rolling in the Deep'?",
-      "correct_answer": "Adele",
-      "incorrect_answers": ["Beyoncé", "Taylor Swift", "Rihanna"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Which artist released the hit song 'Shape of You'?",
-      "correct_answer": "Ed Sheeran",
-      "incorrect_answers": ["Justin Bieber", "Shawn Mendes", "Charlie Puth"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who is known for the pop song 'Hotline Bling'?",
-      "correct_answer": "Drake",
-      "incorrect_answers": ["Kendrick Lamar", "The Weeknd", "Post Malone"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who released the pop song 'Radioactive'?",
-      "correct_answer": "Imagine Dragons",
-      "incorrect_answers": ["Coldplay", "OneRepublic", "Maroon 5"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who sang the pop song 'Love Yourself'?",
-      "correct_answer": "Justin Bieber",
-      "incorrect_answers": ["Shawn Mendes", "Ed Sheeran", "Charlie Puth"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Which artist released the hit song 'Rolling in the Deep'?",
-      "correct_answer": "Adele",
-      "incorrect_answers": ["Beyoncé", "Taylor Swift", "Rihanna"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who is known for the pop song 'Sugar'?",
-      "correct_answer": "Maroon 5",
-      "incorrect_answers": ["Bruno Mars", "Justin Timberlake", "OneRepublic"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who released the pop song 'Shape of You'?",
-      "correct_answer": "Ed Sheeran",
-      "incorrect_answers": ["Justin Bieber", "Shawn Mendes", "Charlie Puth"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who sang the pop song 'Radioactive'?",
-      "correct_answer": "Imagine Dragons",
-      "incorrect_answers": ["Coldplay", "OneRepublic", "Maroon 5"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Which artist released the hit song 'Firework'?",
-      "correct_answer": "Katy Perry",
-      "incorrect_answers": ["Lady Gaga", "Rihanna", "Beyoncé"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who is known for the pop song 'Just the Way You Are'?",
-      "correct_answer": "Bruno Mars",
-      "incorrect_answers": ["Ed Sheeran", "Shawn Mendes", "Justin Bieber"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who released the pop song 'All of Me'?",
-      "correct_answer": "John Legend",
-      "incorrect_answers": ["Sam Smith", "Ed Sheeran", "Charlie Puth"]
-    },
-    {
-      "category": "American Pop Songs",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Who sang the pop song 'Uptown Funk'?",
-      "correct_answer": "Mark Ronson ft. Bruno Mars",
-      "incorrect_answers": [
-        "Maroon 5",
-        "Justin Timberlake",
-        "Pharrell Williams"
-      ]
+      "incorrect_answers": ["Adele", "Beyonce", "KatyPerry"]
     }
   ]
 }

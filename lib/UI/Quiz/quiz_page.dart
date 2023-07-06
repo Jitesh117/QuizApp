@@ -13,6 +13,8 @@ import 'package:quiz_v2/providers/player_provider.dart';
 import 'package:quiz_v2/providers/question_provider.dart';
 
 import '../Styles/text_styles.dart';
+import '../Widgets/playerProfile/drawer_item.dart';
+import '../Widgets/quizWidgets/badge.dart';
 import '../Widgets/quizWidgets/option_tile.dart';
 import '../Widgets/quizWidgets/streak_counter.dart';
 
@@ -39,7 +41,7 @@ class QuizPage extends StatelessWidget {
         backdrop: Container(
           width: double.infinity,
           height: double.infinity,
-          color: Colors.amber,
+          color: Colors.cyan,
         ),
         controller: advancedDrawerController,
         animationCurve: Curves.easeInOut,
@@ -60,65 +62,34 @@ class QuizPage extends StatelessWidget {
                   textColor: Colors.black,
                   iconColor: Colors.black,
                   child: Column(
-                    mainAxisSize: MainAxisSize.max,
+                    // mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Container(
-                        width: 128.0,
-                        height: 128.0,
-                        margin: const EdgeInsets.only(
-                          top: 24.0,
-                          bottom: 64.0,
-                        ),
-                        clipBehavior: Clip.antiAlias,
-                        decoration: BoxDecoration(
-                          color: Colors.pinkAccent.shade100,
-                          shape: BoxShape.circle,
-                          border: Border.all(color: Colors.black, width: 4),
-                        ),
-                        child: Image.asset(
-                          'assets/userAvatars/memojis/user_profile_4.png',
-                        ),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.greenAccent,
-                          borderRadius: BorderRadius.circular(16),
-                          border: Border.all(color: Colors.black, width: 4),
-                        ),
-                        child: ListTile(
-                          onTap: () {
-                            playerProvider.playTapSound();
-                          },
-                          leading: const FaIcon(FontAwesomeIcons.check),
-                          title: Text(
+                      // const SizedBox(height: 50),
+                      DrawerItem(
+                        boxColor: Colors.greenAccent,
+                        icon: FontAwesomeIcons.check,
+                        description:
                             'Correct Answers: ${quesProvider.numberOfCorrectAnswers}',
-                            style: const TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
                       ),
-                      const SizedBox(height: 10),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.redAccent,
-                          borderRadius: BorderRadius.circular(16),
-                          border: Border.all(color: Colors.black, width: 4),
-                        ),
-                        child: ListTile(
-                          onTap: () {
-                            playerProvider.playTapSound();
-                          },
-                          leading: const FaIcon(FontAwesomeIcons.x),
-                          title: Text(
+                      DrawerItem(
+                        description:
                             'Incorrect Answers: ${quesProvider.numberOfInorrectAnswers}',
-                            style: const TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
+                        icon: FontAwesomeIcons.x,
+                        boxColor: Colors.redAccent,
                       ),
-                      const Spacer(),
+                      DrawerItem(
+                        description:
+                            'PowerUps Used: ${quesProvider.numberOfPowerupsUsed}',
+                        icon: FontAwesomeIcons.boltLightning,
+                        boxColor: Colors.blueAccent,
+                      ),
+                      DrawerItem(
+                        description: 'Max Streak: ${playerProvider.maxStreak}',
+                        icon: FontAwesomeIcons.fireFlameCurved,
+                        boxColor: Colors.deepOrange,
+                      ),
+                      // const Spacer(),
                     ],
                   ),
                 ),
@@ -258,8 +229,15 @@ class QuizPage extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              StreakCounter(
-                                streakColor: streakColor,
+                              GestureDetector(
+                                onTap: () {
+                                  // for (int i = 0; i < badgeName.length; i++) {
+                                  //   playerProvider.showSnackBar(context, i);
+                                  // }
+                                },
+                                child: StreakCounter(
+                                  streakColor: streakColor,
+                                ),
                               ),
                               CircularCountDownTimer(
                                 width: 40,
@@ -318,6 +296,7 @@ class QuizPage extends StatelessWidget {
                                     !quesProvider.deleteWrongOptionTapped) {
                                   playerProvider.deleteUsed = true;
                                   playerProvider.powerDelete--;
+                                  quesProvider.numberOfPowerupsUsed++;
                                   quesProvider.deleteWrongOption();
                                   playerProvider.updatePowerups();
                                 }
@@ -335,6 +314,7 @@ class QuizPage extends StatelessWidget {
                                     !quesProvider.revealRightOptionTapped) {
                                   playerProvider.revealUsed = true;
                                   playerProvider.powerReveal--;
+                                  quesProvider.numberOfPowerupsUsed++;
                                   quesProvider.revealCorrectOption();
                                   playerProvider.updatePowerups();
                                 }
@@ -351,6 +331,7 @@ class QuizPage extends StatelessWidget {
                                 if (playerProvider.powerDouble > 0 &&
                                     !quesProvider.doublePointsTapped) {
                                   playerProvider.powerDouble--;
+                                  quesProvider.numberOfPowerupsUsed++;
                                   quesProvider.doublePointsTapped = true;
                                   playerProvider.doubleUsed = true;
                                   playerProvider.updatePowerups();
@@ -368,6 +349,7 @@ class QuizPage extends StatelessWidget {
                                 if (playerProvider.powerSkip > 0) {
                                   playerProvider.skipUsed = true;
                                   playerProvider.powerSkip--;
+                                  quesProvider.numberOfPowerupsUsed++;
                                   playerProvider.callAllBadgeFunctions(
                                       category,
                                       difficulty,
@@ -511,52 +493,6 @@ class QuizPage extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-class PowerUp extends StatelessWidget {
-  const PowerUp({
-    super.key,
-    required this.imagePath,
-    required this.availability,
-  });
-
-  final String imagePath;
-  final String availability;
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Image.asset(
-          imagePath,
-          height: 55,
-        ),
-        Positioned(
-          right: 0,
-          child: Container(
-            height: 30,
-            width: 30,
-            decoration: BoxDecoration(
-              color: Colors.yellowAccent,
-              borderRadius: BorderRadius.circular(100),
-              border: Border.all(
-                color: Colors.black,
-                width: 1,
-              ),
-            ),
-            child: Center(
-              child: Text(
-                availability,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-        ),
-      ],
     );
   }
 }

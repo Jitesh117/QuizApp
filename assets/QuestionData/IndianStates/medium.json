@@ -67,7 +67,7 @@
       "difficulty": "medium",
       "question": "What is the capital city of Telangana?",
       "correct_answer": "Hyderabad",
-      "incorrect_answers": ["Vijayawada", "Visakhapatnam", "Warangal"]
+      "incorrect_answers": ["Amravati", "Visakhapatnam", "Warangal"]
     },
     {
       "category": "Medium Difficulty",
@@ -85,33 +85,9 @@
       "category": "Medium Difficulty",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "What is the capital city of Punjab?",
-      "correct_answer": "Chandigarh",
-      "incorrect_answers": ["Amritsar", "Ludhiana", "Jalandhar"]
-    },
-    {
-      "category": "Medium Difficulty",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Which state is known as the 'Spice Garden of India'?",
-      "correct_answer": "Kerala",
-      "incorrect_answers": ["Tamil Nadu", "Karnataka", "Andhra Pradesh"]
-    },
-    {
-      "category": "Medium Difficulty",
-      "type": "multiple",
-      "difficulty": "medium",
       "question": "What is the capital city of Assam?",
       "correct_answer": "Dispur",
       "incorrect_answers": ["Guwahati", "Silchar", "Jorhat"]
-    },
-    {
-      "category": "Medium Difficulty",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "Which state is known as the 'Land of Temples'?",
-      "correct_answer": "Tamil Nadu",
-      "incorrect_answers": ["Karnataka", "Andhra Pradesh", "Kerala"]
     },
     {
       "category": "Medium Difficulty",
@@ -183,11 +159,7 @@
       "difficulty": "medium",
       "question": "Which union territory of India is known for the famous 'Radhanagar Beach'?",
       "correct_answer": "Andaman and Nicobar Islands",
-      "incorrect_answers": [
-        "Daman and Diu",
-        "Puducherry",
-        "Lakshadweep"
-      ]
+      "incorrect_answers": ["Daman and Diu", "Puducherry", "Lakshadweep"]
     },
     {
       "category": "Medium Difficulty",
@@ -273,14 +245,6 @@
       "category": "Medium Difficulty",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which state is known as the 'Land of Black Gold'?",
-      "correct_answer": "Gujarat",
-      "incorrect_answers": ["Maharashtra", "Rajasthan", "Madhya Pradesh"]
-    },
-    {
-      "category": "Medium Difficulty",
-      "type": "multiple",
-      "difficulty": "medium",
       "question": "What is the capital city of Karnataka?",
       "correct_answer": "Bengaluru",
       "incorrect_answers": ["Mysuru", "Hubballi", "Mangaluru"]
@@ -309,17 +273,297 @@
       "category": "Medium Difficulty",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which state is known as the 'Land of Festivals'?",
-      "correct_answer": "Manipur",
-      "incorrect_answers": ["Mizoram", "Nagaland", "Meghalaya"]
-    },
-    {
-      "category": "Medium Difficulty",
-      "type": "multiple",
-      "difficulty": "medium",
       "question": "What is the capital city of Himachal Pradesh?",
       "correct_answer": "Shimla",
       "incorrect_answers": ["Dharamshala", "Manali", "Kullu"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which year was the state of Gujarat officially formed?",
+      "correct_answer": "1960",
+      "incorrect_answers": ["1956", "1971", "1980"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state was the first to achieve 100% electrification in India?",
+      "correct_answer": "Goa",
+      "incorrect_answers": ["Tamil Nadu", "Maharashtra", "Kerala"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state's capital city was originally known as 'Amaravati'?",
+      "correct_answer": "Andhra Pradesh",
+      "incorrect_answers": ["Uttar Pradesh", "Madhya Pradesh", "Karnataka"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which year did Goa become a state of India?",
+      "correct_answer": "1987",
+      "incorrect_answers": ["1971", "1960", "1991"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state was the first to introduce the Panchayati Raj system?",
+      "correct_answer": "Rajasthan",
+      "incorrect_answers": ["Kerala", "West Bengal", "Tamil Nadu"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which year did Jharkhand become a state of India?",
+      "correct_answer": "2000",
+      "incorrect_answers": ["1991", "1987", "1975"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state's capital city was originally known as 'Nagapatnam'?",
+      "correct_answer": "Tamil Nadu",
+      "incorrect_answers": ["Kerala", "Andhra Pradesh", "Karnataka"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "The state of Mizoram was formed in which year?",
+      "correct_answer": "1987",
+      "incorrect_answers": ["1975", "1960", "1991"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state was the first to implement the Right to Information Act?",
+      "correct_answer": "Assam",
+      "incorrect_answers": ["Maharashtra", "Uttar Pradesh", "Bihar"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which year did Uttarakhand become a state of India?",
+      "correct_answer": "2000",
+      "incorrect_answers": ["1991", "1987", "1975"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state's capital city was originally known as 'Shyamala'?",
+      "correct_answer": "Himachal Pradesh",
+      "incorrect_answers": ["Uttarakhand", "Jammu and Kashmir", "Punjab"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "The state of Chhattisgarh was formed in which year?",
+      "correct_answer": "2000",
+      "incorrect_answers": ["1991", "1987", "1975"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state was the first to achieve 100% primary education?",
+      "correct_answer": "Kerala",
+      "incorrect_answers": ["Tamil Nadu", "Maharashtra", "Gujarat"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which year did Manipur become a state of India?",
+      "correct_answer": "1972",
+      "incorrect_answers": ["1956", "1960", "1987"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state's capital city was originally known as 'Prayag'?",
+      "correct_answer": "Uttar Pradesh",
+      "incorrect_answers": ["Madhya Pradesh", "Bihar", "Rajasthan"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "The state of Meghalaya was formed in which year?",
+      "correct_answer": "1972",
+      "incorrect_answers": ["1956", "1960", "1987"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state was the first to implement the Mahatma Gandhi National Rural Employment Guarantee Act?",
+      "correct_answer": "Maharashtra",
+      "incorrect_answers": ["Uttar Pradesh", "Bihar", "Gujarat"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which year did Nagaland become a state of India?",
+      "correct_answer": "1963",
+      "incorrect_answers": ["1956", "1960", "1987"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state's capital city was originally known as 'Kohima'?",
+      "correct_answer": "Nagaland",
+      "incorrect_answers": ["Manipur", "Mizoram", "Tripura"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "The state of Arunachal Pradesh was formed in which year?",
+      "correct_answer": "1987",
+      "incorrect_answers": ["1975", "1960", "1991"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state was the first to implement the Midday Meal Scheme?",
+      "correct_answer": "TamilNadu",
+      "incorrect_answers": ["Kerala", "Karnataka", "Andhra Pradesh"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which year did Punjab become a state of India?",
+      "correct_answer": "1966",
+      "incorrect_answers": ["1956", "1960", "1987"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state's capital city was originally known as 'Bhagyanagar'?",
+      "correct_answer": "Telangana",
+      "incorrect_answers": ["Andhra Pradesh", "Karnataka", "Tamil Nadu"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "The state of Sikkim was formed in which year?",
+      "correct_answer": "1975",
+      "incorrect_answers": ["1956", "1960", "1987"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state was the first to implement the Midday Meal Scheme?",
+      "correct_answer": "Tamil Nadu",
+      "incorrect_answers": ["Kerala", "Karnataka", "Andhra Pradesh"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which year did Punjab become a state of India?",
+      "correct_answer": "1966",
+      "incorrect_answers": ["1956", "1960", "1987"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which year was the state of Haryana officially formed?",
+      "correct_answer": "1966",
+      "incorrect_answers": ["1956", "1971", "1980"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state was the first to implement the Total Literacy Campaign?",
+      "correct_answer": "Kerala",
+      "incorrect_answers": ["Tamil Nadu", "Maharashtra", "Gujarat"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which year did Chhattisgarh become a state of India?",
+      "correct_answer": "2000",
+      "incorrect_answers": ["1991", "1987", "1975"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state's capital city was originally known as 'Shimoga'?",
+      "correct_answer": "Karnataka",
+      "incorrect_answers": ["Andhra Pradesh", "Tamil Nadu", "Kerala"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "The state of Uttarakhand was formed in which year?",
+      "correct_answer": "2000",
+      "incorrect_answers": ["1991", "1987", "1975"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state was the first to implement the MGNREGA scheme?",
+      "correct_answer": "Andhra Pradesh",
+      "incorrect_answers": ["Maharashtra", "Uttar Pradesh", "Bihar"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which year did Uttarakhand become a state of India?",
+      "correct_answer": "2000",
+      "incorrect_answers": ["1991", "1987", "1975"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state's capital city was originally known as 'Bengaval-uru'?",
+      "correct_answer": "Karnataka",
+      "incorrect_answers": ["Andhra Pradesh", "Tamil Nadu", "Kerala"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "The state of Jharkhand was formed in which year?",
+      "correct_answer": "2000",
+      "incorrect_answers": ["1991", "1987", "1975"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which state was the first to implement the PDS system?",
+      "correct_answer": "Tamil Nadu",
+      "incorrect_answers": ["Kerala", "Karnataka", "Andhra Pradesh"]
     }
   ]
 }

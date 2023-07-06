@@ -4,7 +4,6 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
 import 'dart:convert';
@@ -44,12 +43,16 @@ class QuesProvider with ChangeNotifier {
   int streakCount = 0;
   bool tappedOptionIsCorrect = false;
   bool previousAnswerWasCorrect = false;
+  int numberOfPowerupsUsed = 0;
 
   List<List<DataModel>> dataModels = List.generate(
       genreNames.length, (index) => List.generate(3, (index) => DataModel()));
 
   List<List<String>> badgesEarned = List.generate(
       genreNames.length, (index) => List.generate(3, (index) => "0"));
+
+  List<List<List<int>>> randomQuestions = List.generate(
+      genreNames.length, (index) => List.generate(3, (index) => []));
 
   void loadQuestions() async {
     questionsLoaded = false;
@@ -66,16 +69,17 @@ class QuesProvider with ChangeNotifier {
       dataModels[i][0] = easyData;
       dataModels[i][1] = mediumData;
       dataModels[i][2] = hardData;
+
+      for (int i = 0; i < genreNames.length; i++) {
+        for (int j = 0; j < 3; j++) {
+          for (int k = 0; k < dataModels[i][j].results!.length; k++) {
+            randomQuestions[i][j].add(k);
+          }
+          randomQuestions[i][j].shuffle();
+        }
+      }
     }
-    // logged the value for checking whether the values are getting initialised or not
-    // for (int i = 0; i < categoryNames.length; i++) {
-    //   for (int j = 0; j < 3; j++) {
-    //     for (int k = 0; k < dataModels[i][j].results!.length; k++) {
-    //       dev.log(
-    //           "${dataModels[i][j].results![k].category!} ${dataModels[i][j].results![k].difficulty} ${dataModels[i][j].results![k].question!}");
-    //     }
-    //   }
-    // }
+
     questionsLoaded = true;
     notifyListeners();
   }
@@ -93,8 +97,12 @@ class QuesProvider with ChangeNotifier {
       tappedOption[i] = -1;
     }
     rightPosition = Random().nextInt(3);
-    int itemNumber =
-        Random().nextInt(dataModels[category][difficulty].results!.length);
+
+    if (randomQuestions[category][difficulty].isEmpty) {
+      loadQuestions();
+    }
+    int itemNumber = randomQuestions[category][difficulty].last;
+    randomQuestions[category][difficulty].removeLast();
 
     tapped = false;
     timesTapped = 0;
@@ -105,20 +113,15 @@ class QuesProvider with ChangeNotifier {
 
     showCorrectOption = false;
 
-    dev.log("right value after change $rightPosition");
-
     question = dataModels[category][difficulty].results![itemNumber].question!;
-    question = question = Bidi.stripHtmlIfNeeded(question);
     dev.log(question);
 
     correctAnswer =
         dataModels[category][difficulty].results![itemNumber].correctAnswer!;
-    correctAnswer = Bidi.stripHtmlIfNeeded(correctAnswer);
     for (int i = 0; i < 3; i++) {
       incorrectAnswer[i] = dataModels[category][difficulty]
           .results![itemNumber]
           .incorrectAnswers![i];
-      incorrectAnswer[i] = Bidi.stripHtmlIfNeeded(incorrectAnswer[i]);
       dev.log("Incorrect answer $i: ${incorrectAnswer[i]}");
     }
     dev.log("Correct answer : $correctAnswer");
@@ -215,6 +218,7 @@ class QuesProvider with ChangeNotifier {
                 streakCount = 0;
                 numberOfCorrectAnswers = 0;
                 numberOfInorrectAnswers = 0;
+                numberOfPowerupsUsed = 0;
                 // reset double Streak
                 doublePointsTapped = false;
                 notifyListeners();

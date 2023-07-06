@@ -1,29 +1,20 @@
 {
-  "response_code": 0,
   "results": [
     {
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which is the largest state in India by area?",
-      "correct_answer": "Rajasthan",
-      "incorrect_answers": ["Uttar Pradesh", "Maharashtra", "Madhya Pradesh"]
+      "question": "What is the capital city of Karnataka?",
+      "correct_answer": "Bengaluru",
+      "incorrect_answers": ["Mumbai", "Chennai", "Kolkata"]
     },
     {
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which state is known as the 'Land of the Gods'?",
-      "correct_answer": "Uttarakhand",
-      "incorrect_answers": ["Himachal Pradesh", "Kerala", "Rajasthan"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known as the 'Spice Garden of India'?",
+      "question": "Which state is famous for its backwaters?",
       "correct_answer": "Kerala",
-      "incorrect_answers": ["Tamil Nadu", "Karnataka", "Andhra Pradesh"]
+      "incorrect_answers": ["Tamil Nadu", "Andhra Pradesh", "Karnataka"]
     },
     {
       "category": "Indian States",
@@ -31,183 +22,15 @@
       "difficulty": "easy",
       "question": "Which state is known as the 'Land of the Rising Sun'?",
       "correct_answer": "Arunachal Pradesh",
-      "incorrect_answers": ["Manipur", "Mizoram", "Nagaland"]
+      "incorrect_answers": ["Nagaland", "Manipur", "Meghalaya"]
     },
     {
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which state is known as the 'Land of Temples'?",
-      "correct_answer": "Tamil Nadu",
-      "incorrect_answers": ["Uttar Pradesh", "Maharashtra", "Karnataka"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known as the 'Land of Five Rivers'?",
+      "question": "Which state is home to the famous Golden Temple?",
       "correct_answer": "Punjab",
-      "incorrect_answers": ["Gujarat", "Haryana", "Bihar"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known as the 'Land of Festivals'?",
-      "correct_answer": "Uttar Pradesh",
-      "incorrect_answers": ["West Bengal", "Rajasthan", "Odisha"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known as the 'Land of Lakes'?",
-      "correct_answer": "Madhya Pradesh",
-      "incorrect_answers": ["Kerala", "Rajasthan", "Andhra Pradesh"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known as the 'Land of Thunder Dragon'?",
-      "correct_answer": "Bhutan",
-      "incorrect_answers": ["Arunachal Pradesh", "Meghalaya", "Nagaland"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known as the 'God's Own Country'?",
-      "correct_answer": "Kerala",
-      "incorrect_answers": ["Tamil Nadu", "Karnataka", "Andhra Pradesh"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is home to the famous 'Golden Temple'?",
-      "correct_answer": "Punjab",
-      "incorrect_answers": ["Uttar Pradesh", "Rajasthan", "Maharashtra"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the official language of Odisha?",
-      "correct_answer": "Odia",
-      "incorrect_answers": ["Hindi", "Bengali", "Telugu"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known for the famous 'Konark Sun Temple'?",
-      "correct_answer": "Odisha",
-      "incorrect_answers": ["Madhya Pradesh", "Rajasthan", "Kerala"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the capital city of Odisha?",
-      "correct_answer": "Bhubaneswar",
-      "incorrect_answers": ["Cuttack", "Puri", "Rourkela"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known for the famous 'Jagannath Temple'?",
-      "correct_answer": "Odisha",
-      "incorrect_answers": ["Uttar Pradesh", "Maharashtra", "Tamil Nadu"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known for the famous 'Sundarbans National Park'?",
-      "correct_answer": "West Bengal",
-      "incorrect_answers": ["Assam", "Meghalaya", "Bihar"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the capital city of West Bengal?",
-      "correct_answer": "Kolkata",
-      "incorrect_answers": ["Mumbai", "Delhi", "Chennai"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known for the famous 'Meenakshi Temple'?",
-      "correct_answer": "Tamil Nadu",
-      "incorrect_answers": ["Karnataka", "Andhra Pradesh", "Kerala"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the capital city of Tamil Nadu?",
-      "correct_answer": "Chennai",
-      "incorrect_answers": ["Bengaluru", "Hyderabad", "Kochi"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known for the famous 'Gir Forest National Park'?",
-      "correct_answer": "Gujarat",
-      "incorrect_answers": ["Rajasthan", "Maharashtra", "Madhya Pradesh"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the capital city of Gujarat?",
-      "correct_answer": "Gandhinagar",
-      "incorrect_answers": ["Ahmedabad", "Surat", "Vadodara"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known for the famous 'Mysore Palace'?",
-      "correct_answer": "Karnataka",
-      "incorrect_answers": ["Tamil Nadu", "Andhra Pradesh", "Kerala"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the capital city of Karnataka?",
-      "correct_answer": "Bengaluru",
-      "incorrect_answers": ["Hyderabad", "Chennai", "Thiruvananthapuram"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known for the famous 'Red Fort'?",
-      "correct_answer": "Delhi",
-      "incorrect_answers": ["Uttar Pradesh", "Rajasthan", "Maharashtra"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the capital city of Delhi?",
-      "correct_answer": "New Delhi",
-      "incorrect_answers": ["Mumbai", "Kolkata", "Chennai"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which state is known for the famous 'Ajanta and Ellora Caves'?",
-      "correct_answer": "Maharashtra",
-      "incorrect_answers": ["Uttar Pradesh", "Rajasthan", "Kerala"]
+      "incorrect_answers": ["Rajasthan", "Uttar Pradesh", "Madhya Pradesh"]
     },
     {
       "category": "Indian States",
@@ -221,40 +44,76 @@
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which state is known as the 'Land of Forests'?",
-      "correct_answer": "Madhya Pradesh",
-      "incorrect_answers": ["Uttarakhand", "Arunachal Pradesh", "Kerala"]
+      "question": "Which state is famous for the Ajanta and Ellora Caves?",
+      "correct_answer": "Maharashtra",
+      "incorrect_answers": ["Uttar Pradesh", "Madhya Pradesh", "Tamil Nadu"]
     },
     {
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the capital city of Madhya Pradesh?",
-      "correct_answer": "Bhopal",
-      "incorrect_answers": ["Indore", "Gwalior", "Jabalpur"]
+      "question": "What is the capital city of Andhra Pradesh?",
+      "correct_answer": "Amravati",
+      "incorrect_answers": ["Hyderabad", "Vijayawada", "Visakhapatnam"]
     },
     {
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which state is known for the famous 'Backwaters'?",
-      "correct_answer": "Kerala",
-      "incorrect_answers": ["Tamil Nadu", "Karnataka", "Andhra Pradesh"]
+      "question": "Which state is known as the 'Land of the Gods'?",
+      "correct_answer": "Uttarakhand",
+      "incorrect_answers": [
+        "Himachal Pradesh",
+        "Jammu and Kashmir",
+        "Arunachal Pradesh"
+      ]
     },
     {
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the capital city of Kerala?",
-      "correct_answer": "Thiruvananthapuram",
-      "incorrect_answers": ["Kochi", "Kozhikode", "Thrissur"]
+      "question": "What is the capital city of Tamil Nadu?",
+      "correct_answer": "Chennai",
+      "incorrect_answers": ["Madurai", "Coimbatore", "Trichy"]
     },
     {
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which union territory of India is known for the famous 'Daman and Diu'?",
-      "correct_answer": "Dadra and Nagar Haveli and Daman and Diu",
+      "question": "Which state is famous for its silk production?",
+      "correct_answer": "Karnataka",
+      "incorrect_answers": ["Maharashtra", "Uttar Pradesh", "Tamil Nadu"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which state is known as the 'Land of Five Rivers'?",
+      "correct_answer": "Punjab",
+      "incorrect_answers": ["Haryana", "Uttar Pradesh", "Madhya Pradesh"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which state is famous for the Sundarbans National Park?",
+      "correct_answer": "West Bengal",
+      "incorrect_answers": ["Assam", "Odisha", "Kerala"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the capital city of Gujarat?",
+      "correct_answer": "Gandhinagar",
+      "incorrect_answers": ["Ahmedabad", "Surat", "Rajkot"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which union territory is known for its beaches and nightlife?",
+      "correct_answer": "Goa",
       "incorrect_answers": [
         "Andaman and Nicobar Islands",
         "Puducherry",
@@ -268,6 +127,254 @@
       "question": "What is the capital city of Odisha?",
       "correct_answer": "Bhubaneswar",
       "incorrect_answers": ["Cuttack", "Puri", "Rourkela"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the official language of Maharashtra?",
+      "correct_answer": "Marathi",
+      "incorrect_answers": ["Hindi", "English", "Gujarati"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the official language of Bihar?",
+      "correct_answer": "Hindi",
+      "incorrect_answers": ["Bhojpuri", "Maithili", "Urdu"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the official language of Uttar Pradesh?",
+      "correct_answer": "Hindi",
+      "incorrect_answers": ["Bengali", "Urdu", "Tamil"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which union territory is known for its Portuguese influence and architecture?",
+      "correct_answer": "Goa",
+      "incorrect_answers": [
+        "Andaman and Nicobar Islands",
+        "Puducherry",
+        "Lakshadweep"
+      ]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the official language of Rajasthan?",
+      "correct_answer": "Rajasthani",
+      "incorrect_answers": ["Hindi", "English", "Gujarati"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which union territory is known for its beaches and French colonial architecture?",
+      "correct_answer": "Puducherry",
+      "incorrect_answers": ["Daman and Diu", "Chandigarh", "Lakshadweep"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the official language of West Bengal?",
+      "correct_answer": "Bengali",
+      "incorrect_answers": ["Hindi", "English", "Odia"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which union territory is known for its coral reefs and pristine beaches?",
+      "correct_answer": "Lakshadweep",
+      "incorrect_answers": [
+        "Ladakh",
+        "Daman and Diu",
+        "Puducherry"
+      ]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the official language of Gujarat?",
+      "correct_answer": "Gujarati",
+      "incorrect_answers": ["Hindi", "English", "Marathi"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which union territory is known for its beautiful beaches and nightlife?",
+      "correct_answer": "Goa",
+      "incorrect_answers": [
+        "Andaman and Nicobar Islands",
+        "Puducherry",
+        "Lakshadweep"
+      ]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the official language of Telangana?",
+      "correct_answer": "Telugu",
+      "incorrect_answers": ["Hindi", "English", "Kannada"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which union territory is known for its French influence and architecture?",
+      "correct_answer": "Puducherry",
+      "incorrect_answers": ["Daman and Diu", "Chandigarh", "Lakshadweep"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the official language of Punjab?",
+      "correct_answer": "Punjabi",
+      "incorrect_answers": ["Hindi", "English", "Urdu"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the official language of Uttar Pradesh?",
+      "correct_answer": "Hindi",
+      "incorrect_answers": ["Bengali", "Urdu", "Tamil"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which union territory is known for its Portuguese influence and architecture?",
+      "correct_answer": "Goa",
+      "incorrect_answers": [
+        "Andaman and Nicobar Islands",
+        "Puducherry",
+        "Lakshadweep"
+      ]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the capital city of Rajasthan?",
+      "correct_answer": "Jaipur",
+      "incorrect_answers": ["Jodhpur", "Udaipur", "Jaisalmer"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which union territory is known for its French influence and architecture?",
+      "correct_answer": "Puducherry",
+      "incorrect_answers": ["Daman and Diu", "Chandigarh", "Lakshadweep"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the official language of Maharashtra?",
+      "correct_answer": "Marathi",
+      "incorrect_answers": ["Hindi", "English", "Gujarati"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which union territory is known for its beautiful beaches and coral reefs?",
+      "correct_answer": "Andaman and Nicobar Islands",
+      "incorrect_answers": ["Daman and Diu", "Puducherry", "Lakshadweep"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the official language of Bihar?",
+      "correct_answer": "Hindi",
+      "incorrect_answers": ["Bhojpuri", "Maithili", "Urdu"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which union territory is known for its pristine beaches and coral reefs?",
+      "correct_answer": "Lakshadweep",
+      "incorrect_answers": [
+        "Andaman and Nicobar Islands",
+        "Daman and Diu",
+        "Puducherry"
+      ]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the official language of Uttar Pradesh?",
+      "correct_answer": "Hindi",
+      "incorrect_answers": ["Bengali", "Urdu", "Tamil"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which union territory is known for its Portuguese influence and architecture?",
+      "correct_answer": "Daman and Diu",
+      "incorrect_answers": [
+        "Andaman and Nicobar Islands",
+        "Puducherry",
+        "Lakshadweep"
+      ]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the capital city of Rajasthan?",
+      "correct_answer": "Jaipur",
+      "incorrect_answers": ["Jodhpur", "Udaipur", "Jaisalmer"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which state is famous for its tea plantations?",
+      "correct_answer": "Assam",
+      "incorrect_answers": ["West Bengal", "Karnataka", "Tamil Nadu"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the capital city of Bihar?",
+      "correct_answer": "Patna",
+      "incorrect_answers": ["Gaya", "Muzaffarpur", "Darbhanga"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the capital city of Madhya Pradesh?",
+      "correct_answer": "Bhopal",
+      "incorrect_answers": ["Indore", "Gwalior", "Jabalpur"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the capital city of Telangana?",
+      "correct_answer": "Hyderabad",
+      "incorrect_answers": ["Warangal", "Vijayawada", "Bangalore"]
     }
   ]
 }

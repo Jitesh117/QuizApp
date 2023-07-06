@@ -1,269 +1,381 @@
 {
-  "response_code": 0,
   "results": [
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American pop artist released the hit song 'Bad Romance' in 2009?",
-      "correct_answer": "Lady Gaga",
-      "incorrect_answers": ["Taylor Swift", "Justin Timberlake", "Beyoncé"]
+      "question": "Which actor portrayed Tyler Durden in the movie 'Fight Club'?",
+      "correct_answer": "Brad Pitt",
+      "incorrect_answers": ["Edward Norton", "Leonardo DiCaprio", "Christian Bale"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Michael Jackson's iconic pop song released in 1982?",
-      "correct_answer": "Billie Jean",
-      "incorrect_answers": ["Thriller", "Beat It", "Smooth Criminal"]
+      "question": "Which film won the Best Picture award at the 2019 Academy Awards?",
+      "correct_answer": "Green Book",
+      "incorrect_answers": ["Bohemian Rhapsody", "Black Panther", "The Favourite"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American singer-songwriter released the popular pop song 'Shape of You' in 2017?",
-      "correct_answer": "Ed Sheeran",
-      "incorrect_answers": ["Bruno Mars", "Justin Bieber", "The Weeknd"]
+      "question": "Which artist released the album 'Born in the U.S.A.' in 1984?",
+      "correct_answer": "Bruce Springsteen",
+      "incorrect_answers": ["Bob Dylan", "Tom Petty", "Billy Joel"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Katy Perry's pop song that became an anthem for self-empowerment and topped the charts in 2013?",
-      "correct_answer": "Roar",
-      "incorrect_answers": ["Firework", "Teenage Dream", "California Gurls"]
+      "question": "Who directed the movie 'Gone Girl'?",
+      "correct_answer": "David Fincher",
+      "incorrect_answers": ["Christopher Nolan", "Martin Scorsese", "Quentin Tarantino"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American pop duo released the hit song 'Closer' featuring Halsey in 2016?",
-      "correct_answer": "The Chainsmokers",
-      "incorrect_answers": ["Maroon 5", "Twenty One Pilots", "Imagine Dragons"]
+      "question": "Which actress portrayed Marilyn Monroe in the movie 'My Week with Marilyn'?",
+      "correct_answer": "Michelle Williams",
+      "incorrect_answers": ["Scarlett Johansson", "Natalie Portman", "Cate Blanchett"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Rihanna's pop song featuring Calvin Harris, which became a global success in 2011?",
-      "correct_answer": "We Found Love",
-      "incorrect_answers": ["Umbrella", "Diamonds", "Work"]
+      "question": "Who is the creator of the TV show 'The West Wing'?",
+      "correct_answer": "Aaron Sorkin",
+      "incorrect_answers": ["J.J. Abrams", "David Chase", "Shonda Rhimes"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American singer-songwriter released the pop song 'Hello' in 2015?",
-      "correct_answer": "Adele",
-      "incorrect_answers": ["Taylor Swift", "Katy Perry", "Ariana Grande"]
+      "question": "Which band released the album 'The Joshua Tree' in 1987?",
+      "correct_answer": "U2",
+      "incorrect_answers": ["R.E.M.", "The Rolling Stones", "Coldplay"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Justin Timberlake's pop song that won the Grammy Award for Record of the Year in 2007?",
-      "correct_answer": "What Goes Around... Comes Around",
-      "incorrect_answers": ["SexyBack", "Cry Me a River", "Mirrors"]
+      "question": "Who directed the movie 'Eternal Sunshine of the Spotless Mind'?",
+      "correct_answer": "Michel Gondry",
+      "incorrect_answers": ["Spike Jonze", "Charlie Kaufman", "Wes Anderson"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American pop artist released the hit song 'Blank Space' in 2014?",
-      "correct_answer": "Taylor Swift",
-      "incorrect_answers": ["Selena Gomez", "Demi Lovato", "Miley Cyrus"]
+      "question": "Which singer released the album 'Back to Black' in 2006?",
+      "correct_answer": "Amy Winehouse",
+      "incorrect_answers": ["Adele", "Beyonce", "Taylor Swift"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Bruno Mars' pop song that became one of the best-selling singles of all time?",
-      "correct_answer": "Uptown Funk",
-      "incorrect_answers": [
-        "Just the Way You Are",
-        "Locked Out of Heaven",
-        "24K Magic"
-      ]
+      "question": "Who is the director of the movie 'The Revenant'?",
+      "correct_answer": "Alejandro G. Iñárritu",
+      "incorrect_answers": ["Damien Chazelle", "Guillermo del Toro", "Alfonso Cuarón"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American pop band released the hit song 'Somebody That I Used to Know' featuring Kimbra in 2011?",
-      "correct_answer": "Gotye",
-      "incorrect_answers": ["Foster the People", "OneRepublic", "Fun."]
+      "question": "Which artist released the album 'Hunky Dory' in 1971?",
+      "correct_answer": "David Bowie",
+      "incorrect_answers": ["Elton John", "Bob Dylan", "John Lennon"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Beyoncé's pop song that became an anthem for female empowerment and topped the charts in 2011?",
-      "correct_answer": "Run the World (Girls)",
-      "incorrect_answers": [
-        "Crazy in Love",
-        "Irreplaceable",
-        "Single Ladies (Put a Ring on It)"
-      ]
+      "question": "Who portrayed Tonya Harding in the movie 'I, Tonya'?",
+      "correct_answer": "Margot Robbie",
+      "incorrect_answers": ["Emma Stone", "Saoirse Ronan", "Jennifer Lawrence"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American singer-songwriter released the hit pop song 'Can't Feel My Face' in 2015?",
-      "correct_answer": "The Weeknd",
-      "incorrect_answers": ["Sam Smith", "Zayn", "Charlie Puth"]
+      "question": "The TV show 'The Sopranos' is set in which state?",
+      "correct_answer": "New Jersey",
+      "incorrect_answers": ["New York", "California", "Florida"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Maroon 5's pop song that topped the charts in 2011?",
-      "correct_answer": "Moves Like Jagger",
-      "incorrect_answers": ["Sugar", "Payphone", "One More Night"]
+      "question": "Who is the author of the novel 'To Kill a Mockingbird'?",
+      "correct_answer": "Harper Lee",
+      "incorrect_answers": ["J.D. Salinger", "F. Scott Fitzgerald", "Mark Twain"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American pop artist released the hit song 'Born This Way' in 2011?",
-      "correct_answer": "Lady Gaga",
-      "incorrect_answers": ["Katy Perry", "Rihanna", "Beyoncé"]
+      "question": "Which actor portrayed the character John Wick in the film series?",
+      "correct_answer": "Keanu Reeves",
+      "incorrect_answers": ["Liam Neeson", "Jason Statham", "Tom Cruise"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Ed Sheeran's pop song that became a global sensation and one of the best-selling singles of all time?",
-      "correct_answer": "Shape of You",
-      "incorrect_answers": [
-        "Thinking Out Loud",
-        "Photograph",
-        "Castle on the Hill"
-      ]
+      "question": "The TV show 'The Wire' is set in which city?",
+      "correct_answer": "Baltimore",
+      "incorrect_answers": ["Chicago", "Los Angeles", "New York City"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American pop band released the hit song 'Radioactive' in 2012?",
-      "correct_answer": "Imagine Dragons",
-      "incorrect_answers": ["Coldplay", "Twenty One Pilots", "Fall Out Boy"]
+      "question": "Who directed the movie 'Pulp Fiction'?",
+      "correct_answer": "Quentin Tarantino",
+      "incorrect_answers": ["Martin Scorsese", "Christopher Nolan", "David Fincher"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Taylor Swift's pop song that broke multiple streaming records upon its release in 2019?",
-      "correct_answer": "ME!",
-      "incorrect_answers": ["Shake It Off", "Blank Space", "Bad Blood"]
+      "question": "Which singer released the album 'Lemonade' in 2016?",
+      "correct_answer": "Beyonce",
+      "incorrect_answers": ["Rihanna", "Adele", "Taylor Swift"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American singer-songwriter released the hit pop song 'Love Yourself' in 2015?",
-      "correct_answer": "Justin Bieber",
-      "incorrect_answers": ["Shawn Mendes", "Charlie Puth", "Nick Jonas"]
+      "question": "Who is the author of the novel 'The Great Gatsby'?",
+      "correct_answer": "F. Scott Fitzgerald",
+      "incorrect_answers": ["Ernest Hemingway", "Mark Twain", "Harper Lee"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Ariana Grande's pop song that became a worldwide success and garnered critical acclaim in 2018?",
-      "correct_answer": "No Tears Left to Cry",
-      "incorrect_answers": ["Problem", "Thank U, Next", "Side to Side"]
+      "question": "Who is the lead vocalist of the band Radiohead?",
+      "correct_answer": "Thom Yorke",
+      "incorrect_answers": ["Eddie Vedder", "Chris Martin", "Brandon Flowers"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American pop artist released the hit song 'Hotline Bling' in 2015?",
-      "correct_answer": "Drake",
-      "incorrect_answers": ["Kendrick Lamar", "Jay-Z", "Eminem"]
+      "question": "Which film won the Best Picture award at the 2020 Academy Awards?",
+      "correct_answer": "Parasite",
+      "incorrect_answers": ["Joker", "1917", "Once Upon a Time in Hollywood"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Shawn Mendes' pop song that became a global hit and reached the top of the charts in 2018?",
-      "correct_answer": "In My Blood",
-      "incorrect_answers": [
-        "Stitches",
-        "Treat You Better",
-        "There's Nothing Holdin' Me Back"
-      ]
+      "question": "Who directed the movie 'The Social Network'?",
+      "correct_answer": "David Fincher",
+      "incorrect_answers": ["Christopher Nolan", "Martin Scorsese", "Quentin Tarantino"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American pop band released the hit song 'Sugar' in 2014?",
-      "correct_answer": "Maroon 5",
-      "incorrect_answers": ["OneRepublic", "Coldplay", "Panic! At The Disco"]
+      "question": "Which artist released the album 'Blonde' in 2016?",
+      "correct_answer": "Frank Ocean",
+      "incorrect_answers": ["Kendrick Lamar", "Drake", "The Weeknd"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Demi Lovato's pop song that became an anthem for self-acceptance and empowerment in 2011?",
-      "correct_answer": "Skyscraper",
-      "incorrect_answers": ["Cool for the Summer", "Heart Attack", "Confident"]
+      "question": "The TV show 'The Office' is set in which city?",
+      "correct_answer": "Scranton",
+      "incorrect_answers": ["New York City", "Los Angeles", "Chicago"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American singer-songwriter released the hit pop song 'Havana' featuring Young Thug in 2017?",
-      "correct_answer": "Camila Cabello",
-      "incorrect_answers": ["Selena Gomez", "Ariana Grande", "Dua Lipa"]
+      "question": "Who is the author of the novel 'The Catcher in the Rye'?",
+      "correct_answer": "J.D. Salinger",
+      "incorrect_answers": ["F. Scott Fitzgerald", "Ernest Hemingway", "Mark Twain"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Sia's pop song that became a worldwide hit and gained widespread recognition in 2014?",
-      "correct_answer": "Chandelier",
-      "incorrect_answers": ["Elastic Heart", "Cheap Thrills", "The Greatest"]
+      "question": "Who directed the movie 'Birdman'?",
+      "correct_answer": "Alejandro G. Iñárritu",
+      "incorrect_answers": ["Damien Chazelle", "Guillermo del Toro", "Alfonso Cuarón"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American pop artist released the hit song 'Shallow' in 2018, which won the Academy Award for Best Original Song?",
-      "correct_answer": "Lady Gaga",
-      "incorrect_answers": ["Adele", "Taylor Swift", "Beyoncé"]
+      "question": "Which artist released the album 'Dirty Computer' in 2018?",
+      "correct_answer": "Janelle Monáe",
+      "incorrect_answers": ["Beyonce", "Rihanna", "Taylor Swift"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is the title of Halsey's pop song that became a chart-topping hit in 2019?",
-      "correct_answer": "Without Me",
-      "incorrect_answers": ["Bad at Love", "Colors", "Eastside"]
+      "question": "Which actor portrayed Jordan Belfort in the movie 'The Wolf of Wall Street'?",
+      "correct_answer": "Leonardo DiCaprio",
+      "incorrect_answers": ["Christian Bale", "Brad Pitt", "Johnny Depp"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American singer-songwriter released the pop song 'Wrecking Ball' in 2013?",
-      "correct_answer": "Miley Cyrus",
-      "incorrect_answers": ["Selena Gomez", "Demi Lovato", "Ariana Grande"]
+      "question": "The TV show 'Stranger Things' is set in which decade?",
+      "correct_answer": "1980s",
+      "incorrect_answers": ["1960s", "1970s", "1990s"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is Britney Spears' pop song that became her debut single and reached number one on the Billboard Hot 100 in 1998?",
-      "correct_answer": "...Baby One More Time",
-      "incorrect_answers": ["Toxic", "Oops!... I Did It Again", "Crazy"]
+      "question": "Who is the lead vocalist of the band Guns N' Roses?",
+      "correct_answer": "Axl Rose",
+      "incorrect_answers": ["Kurt Cobain", "Eddie Vedder", "Steven Tyler"]
     },
     {
-      "category": "American Pop Songs",
+      "category": "American Pop Culture",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which American pop artist released the hit song 'WAP' featuring Megan Thee Stallion in 2020?",
-      "correct_answer": "Cardi B",
-      "incorrect_answers": ["Nicki Minaj", "Lizzo", "Megan Thee Stallion"]
+      "question": "Which film won the Best Picture award at the 2018 Academy Awards?",
+      "correct_answer": "The Shape of Water",
+      "incorrect_answers": ["La La Land", "Moonlight", "Three Billboards Outside Ebbing, Missouri"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who directed the movie 'Interstellar'?",
+      "correct_answer": "Christopher Nolan",
+      "incorrect_answers": ["Denis Villeneuve", "Steven Spielberg", "David Fincher"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "The TV show 'Breaking Bad' is set in which U.S. state?",
+      "correct_answer": "New Mexico",
+      "incorrect_answers": ["Arizona", "Texas", "California"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the author of the novel 'The Fault in Our Stars'?",
+      "correct_answer": "John Green",
+      "incorrect_answers": ["Nicholas Sparks", "Jodi Picoult", "Stephenie Meyer"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which artist released the album 'Born to Die' in 2012?",
+      "correct_answer": "Lana Del Rey",
+      "incorrect_answers": ["Adele", "Lady Gaga", "Taylor Swift"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who directed the movie 'No Country for Old Men'?",
+      "correct_answer": "Joel and Ethan Coen",
+      "incorrect_answers": ["Quentin Tarantino", "David Fincher", "Martin Scorsese"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which actress portrayed Katniss Everdeen in the 'Hunger Games' film series?",
+      "correct_answer": "Jennifer Lawrence",
+      "incorrect_answers": ["Emma Watson", "Shailene Woodley", "Saoirse Ronan"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "The TV show 'The Big Bang Theory' is set in which city?",
+      "correct_answer": "Pasadena",
+      "incorrect_answers": ["Los Angeles", "New York City", "Chicago"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the author of the novel 'The Girl on the Train'?",
+      "correct_answer": "Paula Hawkins",
+      "incorrect_answers": ["Gillian Flynn", "Liane Moriarty", "J.K. Rowling"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "The TV show 'Friends' is set in which city?",
+      "correct_answer": "New York City",
+      "incorrect_answers": ["Los Angeles", "Chicago", "Seattle"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which artist released the album 'Yeezus' in 2013?",
+      "correct_answer": "Kanye West",
+      "incorrect_answers": ["Jay-Z", "Drake", "Eminem"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who directed the movie 'Blade Runner 2049'?",
+      "correct_answer": "Denis Villeneuve",
+      "incorrect_answers": ["Christopher Nolan", "David Fincher", "Steven Spielberg"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "The TV show 'Game of Thrones' is based on a series of novels by which author?",
+      "correct_answer": "George R.R. Martin",
+      "incorrect_answers": ["J.K. Rowling", "Stephen King", "Neil Gaiman"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who portrayed the character Jack Sparrow in the 'Pirates of the Caribbean' film series?",
+      "correct_answer": "Johnny Depp",
+      "incorrect_answers": ["Orlando Bloom", "Tom Hanks", "Brad Pitt"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "The TV show 'Stranger Things' is set in which fictional town?",
+      "correct_answer": "Hawkins",
+      "incorrect_answers": ["Derry", "Springfield", "Hill Valley"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the author of the novel 'The Hunger Games'?",
+      "correct_answer": "Suzanne Collins",
+      "incorrect_answers": ["Veronica Roth", "J.K. Rowling", "Stephenie Meyer"]
+    },
+    {
+      "category": "American Pop Culture",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which artist released the album 'OK Computer' in 1997?",
+      "correct_answer": "Radiohead",
+      "incorrect_answers": ["Nirvana", "Pearl Jam", "Red Hot Chili Peppers"]
     }
   ]
 }
+
