@@ -358,6 +358,7 @@ class QuizPage extends StatelessWidget {
                                   playerProvider.updatePowerups();
                                   quesProvider.fetchQuestion(
                                       category, difficulty);
+                                  timeController.reset();
                                   playerProvider.resetPowerups();
                                 }
                               },

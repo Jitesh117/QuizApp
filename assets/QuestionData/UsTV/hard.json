@@ -264,6 +264,150 @@
         "Grey Sloan Memorial Hospital",
         "St. Jude Hospital"
       ]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of hackers who work for a corporation but are secretly working against it?",
+      "correct_answer": "Mr. Robot",
+      "incorrect_answers": [
+        "Black Mirror",
+        "The IT Crowd",
+        "The Big Bang Theory"
+      ]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trapped in a simulation and are trying to escape?",
+      "correct_answer": "Westworld",
+      "incorrect_answers": ["The Matrix", "The Truman Show", "The OA"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to survive in a world where superheroes are real?",
+      "correct_answer": "The Boys",
+      "incorrect_answers": ["Watchmen", "The Umbrella Academy", "Legion"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to survive in a world where the government is controlled by aliens?",
+      "correct_answer": "Falling Skies",
+      "incorrect_answers": ["V", "The X-Files", "The Orville"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to survive in a world where the dead have risen and are attacking the living?",
+      "correct_answer": "The Walking Dead",
+      "incorrect_answers": [
+        "Fear the Walking Dead",
+        "World War Z",
+        "Train to Busan"
+      ]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to survive in a world where magic is real and there is a war between good and evil?",
+      "correct_answer": "The Magicians",
+      "incorrect_answers": [
+        "Once Upon a Time",
+        "The Good Place",
+        "Supernatural"
+      ]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to survive in a world where the government is corrupt and there is a conspiracy to overthrow it?",
+      "correct_answer": "House of Cards",
+      "incorrect_answers": ["Scandal", "Designated Survivor", "The West Wing"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to survive in a world where the climate has changed drastically and there is a new ice age?",
+      "correct_answer": "Snowpiercer",
+      "incorrect_answers": [
+        "The Day After Tomorrow",
+        "Interstellar",
+        "The Road"
+      ]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of scientists who are trying to create a new form of artificial intelligence?",
+      "correct_answer": "Person of Interest",
+      "incorrect_answers": ["Black Mirror", "Westworld", "Her"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of FBI agents who are trying to stop a serial killer who is targeting people with psychic abilities?",
+      "correct_answer": "The Mentalist",
+      "incorrect_answers": ["Criminal Minds", "Lie to Me", "The X-Files"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of friends who are trying to solve the mystery of their friend's death?",
+      "correct_answer": "Veronica Mars",
+      "incorrect_answers": ["Pretty Little Liars", "Gossip Girl", "90210"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to survive in a world where the government has been overthrown by a group of terrorists?",
+      "correct_answer": "Designated Survivor",
+      "incorrect_answers": ["The West Wing", "Scandal", "House of Cards"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of doctors who are trying to save the world from a deadly virus?",
+      "correct_answer": "The Strain",
+      "incorrect_answers": ["World War Z", "Train to Busan", "Contagion"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to survive in a world where the government has been taken over by robots?",
+      "correct_answer": "Humans",
+      "incorrect_answers": ["Westworld", "I, Robot", "Ex Machina"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to survive in a world where the laws of physics have been broken?",
+      "correct_answer": "Fringe",
+      "incorrect_answers": ["The X-Files", "Stranger Things", "Timeless"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to survive in a world where the supernatural is real?",
+      "correct_answer": "Supernatural",
+      "incorrect_answers": ["The Walking Dead", "The X-Files", "Grimm"]
     }
   ]
 }

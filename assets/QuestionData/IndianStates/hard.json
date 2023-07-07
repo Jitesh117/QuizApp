@@ -295,8 +295,7 @@
       "question": "The state of Nagaland was formed in which year?",
       "correct_answer": "1963",
       "incorrect_answers": ["1956", "1960", "1987"]
-    }
-    ,
+    },
     {
       "category": "Indian States",
       "type": "multiple",
@@ -376,6 +375,54 @@
       "question": "The state of Uttarakhand was formed by separating from which Indian state?",
       "correct_answer": "Uttar Pradesh",
       "incorrect_answers": ["Bihar", "Rajasthan", "Madhya Pradesh"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Kodaikanal?",
+      "correct_answer": "Tamil Nadu",
+      "incorrect_answers": ["Kerala", "Andhra Pradesh", "Karnataka"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Indian state is home to the largest number of tigers in India, the Sundarbans?",
+      "correct_answer": "West Bengal",
+      "incorrect_answers": ["Bihar", "Assam", "Meghalaya"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Indian state is home to the largest number of temples in India, the state of Tamil Nadu?",
+      "correct_answer": "Tamil Nadu",
+      "incorrect_answers": ["Kerala", "Andhra Pradesh", "Karnataka"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Indian state is home to the largest number of forts in India, the state of Rajasthan?",
+      "correct_answer": "Rajasthan",
+      "incorrect_answers": ["Gujarat", "Madhya Pradesh", "Haryana"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Indian state is home to the largest number of hill stations in India, the state of Himachal Pradesh?",
+      "correct_answer": "Himachal Pradesh",
+      "incorrect_answers": ["Uttarakhand", "Punjab", "Haryana"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Indian state is home to the largest number of national parks in India, the state of Madhya Pradesh?",
+      "correct_answer": "Madhya Pradesh",
+      "incorrect_answers": ["Uttarakhand", "Gujarat", "Rajasthan"]
     }
   ]
 }

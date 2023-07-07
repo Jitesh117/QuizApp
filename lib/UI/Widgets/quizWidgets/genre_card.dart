@@ -27,9 +27,7 @@ class GenreCard extends StatelessWidget {
       builder: (context, quesProvider, playerProvider, _) => GestureDetector(
         onTap: () {
           playerProvider.playTapSound();
-          if (!quesProvider.questionsLoaded) {
-            quesProvider.loadQuestions();
-          }
+          quesProvider.loadQuestions();
           Navigator.push(
             context,
             MaterialPageRoute(

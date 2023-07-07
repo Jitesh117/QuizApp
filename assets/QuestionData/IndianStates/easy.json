@@ -112,18 +112,6 @@
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which union territory is known for its beaches and nightlife?",
-      "correct_answer": "Goa",
-      "incorrect_answers": [
-        "Andaman and Nicobar Islands",
-        "Puducherry",
-        "Lakshadweep"
-      ]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
       "question": "What is the capital city of Odisha?",
       "correct_answer": "Bhubaneswar",
       "incorrect_answers": ["Cuttack", "Puri", "Rourkela"]
@@ -194,11 +182,7 @@
       "difficulty": "easy",
       "question": "Which union territory is known for its coral reefs and pristine beaches?",
       "correct_answer": "Lakshadweep",
-      "incorrect_answers": [
-        "Ladakh",
-        "Daman and Diu",
-        "Puducherry"
-      ]
+      "incorrect_answers": ["Ladakh", "Daman and Diu", "Puducherry"]
     },
     {
       "category": "Indian States",
@@ -251,18 +235,6 @@
       "question": "What is the official language of Uttar Pradesh?",
       "correct_answer": "Hindi",
       "incorrect_answers": ["Bengali", "Urdu", "Tamil"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which union territory is known for its Portuguese influence and architecture?",
-      "correct_answer": "Goa",
-      "incorrect_answers": [
-        "Andaman and Nicobar Islands",
-        "Puducherry",
-        "Lakshadweep"
-      ]
     },
     {
       "category": "Indian States",
@@ -328,18 +300,6 @@
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which union territory is known for its Portuguese influence and architecture?",
-      "correct_answer": "Daman and Diu",
-      "incorrect_answers": [
-        "Andaman and Nicobar Islands",
-        "Puducherry",
-        "Lakshadweep"
-      ]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
       "question": "What is the capital city of Rajasthan?",
       "correct_answer": "Jaipur",
       "incorrect_answers": ["Jodhpur", "Udaipur", "Jaisalmer"]
@@ -375,6 +335,326 @@
       "question": "What is the capital city of Telangana?",
       "correct_answer": "Hyderabad",
       "incorrect_answers": ["Warangal", "Vijayawada", "Bangalore"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which state is famous for the dance style 'Garba'",
+      "correct_answer": "Gujarat",
+      "incorrect_answers": ["Madhya Pradesh", "Rajasthan", "Maharashtra"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Shimla?",
+      "correct_answer": "Himachal Pradesh",
+      "incorrect_answers": ["Uttarakhand", "Punjab", "Haryana"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the Golden Temple?",
+      "correct_answer": "Punjab",
+      "incorrect_answers": ["Haryana", "Himachal Pradesh", "Rajasthan"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the Thar Desert?",
+      "correct_answer": "Rajasthan",
+      "incorrect_answers": ["Gujarat", "Madhya Pradesh", "Haryana"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the Gateway of India?",
+      "correct_answer": "Mumbai",
+      "incorrect_answers": ["Maharashtra", "Gujarat", "Goa"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the backwaters of Alappuzha?",
+      "correct_answer": "Kerala",
+      "incorrect_answers": ["Tamil Nadu", "Andhra Pradesh", "Karnataka"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Darjeeling?",
+      "correct_answer": "West Bengal",
+      "incorrect_answers": ["Sikkim", "Assam", "Meghalaya"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the world's tallest statue, the Statue of Unity?",
+      "correct_answer": "Gujarat",
+      "incorrect_answers": ["Maharashtra", "Rajasthan", "Uttar Pradesh"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Munnar?",
+      "correct_answer": "Kerala",
+      "incorrect_answers": ["Tamil Nadu", "Andhra Pradesh", "Karnataka"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the river Ganges?",
+      "correct_answer": "Uttar Pradesh",
+      "incorrect_answers": ["Bihar", "West Bengal", "Jharkhand"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Nainital?",
+      "correct_answer": "Uttarakhand",
+      "incorrect_answers": ["Himachal Pradesh", "Punjab", "Haryana"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Mussoorie?",
+      "correct_answer": "Uttarakhand",
+      "incorrect_answers": ["Himachal Pradesh", "Punjab", "Haryana"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Ooty?",
+      "correct_answer": "Tamil Nadu",
+      "incorrect_answers": ["Kerala", "Andhra Pradesh", "Karnataka"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Mahabaleshwar?",
+      "correct_answer": "Maharashtra",
+      "incorrect_answers": ["Karnataka", "Goa", "Gujarat"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Lonavala?",
+      "correct_answer": "Maharashtra",
+      "incorrect_answers": ["Karnataka", "Goa", "Gujarat"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Dalhousie?",
+      "correct_answer": "Himachal Pradesh",
+      "incorrect_answers": ["Uttarakhand", "Punjab", "Haryana"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Cherrapunji?",
+      "correct_answer": "Meghalaya",
+      "incorrect_answers": ["Assam", "Manipur", "Nagaland"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Mount Abu?",
+      "correct_answer": "Rajasthan",
+      "incorrect_answers": ["Uttarakhand", "Punjab", "Haryana"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the world's largest salt desert, the Rann of Kutch?",
+      "correct_answer": "Gujarat",
+      "incorrect_answers": ["Rajasthan", "Madhya Pradesh", "Haryana"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the tiger reserve of Bandhavgarh?",
+      "correct_answer": "Madhya Pradesh",
+      "incorrect_answers": ["Rajasthan", "Uttar Pradesh", "Haryana"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the famous Khajuraho temples?",
+      "correct_answer": "Madhya Pradesh",
+      "incorrect_answers": ["Karnataka", "Goa", "Gujarat"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the river Brahmaputra?",
+      "correct_answer": "Assam",
+      "incorrect_answers": ["Arunachal Pradesh", "Nagaland", "Manipur"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Munnar?",
+      "correct_answer": "Kerala",
+      "incorrect_answers": ["Tamil Nadu", "Andhra Pradesh", "Karnataka"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the river Godavari?",
+      "correct_answer": "Andhra Pradesh",
+      "incorrect_answers": ["Telangana", "Karnataka", "Maharashtra"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Nainital?",
+      "correct_answer": "Uttarakhand",
+      "incorrect_answers": ["Himachal Pradesh", "Punjab", "Haryana"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Mussoorie?",
+      "correct_answer": "Uttarakhand",
+      "incorrect_answers": ["Himachal Pradesh", "Punjab", "Haryana"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Ooty?",
+      "correct_answer": "Tamil Nadu",
+      "incorrect_answers": ["Kerala", "Andhra Pradesh", "Karnataka"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Mahabaleshwar?",
+      "correct_answer": "Maharashtra",
+      "incorrect_answers": ["Karnataka", "Goa", "Gujarat"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the world's second highest peak, Mount Kanchenjunga?",
+      "correct_answer": "Sikkim",
+      "incorrect_answers": ["West Bengal", "Assam", "Meghalaya"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the famous Hampi ruins?",
+      "correct_answer": "Karnataka",
+      "incorrect_answers": ["Tamil Nadu", "Andhra Pradesh", "Kerala"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the world's largest man-made lake, the Chilika Lake?",
+      "correct_answer": "Odisha",
+      "incorrect_answers": ["Andhra Pradesh", "West Bengal", "Tamil Nadu"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Cherrapunji, which is known as the wettest place on Earth?",
+      "correct_answer": "Meghalaya",
+      "incorrect_answers": ["Assam", "Manipur", "Nagaland"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the Thar Desert?",
+      "correct_answer": "Rajasthan",
+      "incorrect_answers": ["Gujarat", "Madhya Pradesh", "Haryana"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the famous backwaters of Alappuzha?",
+      "correct_answer": "Kerala",
+      "incorrect_answers": ["Tamil Nadu", "Andhra Pradesh", "Karnataka"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the hill station of Darjeeling?",
+      "correct_answer": "West Bengal",
+      "incorrect_answers": ["Sikkim", "Assam", "Meghalaya"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the city of Mumbai, the financial capital of India?",
+      "correct_answer": "Maharashtra",
+      "incorrect_answers": ["Karnataka", "Goa", "Gujarat"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the world's tallest statue, the Statue of Unity?",
+      "correct_answer": "Gujarat",
+      "incorrect_answers": ["Maharashtra", "Rajasthan", "Uttar Pradesh"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the famous Taj Mahal?",
+      "correct_answer": "Uttar Pradesh",
+      "incorrect_answers": ["Madhya Pradesh", "Gujarat", "Rajasthan"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the famous hill station of Munnar, which is known as the 'queen of the hills'?",
+      "correct_answer": "Kerala",
+      "incorrect_answers": ["Tamil Nadu", "Andhra Pradesh", "Karnataka"]
+    },
+    {
+      "category": "Indian States",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Indian state is home to the famous hill station of Nainital, which is known as the 'Lake District of India'?",
+      "correct_answer": "Uttarakhand",
+      "incorrect_answers": ["Himachal Pradesh", "Punjab", "Haryana"]
     }
   ]
 }

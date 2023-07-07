@@ -380,6 +380,86 @@
         "Grey Sloan Memorial Hospital",
         "St. Jude Hospital"
       ]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of scientists who work at a fictional research facility in New Mexico?",
+      "correct_answer": "The X-Files",
+      "incorrect_answers": ["Breaking Bad", "Lost", "Stranger Things"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of criminals who are forced to work together for the government?",
+      "correct_answer": "The Blacklist",
+      "incorrect_answers": ["Prison Break", "The Mentalist", "The Good Wife"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trapped in a post-apocalyptic world?",
+      "correct_answer": "The Walking Dead",
+      "incorrect_answers": ["Game of Thrones", "Westworld", "Stranger Things"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of friends who live in New York City and work in the advertising industry?",
+      "correct_answer": "Mad Men",
+      "incorrect_answers": ["Friends", "Sex and the City", "Entourage"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trapped in a fantasy world?",
+      "correct_answer": "Once Upon a Time",
+      "incorrect_answers": ["The Good Place", "The Magicians", "Supernatural"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to survive in a post-apocalyptic world where zombies have taken over?",
+      "correct_answer": "The Walking Dead",
+      "incorrect_answers": [
+        "Fear the Walking Dead",
+        "World War Z",
+        "Train to Busan"
+      ]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to survive in a world where magic is real?",
+      "correct_answer": "The Magicians",
+      "incorrect_answers": [
+        "Once Upon a Time",
+        "The Good Place",
+        "Supernatural"
+      ]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to solve a mystery?",
+      "correct_answer": "Lost",
+      "incorrect_answers": ["The X-Files", "The Mentalist", "Stranger Things"]
+    },
+    {
+      "category": "US TV Shows",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which US TV show is about a group of people who are trying to survive in a world where the government is corrupt?",
+      "correct_answer": "House of Cards",
+      "incorrect_answers": ["Scandal", "Designated Survivor", "The West Wing"]
     }
   ]
 }
