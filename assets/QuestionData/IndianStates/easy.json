@@ -373,8 +373,8 @@
       "type": "multiple",
       "difficulty": "easy",
       "question": "Which Indian state is home to the Gateway of India?",
-      "correct_answer": "Mumbai",
-      "incorrect_answers": ["Maharashtra", "Gujarat", "Goa"]
+      "correct_answer": "Maharashtra",
+      "incorrect_answers": ["Andhra Pradesh", "Gujarat", "Goa"]
     },
     {
       "category": "Indian States",
@@ -543,14 +543,6 @@
       "question": "Which Indian state is home to the hill station of Mussoorie?",
       "correct_answer": "Uttarakhand",
       "incorrect_answers": ["Himachal Pradesh", "Punjab", "Haryana"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which Indian state is home to the hill station of Ooty?",
-      "correct_answer": "Tamil Nadu",
-      "incorrect_answers": ["Kerala", "Andhra Pradesh", "Karnataka"]
     },
     {
       "category": "Indian States",

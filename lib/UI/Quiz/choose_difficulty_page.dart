@@ -34,7 +34,7 @@ class ChooseDifficultyPage extends StatelessWidget {
     log('build');
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => Scaffold(
-        backgroundColor: Colors.yellow.shade100,
+        backgroundColor: Colors.white,
         body: SafeArea(
           child: Stack(
             children: [

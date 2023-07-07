@@ -16,7 +16,7 @@ class ShopScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => Scaffold(
-        backgroundColor: Colors.yellow.shade100,
+        backgroundColor: Colors.white,
         body: SafeArea(
           child: Stack(
             children: [
@@ -38,6 +38,13 @@ class ShopScreen extends StatelessWidget {
                         color: Colors.white,
                         border: Border.all(color: Colors.black, width: 4),
                         borderRadius: BorderRadius.circular(16),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.black,
+                            offset: Offset(4, 4),
+                            blurRadius: 0,
+                          ),
+                        ],
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -115,7 +122,7 @@ class ShopScreen extends StatelessWidget {
                           child: ShopItem(
                             imagePath: 'assets/powerups/three.png',
                             price: 50,
-                            bgColor: Colors.yellow.shade200,
+                            bgColor: Colors.yellow.shade400,
                             numberOfItems: playerProvider.powerDouble,
                           ),
                         ),
@@ -128,7 +135,7 @@ class ShopScreen extends StatelessWidget {
                           child: ShopItem(
                             imagePath: 'assets/powerups/four.png',
                             price: 50,
-                            bgColor: Colors.blueAccent.shade100,
+                            bgColor: Colors.blueAccent,
                             numberOfItems: playerProvider.powerSkip,
                           ),
                         ),
@@ -141,6 +148,7 @@ class ShopScreen extends StatelessWidget {
                         itemBuilder: (context, index) => PowerDescription(
                           imagePath: powerups[index],
                           description: powerDescription[index],
+                          bgColor: powerupColor[index],
                         ),
                       ),
                     ),

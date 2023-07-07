@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
@@ -17,7 +15,6 @@ class PlayerProvider with ChangeNotifier {
   int powerReveal = 2;
   int powerDouble = 2;
   int powerSkip = 2;
-
 
   // achievements variables
   List<bool> badge = List.generate(badgeName.length, (index) => false);
@@ -40,7 +37,6 @@ class PlayerProvider with ChangeNotifier {
 
   int timeTaken = 0;
   int totalTimeTaken = 0;
-
 
   void fetchPlayerData() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
@@ -219,7 +215,7 @@ class PlayerProvider with ChangeNotifier {
   void playTapSound() {
     if (soundShouldPlay) {
       final player = AudioPlayer();
-      player.setVolume(0.5);
+      player.setVolume(0.1);
       player.play(AssetSource('sounds/ding.mp3'));
     }
   }
@@ -430,7 +426,7 @@ class PlayerProvider with ChangeNotifier {
       ),
     );
     final player = AudioPlayer();
-    player.setVolume(1);
+    player.setVolume(0.5);
     player.play(AssetSource('sounds/achievement.wav'));
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
@@ -438,9 +434,9 @@ class PlayerProvider with ChangeNotifier {
   void callAllBadgeFunctions(int category, int difficulty,
       bool tappedOptionIsCorrect, BuildContext context) async {
     answeredCorrectly = tappedOptionIsCorrect;
-    for (int i = 0; i < badgeName.length; i++) {
-      log("badge$i: ${badge[i]}");
-    }
+    // for (int i = 0; i < badgeName.length; i++) {
+    //   log("badge$i: ${badge[i]}");
+    // }
     badge0to9(category, difficulty, context);
     badge10(context);
     badge11(context);

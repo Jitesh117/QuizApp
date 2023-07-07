@@ -157,7 +157,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which soccer team won the Copa Am&eacute;rica 2015 Championship ?",
+      "question": "Which soccer team won the Copa América 2015 Championship ?",
       "correct_answer": "Chile",
       "incorrect_answers": ["Argentina", "Brazil", "Paraguay"]
     },
@@ -165,7 +165,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which soccer team won the Copa Am&eacute;rica Centenario 2016?",
+      "question": "Which soccer team won the Copa América Centenario 2016?",
       "correct_answer": "Chile",
       "incorrect_answers": ["Argentina", "Brazil", "Colombia"]
     },

@@ -39,20 +39,25 @@ class GenreCard extends StatelessWidget {
           );
         },
         child: Padding(
-          padding: const EdgeInsets.only(bottom: 10),
+          padding: const EdgeInsets.all(10),
           child: Container(
             width: width - 32,
             height: width - 32,
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              borderRadius: const BorderRadius.all(
-                Radius.circular(32),
-              ),
+              borderRadius: const BorderRadius.all(Radius.circular(16)),
               color: bgColor,
               border: Border.all(
                 color: Colors.black,
                 width: 4,
               ),
+              boxShadow: const [
+                BoxShadow(
+                  color: Colors.black,
+                  offset: Offset(4, 4),
+                  blurRadius: 0,
+                ),
+              ],
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

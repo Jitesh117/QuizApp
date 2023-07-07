@@ -21,12 +21,19 @@ class DrawerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => Padding(
-        padding: const EdgeInsets.only(bottom: 10),
+        padding: const EdgeInsets.only(bottom: 20),
         child: Container(
           decoration: BoxDecoration(
             color: boxColor,
             borderRadius: BorderRadius.circular(16),
             border: Border.all(color: Colors.black, width: 4),
+            boxShadow: const [
+              BoxShadow(
+                color: Colors.black,
+                offset: Offset(4, 4),
+                blurRadius: 0,
+              ),
+            ],
           ),
           child: ListTile(
             onTap: () {

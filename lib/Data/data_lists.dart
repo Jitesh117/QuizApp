@@ -5,7 +5,7 @@ List<String> genreNames = [
   'Anime',
   'Computer',
   'GK',
-  'Indian Mythology',
+  'Science',
   'Marvel',
   'Movies',
   'Sports',
@@ -17,7 +17,7 @@ Map<int, String> categories = {
   1: "Anime",
   2: "computer",
   3: "GK",
-  4: "IndianMythology",
+  4: "science",
   5: "Marvel",
   6: "movies",
   7: "sports",
@@ -68,6 +68,13 @@ List<String> powerups = [
   'assets/powerups/four.png',
 ];
 
+List<Color> powerupColor = [
+  Colors.pinkAccent.shade200,
+  Colors.greenAccent.shade400,
+  Colors.yellow.shade400,
+  Colors.blueAccent,
+];
+
 List<String> powerDescription = [
   'Removes a wrong option',
   'Reveals the answer',
@@ -85,7 +92,7 @@ List<String> badgeName = [
   // badge 3
   "Know-It-All Extraordinaire",
   // badge 4
-  "The Enlightened One",
+  "You know, I'm something of a scientist myself!",
   // badge 5
   "MCU Fanatic",
   // badge 6
@@ -127,13 +134,13 @@ List<String> badgeDescription = [
   // badge 0
   "Answer 10 questions correctly in a row across all difficulties in the category 'Indian States'",
   // badge 1
-  "Answer 10 questions correctly in a row across all difficulties in the category 'Anime'", 
+  "Answer 10 questions correctly in a row across all difficulties in the category 'Anime'",
   // badge 2
-  "Answer 10 questions correctly in a row across all difficulties in the category 'Computers'",  
+  "Answer 10 questions correctly in a row across all difficulties in the category 'Computers'",
   // badge 3
   "Answer 10 questions correctly in a row across all difficulties in the category 'GK'",
   // badge 4
-  "Answer 10 questions correctly in a row across all difficulties in the category 'Indian Mythology'",
+  "Answer 10 questions correctly in a row across all difficulties in the category 'Science'",
   // badge 5
   "Answer 10 questions correctly in a row across all difficulties in the category 'Marvel'",
   // badge 6
@@ -164,7 +171,7 @@ List<String> badgeDescription = [
   // badge 18
   "Use the 'Reveal the answer' powerup and answer it correctly",
   // badge 19
-  "Answer 200 questions correctly across all categories and difficulties",
+  "Answer 500 questions correctly across all categories and difficulties",
   // badge 20
   "Use all 4 powerups in a single question",
   // badge 21

@@ -69,14 +69,14 @@ class QuesProvider with ChangeNotifier {
       dataModels[i][0] = easyData;
       dataModels[i][1] = mediumData;
       dataModels[i][2] = hardData;
+    }
 
-      for (int i = 0; i < genreNames.length; i++) {
-        for (int j = 0; j < 3; j++) {
-          for (int k = 0; k < dataModels[i][j].results!.length; k++) {
-            randomQuestions[i][j].add(k);
-          }
-          randomQuestions[i][j].shuffle();
+    for (int i = 0; i < genreNames.length; i++) {
+      for (int j = 0; j < 3; j++) {
+        for (int k = 0; k < dataModels[i][j].results!.length; k++) {
+          randomQuestions[i][j].add(k);
         }
+        randomQuestions[i][j].shuffle();
       }
     }
 
@@ -100,6 +100,7 @@ class QuesProvider with ChangeNotifier {
 
     if (randomQuestions[category][difficulty].isEmpty) {
       loadQuestions();
+      fetchQuestion(category, difficulty);
     }
     int itemNumber = randomQuestions[category][difficulty].last;
     randomQuestions[category][difficulty].removeLast();
@@ -148,7 +149,7 @@ class QuesProvider with ChangeNotifier {
   void confettiPlay() async {
     confettiController.play();
     final player = AudioPlayer();
-    player.setVolume(0.5);
+    player.setVolume(0.1);
     player.play(AssetSource('sounds/confetti.mp3'));
     await Future.delayed(
       const Duration(milliseconds: 200),
@@ -290,7 +291,7 @@ class QuesProvider with ChangeNotifier {
 
   void playTapSound() {
     final player = AudioPlayer();
-    player.setVolume(0.5);
+    player.setVolume(0.1);
     player.play(AssetSource('sounds/ding.mp3'));
   }
 }

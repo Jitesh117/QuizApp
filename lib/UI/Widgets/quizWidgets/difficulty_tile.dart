@@ -28,11 +28,18 @@ class DifficultyTile extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: cardColor,
-                borderRadius: const BorderRadius.all(Radius.circular(32)),
+                borderRadius: const BorderRadius.all(Radius.circular(16)),
                 border: Border.all(
                   color: Colors.black,
                   width: 4,
                 ),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.black,
+                    offset: Offset(4, 4),
+                    blurRadius: 0,
+                  ),
+                ],
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

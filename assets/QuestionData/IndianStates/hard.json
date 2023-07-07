@@ -196,14 +196,6 @@
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which state was the first to implement the Green Kerala Mission?",
-      "correct_answer": "Kerala",
-      "incorrect_answers": ["Tamil Nadu", "Maharashtra", "Gujarat"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "hard",
       "question": "Which Indian state was formerly known as 'Travancore'?",
       "correct_answer": "Kerala",
       "incorrect_answers": ["Tamil Nadu", "Karnataka", "Andhra Pradesh"]
@@ -396,7 +388,7 @@
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which Indian state is home to the largest number of temples in India, the state of Tamil Nadu?",
+      "question": "Which Indian state is home to the largest number of temples in India?",
       "correct_answer": "Tamil Nadu",
       "incorrect_answers": ["Kerala", "Andhra Pradesh", "Karnataka"]
     },
@@ -404,7 +396,7 @@
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which Indian state is home to the largest number of forts in India, the state of Rajasthan?",
+      "question": "Which Indian state is home to the largest number of forts in India?",
       "correct_answer": "Rajasthan",
       "incorrect_answers": ["Gujarat", "Madhya Pradesh", "Haryana"]
     },
@@ -412,7 +404,7 @@
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which Indian state is home to the largest number of hill stations in India, the state of Himachal Pradesh?",
+      "question": "Which Indian state is home to the largest number of hill stations in India?",
       "correct_answer": "Himachal Pradesh",
       "incorrect_answers": ["Uttarakhand", "Punjab", "Haryana"]
     },

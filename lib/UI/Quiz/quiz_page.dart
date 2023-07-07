@@ -6,7 +6,6 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:quiz_v2/providers/player_provider.dart';
@@ -36,6 +35,7 @@ class QuizPage extends StatelessWidget {
     final timeController = CountDownController();
     dev.log('build');
     final player = AudioPlayer();
+    player.setVolume(0.1);
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => AdvancedDrawer(
         backdrop: Container(
@@ -98,7 +98,7 @@ class QuizPage extends StatelessWidget {
           ),
         ),
         child: Scaffold(
-          backgroundColor: Colors.yellow.shade100,
+          backgroundColor: Colors.white,
           body: WillPopScope(
             onWillPop: () {
               return quesProvider.popOrNot(context);
@@ -107,13 +107,13 @@ class QuizPage extends StatelessWidget {
               child: Stack(
                 children: [
                   // background animation
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height,
-                    child: Lottie.asset(
-                      'assets/lottieAnimations/patternBack.zip',
-                      fit: BoxFit.cover,
-                    ),
-                  ),
+                  // SizedBox(
+                  //   height: MediaQuery.of(context).size.height,
+                  //   child: Lottie.asset(
+                  //     'assets/lottieAnimations/patternBack.zip',
+                  //     fit: BoxFit.cover,
+                  //   ),
+                  // ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         vertical: 08, horizontal: 20),
@@ -126,6 +126,13 @@ class QuizPage extends StatelessWidget {
                             color: Colors.white,
                             border: Border.all(color: Colors.black, width: 4),
                             borderRadius: BorderRadius.circular(16),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Colors.black,
+                                offset: Offset(4, 4),
+                                blurRadius: 0,
+                              ),
+                            ],
                           ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -174,6 +181,13 @@ class QuizPage extends StatelessWidget {
                                       color: Colors.black,
                                       width: 4,
                                     ),
+                                    boxShadow: const [
+                                      BoxShadow(
+                                        color: Colors.black,
+                                        offset: Offset(2, 2),
+                                        blurRadius: 0,
+                                      ),
+                                    ],
                                   ),
                                   child: const Row(
                                     children: [
@@ -207,8 +221,19 @@ class QuizPage extends StatelessWidget {
                         Container(
                           padding: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
+                            color: Colors.lightGreenAccent,
                             borderRadius: BorderRadius.circular(16),
-                            border: Border.all(color: Colors.black, width: 4),
+                            border: Border.all(
+                              color: Colors.black,
+                              width: 4,
+                            ),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Colors.black,
+                                offset: Offset(4, 4),
+                                blurRadius: 0,
+                              ),
+                            ],
                           ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -234,6 +259,7 @@ class QuizPage extends StatelessWidget {
                                   // for (int i = 0; i < badgeName.length; i++) {
                                   //   playerProvider.showSnackBar(context, i);
                                   // }
+                                  // quesProvider.confettiPlay();
                                 },
                                 child: StreakCounter(
                                   streakColor: streakColor,
@@ -245,7 +271,7 @@ class QuizPage extends StatelessWidget {
                                 duration: 30,
                                 autoStart: true,
                                 fillColor: Colors.black,
-                                ringColor: Colors.yellow.shade100,
+                                ringColor: Colors.transparent,
                                 controller: timeController,
                                 isReverseAnimation: true,
                                 isReverse: true,
@@ -285,7 +311,7 @@ class QuizPage extends StatelessWidget {
                             ],
                           ),
                         ),
-                        const SizedBox(height: 10),
+                        const SizedBox(height: 14),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -358,7 +384,7 @@ class QuizPage extends StatelessWidget {
                                   playerProvider.updatePowerups();
                                   quesProvider.fetchQuestion(
                                       category, difficulty);
-                                  timeController.reset();
+                                  timeController.restart();
                                   playerProvider.resetPowerups();
                                 }
                               },
@@ -375,12 +401,19 @@ class QuizPage extends StatelessWidget {
                           width: MediaQuery.of(context).size.width - 40,
                           padding: const EdgeInsets.all(20),
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Colors.cyanAccent,
                             borderRadius: BorderRadius.circular(16),
                             border: Border.all(
                               color: Colors.black,
                               width: 4,
                             ),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Colors.black,
+                                offset: Offset(4, 4),
+                                blurRadius: 0,
+                              ),
+                            ],
                           ),
                           child: Text(
                             quesProvider.question,

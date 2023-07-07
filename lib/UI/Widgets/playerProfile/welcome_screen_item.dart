@@ -20,7 +20,14 @@ class WelcomeScreenButton extends StatelessWidget {
       decoration: BoxDecoration(
         color: buttonColor,
         border: Border.all(color: Colors.black, width: 5),
-        borderRadius: BorderRadius.circular(32),
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.black,
+            offset: Offset(4, 4),
+            blurRadius: 0,
+          ),
+        ],
       ),
       child: Stack(
         children: [

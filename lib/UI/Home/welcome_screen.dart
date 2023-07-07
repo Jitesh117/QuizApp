@@ -6,7 +6,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/UI/Home/achievements.dart';
-import 'package:quiz_v2/UI/Home/home.dart';
+import 'package:quiz_v2/UI/Home/choose_category_screen.dart';
 import 'package:quiz_v2/UI/Home/shop_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -83,7 +83,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     // final hawkFabMenuController = HawkFabMenuController();
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => Scaffold(
-        backgroundColor: Colors.yellow.shade100,
+        backgroundColor: Colors.white,
         // floatingActionButton: HawkFabMenu(
         //   icon: AnimatedIcons.list_view,
         //   fabColor: Colors.white,
@@ -168,7 +168,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                           },
                           child: const WelcomeScreenButton(
                             name: 'Achievements',
-                            buttonColor: Colors.white,
+                            buttonColor: Colors.cyanAccent,
                             icon: FontAwesomeIcons.trophy,
                           ),
                         ),
@@ -186,7 +186,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                           },
                           child: const WelcomeScreenButton(
                             name: 'Shop',
-                            buttonColor: Colors.white,
+                            buttonColor: Colors.redAccent,
                             icon: FontAwesomeIcons.cartShopping,
                           ),
                         ),
@@ -197,13 +197,14 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const HomePage(),
+                                builder: (context) =>
+                                    const ChooseCategoryScreen(),
                               ),
                             );
                           },
                           child: const WelcomeScreenButton(
                             name: 'Play!',
-                            buttonColor: Colors.yellow,
+                            buttonColor: Colors.lightGreenAccent,
                             icon: FontAwesomeIcons.gamepad,
                           ),
                         ),

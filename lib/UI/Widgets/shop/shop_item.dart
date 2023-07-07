@@ -25,6 +25,13 @@ class ShopItem extends StatelessWidget {
         color: bgColor,
         borderRadius: BorderRadius.circular(32),
         border: Border.all(color: Colors.black, width: 4),
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.black,
+            offset: Offset(4, 4),
+            blurRadius: 0,
+          ),
+        ],
       ),
       child: Center(
         child: Column(

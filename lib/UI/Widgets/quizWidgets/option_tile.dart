@@ -51,6 +51,13 @@ class _OptionTileState extends State<OptionTile> {
               width: 4,
             ),
             borderRadius: const BorderRadius.all(Radius.circular(16)),
+            boxShadow: const [
+              BoxShadow(
+                color: Colors.black,
+                offset: Offset(4, 4),
+                blurRadius: 0,
+              ),
+            ],
           ),
           child: SizedBox(
             child: Center(

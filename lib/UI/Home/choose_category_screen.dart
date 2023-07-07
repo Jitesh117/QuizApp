@@ -8,19 +8,19 @@ import 'package:quiz_v2/UI/Widgets/quizWidgets/genre_card.dart';
 import '../../providers/player_provider.dart';
 import '../../providers/question_provider.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class ChooseCategoryScreen extends StatefulWidget {
+  const ChooseCategoryScreen({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<ChooseCategoryScreen> createState() => _ChooseCategoryScreenState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _ChooseCategoryScreenState extends State<ChooseCategoryScreen> {
   @override
   Widget build(BuildContext context) {
     return Consumer2<QuesProvider, PlayerProvider>(
       builder: (context, quesProvider, playerProvider, _) => Scaffold(
-        backgroundColor: Colors.yellow.shade100,
+        backgroundColor: Colors.white,
         body: SafeArea(
           child: Stack(
             children: [
@@ -64,7 +64,8 @@ class _HomePageState extends State<HomePage> {
                         gridDelegate:
                             const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
-                          crossAxisSpacing: 10,
+                          crossAxisSpacing: 0,
+                          mainAxisSpacing: 0,
                         ),
                         itemBuilder: ((context, index) => GenreCard(
                               topicName: genreNames[index],
