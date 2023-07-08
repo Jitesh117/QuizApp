@@ -23,7 +23,7 @@ A quiz app made with Flutter💙.
 </p>
 
 ## APK Release
-- The latest version of the Flutter Quiz app can be found in the [Releases](https://github.com/your-username/flutter-quiz-app/releases) section of this GitHub repository. You can download the APK file for direct installation on your Android device.
+- The latest version of the Flutter Quiz app can be found in the [Releases](https://github.com/jitesh117/QuizApp/releases) section of this GitHub repository. You can download the APK file for direct installation on your Android device.
 
 - Please note that the APK release may not always be the most up-to-date version of the app. It is recommended to clone the repository and follow the installation instructions provided in the next section for the most recent version of the app.
 
