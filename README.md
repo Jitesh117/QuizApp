@@ -46,19 +46,19 @@ To install the APK on your Android device, follow these steps:
 
 ## Run locally on your machine
 ```shell
-     git clone https://github.com/Jitesh117/QuizApp.git
+git clone https://github.com/Jitesh117/QuizApp.git
 ```
 
 ```shell
-    cd QuizApp
+cd QuizApp
 ```
 
 ```shell
-    flutter pub get
+flutter pub get
 ``` 
 
 ```shell
-    flutter run
+flutter run
 ```
 
 ## Acknowledgements
