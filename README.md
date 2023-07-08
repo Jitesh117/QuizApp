@@ -21,6 +21,7 @@ A quiz app made with Flutter💙.
 <img width = 200 src = "./screenshots/5.png">
 <img width = 200 src = "./screenshots/6.png">
 </p>
+
 ## APK Release
 - The latest version of the Flutter Quiz app can be found in the [Releases](https://github.com/your-username/flutter-quiz-app/releases) section of this GitHub repository. You can download the APK file for direct installation on your Android device.
 
