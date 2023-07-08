@@ -30,7 +30,7 @@ A quiz app made with Flutter💙.
 ### Installation
 To install the APK on your Android device, follow these steps:
 
-1. Download the APK file from the [Releaess](https://github.com/jitesh117/QuizApp/releases) section.
+1. Download the APK file from the [Releases](https://github.com/jitesh117/QuizApp/releases) section.
 
 1. Transfer the APK file to your Android device, either by connecting it to your computer or using a file-sharing method such as email or cloud storage.
 
