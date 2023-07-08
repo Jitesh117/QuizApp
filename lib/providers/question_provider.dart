@@ -51,11 +51,14 @@ class QuesProvider with ChangeNotifier {
   List<List<String>> badgesEarned = List.generate(
       genreNames.length, (index) => List.generate(3, (index) => "0"));
 
-  List<List<List<int>>> randomQuestions = List.generate(
-      genreNames.length, (index) => List.generate(3, (index) => []));
+  late List<List<List<int>>> randomQuestions = [];
+//  List.generate(
+//       genreNames.length, (index) => List.generate(3, (index) => []));
 
   void loadQuestions() async {
     questionsLoaded = false;
+    randomQuestions = List.generate(
+        genreNames.length, (index) => List.generate(3, (index) => []));
     for (int i = 0; i < genreNames.length; i++) {
       String easy = await rootBundle
           .loadString("assets/QuestionData/${categories[i]}/easy.json");
@@ -71,6 +74,12 @@ class QuesProvider with ChangeNotifier {
       dataModels[i][2] = hardData;
     }
 
+    addRandomQuestions();
+    questionsLoaded = true;
+    notifyListeners();
+  }
+
+  void addRandomQuestions() {
     for (int i = 0; i < genreNames.length; i++) {
       for (int j = 0; j < 3; j++) {
         for (int k = 0; k < dataModels[i][j].results!.length; k++) {
@@ -79,9 +88,6 @@ class QuesProvider with ChangeNotifier {
         randomQuestions[i][j].shuffle();
       }
     }
-
-    questionsLoaded = true;
-    notifyListeners();
   }
 
   void fetchQuestion(int category, int difficulty) {
@@ -100,7 +106,8 @@ class QuesProvider with ChangeNotifier {
 
     if (randomQuestions[category][difficulty].isEmpty) {
       loadQuestions();
-      fetchQuestion(category, difficulty);
+      addRandomQuestions();
+      // fetchQuestion(category, difficulty);
     }
     int itemNumber = randomQuestions[category][difficulty].last;
     randomQuestions[category][difficulty].removeLast();

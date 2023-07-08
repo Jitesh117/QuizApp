@@ -138,7 +138,7 @@
       "type": "multiple",
       "difficulty": "easy",
       "question": "Who directed the 2015 movie 'The Revenant'?",
-      "correct_answer": "Alejandro G. I&ntilde;&aacute;rritu",
+      "correct_answer": "Alejandro G. Iñárritu",
       "incorrect_answers": [
         "Christopher Nolan",
         "David Fincher",
@@ -437,7 +437,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What historical time period was the center of the Assassin&rsquo;s Creed movie (2016)?",
+      "question": "What historical time period was the center of the Assassin's Creed movie (2016)?",
       "correct_answer": "Spanish Inquisition",
       "incorrect_answers": [
         "Victorian England",

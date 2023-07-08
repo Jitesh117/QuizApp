@@ -333,7 +333,7 @@
       "correct_answer": "St. Peter's Basilica",
       "incorrect_answers": [
         "Catania Cathedral",
-        "St. Mark&rsquo;s Basilica",
+        "St. Mark's Basilica",
         "The Duomo of Florence"
       ]
     },
@@ -547,11 +547,7 @@
       "difficulty": "hard",
       "question": "What is the name of one of the Neo-Aramaic languages spoken by the Jewish population from Northwestern Iraq?",
       "correct_answer": "Lishana Deni",
-      "incorrect_answers": [
-        "Hulaul&aacute;",
-        "Lishan Didan",
-        "Chaldean Neo-Aramaic"
-      ]
+      "incorrect_answers": ["Hulaulá", "Lishan Didan", "Chaldean Neo-Aramaic"]
     },
     {
       "category": "Geography",
@@ -609,7 +605,7 @@
       "category": "Geography",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Llanfair&shy;pwllgwyngyll&shy;gogery&shy;chwyrn&shy;drobwll&shy;llan&shy;tysilio&shy;gogo&shy;goch is located on which Welsh island?",
+      "question": "Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch is located on which Welsh island?",
       "correct_answer": "Anglesey",
       "incorrect_answers": ["Barry", "Bardsey", "Caldey"]
     },
@@ -683,7 +679,7 @@
       "difficulty": "hard",
       "question": "What is the Finnish word for 'Finland'?",
       "correct_answer": "Suomi",
-      "incorrect_answers": ["Eesti", "Magyarorsz&aacute;g", "Sverige"]
+      "incorrect_answers": ["Eesti", "Magyarország", "Sverige"]
     },
     {
       "category": "Geography",

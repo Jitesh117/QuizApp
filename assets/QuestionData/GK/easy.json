@@ -146,8 +146,8 @@
       "type": "multiple",
       "difficulty": "easy",
       "question": "What is the 15th letter of the Greek alphabet?",
-      "correct_answer": "Omicron (&Omicron;)",
-      "incorrect_answers": ["Sigma (&Sigma;)", "Pi (&Pi;)", "Nu (&Nu;)"]
+      "correct_answer": "Omicron (Ο)",
+      "incorrect_answers": ["Sigma (σ)", "Pi (π)", "Nu (ν)"]
     },
     {
       "category": "Geography",
@@ -433,14 +433,6 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Where is the train station 'Llanfair&shy;pwllgwyngyll&shy;gogery&shy;chwyrn&shy;drobwll&shy;llan&shy;tysilio&shy;gogo&shy;goch'?",
-      "correct_answer": "Wales",
-      "incorrect_answers": ["Moldova", "Czech Republic", "Denmark"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
       "question": "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?",
       "correct_answer": "Demolition",
       "incorrect_answers": [
@@ -637,7 +629,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "The New York Times slogan is, &ldquo;All the News That&rsquo;s Fit to&hellip;&rdquo;",
+      "question": "The New York Times slogan is, 'All the News That's Fit to…",
       "correct_answer": "Print",
       "incorrect_answers": ["Digest", "Look", "Read"]
     },
@@ -773,7 +765,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the name of NASA&rsquo;s most famous space telescope?",
+      "question": "What is the name of NASA's most famous space telescope?",
       "correct_answer": "Hubble Space Telescope",
       "incorrect_answers": ["Big Eye", "Death Star", "Millenium Falcon"]
     },

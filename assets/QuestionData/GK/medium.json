@@ -63,7 +63,7 @@
       "difficulty": "medium",
       "question": "The following Spanish provinces are located in the northern area of Spain except:",
       "correct_answer": "Murcia",
-      "incorrect_answers": ["Asturias", "Navarre", "Le&oacute;n"]
+      "incorrect_answers": ["Asturias", "Navarre", "León"]
     },
     {
       "category": "Geography",
@@ -559,7 +559,7 @@
       "difficulty": "medium",
       "question": "What is the German word for 'spoon'?",
       "correct_answer": "Löffel",
-      "incorrect_answers": ["Gabel", "Messer", "Essst&auml;bchen"]
+      "incorrect_answers": ["Gabel", "Messer", "Essstäbchen"]
     },
     {
       "category": "General Knowledge",

@@ -133,7 +133,7 @@
       "category": "Science & Nature",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which gas forms about 78% of the Earth&rsquo;s atmosphere?",
+      "question": "Which gas forms about 78% of the Earth's atmosphere?",
       "correct_answer": "Nitrogen",
       "incorrect_answers": ["Oxygen", "Argon", "Carbon Dioxide"]
     },
@@ -226,7 +226,7 @@
       "type": "multiple",
       "difficulty": "easy",
       "question": "Who is the chemical element Curium named after?",
-      "correct_answer": "Marie &; Pierre Curie",
+      "correct_answer": "Marie & Pierre Curie",
       "incorrect_answers": [
         "The Curiosity Rover",
         "Curious George",
@@ -353,7 +353,7 @@
       "category": "Science & Nature",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What animal takes part in Schr&ouml;dinger's most famous thought experiment?",
+      "question": "What animal takes part in Schrödinger's most famous thought experiment?",
       "correct_answer": "Cat",
       "incorrect_answers": ["Dog", "Bat", "Butterfly"]
     },

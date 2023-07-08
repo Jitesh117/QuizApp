@@ -51,11 +51,7 @@
       "difficulty": "hard",
       "question": "What common name is given to the medial condition, tibial stress syndrome (MTSS)?",
       "correct_answer": "Shin Splints",
-      "incorrect_answers": [
-        "Tennis Elbow",
-        "Carpal Tunnel",
-        "Housemaid's Knee"
-      ]
+      "incorrect_answers": ["Tennis Elbow", "Carpal Tunnel", "Housemaid's Knee"]
     },
     {
       "category": "Science & Nature",
@@ -331,11 +327,7 @@
       "difficulty": "hard",
       "question": "What physics principle relates the net electric flux out of a closed surface to the charge enclosed by that surface?",
       "correct_answer": "Gauss's Law",
-      "incorrect_answers": [
-        "Faraday's Law",
-        "Ampere's Law",
-        "Biot-Savart Law"
-      ]
+      "incorrect_answers": ["Faraday's Law", "Ampere's Law", "Biot-Savart Law"]
     },
     {
       "category": "Science & Nature",
@@ -409,8 +401,8 @@
       "correct_answer": "Pavlov's dog experiments",
       "incorrect_answers": [
         "Skinner box experiment",
-        "Schr&ouml;dinger's cat experiment",
-        "Harlow&rsquo;s monkey experiments"
+        "Schrödinger's cat experiment",
+        "Harlow's monkey experiments"
       ]
     },
     {
@@ -453,7 +445,7 @@
       "category": "Science & Nature",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which of the following liquids is least viscous? Assume temperature is 25&deg;C.",
+      "question": "Which of the following liquids is least viscous? Assume temperature is 25°C.",
       "correct_answer": "Acetone",
       "incorrect_answers": ["Water", "Mercury", "Benzene"]
     },
@@ -474,10 +466,10 @@
       "type": "multiple",
       "difficulty": "hard",
       "question": "The core of the Sun can reach which temperature?",
-      "correct_answer": "27&deg; Million F (15&deg; Million C)",
+      "correct_answer": "27° Million F (15° Million C)",
       "incorrect_answers": [
-        "938,000&deg; F (521093.3&deg; C)",
-        "8&deg; Billion F (&deg;4.4 Billion C)",
+        "938,000° F (521093.3° C)",
+        "8° Billion F (°4.4 Billion C)",
         "Absolute Zero (Both F and C)"
       ]
     },
@@ -524,9 +516,9 @@
       "question": "Which major extinction event was caused by an asteroid collision and eliminated the majority of non-avian dinosaurs?",
       "correct_answer": "Cretaceous-Paleogene",
       "incorrect_answers": [
-        "Triassic&ndash;Jurassic",
-        "Permian&ndash;Triassic",
-        "Ordovician&ndash;Silurian"
+        "Triassic-Jurassic",
+        "Permian-Triassic",
+        "Ordovician-Silurian"
       ]
     },
     {

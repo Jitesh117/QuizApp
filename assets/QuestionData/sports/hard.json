@@ -137,7 +137,7 @@
       "category": "Sports",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What is &ldquo;The Sport of Kings&rdquo;?",
+      "question": "What is 'The Sport of Kings'?",
       "correct_answer": "Horse Racing",
       "incorrect_answers": ["Chess", "Jousting", "Fencing"]
     },

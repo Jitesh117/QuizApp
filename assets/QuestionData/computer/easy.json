@@ -211,11 +211,7 @@
       "difficulty": "easy",
       "question": "The C programming language was created by this American computer scientist. ",
       "correct_answer": "Dennis Ritchie",
-      "incorrect_answers": [
-        "Tim Berners Lee",
-        "al-Khwārizmī",
-        "Willis Ware"
-      ]
+      "incorrect_answers": ["Tim Berners Lee", "al-Khwārizmī", "Willis Ware"]
     },
     {
       "category": "Science: Computers",

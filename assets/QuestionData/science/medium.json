@@ -186,8 +186,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "question": "At what temperature does water boil?",
-      "correct_answer": "212&deg;F",
-      "incorrect_answers": ["200&deg;F", "181&deg;F", "178&deg;F"]
+    "correct_answer": "212°F", "incorrect_answers": ["200°F", "181°F", "178°F"]
     },
     {
       "category": "Science & Nature",
@@ -210,7 +209,7 @@
       "type": "multiple",
       "difficulty": "medium",
       "question": "Who made the discovery of X-rays?",
-      "correct_answer": "Wilhelm Conrad R&ouml;ntgen",
+      "correct_answer": "Wilhelm Conrad Röntgen",
       "incorrect_answers": [
         "Thomas Alva Edison",
         "James Watt",
@@ -385,7 +384,7 @@
       "correct_answer": "Dunning-Kruger effect",
       "incorrect_answers": [
         "Meyers-Briggs effect",
-        "M&uuml;ller-Lyer effect",
+        "Müller-Lyer effect",
         "Freud-Hall effect"
       ]
     },
@@ -630,11 +629,11 @@
       "type": "multiple",
       "difficulty": "medium",
       "question": "The Sun consists of mostly which two elements?",
-      "correct_answer": "Hydrogen &; Helium",
+      "correct_answer": "Hydrogen & Helium",
       "incorrect_answers": [
-        "Hydrogen &; Nitrogen",
-        "Carbon &; Nitrogen",
-        "Carbon &; Helium"
+        "Hydrogen & Nitrogen",
+        "Carbon & Nitrogen",
+        "Carbon & Helium"
       ]
     },
     {
