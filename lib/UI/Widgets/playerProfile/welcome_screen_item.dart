@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../../Styles/text_styles.dart';
+
 class WelcomeScreenButton extends StatelessWidget {
   const WelcomeScreenButton({
     required this.name,
@@ -34,10 +36,11 @@ class WelcomeScreenButton extends StatelessWidget {
           Row(
             children: [
               FaIcon(icon, size: 35),
-              const Text(
+              Text(
+                textScaleFactor: ScaleSize.textScaleFactor(context),
                 '',
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 25,
                 ),
               ),
@@ -45,12 +48,13 @@ class WelcomeScreenButton extends StatelessWidget {
           ),
           Center(
             child: Text(
+              textScaleFactor: ScaleSize.textScaleFactor(context),
               name,
               textAlign: TextAlign.center,
               style: const TextStyle(
                 color: Colors.black,
                 fontSize: 25,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w700,
               ),
             ),
           ),

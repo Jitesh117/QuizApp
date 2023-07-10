@@ -13,12 +13,14 @@ class GenreCard extends StatelessWidget {
     required this.category,
     required this.streakColor,
     required this.bgColor,
+    required this.imagePath,
   });
 
   final String topicName;
   final int category;
   final Color streakColor;
   final Color bgColor;
+  final String imagePath;
 
   @override
   Widget build(BuildContext context) {
@@ -60,14 +62,19 @@ class GenreCard extends StatelessWidget {
               ],
             ),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Image.asset(
+                  imagePath,
+                  height: 50,
+                ),
                 Center(
                   child: Text(
+                    textScaleFactor: ScaleSize.textScaleFactor(context),
                     topicName,
                     textAlign: TextAlign.center,
-                    style: cardTextStyle,
+                    style: bigBold,
                   ),
                 ),
               ],

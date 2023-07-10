@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../Styles/text_styles.dart';
+
 class StatsTileColumn extends StatelessWidget {
   const StatsTileColumn({
     super.key,
@@ -21,15 +23,16 @@ class StatsTileColumn extends StatelessWidget {
           color: Colors.white,
         ),
         Text(
+          textScaleFactor: ScaleSize.textScaleFactor(context),
           description,
           style: TextStyle(
             color: Colors.grey.shade400,
           ),
         ),
         Text(
+          textScaleFactor: ScaleSize.textScaleFactor(context),
           number,
-          style: const TextStyle(
-              color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+          style: whiteBold,
         ),
       ],
     );

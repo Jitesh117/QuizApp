@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 
 import '../../../providers/player_provider.dart';
 import '../../../providers/question_provider.dart';
+import '../../Styles/text_styles.dart';
 
 class DrawerItem extends StatelessWidget {
   const DrawerItem({
@@ -41,10 +42,9 @@ class DrawerItem extends StatelessWidget {
             },
             leading: FaIcon(icon),
             title: Text(
+              textScaleFactor: ScaleSize.textScaleFactor(context),
               description,
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
+              style: regularBold,
             ),
           ),
         ),

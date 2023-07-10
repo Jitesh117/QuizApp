@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../Styles/text_styles.dart';
+
 class PowerDescription extends StatelessWidget {
   const PowerDescription({
     super.key,
@@ -38,12 +40,10 @@ class PowerDescription extends StatelessWidget {
           ),
           const SizedBox(width: 10),
           Text(
+            textScaleFactor: ScaleSize.textScaleFactor(context),
             description,
             overflow: TextOverflow.ellipsis,
-            style: const TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
+            style: midBold,
           )
         ]),
       ),

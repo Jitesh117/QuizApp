@@ -80,6 +80,7 @@ flutter:
     - assets/sounds/
     - assets/powerups/
     - assets/badges/
+    - assets/genreImages/
     - assets/lottieAnimations/
     - assets/QuestionData/science/
     - assets/QuestionData/IndianStates/
@@ -105,11 +106,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Alfa
-  #     fonts:
-  #       - asset: assets/AlfaSlabOne-Regular.ttf
-  #         weight: 400
+  fonts:
+    - family: "Cabinet Grotesk Variable"
+      fonts:
+        - asset: assets/fonts/regular.otf
+        - asset: assets/fonts/bold.otf
+          weight: 500
+        - asset: assets/fonts/extraBold.otf
+          weight: 700
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
           useMaterial3: true,
-          // fontFamily: 'Alfa',
+          fontFamily: 'Cabinet Grotesk Variable',
         ),
         home: const WelcomeScreen(),
       ),

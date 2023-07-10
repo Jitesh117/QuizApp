@@ -13,7 +13,7 @@ import 'package:quiz_v2/providers/question_provider.dart';
 
 import '../Styles/text_styles.dart';
 import '../Widgets/playerProfile/drawer_item.dart';
-import '../Widgets/quizWidgets/badge.dart';
+import '../Widgets/quizWidgets/powerup.dart';
 import '../Widgets/quizWidgets/option_tile.dart';
 import '../Widgets/quizWidgets/streak_counter.dart';
 
@@ -41,7 +41,7 @@ class QuizPage extends StatelessWidget {
         backdrop: Container(
           width: double.infinity,
           height: double.infinity,
-          color: Colors.cyan,
+          color: Colors.pinkAccent,
         ),
         controller: advancedDrawerController,
         animationCurve: Curves.easeInOut,
@@ -158,11 +158,10 @@ class QuizPage extends StatelessWidget {
                                   const FaIcon(FontAwesomeIcons.coins),
                                   const SizedBox(width: 10),
                                   Text(
+                                    textScaleFactor:
+                                        ScaleSize.textScaleFactor(context),
                                     playerProvider.points.toString(),
-                                    style: const TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 20,
-                                    ),
+                                    style: midBold,
                                   ),
                                 ],
                               ),
@@ -189,19 +188,18 @@ class QuizPage extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  child: const Row(
+                                  child: Row(
                                     children: [
-                                      FaIcon(
+                                      const FaIcon(
                                         FontAwesomeIcons.circleInfo,
                                         size: 16,
                                       ),
-                                      SizedBox(width: 5),
+                                      const SizedBox(width: 5),
                                       Text(
+                                        textScaleFactor:
+                                            ScaleSize.textScaleFactor(context),
                                         'Stats',
-                                        style: TextStyle(
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                                        style: regularBold,
                                       ),
                                     ],
                                   ),
@@ -221,7 +219,7 @@ class QuizPage extends StatelessWidget {
                         Container(
                           padding: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
-                            color: Colors.lightGreenAccent,
+                            color: Colors.deepPurple.shade300,
                             borderRadius: BorderRadius.circular(16),
                             border: Border.all(
                               color: Colors.black,
@@ -245,12 +243,10 @@ class QuizPage extends StatelessWidget {
                                   ),
                                   const SizedBox(width: 10),
                                   Text(
+                                    textScaleFactor:
+                                        ScaleSize.textScaleFactor(context),
                                     quesProvider.questionNumber.toString(),
-                                    style: TextStyle(
-                                      color: Colors.grey.shade800,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                                    style: midBold,
                                   ),
                                 ],
                               ),
@@ -276,10 +272,7 @@ class QuizPage extends StatelessWidget {
                                 isReverseAnimation: true,
                                 isReverse: true,
                                 textFormat: CountdownTextFormat.S,
-                                textStyle: const TextStyle(
-                                    fontSize: 16,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold),
+                                textStyle: midBold,
                                 onComplete: () async {
                                   quesProvider.streakCount = 0;
                                   quesProvider.numberOfInorrectAnswers++;
@@ -337,7 +330,8 @@ class QuizPage extends StatelessWidget {
                               onTap: () {
                                 playerProvider.playTapSound();
                                 if (playerProvider.powerReveal > 0 &&
-                                    !quesProvider.revealRightOptionTapped) {
+                                    !quesProvider.revealRightOptionTapped &&
+                                    quesProvider.questionsLoaded) {
                                   playerProvider.revealUsed = true;
                                   playerProvider.powerReveal--;
                                   quesProvider.numberOfPowerupsUsed++;
@@ -416,9 +410,10 @@ class QuizPage extends StatelessWidget {
                             ],
                           ),
                           child: Text(
+                            textScaleFactor: ScaleSize.textScaleFactor(context),
                             quesProvider.question,
                             textAlign: TextAlign.center,
-                            style: cardTextStyle,
+                            style: bigBold,
                           ),
                         ),
                         const SizedBox(height: 20),

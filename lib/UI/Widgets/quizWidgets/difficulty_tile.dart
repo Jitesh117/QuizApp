@@ -47,8 +47,9 @@ class DifficultyTile extends StatelessWidget {
                 children: [
                   Center(
                     child: Text(
+                      textScaleFactor: ScaleSize.textScaleFactor(context),
                       difficulty,
-                      style: cardTextStyle,
+                      style: bigBold,
                     ),
                   )
                 ],

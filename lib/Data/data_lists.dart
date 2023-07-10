@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 List<String> genreNames = [
   'Indian States',
-  'Anime',
+  'Anime & Manga',
   'Computer',
   'GK',
   'Science',
@@ -53,6 +53,19 @@ List<Color> genreColor = [
   const Color(0xffA3CB38),
   const Color(0xFF6163D5),
   const Color(0xFFFF9800),
+];
+
+List<String> genreIcons = [
+  'assets/genreImages/indianStates.png',
+  'assets/genreImages/anime.png',
+  'assets/genreImages/computer.png',
+  'assets/genreImages/gk.png',
+  'assets/genreImages/science.png',
+  'assets/genreImages/marvel.png',
+  'assets/genreImages/movies.png',
+  'assets/genreImages/sports.png',
+  'assets/genreImages/usTV.png',
+  'assets/genreImages/pop.png',
 ];
 
 List<Color> optionColor = [

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/providers/player_provider.dart';
 import '../../../providers/question_provider.dart';
+import '../../Styles/text_styles.dart';
 
 class OptionTile extends StatefulWidget {
   const OptionTile({
@@ -41,10 +42,16 @@ class _OptionTileState extends State<OptionTile> {
                       Colors.yellowAccent.shade700,
                       Colors.green,
                     ]
-                  : [
-                      widget.optionColor,
-                      widget.optionColor,
-                    ],
+                  : (quesProvider.tapped &&
+                          quesProvider.rightPosition != widget.optionNumber)
+                      ? [
+                          Colors.grey,
+                          Colors.grey,
+                        ]
+                      : [
+                          widget.optionColor,
+                          widget.optionColor,
+                        ],
             ),
             border: Border.all(
               color: Colors.black,
@@ -62,13 +69,10 @@ class _OptionTileState extends State<OptionTile> {
           child: SizedBox(
             child: Center(
               child: Text(
+                textScaleFactor: ScaleSize.textScaleFactor(context),
                 widget.optionValue,
                 textAlign: TextAlign.center,
-                style: const TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: midBold,
               ),
             ),
           ),

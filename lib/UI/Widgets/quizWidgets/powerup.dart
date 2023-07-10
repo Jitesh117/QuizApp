@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../Styles/text_styles.dart';
+
 class PowerUp extends StatelessWidget {
   const PowerUp({
     super.key,
@@ -33,10 +35,9 @@ class PowerUp extends StatelessWidget {
             ),
             child: Center(
               child: Text(
+                textScaleFactor: ScaleSize.textScaleFactor(context),
                 availability,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
+                style: regular,
               ),
             ),
           ),

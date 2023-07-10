@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../UI/Styles/text_styles.dart';
+
 class PlayerProvider with ChangeNotifier {
   int highScore = 0;
   String name = "Guest";
@@ -122,9 +124,10 @@ class PlayerProvider with ChangeNotifier {
       builder: (context) {
         return points < price
             ? AlertDialog(
-                title: const Text(
+                title: Text(
+                  textScaleFactor: ScaleSize.textScaleFactor(context),
                   "You have insufficient coins",
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: regularBold,
                   textAlign: TextAlign.center,
                 ),
                 actionsAlignment: MainAxisAlignment.center,
@@ -134,21 +137,19 @@ class PlayerProvider with ChangeNotifier {
                       playTapSound();
                       Navigator.pop(context);
                     },
-                    child: const Text(
+                    child: Text(
+                      textScaleFactor: ScaleSize.textScaleFactor(context),
                       'OK',
-                      style: TextStyle(
-                        color: Colors.green,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: greenBold,
                     ),
                   ),
                 ],
               )
             : AlertDialog(
-                title: const Text(
+                title: Text(
+                  textScaleFactor: ScaleSize.textScaleFactor(context),
                   "Are you sure you want to buy this?",
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: regularBold,
                   textAlign: TextAlign.center,
                 ),
                 actionsAlignment: MainAxisAlignment.spaceBetween,
@@ -158,13 +159,10 @@ class PlayerProvider with ChangeNotifier {
                       playTapSound();
                       Navigator.pop(context, false);
                     },
-                    child: const Text(
+                    child: Text(
+                      textScaleFactor: ScaleSize.textScaleFactor(context),
                       'No',
-                      style: TextStyle(
-                        color: Colors.red,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: redBold,
                     ),
                   ),
                   TextButton(
@@ -196,13 +194,10 @@ class PlayerProvider with ChangeNotifier {
                       notifyListeners();
                       Navigator.pop(context, true);
                     },
-                    child: const Text(
+                    child: Text(
+                      textScaleFactor: ScaleSize.textScaleFactor(context),
                       'Yes',
-                      style: TextStyle(
-                        color: Colors.green,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: greenBold,
                     ),
                   ),
                 ],
@@ -405,19 +400,15 @@ class PlayerProvider with ChangeNotifier {
             const SizedBox(width: 10),
             Column(
               children: [
-                const Text(
+                Text(
+                  textScaleFactor: ScaleSize.textScaleFactor(context),
                   'Achievement Unlocked!',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: whiteRegular,
                 ),
                 Text(
+                  textScaleFactor: ScaleSize.textScaleFactor(context),
                   badgeName[index],
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: whiteRegular,
                 ),
               ],
             ),

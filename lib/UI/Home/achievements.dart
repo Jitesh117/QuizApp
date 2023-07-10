@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_v2/Data/data_lists.dart';
 import 'package:shimmer_animation/shimmer_animation.dart';
 
 import '../../providers/player_provider.dart';
 import '../../providers/question_provider.dart';
+import '../Styles/text_styles.dart';
 
 class AchievementsPage extends StatelessWidget {
   const AchievementsPage({super.key});
@@ -19,14 +19,14 @@ class AchievementsPage extends StatelessWidget {
         body: SafeArea(
           child: Stack(
             children: [
-              SizedBox(
-                height: MediaQuery.of(context).size.height,
-                width: MediaQuery.of(context).size.width,
-                child: Lottie.asset(
-                  'assets/lottieAnimations/patternBack.zip',
-                  fit: BoxFit.cover,
-                ),
-              ),
+              // SizedBox(
+              //   height: MediaQuery.of(context).size.height,
+              //   width: MediaQuery.of(context).size.width,
+              //   child: Lottie.asset(
+              //     'assets/lottieAnimations/patternBack.zip',
+              //     fit: BoxFit.cover,
+              //   ),
+              // ),
               Padding(
                 padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
                 child: Column(
@@ -96,14 +96,15 @@ class AchievementsPage extends StatelessWidget {
                                         ),
                                       ),
                                       Text(
+                                        textScaleFactor:
+                                            ScaleSize.textScaleFactor(context),
                                         badgeName[index],
                                         textAlign: TextAlign.center,
-                                        style: const TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                                        style: whiteBold,
                                       ),
                                       Text(
+                                        textScaleFactor:
+                                            ScaleSize.textScaleFactor(context),
                                         badgeDescription[index],
                                         textAlign: TextAlign.center,
                                       )

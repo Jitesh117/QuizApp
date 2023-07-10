@@ -123,20 +123,21 @@ class _WelcomeScreenState extends State<WelcomeScreen>
         //     ),
         //   ],
         //   body: const Center(
-        //     child: Text(''),
+        //     child: Text(
+        // textScaleFactor: ScaleSize.textScaleFactor(context),''),
         //   ),
         // ),
         body: SafeArea(
           // background animation
           child: Stack(
             children: [
-              SizedBox(
-                height: MediaQuery.of(context).size.height,
-                child: Lottie.asset(
-                  'assets/lottieAnimations/patternBack.zip',
-                  fit: BoxFit.cover,
-                ),
-              ),
+              // SizedBox(
+              //   height: MediaQuery.of(context).size.height,
+              //   child: Lottie.asset(
+              //     'assets/lottieAnimations/patternBack.zip',
+              //     fit: BoxFit.cover,
+              //   ),
+              // ),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 30),
@@ -145,9 +146,9 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                   children: [
                     Center(
                       child: SizedBox(
-                        height: 300,
+                        height: 400,
                         child: Lottie.asset(
-                          'assets/lottieAnimations/redPattern.zip',
+                          'assets/lottieAnimations/hero.json',
                           fit: BoxFit.fill,
                           alignment: Alignment.center,
                         ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../../Styles/text_styles.dart';
+
 class ShopItem extends StatelessWidget {
   const ShopItem({
     super.key,
@@ -58,10 +60,9 @@ class ShopItem extends StatelessWidget {
                     ),
                     child: Center(
                       child: Text(
+                        textScaleFactor: ScaleSize.textScaleFactor(context),
                         numberOfItems.toString(),
-                        style: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: regularBold,
                       ),
                     ),
                   ),
@@ -73,12 +74,9 @@ class ShopItem extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
+                  textScaleFactor: ScaleSize.textScaleFactor(context),
                   '$price',
-                  style: const TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: midBold,
                 ),
                 const SizedBox(width: 5),
                 const FaIcon(FontAwesomeIcons.coins),

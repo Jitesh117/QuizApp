@@ -9,6 +9,7 @@ import 'package:quiz_v2/UI/Quiz/quiz_page.dart';
 import 'package:quiz_v2/providers/player_provider.dart';
 import 'package:quiz_v2/providers/question_provider.dart';
 
+import '../Styles/text_styles.dart';
 import '../Widgets/quizWidgets/difficulty_tile.dart';
 
 // ignore: must_be_immutable
@@ -39,13 +40,13 @@ class ChooseDifficultyPage extends StatelessWidget {
           child: Stack(
             children: [
               // background animation
-              SizedBox(
-                height: MediaQuery.of(context).size.height,
-                child: Lottie.asset(
-                  'assets/lottieAnimations/patternBack.zip',
-                  fit: BoxFit.cover,
-                ),
-              ),
+              // SizedBox(
+              //   height: MediaQuery.of(context).size.height,
+              //   child: Lottie.asset(
+              //     'assets/lottieAnimations/patternBack.zip',
+              //     fit: BoxFit.cover,
+              //   ),
+              // ),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 0, horizontal: 20),
@@ -70,12 +71,13 @@ class ChooseDifficultyPage extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 10),
-                    const Center(
+                    Center(
                       child: Text(
+                        textScaleFactor: ScaleSize.textScaleFactor(context),
                         'Choose your difficulty',
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 30,
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.w700,
                         ),
                       ),
                     ),

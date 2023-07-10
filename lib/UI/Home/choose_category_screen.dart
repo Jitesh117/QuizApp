@@ -24,14 +24,14 @@ class _ChooseCategoryScreenState extends State<ChooseCategoryScreen> {
         body: SafeArea(
           child: Stack(
             children: [
-              SizedBox(
-                height: MediaQuery.of(context).size.height,
-                width: MediaQuery.of(context).size.width,
-                child: Lottie.asset(
-                  'assets/lottieAnimations/patternBack.zip',
-                  fit: BoxFit.cover,
-                ),
-              ),
+              // SizedBox(
+              //   height: MediaQuery.of(context).size.height,
+              //   width: MediaQuery.of(context).size.width,
+              //   child: Lottie.asset(
+              //     'assets/lottieAnimations/patternBack.zip',
+              //     fit: BoxFit.cover,
+              //   ),
+              // ),
               Padding(
                 padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
                 child: Column(
@@ -72,6 +72,7 @@ class _ChooseCategoryScreenState extends State<ChooseCategoryScreen> {
                               category: index,
                               streakColor: Colors.lightBlue,
                               bgColor: genreColor[index],
+                              imagePath: genreIcons[index],
                             )),
                       ),
                     ),

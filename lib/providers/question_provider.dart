@@ -10,6 +10,8 @@ import 'dart:convert';
 import 'dart:developer' as dev;
 import 'package:quiz_v2/Data/models/data_model.dart';
 
+import '../UI/Styles/text_styles.dart';
+
 class QuesProvider with ChangeNotifier {
   ConfettiController confettiController = ConfettiController();
   // initialisation of question and answers
@@ -75,7 +77,6 @@ class QuesProvider with ChangeNotifier {
     }
 
     addRandomQuestions();
-    questionsLoaded = true;
     notifyListeners();
   }
 
@@ -118,7 +119,7 @@ class QuesProvider with ChangeNotifier {
     deleteWrongOptionTapped = false;
     revealRightOptionTapped = false;
     doublePointsTapped = false;
-
+    questionsLoaded = false;
     showCorrectOption = false;
 
     question = dataModels[category][difficulty].results![itemNumber].question!;
@@ -132,6 +133,7 @@ class QuesProvider with ChangeNotifier {
           .incorrectAnswers![i];
       dev.log("Incorrect answer $i: ${incorrectAnswer[i]}");
     }
+    questionsLoaded = true;
     dev.log("Correct answer : $correctAnswer");
     notifyListeners();
   }
@@ -199,9 +201,10 @@ class QuesProvider with ChangeNotifier {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: const Text(
+          title: Text(
+            textScaleFactor: ScaleSize.textScaleFactor(context),
             "Do you want to go back? You'll lose all your progess!",
-            style: TextStyle(fontWeight: FontWeight.bold),
+            style: regularBold,
             textAlign: TextAlign.center,
           ),
           actionsAlignment: MainAxisAlignment.spaceBetween,
@@ -211,13 +214,10 @@ class QuesProvider with ChangeNotifier {
                 playTapSound();
                 Navigator.pop(context, false);
               },
-              child: const Text(
+              child: Text(
+                textScaleFactor: ScaleSize.textScaleFactor(context),
                 'No',
-                style: TextStyle(
-                  color: Colors.red,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: redBold,
               ),
             ),
             TextButton(
@@ -232,13 +232,10 @@ class QuesProvider with ChangeNotifier {
                 notifyListeners();
                 Navigator.pop(context, true);
               },
-              child: const Text(
+              child: Text(
+                textScaleFactor: ScaleSize.textScaleFactor(context),
                 'Yes',
-                style: TextStyle(
-                  color: Colors.green,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: greenBold,
               ),
             ),
           ],

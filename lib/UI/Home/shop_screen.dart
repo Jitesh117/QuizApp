@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '../../Data/data_lists.dart';
 import '../../providers/player_provider.dart';
 import '../../providers/question_provider.dart';
+import '../Styles/text_styles.dart';
 import '../Widgets/shop/power_description.dart';
 import '../Widgets/shop/shop_item.dart';
 
@@ -21,13 +22,13 @@ class ShopScreen extends StatelessWidget {
           child: Stack(
             children: [
               // background animation
-              SizedBox(
-                height: MediaQuery.of(context).size.height,
-                child: Lottie.asset(
-                  'assets/lottieAnimations/patternBack.zip',
-                  fit: BoxFit.cover,
-                ),
-              ),
+              // SizedBox(
+              //   height: MediaQuery.of(context).size.height,
+              //   child: Lottie.asset(
+              //     'assets/lottieAnimations/patternBack.zip',
+              //     fit: BoxFit.cover,
+              //   ),
+              // ),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Column(
@@ -66,12 +67,10 @@ class ShopScreen extends StatelessWidget {
                               const FaIcon(FontAwesomeIcons.coins),
                               const SizedBox(width: 10),
                               Text(
+                                textScaleFactor:
+                                    ScaleSize.textScaleFactor(context),
                                 playerProvider.points.toString(),
-                                style: const TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                ),
-                              ),
+                                style: regular,                             ),
                             ],
                           ),
                         ],

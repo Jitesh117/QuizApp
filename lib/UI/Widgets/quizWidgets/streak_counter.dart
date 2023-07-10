@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
 import '../../../providers/question_provider.dart';
+import '../../Styles/text_styles.dart';
 
 class StreakCounter extends StatelessWidget {
   const StreakCounter({
@@ -25,11 +26,9 @@ class StreakCounter extends StatelessWidget {
           ),
           const SizedBox(width: 10),
           Text(
+            textScaleFactor: ScaleSize.textScaleFactor(context),
             quesProvider.streakCount.toString(),
-            style: const TextStyle(
-              color: Colors.black,
-              fontSize: 24,
-            ),
+            style: bigBold,
           )
         ],
       ),
