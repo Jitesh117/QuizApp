@@ -9,7 +9,7 @@ A quiz app made with Flutter💙.
 - Achievements / Badges
 - PowerUps 
 - Shop
-- Beautiful Neurabrutalistic design
+- Beautiful Neubrutalistic design
 
 ## How it looks
 <p align = "center">
@@ -77,8 +77,3 @@ flutter run
 - [provider](https://pub.dev/packages/provider)
 - [shared_preferences](https://pub.dev/packages/shared_preferences)
 - [shimmer_animation](https://pub.dev/packages/shimmer_animation)
-
-    
-
-
-

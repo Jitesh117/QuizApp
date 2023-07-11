@@ -33,19 +33,21 @@ class PowerDescription extends StatelessWidget {
             ),
           ],
         ),
-        child: Row(children: [
-          Image.asset(
-            imagePath,
-            height: 40,
-          ),
-          const SizedBox(width: 10),
-          Text(
-            textScaleFactor: ScaleSize.textScaleFactor(context),
-            description,
-            overflow: TextOverflow.ellipsis,
-            style: midBold,
-          )
-        ]),
+        child: Row(
+          children: [
+            Image.asset(
+              imagePath,
+              height: 40,
+            ),
+            const SizedBox(width: 10),
+            Text(
+              textScaleFactor: ScaleSize.textScaleFactor(context),
+              description,
+              overflow: TextOverflow.ellipsis,
+              style: midBold,
+            )
+          ],
+        ),
       ),
     );
   }

@@ -136,14 +136,6 @@
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the official language of Uttar Pradesh?",
-      "correct_answer": "Hindi",
-      "incorrect_answers": ["Bengali", "Urdu", "Tamil"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
       "question": "Which union territory is known for its Portuguese influence and architecture?",
       "correct_answer": "Goa",
       "incorrect_answers": [
@@ -264,14 +256,6 @@
       "category": "Indian States",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which union territory is known for its beautiful beaches and coral reefs?",
-      "correct_answer": "Andaman and Nicobar Islands",
-      "incorrect_answers": ["Daman and Diu", "Puducherry", "Lakshadweep"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
       "question": "What is the official language of Bihar?",
       "correct_answer": "Hindi",
       "incorrect_answers": ["Bhojpuri", "Maithili", "Urdu"]
@@ -287,22 +271,6 @@
         "Daman and Diu",
         "Puducherry"
       ]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the official language of Uttar Pradesh?",
-      "correct_answer": "Hindi",
-      "incorrect_answers": ["Bengali", "Urdu", "Tamil"]
-    },
-    {
-      "category": "Indian States",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the capital city of Rajasthan?",
-      "correct_answer": "Jaipur",
-      "incorrect_answers": ["Jodhpur", "Udaipur", "Jaisalmer"]
     },
     {
       "category": "Indian States",

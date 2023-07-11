@@ -37,7 +37,7 @@ class PowerUp extends StatelessWidget {
               child: Text(
                 textScaleFactor: ScaleSize.textScaleFactor(context),
                 availability,
-                style: regular,
+                style: regularBold,
               ),
             ),
           ),

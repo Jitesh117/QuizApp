@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
-import 'package:quiz_v2/UI/Home/achievements.dart';
+import 'package:quiz_v2/UI/Home/achievements_screen.dart';
 import 'package:quiz_v2/UI/Home/choose_category_screen.dart';
 import 'package:quiz_v2/UI/Home/shop_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
