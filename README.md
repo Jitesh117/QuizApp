@@ -3,7 +3,7 @@
 A quiz app made with Flutter💙.
 
 ## Features
-- Multiple Choise Questions
+- Multiple Choice Questions
 - 10 Categories of questions to choose from
 - Point system
 - Achievements / Badges
